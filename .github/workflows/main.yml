@@ -1,0 +1,52 @@
+name: deploy gh-pages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    name: Build and deploy gh-pages
+    env:
+      MY_SECRET   : ${{ secrets.COMMIT_SECRET }}
+      USER_NAME   : githubaction
+      USER_EMAIL  : githubaction@fake.com
+      PUBLISH_DIR : ./build
+      GH_PAGES_BRANCH: gh-pages
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [14.x]
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+
+    - name: yarn install
+      run: |
+        yarn install
+
+    - name: yarn build
+      run: |
+        yarn build
+
+    - name: Commit files
+      run: |
+        cd $PUBLISH_DIR
+        git init
+        git config --local user.email $USER_NAME
+        git config --local user.name $USER_EMAIL
+        git status
+        git remote add origin https://$MY_SECRET@github.com/$GITHUB_REPOSITORY.git
+        git checkout -b $GH_PAGES_BRANCH
+        git add --all
+        git commit -m "deploy to Github pages"
+        git push origin $GH_PAGES_BRANCH -f
+        echo 🤘 deploy $GH_PAGES_BRANCH complete.
