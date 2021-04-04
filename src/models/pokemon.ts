@@ -18,23 +18,31 @@ export type PokemonType =
     | 'POKEMON_TYPE_STEEL'
     | 'POKEMON_TYPE_WATER';
 
-export interface ICombatMoveBuff {
-    attackerAttackStatStageChange?: number;
-    attackerDefenseStatStageChange?: number;
-    targetAttackStatStageChange?: number;
-    targetDefenseStatStageChange?: number;
-    buffActivationChance: number;
-}
-
-export interface ICombatMove {
+export interface IMove {
     id: string;
     name: string;
     uniqueId: string;
     type: PokemonType;
-    power: number;
-    energyDelta: number;
-    durationTurns?: number;
-    buffs?: ICombatMoveBuff;
+    base: {
+        power: number;
+        staminaLossScalar: number;
+        durationMs: number;
+        energyDelta: number;
+        accuracyChance?: number;
+        criticalChance?: number;
+    };
+    combat: {
+        power: number;
+        energyDelta: number;
+        durationTurns?: number;
+        buffs?: {
+            attackerAttackStatStageChange?: number;
+            attackerDefenseStatStageChange?: number;
+            targetAttackStatStageChange?: number;
+            targetDefenseStatStageChange?: number;
+            buffActivationChance: number;
+        };
+    };
 }
 
 export interface IPokemon {
@@ -47,10 +55,10 @@ export interface IPokemon {
         baseAttack: number;
         baseDefense: number;
     };
-    quickMoves?: ICombatMove[];
-    cinematicMoves?: ICombatMove[];
-    eliteQuickMoves?: ICombatMove[];
-    eliteCinematicMoves?: ICombatMove[];
+    quickMoves?: IMove[];
+    cinematicMoves?: IMove[];
+    eliteQuickMoves?: IMove[];
+    eliteCinematicMoves?: IMove[];
     familyId: string;
     form?: string;
     thirdMove: {

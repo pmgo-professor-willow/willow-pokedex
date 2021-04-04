@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router } from "react-router-dom";
 import fetch from 'node-fetch';
-import { Row, Col, Typography, Divider, Image } from 'antd';
+import { Row, Col, Typography, Divider, Image, Radio } from 'antd';
 // Local modules.
 import { IPokemon } from './models/pokemon';
 import * as Pokemon from './components/pokemon';
@@ -10,11 +10,12 @@ import * as Pokemon from './components/pokemon';
 const App: React.FC = () => {
     const [, setLoading] = useState<boolean>(false);
     const [pokemons, setPokemons] = useState<IPokemon[]>([]);
+    const [mode, setMode] = useState<'pve' | 'pvp'>('pve');
 
     useEffect(() => {
         async function fetchData() {
             setLoading(true);
-            const res = await fetch('https://pmgo-professor-willow.github.io/willow-pokedex/data/pokemons.json');
+            const res = await fetch('/willow-pokedex/data/pokemons.json');
             const allPokemons: IPokemon[] = await res.json();
             setLoading(false);
             setPokemons(allPokemons.slice(24, 25));
@@ -70,6 +71,15 @@ const App: React.FC = () => {
                             </Col>
                         </Row>
 
+                        <Row>
+                            <Col flex={1} style={{ textAlign: 'center' }}>
+                                <Radio.Group value={mode} onChange={(e) => setMode(e.target.value)}>
+                                    <Radio.Button value='pve' children={'道館對戰 & 團體戰'} />
+                                    <Radio.Button value='pvp' children={'訓練家對戰'} />
+                                </Radio.Group>
+                            </Col>
+                        </Row>
+
                         <Divider plain orientation='left'>
                             <Row wrap={false} gutter={5} align='middle' justify='center'>
                                 <Col flex='none'>
@@ -86,12 +96,14 @@ const App: React.FC = () => {
                         {pokemon.quickMoves?.map((move) => (
                             <Pokemon.Move key={move.uniqueId}
                                 move={move}
+                                mode={mode}
                             />
                         ))}
 
                         {pokemon.eliteQuickMoves?.map((move) => (
                             <Pokemon.Move key={move.uniqueId}
                                 move={move}
+                                mode={mode}
                                 legacy={true}
                             />
                         ))}
@@ -112,12 +124,14 @@ const App: React.FC = () => {
                         {pokemon.cinematicMoves?.map((move) => (
                             <Pokemon.Move key={move.uniqueId}
                                 move={move}
+                                mode={mode}
                             />
                         ))}
 
                         {pokemon.eliteCinematicMoves?.map((move) => (
                             <Pokemon.Move key={move.uniqueId}
                                 move={move}
+                                mode={mode}
                                 legacy={true}
                             />
                         ))}
