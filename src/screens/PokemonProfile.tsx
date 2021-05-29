@@ -1,8 +1,8 @@
 // Node modules.
 import { maxBy } from 'lodash';
-import React, { useEffect, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import { useParams } from 'react-router';
-import { Row, Col, Typography, Divider, Image, Radio, Alert, Tag } from 'antd';
+import { Row, Col, Typography, Divider, Image, Radio, Alert, Tag, Select } from 'antd';
 // Local modules.
 import type { IPokemon, IPokemonStatus } from '../models/pokemon';
 import * as Pokemon from '../components/pokemon';
@@ -14,13 +14,28 @@ interface PokemonProfileProps {
 const PokemonProfile: React.FC<PokemonProfileProps> = (props) => {
     const { pokemons } = props;
 
-    const [mode, setMode] = useState<'pve' | 'pvp'>('pve');
-
     const { pokemonNo } = useParams<{ pokemonNo: string }>();
 
-    const pokemon = pokemons.find((p) => p.no === parseInt(pokemonNo));
+    const [mode, setMode] = useState<'pve' | 'pvp'>('pve');
+    const [isomorphicPokemons, setIsomorphicPokemons] = useState<IPokemon[]>([]);
+    const [displayPokemon, setDisplayPokemon] = useState<IPokemon | null>(null);
+    const [maximum, setMaximum] = useState<IPokemonStatus>(displayPokemon?.stats!);
 
-    const [maximum, setMaximum] = useState<IPokemonStatus>(pokemon?.stats!);
+    const onChangeForm = useCallback((form: string) => {
+        const selectedPokemon = (
+            isomorphicPokemons.find((p) => p.form === form) ||
+            isomorphicPokemons.find((p) => !p.form)
+        )!;
+
+        setDisplayPokemon(selectedPokemon);
+    }, [isomorphicPokemons]);
+
+    useEffect(() => {
+        const newIsomorphicPokemons = pokemons.filter((p) => p.no === parseInt(pokemonNo));
+        const [newDisplayPokemon] = newIsomorphicPokemons;
+        setIsomorphicPokemons(newIsomorphicPokemons);
+        setDisplayPokemon(newDisplayPokemon);
+    }, [pokemons, pokemonNo]);
 
     useEffect(() => {
         setMaximum({
@@ -30,7 +45,7 @@ const PokemonProfile: React.FC<PokemonProfileProps> = (props) => {
         });
     }, [pokemons]);
 
-    if (!pokemon) {
+    if (!displayPokemon) {
         return null;
     }
 
@@ -39,11 +54,11 @@ const PokemonProfile: React.FC<PokemonProfileProps> = (props) => {
             <Row justify={'center'} align={'middle'}>
                 <Col flex={0} style={{ textAlign: 'center' }}>
                     {/* Image */}
-                    <Pokemon.Image pokemonNo={pokemon.no} size={125} />
+                    <Pokemon.Image pokemonNo={displayPokemon.no} size={125} />
 
                     {/* Name */}
                     <Typography.Title level={3}>
-                        {pokemon.name}
+                        {displayPokemon.name}
                     </Typography.Title>
                 </Col>
 
@@ -52,7 +67,7 @@ const PokemonProfile: React.FC<PokemonProfileProps> = (props) => {
                     <Row justify={'center'} align={'middle'}>
                         <Col span={12} style={{ textAlign: 'center' }}>
                             <Row>
-                                {pokemon.types.map((type, i) => (
+                                {displayPokemon.types.map((type, i) => (
                                     <Col key={i} flex={1}>
                                         <Pokemon.TypeIcon pokemonType={type} size={35} />
                                     </Col>
@@ -66,29 +81,44 @@ const PokemonProfile: React.FC<PokemonProfileProps> = (props) => {
                         <Col span={24} style={{ textAlign: 'center' }}>
                             <Pokemon.Stat
                                 type='attack'
-                                value={pokemon.stats.baseAttack}
-                                percent={pokemon.stats.baseAttack / maximum.baseAttack * 100}
+                                value={displayPokemon.stats.baseAttack}
+                                percent={displayPokemon.stats.baseAttack / maximum.baseAttack * 100}
                             />
                         </Col>
 
                         <Col span={24} style={{ textAlign: 'center' }}>
                             <Pokemon.Stat
                                 type='defense'
-                                value={pokemon.stats.baseDefense}
-                                percent={pokemon.stats.baseDefense / maximum.baseDefense * 100}
+                                value={displayPokemon.stats.baseDefense}
+                                percent={displayPokemon.stats.baseDefense / maximum.baseDefense * 100}
                             />
                         </Col>
 
                         <Col span={24} style={{ textAlign: 'center' }}>
                             <Pokemon.Stat
                                 type='stamina'
-                                value={pokemon.stats.baseStamina}
-                                percent={pokemon.stats.baseStamina / maximum.baseDefense * 100}
+                                value={displayPokemon.stats.baseStamina}
+                                percent={displayPokemon.stats.baseStamina / maximum.baseDefense * 100}
                             />
                         </Col>
                     </Row>
                 </Col>
             </Row>
+
+            <Row>
+                <Col flex={1} style={{ textAlign: 'center' }}>
+                    <Select style={{ width: '70%' }}
+                        defaultValue={ displayPokemon.form }
+                        onChange={onChangeForm}
+                    >
+                        {isomorphicPokemons.map(({ form }, i) => (
+                            <Select.Option key={i} value={String(form)}>{form}</Select.Option>
+                        ))}
+                    </Select>
+                </Col>
+            </Row>
+
+            <Divider />
 
             <Row>
                 <Col flex={1} style={{ textAlign: 'center' }}>
@@ -112,14 +142,14 @@ const PokemonProfile: React.FC<PokemonProfileProps> = (props) => {
                 </Row>
             </Divider>
 
-            {pokemon.quickMoves?.map((move) => (
+            {displayPokemon.quickMoves?.map((move) => (
                 <Pokemon.Move key={move.uniqueId}
                     move={move}
                     mode={mode}
                 />
             ))}
 
-            {pokemon.eliteQuickMoves?.map((move) => (
+            {displayPokemon.eliteQuickMoves?.map((move) => (
                 <Pokemon.Move key={move.uniqueId}
                     move={move}
                     mode={mode}
@@ -140,14 +170,14 @@ const PokemonProfile: React.FC<PokemonProfileProps> = (props) => {
                 </Row>
             </Divider>
 
-            {pokemon.cinematicMoves?.map((move) => (
+            {displayPokemon.cinematicMoves?.map((move) => (
                 <Pokemon.Move key={move.uniqueId}
                     move={move}
                     mode={mode}
                 />
             ))}
 
-            {pokemon.eliteCinematicMoves?.map((move) => (
+            {displayPokemon.eliteCinematicMoves?.map((move) => (
                 <Pokemon.Move key={move.uniqueId}
                     move={move}
                     mode={mode}
