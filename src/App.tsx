@@ -24,8 +24,8 @@ const App: React.FC = () => {
     }, []);
 
     return (
-        <Router>
-            <div style={{ padding: 12 }}>
+        <div style={{ height: '100%', background: '#ECECEC', padding: 12 }}>
+            <Router>
                 <Switch>
                     <Route path='/pokemons/:pokemonNo'
                         render={() => <PokemonProfile pokemons={pokemons} />}
@@ -39,8 +39,8 @@ const App: React.FC = () => {
                         <Redirect to='/pokemons' />
                     </Route>
                 </Switch>
-            </div>
-        </Router>
+            </Router>
+        </div>
     );
 };
 

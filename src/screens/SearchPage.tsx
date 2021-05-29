@@ -1,7 +1,7 @@
 // Node modules.
 import React, { useCallback, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Affix, Input, Row, Col, Typography } from 'antd';
+import { Space, Affix, Input, Row, Col, Typography } from 'antd';
 import LazyLoad from 'react-lazyload';
 // Local modules.
 import { IPokemon } from '../models/pokemon';
@@ -30,7 +30,7 @@ const SearchPage: React.FC<SearchPageProps> = (props) => {
     }, [pokemons]);
 
     return (
-        <React.Fragment>
+        <Space direction='vertical'>
             <Affix offsetTop={12}>
                 <Input.Search
                     placeholder='搜尋寶可夢'
@@ -38,23 +38,26 @@ const SearchPage: React.FC<SearchPageProps> = (props) => {
                 />
             </Affix>
 
-            <Row justify='space-between'>
+            <Row justify='space-between' gutter={[8, 8]}>
                 {displayPokemons.map((pokemon, i) => (
-                    <Col key={i} span={8} flex='100px' style={{ textAlign: 'center' }}>
+                    <Col key={i} flex='33%' style={{ textAlign: 'center' }}>
                         <Link to={`/pokemons/${pokemon.no}`}>
-                            <LazyLoad height={100} offset={300}>
-                                <Pokemon.Image pokemonNo={pokemon.no} size={100} />
-                            </LazyLoad>
+                            <div style={{ background: '#FFF', borderRadius: '5px' }}>
+                                {/* Image */}
+                                <LazyLoad height={100} offset={300}>
+                                    <Pokemon.Image pokemonNo={pokemon.no} size={100} />
+                                </LazyLoad>
 
-                            {/* Name */}
-                            <Typography.Title level={4}>
-                                {pokemon.name}
-                            </Typography.Title>
+                                {/* Name */}
+                                <Typography.Text >
+                                    {pokemon.name}
+                                </Typography.Text>
+                            </div>
                         </Link>
                     </Col>
                 ))}
             </Row>
-        </React.Fragment>
+        </Space>
     );
 };
 
