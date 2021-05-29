@@ -45,16 +45,18 @@ export interface IMove {
     };
 }
 
+export interface IPokemonStatus {
+    baseStamina: number;
+    baseAttack: number;
+    baseDefense: number;
+}
+
 export interface IPokemon {
     no: number;
     uniqueId: string;
     name: string;
     types: PokemonType[];
-    stats: {
-        baseStamina: number;
-        baseAttack: number;
-        baseDefense: number;
-    };
+    stats: IPokemonStatus;
     quickMoves?: IMove[];
     cinematicMoves?: IMove[];
     eliteQuickMoves?: IMove[];

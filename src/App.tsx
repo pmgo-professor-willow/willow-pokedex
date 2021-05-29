@@ -1,9 +1,10 @@
 // Node modules.
 import React, { useEffect, useState } from 'react';
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
 import fetch from 'node-fetch';
 // Local modules.
 import { IPokemon } from './models/pokemon';
+import SearchPage from './screens/SearchPage';
 import PokemonProfile from './screens/PokemonProfile';
 
 const App: React.FC = () => {
@@ -16,7 +17,7 @@ const App: React.FC = () => {
             const res = await fetch('/willow-pokedex/data/pokemons.json');
             const allPokemons: IPokemon[] = await res.json();
             setLoading(false);
-            setPokemons(allPokemons.slice(24, 25));
+            setPokemons(allPokemons);
         };
 
         fetchData();
@@ -24,12 +25,20 @@ const App: React.FC = () => {
 
     return (
         <Router>
-            <div className='App' style={{ padding: 12 }}>
-                {pokemons.map((pokemon, i) => (
-                    <PokemonProfile key={i}
-                        pokemon={pokemon}
+            <div style={{ padding: 12 }}>
+                <Switch>
+                    <Route path='/pokemons/:pokemonNo'
+                        render={() => <PokemonProfile pokemons={pokemons} />}
                     />
-                ))}
+
+                    <Route path='/pokemons'
+                        render={() => <SearchPage pokemons={pokemons} />}
+                    />
+
+                    <Route>
+                        <Redirect to='/pokemons' />
+                    </Route>
+                </Switch>
             </div>
         </Router>
     );

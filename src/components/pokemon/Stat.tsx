@@ -5,10 +5,11 @@ import { Row, Col, Typography, Progress } from 'antd';
 interface PokemonStatProps {
     type: 'attack' | 'defense' | 'stamina';
     value: number;
+    percent: number;
 }
 
 const PokemonStat: React.FC<PokemonStatProps> = (props) => {
-    const { type, value } = props;
+    const { type, value, percent } = props;
 
     let displayText = '';
     let strokeColor = '';
@@ -47,7 +48,7 @@ const PokemonStat: React.FC<PokemonStatProps> = (props) => {
             <Col span={14}>
                 <Progress status='active' showInfo={false}
                     strokeWidth={12}
-                    percent={30}
+                    percent={percent}
                     strokeColor={strokeColor}
                 />
             </Col>

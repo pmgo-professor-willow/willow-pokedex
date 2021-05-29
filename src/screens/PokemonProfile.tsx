@@ -1,18 +1,38 @@
 // Node modules.
-import React, { useState } from 'react';
+import { maxBy } from 'lodash';
+import React, { useEffect, useState } from 'react';
+import { useParams } from 'react-router';
 import { Row, Col, Typography, Divider, Image, Radio, Alert, Tag } from 'antd';
 // Local modules.
-import { IPokemon } from '../models/pokemon';
+import type { IPokemon, IPokemonStatus } from '../models/pokemon';
 import * as Pokemon from '../components/pokemon';
 
 interface PokemonProfileProps {
-    pokemon: IPokemon;
+    pokemons: IPokemon[];
 }
 
 const PokemonProfile: React.FC<PokemonProfileProps> = (props) => {
-    const { pokemon } = props;
+    const { pokemons } = props;
 
     const [mode, setMode] = useState<'pve' | 'pvp'>('pve');
+
+    const { pokemonNo } = useParams<{ pokemonNo: string }>();
+
+    const pokemon = pokemons.find((p) => p.no === parseInt(pokemonNo));
+
+    const [maximum, setMaximum] = useState<IPokemonStatus>(pokemon?.stats!);
+
+    useEffect(() => {
+        setMaximum({
+            baseStamina: maxBy(pokemons, (pokemon) => pokemon.stats.baseStamina)?.stats.baseAttack!,
+            baseAttack: maxBy(pokemons, (pokemon) => pokemon.stats.baseAttack)?.stats.baseAttack!,
+            baseDefense: maxBy(pokemons, (pokemon) => pokemon.stats.baseDefense)?.stats.baseDefense!,
+        });
+    }, [pokemons]);
+
+    if (!pokemon) {
+        return null;
+    }
 
     return (
         <React.Fragment>
@@ -44,15 +64,27 @@ const PokemonProfile: React.FC<PokemonProfileProps> = (props) => {
                     {/* Stats */}
                     <Row justify={'center'} align={'middle'}>
                         <Col span={24} style={{ textAlign: 'center' }}>
-                            <Pokemon.Stat type='attack' value={pokemon.stats.baseAttack} />
+                            <Pokemon.Stat
+                                type='attack'
+                                value={pokemon.stats.baseAttack}
+                                percent={pokemon.stats.baseAttack / maximum.baseAttack * 100}
+                            />
                         </Col>
 
                         <Col span={24} style={{ textAlign: 'center' }}>
-                            <Pokemon.Stat type='defense' value={pokemon.stats.baseDefense} />
+                            <Pokemon.Stat
+                                type='defense'
+                                value={pokemon.stats.baseDefense}
+                                percent={pokemon.stats.baseDefense / maximum.baseDefense * 100}
+                            />
                         </Col>
 
                         <Col span={24} style={{ textAlign: 'center' }}>
-                            <Pokemon.Stat type='stamina' value={pokemon.stats.baseStamina} />
+                            <Pokemon.Stat
+                                type='stamina'
+                                value={pokemon.stats.baseStamina}
+                                percent={pokemon.stats.baseStamina / maximum.baseDefense * 100}
+                            />
                         </Col>
                     </Row>
                 </Col>
@@ -131,7 +163,7 @@ const PokemonProfile: React.FC<PokemonProfileProps> = (props) => {
                         </Col>
                         <Col>
                             <Typography.Text>
-                                {'表該招式須透過活動或厲害招式學習器習得'}
+                                {'招式須透過活動或厲害招式學習器習得'}
                             </Typography.Text>
                         </Col>
                     </Row>
