@@ -67,4 +67,7 @@ export interface IPokemon {
         stardustToUnlock: number;
         candyToUnlock: number;
     };
+    cpTable: {
+        [level: string]: number;
+    };
 }

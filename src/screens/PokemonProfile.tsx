@@ -137,7 +137,9 @@ const PokemonProfile: React.FC<PokemonProfileProps> = (props) => {
                         />
                     </Col>
                     <Col flex='none'>
-                        {'一般招式'}
+                        <Typography.Title level={5} style={{ margin: 0 }}>
+                            {'一般招式'}
+                        </Typography.Title>
                     </Col>
                 </Row>
             </Divider>
@@ -165,7 +167,9 @@ const PokemonProfile: React.FC<PokemonProfileProps> = (props) => {
                         />
                     </Col>
                     <Col flex='none'>
-                        {'特殊招式'}
+                        <Typography.Title level={5} style={{ margin: 0 }}>
+                            {'特殊招式'}
+                        </Typography.Title>
                     </Col>
                 </Row>
             </Divider>
@@ -199,6 +203,23 @@ const PokemonProfile: React.FC<PokemonProfileProps> = (props) => {
                     </Row>
                 }
             />
+
+            <Divider plain orientation='left'>
+                <Row wrap={false} gutter={5} align='middle' justify='center'>
+                    <Col flex='none'>
+                        <Image preview={false} height={30} width={30}
+                            src={'https://raw.githubusercontent.com/PokeMiners/pogo_assets/master/Images/Items/Item_1301.png'}
+                        />
+                    </Col>
+                    <Col flex='none'>
+                        <Typography.Title level={5} style={{ margin: 0 }}>
+                            {'最大 CP'}
+                        </Typography.Title>
+                    </Col>
+                </Row>
+            </Divider>
+
+            <Pokemon.CombatPower cpTable={displayPokemon.cpTable} />
         </React.Fragment>
     );
 };
