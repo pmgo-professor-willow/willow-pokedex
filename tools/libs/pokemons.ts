@@ -4,6 +4,7 @@ import { compact } from 'lodash';
 import { gameMaster } from './game-master';
 import { filterResources } from './resources';
 import { mapMoves } from './moves';
+import { calculateCP } from './cp-calculator';
 
 interface Pokemon {
     pokemonId: string;
@@ -37,6 +38,12 @@ const getPokemons = (): Pokemon[] => {
             const pokemon = template.data.pokemonSettings as Pokemon;
 
             if (pokemon) {
+                const maxStatuses: [atk: number, dev: number, hp: number] = [
+                    pokemon.stats.baseAttack + 15,
+                    pokemon.stats.baseDefense + 15,
+                    pokemon.stats.baseStamina + 15,
+                ];
+
                 prev.push({
                     uniqueId: pokemon.pokemonId,
                     no: parseInt(noIndex),
@@ -48,6 +55,15 @@ const getPokemons = (): Pokemon[] => {
                     cinematicMoves: mapMoves(pokemon.cinematicMoves),
                     eliteQuickMoves: mapMoves(pokemon.eliteQuickMove),
                     eliteCinematicMoves: mapMoves(pokemon.eliteCinematicMove),
+                    cpTable: {
+                        15: calculateCP(15.0, ...maxStatuses),
+                        20: calculateCP(20.0, ...maxStatuses),
+                        25: calculateCP(25.0, ...maxStatuses),
+                        30: calculateCP(30.0, ...maxStatuses),
+                        35: calculateCP(35.0, ...maxStatuses),
+                        40: calculateCP(40.0, ...maxStatuses),
+                        50: calculateCP(50.0, ...maxStatuses),
+                    },
                 });
             }
         }
