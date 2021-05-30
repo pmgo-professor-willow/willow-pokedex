@@ -31,7 +31,7 @@ const pokemonNameDict = filterResources(/pokemon_name_(\w+)/);
 const getPokemons = (): Pokemon[] => {
     const pokemons = gameMaster.reduce<any>((prev, template) => {
         const matches = template.templateId.match(/^V(\d+)_POKEMON_(\w+)$/);
-    
+
         if (matches) {
             const { 1: noIndex, 2: pokemonNameIndex } = matches;
             const pokemon = template.data.pokemonSettings as Pokemon;
@@ -51,7 +51,7 @@ const getPokemons = (): Pokemon[] => {
                 });
             }
         }
-    
+
         return prev;
     }, []);
 
