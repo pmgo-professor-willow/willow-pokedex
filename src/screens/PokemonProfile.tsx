@@ -3,15 +3,18 @@ import { maxBy } from 'lodash';
 import React, { useCallback, useEffect, useState } from 'react';
 import { useParams } from 'react-router';
 import { Row, Col, Typography, Divider, Image, Radio, Alert, Tag, Select } from 'antd';
+import styled from 'styled-components';
 // Local modules.
 import type { IPokemon, IPokemonStatus } from '../models/pokemon';
 import * as Pokemon from '../components/pokemon';
 
 interface PokemonProfileProps {
+    className?: string;
     pokemons: IPokemon[];
 }
 
 const PokemonProfile: React.FC<PokemonProfileProps> = (props) => {
+    const { className } = props;
     const { pokemons } = props;
 
     const { pokemonNo } = useParams<{ pokemonNo: string }>();
@@ -50,9 +53,9 @@ const PokemonProfile: React.FC<PokemonProfileProps> = (props) => {
     }
 
     return (
-        <React.Fragment>
+        <div className={className}>
             <Row justify={'center'} align={'middle'}>
-                <Col flex={0} style={{ textAlign: 'center' }}>
+                <Col className='pokemon-avatar' flex={0}>
                     {/* Image */}
                     <Pokemon.Image pokemonNo={displayPokemon.no} size={125} />
 
@@ -62,10 +65,10 @@ const PokemonProfile: React.FC<PokemonProfileProps> = (props) => {
                     </Typography.Title>
                 </Col>
 
-                <Col flex={3} style={{ textAlign: 'center' }}>
+                <Col className='pokemon-meta' flex={3}>
                     {/* Types */}
                     <Row justify={'center'} align={'middle'}>
-                        <Col span={12} style={{ textAlign: 'center' }}>
+                        <Col className='pokemon-types' span={12}>
                             <Row>
                                 {displayPokemon.types.map((type, i) => (
                                     <Col key={i} flex={1}>
@@ -78,7 +81,7 @@ const PokemonProfile: React.FC<PokemonProfileProps> = (props) => {
 
                     {/* Stats */}
                     <Row justify={'center'} align={'middle'}>
-                        <Col span={24} style={{ textAlign: 'center' }}>
+                        <Col className='pokemon-stat' span={24}>
                             <Pokemon.Stat
                                 type='attack'
                                 value={displayPokemon.stats.baseAttack}
@@ -86,7 +89,7 @@ const PokemonProfile: React.FC<PokemonProfileProps> = (props) => {
                             />
                         </Col>
 
-                        <Col span={24} style={{ textAlign: 'center' }}>
+                        <Col className='pokemon-stat' span={24}>
                             <Pokemon.Stat
                                 type='defense'
                                 value={displayPokemon.stats.baseDefense}
@@ -94,7 +97,7 @@ const PokemonProfile: React.FC<PokemonProfileProps> = (props) => {
                             />
                         </Col>
 
-                        <Col span={24} style={{ textAlign: 'center' }}>
+                        <Col className='pokemon-stat' span={24}>
                             <Pokemon.Stat
                                 type='stamina'
                                 value={displayPokemon.stats.baseStamina}
@@ -106,8 +109,8 @@ const PokemonProfile: React.FC<PokemonProfileProps> = (props) => {
             </Row>
 
             <Row>
-                <Col flex={1} style={{ textAlign: 'center' }}>
-                    <Select style={{ width: '70%' }}
+                <Col className='pokemon-forms' flex={1}>
+                    <Select className='pokemon-forms-select'
                         defaultValue={ displayPokemon.form }
                         onChange={onChangeForm}
                     >
@@ -121,7 +124,7 @@ const PokemonProfile: React.FC<PokemonProfileProps> = (props) => {
             <Divider />
 
             <Row>
-                <Col flex={1} style={{ textAlign: 'center' }}>
+                <Col className='pokemon-mode' flex={1}>
                     <Radio.Group value={mode} onChange={(e) => setMode(e.target.value)}>
                         <Radio.Button value='pve' children={'道館對戰 & 團體戰'} />
                         <Radio.Button value='pvp' children={'訓練家對戰'} />
@@ -137,7 +140,7 @@ const PokemonProfile: React.FC<PokemonProfileProps> = (props) => {
                         />
                     </Col>
                     <Col flex='none'>
-                        <Typography.Title level={5} style={{ margin: 0 }}>
+                        <Typography.Title className='divider-title' level={5}>
                             {'一般招式'}
                         </Typography.Title>
                     </Col>
@@ -167,7 +170,7 @@ const PokemonProfile: React.FC<PokemonProfileProps> = (props) => {
                         />
                     </Col>
                     <Col flex='none'>
-                        <Typography.Title level={5} style={{ margin: 0 }}>
+                        <Typography.Title className='divider-title' level={5}>
                             {'特殊招式'}
                         </Typography.Title>
                     </Col>
@@ -212,7 +215,7 @@ const PokemonProfile: React.FC<PokemonProfileProps> = (props) => {
                         />
                     </Col>
                     <Col flex='none'>
-                        <Typography.Title level={5} style={{ margin: 0 }}>
+                        <Typography.Title className='divider-title' level={5}>
                             {'最大 CP'}
                         </Typography.Title>
                     </Col>
@@ -220,8 +223,38 @@ const PokemonProfile: React.FC<PokemonProfileProps> = (props) => {
             </Divider>
 
             <Pokemon.CombatPower cpTable={displayPokemon.cpTable} />
-        </React.Fragment>
+        </div>
     );
 };
 
-export default PokemonProfile;
+const styledPokemonProfile = styled(PokemonProfile)`
+.pokemon-avatar {
+    text-align: center;
+}
+
+.pokemon-meta {
+    text-align: center;
+}
+
+.pokemon-stat {
+    text-align: center;
+}
+
+.pokemon-forms {
+    text-align: center;
+
+    .pokemon-forms-select {
+        width: 70%;
+    }
+}
+
+.pokemon-mode {
+    text-align: center;
+}
+
+.divider-title {
+    margin: 0;
+}
+`;
+
+export default styledPokemonProfile;

@@ -32,10 +32,12 @@ const SearchPage: React.FC<SearchPageProps> = (props) => {
     return (
         <Space direction='vertical'>
             <Affix offsetTop={12}>
-                <Input.Search
-                    placeholder='搜尋寶可夢'
-                    onSearch={onSearch}
-                />
+                <div>
+                    <Input.Search
+                        placeholder='搜尋寶可夢'
+                        onSearch={onSearch}
+                    />
+                </div>
             </Affix>
 
             <Row justify='space-between' gutter={[8, 8]}>
