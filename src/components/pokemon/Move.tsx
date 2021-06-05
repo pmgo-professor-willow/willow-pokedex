@@ -82,6 +82,12 @@ const PokemonMove: React.FC<PokemonMoveProps> = (props) => {
                                 {legacy &&
                                     <Tag color='red'>{'絕版'}</Tag>
                                 }
+                                {move.uniqueId === 'RETURN' &&
+                                    <Tag color='cyan'>{'淨化'}</Tag>
+                                }
+                                {move.uniqueId === 'FRUSTRATION' &&
+                                    <Tag color='purple'>{'暗影'}</Tag>
+                                }
                             </Col>
                         </Row>
                     </Col>

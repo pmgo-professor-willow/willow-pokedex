@@ -63,7 +63,11 @@ const getPokemons = (): Pokemon[] => {
                     form,
                     stats: pokemon.stats,
                     quickMoves: mapMoves(pokemon.quickMoves),
-                    cinematicMoves: mapMoves(pokemon.cinematicMoves),
+                    cinematicMoves: mapMoves(compact([
+                        ...pokemon.cinematicMoves || [],
+                        form === 'PURIFIED' ? 'RETURN' : null,
+                        form === 'SHADOW' ? 'FRUSTRATION' : null,
+                    ])),
                     eliteQuickMoves: mapMoves(pokemon.eliteQuickMove),
                     eliteCinematicMoves: mapMoves(pokemon.eliteCinematicMove),
                     cpTable: {

@@ -115,7 +115,7 @@ const PokemonProfile: React.FC<PokemonProfileProps> = (props) => {
             <Row>
                 <Col className='pokemon-forms' flex={1}>
                     <Select className='pokemon-forms-select'
-                        defaultValue={ displayPokemon.form }
+                        defaultValue={displayPokemon.form}
                         onChange={onChangeForm}
                     >
                         {isomorphicPokemons.map(({ form }, i) => (
@@ -151,14 +151,14 @@ const PokemonProfile: React.FC<PokemonProfileProps> = (props) => {
                 </Row>
             </Divider>
 
-            {displayPokemon.quickMoves?.map((move) => (
+            {displayPokemon.quickMoves.map((move) => (
                 <Pokemon.Move key={move.uniqueId}
                     move={move}
                     mode={mode}
                 />
             ))}
 
-            {displayPokemon.eliteQuickMoves?.map((move) => (
+            {displayPokemon.eliteQuickMoves.map((move) => (
                 <Pokemon.Move key={move.uniqueId}
                     move={move}
                     mode={mode}
@@ -181,14 +181,14 @@ const PokemonProfile: React.FC<PokemonProfileProps> = (props) => {
                 </Row>
             </Divider>
 
-            {displayPokemon.cinematicMoves?.map((move) => (
+            {displayPokemon.cinematicMoves.map((move) => (
                 <Pokemon.Move key={move.uniqueId}
                     move={move}
                     mode={mode}
                 />
             ))}
 
-            {displayPokemon.eliteCinematicMoves?.map((move) => (
+            {displayPokemon.eliteCinematicMoves.map((move) => (
                 <Pokemon.Move key={move.uniqueId}
                     move={move}
                     mode={mode}
@@ -198,15 +198,51 @@ const PokemonProfile: React.FC<PokemonProfileProps> = (props) => {
 
             <Alert type='warning'
                 message={
-                    <Row justify='center' align='middle'>
-                        <Col>
-                            <Tag color='red'>{'絕版'}</Tag>
-                        </Col>
-                        <Col>
-                            <Typography.Text>
-                                {'招式須透過活動或厲害招式學習器習得'}
-                            </Typography.Text>
-                        </Col>
+                    <Row gutter={[8, 8]}>
+                        {displayPokemon.eliteQuickMoves.length + displayPokemon.eliteCinematicMoves.length && (
+                            <Col span={24}>
+                                <Row align='middle'>
+                                    <Col flex={0}>
+                                        <Tag color='red'>{'絕版'}</Tag>
+                                    </Col>
+                                    <Col flex={1}>
+                                        <Typography.Text>
+                                            {'招式須透過活動或厲害招式學習器習得'}
+                                        </Typography.Text>
+                                    </Col>
+                                </Row>
+                            </Col>
+                        )}
+
+                        {displayPokemon.form === 'PURIFIED' && (
+                            <Col span={24}>
+                                <Row align='middle'>
+                                    <Col flex={0}>
+                                        <Tag color='cyan'>{'淨化'}</Tag>
+                                    </Col>
+                                    <Col flex={1}>
+                                        <Typography.Text>
+                                            {'招式需透過淨化暗影寶可夢獲得'}
+                                        </Typography.Text>
+                                    </Col>
+                                </Row>
+                            </Col>
+                        )}
+
+                        {displayPokemon.form === 'SHADOW' && (
+                            <Col span={24}>
+                                <Row align='middle'>
+                                    <Col flex={0}>
+                                        <Tag color='purple'>{'暗影'}</Tag>
+                                    </Col>
+                                    <Col flex={1}>
+                                        <Typography.Text>
+                                            {'捕獲暗影寶可夢時會獲得該招式'}
+                                        </Typography.Text>
+                                    </Col>
+                                </Row>
+                            </Col>
+                        )}
                     </Row>
                 }
             />

@@ -57,10 +57,10 @@ export interface IPokemon {
     name: string;
     types: PokemonType[];
     stats: IPokemonStatus;
-    quickMoves?: IMove[];
-    cinematicMoves?: IMove[];
-    eliteQuickMoves?: IMove[];
-    eliteCinematicMoves?: IMove[];
+    quickMoves: IMove[];
+    cinematicMoves: IMove[];
+    eliteQuickMoves: IMove[];
+    eliteCinematicMoves: IMove[];
     familyId: string;
     form?: string;
     thirdMove: {
