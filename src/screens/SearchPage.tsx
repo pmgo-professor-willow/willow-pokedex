@@ -18,14 +18,14 @@ const SearchPage: React.FC<SearchPageProps> = (props) => {
 
     const onSearch = useCallback((value: string) => {
         const filteredPokemons = pokemons
-            .filter((pokemon) => !pokemon.form)
+            .filter((pokemon) => pokemon.form === 'NORMAL')
             .filter((pokemon) => pokemon.name.includes(value));
         setDisplayPokemons(filteredPokemons);
     }, [pokemons]);
 
     useEffect(() => {
         const filteredPokemons = pokemons
-            .filter((pokemon) => !pokemon.form);
+            .filter((pokemon) => pokemon.form === 'NORMAL');
         setDisplayPokemons(filteredPokemons);
     }, [pokemons]);
 
@@ -43,11 +43,15 @@ const SearchPage: React.FC<SearchPageProps> = (props) => {
             <Row justify='space-between' gutter={[8, 8]}>
                 {displayPokemons.map((pokemon, i) => (
                     <Col key={i} flex='33%' style={{ textAlign: 'center' }}>
-                        <Link to={`/pokemons/${pokemon.no}`}>
+                        <Link to={`/willow-pokedex/pokemons/${pokemon.no}`}>
                             <div style={{ background: '#FFF', borderRadius: '5px' }}>
                                 {/* Image */}
                                 <LazyLoad height={100} offset={300}>
-                                    <Pokemon.Image pokemonNo={pokemon.no} size={100} />
+                                    <Pokemon.Image
+                                        pokemonNo={pokemon.no}
+                                        pokemonForm={pokemon.form}
+                                        size={100}
+                                    />
                                 </LazyLoad>
 
                                 {/* Name */}

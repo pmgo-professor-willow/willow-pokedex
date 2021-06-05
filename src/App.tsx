@@ -27,16 +27,16 @@ const App: React.FC = () => {
         <div style={{ height: '100%', background: '#ECECEC', padding: 12 }}>
             <Router>
                 <Switch>
-                    <Route path='/pokemons/:pokemonNo'
+                    <Route path='/willow-pokedex/pokemons/:pokemonNo'
                         render={() => <PokemonProfile pokemons={pokemons} />}
                     />
 
-                    <Route path='/pokemons'
+                    <Route path='/willow-pokedex/pokemons'
                         render={() => <SearchPage pokemons={pokemons} />}
                     />
 
                     <Route>
-                        <Redirect to='/pokemons' />
+                        <Redirect to='/willow-pokedex/pokemons' />
                     </Route>
                 </Switch>
             </Router>

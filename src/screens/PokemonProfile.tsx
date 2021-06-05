@@ -57,7 +57,11 @@ const PokemonProfile: React.FC<PokemonProfileProps> = (props) => {
             <Row justify={'center'} align={'middle'}>
                 <Col className='pokemon-avatar' flex={0}>
                     {/* Image */}
-                    <Pokemon.Image pokemonNo={displayPokemon.no} size={125} />
+                    <Pokemon.Image
+                        pokemonNo={displayPokemon.no}
+                        pokemonForm={displayPokemon.form}
+                        size={125}
+                    />
 
                     {/* Name */}
                     <Typography.Title level={3}>
@@ -136,7 +140,7 @@ const PokemonProfile: React.FC<PokemonProfileProps> = (props) => {
                 <Row wrap={false} gutter={5} align='middle' justify='center'>
                     <Col flex='none'>
                         <Image preview={false} height={30} width={57.7}
-                            src={'https://raw.githubusercontent.com/PokeMiners/pogo_assets/master/Images/Items/Item_1201.png'}
+                            src={'/willow-pokedex/assets/Item_1201.png'}
                         />
                     </Col>
                     <Col flex='none'>
@@ -166,7 +170,7 @@ const PokemonProfile: React.FC<PokemonProfileProps> = (props) => {
                 <Row wrap={false} gutter={5} align='middle' justify='center'>
                     <Col flex='none'>
                         <Image preview={false} height={30} width={57.7}
-                            src={'https://raw.githubusercontent.com/PokeMiners/pogo_assets/master/Images/Items/Item_1202.png'}
+                            src={'/willow-pokedex/assets/Item_1202.png'}
                         />
                     </Col>
                     <Col flex='none'>
@@ -211,7 +215,7 @@ const PokemonProfile: React.FC<PokemonProfileProps> = (props) => {
                 <Row wrap={false} gutter={5} align='middle' justify='center'>
                     <Col flex='none'>
                         <Image preview={false} height={30} width={30}
-                            src={'https://raw.githubusercontent.com/PokeMiners/pogo_assets/master/Images/Items/Item_1301.png'}
+                            src={'/willow-pokedex/assets/Item_1301.png'}
                         />
                     </Col>
                     <Col flex='none'>

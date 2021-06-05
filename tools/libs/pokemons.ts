@@ -44,12 +44,23 @@ const getPokemons = (): Pokemon[] => {
                     pokemon.stats.baseStamina + 15,
                 ];
 
+                // undefined -> 'NORMAL'
+                // 'xxx_NORMAL' -> remove
+                // 'xxx_GALARIAN' -> 'GALARIAN'
+                const form = pokemon.form
+                    ? pokemon.form.replace(`${pokemon.pokemonId}_`, '')
+                    : 'NORMAL';
+
+                if (pokemon.form?.includes('_NORMAL')) {
+                    return prev;
+                }
+
                 prev.push({
                     uniqueId: pokemon.pokemonId,
                     no: parseInt(noIndex),
                     name: pokemonNameDict[noIndex],
                     types: compact([pokemon.type, pokemon.type2]),
-                    form: pokemon.form,
+                    form,
                     stats: pokemon.stats,
                     quickMoves: mapMoves(pokemon.quickMoves),
                     cinematicMoves: mapMoves(pokemon.cinematicMoves),
