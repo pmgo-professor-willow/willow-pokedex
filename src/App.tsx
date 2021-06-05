@@ -27,7 +27,7 @@ const App: React.FC = () => {
         <div style={{ height: '100%', background: '#ECECEC', padding: 12 }}>
             <Router>
                 <Switch>
-                    <Route path='/willow-pokedex/pokemons/:pokemonNo'
+                    <Route path='/willow-pokedex/pokemons/:pokemonNo/:pokemonForm'
                         render={() => <PokemonProfile pokemons={pokemons} />}
                     />
 

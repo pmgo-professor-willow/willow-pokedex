@@ -2,6 +2,7 @@
 import { maxBy } from 'lodash';
 import React, { useCallback, useEffect, useState } from 'react';
 import { useParams } from 'react-router';
+import { Redirect } from 'react-router-dom';
 import { Row, Col, Typography, Divider, Image, Radio, Alert, Tag, Select } from 'antd';
 import styled from 'styled-components';
 // Local modules.
@@ -17,28 +18,24 @@ const PokemonProfile: React.FC<PokemonProfileProps> = (props) => {
     const { className } = props;
     const { pokemons } = props;
 
-    const { pokemonNo } = useParams<{ pokemonNo: string }>();
+    const { pokemonNo, pokemonForm } = useParams<{ pokemonNo: string, pokemonForm: string }>();
 
     const [mode, setMode] = useState<'pve' | 'pvp'>('pve');
     const [isomorphicPokemons, setIsomorphicPokemons] = useState<IPokemon[]>([]);
-    const [displayPokemon, setDisplayPokemon] = useState<IPokemon | null>(null);
+    const [displayPokemon, setDisplayPokemon] = useState<IPokemon | undefined>();
+    const [selectedForm, setSelectedForm] = useState<string>(pokemonForm);
     const [maximum, setMaximum] = useState<IPokemonStatus>(displayPokemon?.stats!);
 
     const onChangeForm = useCallback((form: string) => {
-        const selectedPokemon = (
-            isomorphicPokemons.find((p) => p.form === form) ||
-            isomorphicPokemons.find((p) => !p.form)
-        )!;
-
-        setDisplayPokemon(selectedPokemon);
-    }, [isomorphicPokemons]);
+        setSelectedForm(form);
+    }, []);
 
     useEffect(() => {
         const newIsomorphicPokemons = pokemons.filter((p) => p.no === parseInt(pokemonNo));
-        const [newDisplayPokemon] = newIsomorphicPokemons;
+        const newDisplayPokemon = newIsomorphicPokemons.find((p) => p.form === pokemonForm);
         setIsomorphicPokemons(newIsomorphicPokemons);
         setDisplayPokemon(newDisplayPokemon);
-    }, [pokemons, pokemonNo]);
+    }, [pokemons, pokemonNo, pokemonForm]);
 
     useEffect(() => {
         setMaximum({
@@ -50,6 +47,10 @@ const PokemonProfile: React.FC<PokemonProfileProps> = (props) => {
 
     if (!displayPokemon) {
         return null;
+    }
+
+    if (pokemonForm !== selectedForm) {
+        return <Redirect to={`/willow-pokedex/pokemons/${pokemonNo}/${selectedForm}`} />;
     }
 
     return (
@@ -115,7 +116,7 @@ const PokemonProfile: React.FC<PokemonProfileProps> = (props) => {
             <Row>
                 <Col className='pokemon-forms' flex={1}>
                     <Select className='pokemon-forms-select'
-                        defaultValue={displayPokemon.form}
+                        defaultValue={selectedForm}
                         onChange={onChangeForm}
                     >
                         {isomorphicPokemons.map(({ form }, i) => (
@@ -199,20 +200,18 @@ const PokemonProfile: React.FC<PokemonProfileProps> = (props) => {
             <Alert type='warning'
                 message={
                     <Row gutter={[8, 8]}>
-                        {displayPokemon.eliteQuickMoves.length + displayPokemon.eliteCinematicMoves.length && (
-                            <Col span={24}>
-                                <Row align='middle'>
-                                    <Col flex={0}>
-                                        <Tag color='red'>{'絕版'}</Tag>
-                                    </Col>
-                                    <Col flex={1}>
-                                        <Typography.Text>
-                                            {'招式須透過活動或厲害招式學習器習得'}
-                                        </Typography.Text>
-                                    </Col>
-                                </Row>
-                            </Col>
-                        )}
+                        <Col span={24}>
+                            <Row align='middle'>
+                                <Col flex={0}>
+                                    <Tag color='red'>{'絕版'}</Tag>
+                                </Col>
+                                <Col flex={1}>
+                                    <Typography.Text>
+                                        {'招式須透過活動或厲害招式學習器習得'}
+                                    </Typography.Text>
+                                </Col>
+                            </Row>
+                        </Col>
 
                         {displayPokemon.form === 'PURIFIED' && (
                             <Col span={24}>

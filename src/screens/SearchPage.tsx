@@ -43,7 +43,7 @@ const SearchPage: React.FC<SearchPageProps> = (props) => {
             <Row justify='space-between' gutter={[8, 8]}>
                 {displayPokemons.map((pokemon, i) => (
                     <Col key={i} flex='33%' style={{ textAlign: 'center' }}>
-                        <Link to={`/willow-pokedex/pokemons/${pokemon.no}`}>
+                        <Link to={`/willow-pokedex/pokemons/${pokemon.no}/NORMAL`}>
                             <div style={{ background: '#FFF', borderRadius: '5px' }}>
                                 {/* Image */}
                                 <LazyLoad height={100} offset={1000}>
