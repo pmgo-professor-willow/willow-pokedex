@@ -46,7 +46,7 @@ const SearchPage: React.FC<SearchPageProps> = (props) => {
                         <Link to={`/willow-pokedex/pokemons/${pokemon.no}`}>
                             <div style={{ background: '#FFF', borderRadius: '5px' }}>
                                 {/* Image */}
-                                <LazyLoad height={100} offset={300}>
+                                <LazyLoad height={100} offset={1000}>
                                     <Pokemon.Image
                                         pokemonNo={pokemon.no}
                                         pokemonForm={pokemon.form}
