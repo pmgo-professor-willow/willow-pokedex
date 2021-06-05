@@ -3,7 +3,7 @@ import { maxBy } from 'lodash';
 import React, { useCallback, useEffect, useState } from 'react';
 import { useParams } from 'react-router';
 import { Redirect } from 'react-router-dom';
-import { Row, Col, Typography, Divider, Image, Radio, Alert, Tag, Select } from 'antd';
+import { Row, Col, Typography, Divider, Image, Radio, Alert, Tag, Select, Button } from 'antd';
 import styled from 'styled-components';
 // Local modules.
 import type { IPokemon, IPokemonStatus } from '../models/pokemon';
@@ -23,7 +23,8 @@ const PokemonProfile: React.FC<PokemonProfileProps> = (props) => {
     const [mode, setMode] = useState<'pve' | 'pvp'>('pve');
     const [isomorphicPokemons, setIsomorphicPokemons] = useState<IPokemon[]>([]);
     const [displayPokemon, setDisplayPokemon] = useState<IPokemon | undefined>();
-    const [selectedForm, setSelectedForm] = useState<string>(pokemonForm);
+    const [selectedForm, setSelectedForm] = useState(pokemonForm);
+    const [shiny, setShiny] = useState(false);
     const [maximum, setMaximum] = useState<IPokemonStatus>(displayPokemon?.stats!);
 
     const onChangeForm = useCallback((form: string) => {
@@ -61,6 +62,7 @@ const PokemonProfile: React.FC<PokemonProfileProps> = (props) => {
                     <Pokemon.Image
                         pokemonNo={displayPokemon.no}
                         pokemonForm={displayPokemon.form}
+                        shiny={shiny}
                         size={125}
                     />
 
@@ -113,16 +115,25 @@ const PokemonProfile: React.FC<PokemonProfileProps> = (props) => {
                 </Col>
             </Row>
 
-            <Row>
-                <Col className='pokemon-forms' flex={1}>
+            <Row align='middle'>
+                <Col className='pokemon-forms' flex={2}>
                     <Select className='pokemon-forms-select'
-                        defaultValue={selectedForm}
+                        value={selectedForm}
                         onChange={onChangeForm}
                     >
                         {isomorphicPokemons.map(({ form }, i) => (
                             <Select.Option key={i} value={String(form)}>{form}</Select.Option>
                         ))}
                     </Select>
+                </Col>
+
+                <Col className='pokemon-shiny' flex={1}>
+                    <Button block
+                        type={shiny ? 'primary' : 'dashed'}
+                        onClick={() => setShiny(!shiny)}
+                    >
+                        {'異色✨'}
+                    </Button>
                 </Col>
             </Row>
 
@@ -283,8 +294,12 @@ const styledPokemonProfile = styled(PokemonProfile)`
     text-align: center;
 
     .pokemon-forms-select {
-        width: 70%;
+        width: 90%;
     }
+}
+
+.pokemon-shiny {
+    text-align: center;
 }
 
 .pokemon-mode {
