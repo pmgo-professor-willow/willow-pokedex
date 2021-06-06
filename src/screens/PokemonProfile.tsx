@@ -33,7 +33,7 @@ const PokemonProfile: React.FC<PokemonProfileProps> = (props) => {
 
     useEffect(() => {
         const newIsomorphicPokemons = pokemons.filter((p) => p.no === parseInt(pokemonNo));
-        const newDisplayPokemon = newIsomorphicPokemons.find((p) => p.form === pokemonForm);
+        const newDisplayPokemon = newIsomorphicPokemons.find((p) => p.form?.toLowerCase() === pokemonForm);
         setIsomorphicPokemons(newIsomorphicPokemons);
         setDisplayPokemon(newDisplayPokemon);
     }, [pokemons, pokemonNo, pokemonForm]);
@@ -122,7 +122,7 @@ const PokemonProfile: React.FC<PokemonProfileProps> = (props) => {
                         onChange={onChangeForm}
                     >
                         {isomorphicPokemons.map(({ form }, i) => (
-                            <Select.Option key={i} value={String(form)}>{form}</Select.Option>
+                            <Select.Option key={i} value={String(form).toLowerCase()}>{form}</Select.Option>
                         ))}
                     </Select>
                 </Col>
