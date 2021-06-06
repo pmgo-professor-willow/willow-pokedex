@@ -2,6 +2,7 @@
 import { times } from 'lodash';
 import React from 'react';
 import { Row, Col, Tag, Typography, Progress } from 'antd';
+import styled from 'styled-components';
 // Local modules.
 import { IMove } from '../../models/pokemon';
 import { TypeIcon } from './index';
@@ -51,71 +52,175 @@ const PokemonMoveEnergyBar: React.FC<PokemonMoveEnergyBarProps> = (props) => {
     );
 };
 
+interface PokemonCombatMoveBuffsProps {
+    buffs: IMove['combat']['buffs'];
+}
+
+const PokemonCombatMoveBuffs: React.FC<PokemonCombatMoveBuffsProps> = (props) => {
+    const { buffs } = props;
+
+    if (!buffs) {
+        return null;
+    }
+
+    const buffColumn = (target: 'self' | 'enemy', metric: 'atk' | 'def', count: number): JSX.Element => {
+        const targetText = target === 'self' ? '自身' : '敵方';
+        const metricText = metric === 'atk' ? '攻擊' : '防禦';
+        const levelText = count > 0
+            ? `上升 ${count} 層`
+            : `下降 ${Math.abs(count)} 層`;
+
+        let iconText = '';
+        if (count === 1) {
+            iconText = '🔼';
+        } else if (count === -1) {
+            iconText = '🔽';
+        } else if (count >= 2) {
+            iconText = '⏫';
+        } else if (count <= -2) {
+            iconText = '⏬';
+        }
+
+        return (
+            <Row className='pokemon-move-sub' wrap={false} gutter={1} align='middle'>
+                <Col flex={1}>
+                    <Typography.Text>
+                        {`${iconText} ${targetText}${metricText}${levelText}`}
+                    </Typography.Text>
+                </Col>
+            </Row>
+        );
+    };
+
+    return (
+        <>
+            <Row className='pokemon-move-sub' wrap={false} gutter={1} align='middle'>
+                <Col className='numberic' flex={1}>
+                    <Typography.Text>
+                        {`📈 觸發機率: ${buffs.buffActivationChance * 100}%`}
+                    </Typography.Text>
+                </Col>
+            </Row>
+
+            {buffs.attackerAttackStatStageChange && (
+                buffColumn('self', 'atk', buffs.attackerAttackStatStageChange)
+            )}
+
+            {buffs.attackerDefenseStatStageChange && (
+                buffColumn('self', 'def', buffs.attackerDefenseStatStageChange)
+            )}
+
+            {buffs.targetAttackStatStageChange && (
+                buffColumn('enemy', 'atk', buffs.targetAttackStatStageChange)
+            )}
+
+            {buffs.targetDefenseStatStageChange && (
+                buffColumn('enemy', 'def', buffs.targetDefenseStatStageChange)
+            )}
+        </>
+    );
+};
+
 interface PokemonMoveProps {
+    className?: string;
     move: IMove;
     mode: 'pve' | 'pvp';
     legacy?: boolean;
 }
 
 const PokemonMove: React.FC<PokemonMoveProps> = (props) => {
+    const { className } = props;
     const { move, mode, legacy } = props;
 
-    const { power, energyDelta } = mode === 'pvp' ? move.combat : move.base;
+    const isPVP = mode === 'pvp';
+    const { power, energyDelta } = isPVP ? move.combat : move.base;
 
     return (
-        <Row wrap={false} gutter={1} align='middle' style={{ marginBottom: 10 }}>
-            <Col flex='auto'>
-                <Row wrap={false} gutter={5} align='middle'>
-                    <Col flex='none' style={{ display: 'flex', alignContent: 'center' }}>
-                        <TypeIcon pokemonType={move.type} size={20} />
-                    </Col>
+        <div className={className}>
+            <Row className='pokemon-move-main' wrap={false} gutter={1} align='middle'>
+                <Col flex='auto'>
+                    <Row wrap={false} gutter={5} align='middle'>
+                        <Col className='pokemon-move-type' flex='none'>
+                            <TypeIcon pokemonType={move.type} size={20} />
+                        </Col>
 
-                    <Col flex='none'>
-                        <Row wrap={false} gutter={5}>
-                            <Col flex='none'>
-                                <Typography.Text strong>
-                                    {move.name}
-                                </Typography.Text>
-                            </Col>
-                                
-                            <Col flex='none'>
-                                {legacy &&
-                                    <Tag color='red'>{'絕版'}</Tag>
-                                }
-                                {move.uniqueId === 'RETURN' &&
-                                    <Tag color='cyan'>{'淨化'}</Tag>
-                                }
-                                {move.uniqueId === 'FRUSTRATION' &&
-                                    <Tag color='purple'>{'暗影'}</Tag>
-                                }
-                            </Col>
-                        </Row>
-                    </Col>
-                </Row>
-            </Col>
+                        <Col flex='none'>
+                            <Row wrap={false} gutter={5}>
+                                {/* Move name */}
+                                <Col flex='none'>
+                                    <Typography.Text strong>
+                                        {move.name}
+                                    </Typography.Text>
+                                </Col>
 
-            {energyDelta < 0 &&
-                <Col span={6} style={{ textAlign: 'end' }}>
-                    <PokemonMoveEnergyBar
-                        energyDelta={energyDelta}
-                        type={move.type}
-                    />
+                                {/* Tags */}
+                                <Col flex='none'>
+                                    {legacy &&
+                                        <Tag color='red'>{'絕版'}</Tag>
+                                    }
+                                    {move.uniqueId === 'RETURN' &&
+                                        <Tag color='cyan'>{'淨化'}</Tag>
+                                    }
+                                    {move.uniqueId === 'FRUSTRATION' &&
+                                        <Tag color='purple'>{'暗影'}</Tag>
+                                    }
+                                </Col>
+                            </Row>
+                        </Col>
+                    </Row>
                 </Col>
+
+                {energyDelta < 0 &&
+                    <Col className='numberic' span={6}>
+                        <PokemonMoveEnergyBar
+                            energyDelta={energyDelta}
+                            type={move.type}
+                        />
+                    </Col>
+                }
+
+                <Col className='numberic' span={3}>
+                    <Typography.Text>
+                        {power}
+                    </Typography.Text>
+                </Col>
+
+                <Col className='numberic' span={3}>
+                    <Typography.Text>
+                        {energyDelta}
+                    </Typography.Text>
+                </Col>
+            </Row>
+
+            {isPVP &&
+                <PokemonCombatMoveBuffs
+                    buffs={move.combat.buffs}
+                />
             }
-
-            <Col span={3} style={{ textAlign: 'end' }}>
-                <Typography.Text>
-                    {power}
-                </Typography.Text>
-            </Col>
-
-            <Col span={3} style={{ textAlign: 'end' }}>
-                <Typography.Text>
-                    {energyDelta}
-                </Typography.Text>
-            </Col>
-        </Row>
+        </div>
     );
 };
 
-export default PokemonMove;
+const styledPokemonMove = styled(PokemonMove)`
+& {
+    margin-bottom: 0.75em;
+}
+
+.pokemon-move-main {
+    .pokemon-move-type {
+        display: flex;
+        align-content: center;
+    }
+
+    .numberic {
+        text-align: end;
+    }
+}
+
+.pokemon-move-sub {
+    padding-left: 2.5em;
+    margin: 0.25em 0;
+}
+`;
+
+export default styledPokemonMove;
