@@ -14,7 +14,7 @@ const App: React.FC = () => {
     useEffect(() => {
         async function fetchData() {
             setLoading(true);
-            const res = await fetch('/willow-pokedex/data/pokemons.json');
+            const res = await fetch('/willow-pokedex/data/pokemons.min.json');
             const allPokemons: IPokemon[] = await res.json();
             setLoading(false);
             setPokemons(allPokemons);

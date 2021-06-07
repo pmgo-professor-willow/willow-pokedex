@@ -152,7 +152,7 @@ const PokemonProfile: React.FC<PokemonProfileProps> = (props) => {
                 <Row wrap={false} gutter={5} align='middle' justify='center'>
                     <Col flex='none'>
                         <Image preview={false} height={30} width={57.7}
-                            src={'/willow-pokedex/assets/Item_1201.png'}
+                            src={'/willow-pokedex/assets/quick_move.png'}
                         />
                     </Col>
                     <Col flex='none'>
@@ -182,7 +182,7 @@ const PokemonProfile: React.FC<PokemonProfileProps> = (props) => {
                 <Row wrap={false} gutter={5} align='middle' justify='center'>
                     <Col flex='none'>
                         <Image preview={false} height={30} width={57.7}
-                            src={'/willow-pokedex/assets/Item_1202.png'}
+                            src={'/willow-pokedex/assets/cinematic_move.png'}
                         />
                     </Col>
                     <Col flex='none'>
@@ -260,8 +260,35 @@ const PokemonProfile: React.FC<PokemonProfileProps> = (props) => {
             <Divider plain orientation='left'>
                 <Row wrap={false} gutter={5} align='middle' justify='center'>
                     <Col flex='none'>
+                        <Image preview={false} height={30} width={47}
+                            src={'/willow-pokedex/assets/pokemon_desc.png'}
+                        />
+                    </Col>
+                    <Col flex='none'>
+                        <Typography.Title className='divider-title' level={5}>
+                            {'關於'}
+                        </Typography.Title>
+                    </Col>
+                </Row>
+            </Divider>
+
+            <Row align='middle'>
+                <Col className='' flex={1}>
+                    <Typography.Title level={5}>
+                        {displayPokemon.category}
+                    </Typography.Title>
+                    
+                    <Typography.Paragraph>
+                        {displayPokemon.description}
+                    </Typography.Paragraph>
+                </Col>
+            </Row>
+
+            <Divider plain orientation='left'>
+                <Row wrap={false} gutter={5} align='middle' justify='center'>
+                    <Col flex='none'>
                         <Image preview={false} height={30} width={30}
-                            src={'/willow-pokedex/assets/Item_1301.png'}
+                            src={'/willow-pokedex/assets/pokemon_cp.png'}
                         />
                     </Col>
                     <Col flex='none'>

@@ -56,6 +56,8 @@ export interface IPokemon {
     uniqueId: string;
     name: string;
     types: PokemonType[];
+    category: string;
+    description: string;
     stats: IPokemonStatus;
     quickMoves: IMove[];
     cinematicMoves: IMove[];

@@ -28,6 +28,8 @@ interface Pokemon {
 }
 
 const pokemonNameDict = filterResources(/pokemon_name_(\w+)/);
+const pokemonCategoryDict = filterResources(/pokemon_category_(\w+)/);
+const pokemonDescriptionDict = filterResources(/pokemon_desc_(\w+)/);
 
 const getPokemons = (): Pokemon[] => {
     const pokemons = gameMaster.reduce<any>((prev, template) => {
@@ -60,6 +62,8 @@ const getPokemons = (): Pokemon[] => {
                     no: parseInt(noIndex),
                     name: pokemonNameDict[noIndex],
                     types: compact([pokemon.type, pokemon.type2]),
+                    category: pokemonCategoryDict[noIndex],
+                    description: pokemonDescriptionDict[noIndex],
                     form,
                     stats: pokemon.stats,
                     quickMoves: mapMoves(pokemon.quickMoves),

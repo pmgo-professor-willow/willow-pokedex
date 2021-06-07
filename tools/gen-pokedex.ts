@@ -16,6 +16,7 @@ const main = async () => {
     try {
         const pokemons = getPokemons();
         await writeFile(`${outputPath}/pokemons.json`, JSON.stringify(pokemons, null, 2));
+        await writeFile(`${outputPath}/pokemons.min.json`, JSON.stringify(pokemons));
     } catch (e) {
         console.error(e);
     }
