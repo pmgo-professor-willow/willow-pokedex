@@ -4,11 +4,16 @@ import { mkdirp, writeFile } from 'fs-extra';
 // Local modules.
 import { getPokemons } from './libs/pokemons';
 import { downloadGameMaster, downloadI18n } from './download-rawdata';
+import { downloadRankings } from './download-pvpoke';
 
 const main = async () => {
-    // Download data first.
+    // Download game master data
     await downloadGameMaster();
     await downloadI18n();
+    // Download pvpoke data.
+    await downloadRankings('1500'); // Great League
+    await downloadRankings('2500'); // Ultra League
+    await downloadRankings('10000'); // Master League
 
     const outputPath = './public/data';
     await mkdirp(outputPath);
