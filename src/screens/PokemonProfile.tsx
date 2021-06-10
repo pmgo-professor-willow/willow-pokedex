@@ -148,6 +148,10 @@ const PokemonProfile: React.FC<PokemonProfileProps> = (props) => {
                 </Col>
             </Row>
 
+            {mode === 'pvp' &&
+                <Pokemon.CombatRanking pokemon={displayPokemon} />
+            }
+
             <Divider plain orientation='left'>
                 <Row wrap={false} gutter={5} align='middle' justify='center'>
                     <Col flex='none'>

@@ -2,6 +2,7 @@
 import { compact } from 'lodash';
 // Local modules.
 import { gameMaster } from './game-master';
+import { getRanking } from './league-ranking';
 import { filterResources } from './resources';
 import { mapMoves } from './moves';
 import { calculateCP } from './cp-calculator';
@@ -74,6 +75,7 @@ const getPokemons = (): Pokemon[] => {
                     ])),
                     eliteQuickMoves: mapMoves(pokemon.eliteQuickMove),
                     eliteCinematicMoves: mapMoves(pokemon.eliteCinematicMove),
+                    // Extra.
                     cpTable: {
                         15: calculateCP(15.0, ...maxStatuses),
                         20: calculateCP(20.0, ...maxStatuses),
@@ -83,6 +85,9 @@ const getPokemons = (): Pokemon[] => {
                         40: calculateCP(40.0, ...maxStatuses),
                         50: calculateCP(50.0, ...maxStatuses),
                     },
+                    greatLeague: getRanking(pokemon.pokemonId, 'great', form),
+                    ultraLeague: getRanking(pokemon.pokemonId, 'ultra', form),
+                    masterLeague: getRanking(pokemon.pokemonId, 'master', form),
                 });
             }
         }

@@ -51,6 +51,12 @@ export interface IPokemonStatus {
     baseDefense: number;
 }
 
+export interface ILeagueRanking {
+    ranking: number;
+    quickMoveIds: string[];
+    cinematicMoveIds: string[];
+}
+
 export interface IPokemon {
     no: number;
     uniqueId: string;
@@ -72,4 +78,7 @@ export interface IPokemon {
     cpTable: {
         [level: string]: number;
     };
+    greatLeague?: ILeagueRanking;
+    ultraLeague?: ILeagueRanking;
+    masterLeague?: ILeagueRanking;
 }
