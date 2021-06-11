@@ -9,6 +9,8 @@ import styled from 'styled-components';
 import type { IPokemon, IPokemonStatus } from '../models/pokemon';
 import * as Pokemon from '../components/pokemon';
 
+type League = 'greatLeague' | 'ultraLeague' | 'masterLeague';
+
 interface PokemonProfileProps {
     className?: string;
     pokemons: IPokemon[];
@@ -25,6 +27,7 @@ const PokemonProfile: React.FC<PokemonProfileProps> = (props) => {
     const [displayPokemon, setDisplayPokemon] = useState<IPokemon | undefined>();
     const [selectedForm, setSelectedForm] = useState(pokemonForm);
     const [shiny, setShiny] = useState(false);
+    const [leagueRanking, setLeagueRanking] = useState<IPokemon[League]>();
     const [maximum, setMaximum] = useState<IPokemonStatus>(displayPokemon?.stats!);
 
     const onChangeForm = useCallback((form: string) => {
@@ -45,6 +48,16 @@ const PokemonProfile: React.FC<PokemonProfileProps> = (props) => {
             baseDefense: maxBy(pokemons, (pokemon) => pokemon.stats.baseDefense)?.stats.baseDefense!,
         });
     }, [pokemons]);
+
+    useEffect(() => {
+        if (displayPokemon) {
+            setLeagueRanking(
+                displayPokemon.greatLeague ||
+                displayPokemon.ultraLeague ||
+                displayPokemon.masterLeague
+            );
+        }
+    }, [displayPokemon]);
 
     if (!displayPokemon) {
         return null;
@@ -171,6 +184,7 @@ const PokemonProfile: React.FC<PokemonProfileProps> = (props) => {
                 <Pokemon.Move key={move.uniqueId}
                     move={move}
                     mode={mode}
+                    bestCombatMoveIds={leagueRanking?.quickMoveIds}
                 />
             ))}
 
@@ -179,6 +193,7 @@ const PokemonProfile: React.FC<PokemonProfileProps> = (props) => {
                     move={move}
                     mode={mode}
                     legacy={true}
+                    bestCombatMoveIds={leagueRanking?.quickMoveIds}
                 />
             ))}
 
@@ -201,6 +216,7 @@ const PokemonProfile: React.FC<PokemonProfileProps> = (props) => {
                 <Pokemon.Move key={move.uniqueId}
                     move={move}
                     mode={mode}
+                    bestCombatMoveIds={leagueRanking?.cinematicMoveIds}
                 />
             ))}
 
@@ -209,6 +225,7 @@ const PokemonProfile: React.FC<PokemonProfileProps> = (props) => {
                     move={move}
                     mode={mode}
                     legacy={true}
+                    bestCombatMoveIds={leagueRanking?.cinematicMoveIds}
                 />
             ))}
 

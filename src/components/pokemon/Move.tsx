@@ -3,6 +3,14 @@ import { times } from 'lodash';
 import React from 'react';
 import { Row, Col, Tag, Typography, Progress } from 'antd';
 import styled from 'styled-components';
+import {
+    LikeTwoTone,
+    CaretUpOutlined,
+    CaretDownOutlined,
+    ForwardOutlined,
+    BackwardOutlined,
+    LineChartOutlined,
+} from '@ant-design/icons';
 // Local modules.
 import { IMove } from '../../models/pokemon';
 import { TypeIcon } from './index';
@@ -70,22 +78,23 @@ const PokemonCombatMoveBuffs: React.FC<PokemonCombatMoveBuffsProps> = (props) =>
             ? `上升 ${count} 層`
             : `下降 ${Math.abs(count)} 層`;
 
-        let iconText = '';
+        let icon;
         if (count === 1) {
-            iconText = '🔼';
+            icon = <CaretUpOutlined className='green icon' />;
         } else if (count === -1) {
-            iconText = '🔽';
+            icon = <CaretDownOutlined className='red icon' />;
         } else if (count >= 2) {
-            iconText = '⏫';
+            icon = <ForwardOutlined className='green icon' rotate={-90} />;
         } else if (count <= -2) {
-            iconText = '⏬';
+            icon = <BackwardOutlined className='red icon' rotate={-90} />;
         }
 
         return (
             <Row className='pokemon-move-sub' wrap={false} gutter={1} align='middle'>
                 <Col flex={1}>
-                    <Typography.Text>
-                        {`${iconText} ${targetText}${metricText}${levelText}`}
+                    <Typography.Text className='content'>
+                        {icon}
+                        {` ${targetText}${metricText}${levelText}`}
                     </Typography.Text>
                 </Col>
             </Row>
@@ -95,9 +104,10 @@ const PokemonCombatMoveBuffs: React.FC<PokemonCombatMoveBuffsProps> = (props) =>
     return (
         <>
             <Row className='pokemon-move-sub' wrap={false} gutter={1} align='middle'>
-                <Col className='numberic' flex={1}>
-                    <Typography.Text>
-                        {`📈 觸發機率: ${buffs.buffActivationChance * 100}%`}
+                <Col flex={1}>
+                    <Typography.Text className='content'>
+                        <LineChartOutlined className='icon' />
+                        {` 觸發機率: ${buffs.buffActivationChance * 100}%`}
                     </Typography.Text>
                 </Col>
             </Row>
@@ -126,14 +136,21 @@ interface PokemonMoveProps {
     move: IMove;
     mode: 'pve' | 'pvp';
     legacy?: boolean;
+    bestCombatMoveIds?: string[];
 }
 
 const PokemonMove: React.FC<PokemonMoveProps> = (props) => {
     const { className } = props;
-    const { move, mode, legacy } = props;
+    const { move, mode, legacy, bestCombatMoveIds } = props;
 
-    const isPVP = mode === 'pvp';
-    const { power, energyDelta } = isPVP ? move.combat : move.base;
+    const pvp = mode === 'pvp';
+    const { power, energyDelta } = pvp ? move.combat : move.base;
+
+    // Shadow or purified pokemons.
+    const special = ['RETURN', 'FRUSTRATION'].includes(move.uniqueId);
+
+    // This move is the best combat move or not.
+    const best = bestCombatMoveIds?.includes(move.uniqueId.replace(/_FAST$/, ''));
 
     return (
         <div className={className}>
@@ -146,6 +163,13 @@ const PokemonMove: React.FC<PokemonMoveProps> = (props) => {
 
                         <Col flex='none'>
                             <Row wrap={false} gutter={5}>
+                                {/* Best combat move */}
+                                {(pvp && best) &&
+                                    <Col flex='none'>
+                                        <LikeTwoTone twoToneColor='#52c41a' />
+                                    </Col>
+                                }
+
                                 {/* Move name */}
                                 <Col flex='none'>
                                     <Typography.Text strong>
@@ -154,24 +178,26 @@ const PokemonMove: React.FC<PokemonMoveProps> = (props) => {
                                 </Col>
 
                                 {/* Tags */}
-                                <Col flex='none'>
-                                    {legacy &&
-                                        <Tag color='red'>{'絕版'}</Tag>
-                                    }
-                                    {move.uniqueId === 'RETURN' &&
-                                        <Tag color='cyan'>{'淨化'}</Tag>
-                                    }
-                                    {move.uniqueId === 'FRUSTRATION' &&
-                                        <Tag color='purple'>{'暗影'}</Tag>
-                                    }
-                                </Col>
+                                {(legacy || special) &&
+                                    <Col flex='none'>
+                                        {legacy &&
+                                            <Tag color='red'>{'絕版'}</Tag>
+                                        }
+                                        {move.uniqueId === 'RETURN' &&
+                                            <Tag color='cyan'>{'淨化'}</Tag>
+                                        }
+                                        {move.uniqueId === 'FRUSTRATION' &&
+                                            <Tag color='purple'>{'暗影'}</Tag>
+                                        }
+                                    </Col>
+                                }
                             </Row>
                         </Col>
                     </Row>
                 </Col>
 
                 {energyDelta < 0 &&
-                    <Col className='numberic' span={6}>
+                    <Col className='numberic' span={5}>
                         <PokemonMoveEnergyBar
                             energyDelta={energyDelta}
                             type={move.type}
@@ -192,7 +218,7 @@ const PokemonMove: React.FC<PokemonMoveProps> = (props) => {
                 </Col>
             </Row>
 
-            {isPVP &&
+            {pvp &&
                 <PokemonCombatMoveBuffs
                     buffs={move.combat.buffs}
                 />
@@ -220,6 +246,24 @@ const styledPokemonMove = styled(PokemonMove)`
 .pokemon-move-sub {
     padding-left: 2.5em;
     margin: 0.25em 0;
+
+    .content {
+        display: flex;
+        align-items: center;
+
+        .icon {
+            font-size: 1.5em;
+            margin-right: 0.25em;
+
+            &.green {
+                color: #52c41a;
+            }
+
+            &.red {
+                color: #f5222d;
+            }
+        }
+    }
 }
 `;
 
