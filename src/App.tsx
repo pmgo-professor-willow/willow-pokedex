@@ -24,23 +24,21 @@ const App: React.FC = () => {
     }, []);
 
     return (
-        <div style={{ height: '100%', background: '#ECECEC', padding: 12 }}>
-            <Router>
-                <Switch>
-                    <Route path='/willow-pokedex/pokemons/:pokemonNo/:pokemonForm'
-                        render={() => <PokemonProfile pokemons={pokemons} />}
-                    />
+        <Router>
+            <Switch>
+                <Route path='/willow-pokedex/pokemons/:pokemonNo/:pokemonForm'
+                    render={() => <PokemonProfile pokemons={pokemons} />}
+                />
 
-                    <Route path='/willow-pokedex/pokemons'
-                        render={() => <SearchPage pokemons={pokemons} />}
-                    />
+                <Route path='/willow-pokedex/pokemons'
+                    render={() => <SearchPage pokemons={pokemons} />}
+                />
 
-                    <Route>
-                        <Redirect to='/willow-pokedex/pokemons' />
-                    </Route>
-                </Switch>
-            </Router>
-        </div>
+                <Route>
+                    <Redirect to='/willow-pokedex/pokemons' />
+                </Route>
+            </Switch>
+        </Router>
     );
 };
 
