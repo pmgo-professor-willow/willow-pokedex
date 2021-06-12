@@ -3,15 +3,18 @@ import React, { useCallback, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Space, Affix, Input, Row, Col, Typography } from 'antd';
 import LazyLoad from 'react-lazyload';
+import styled from 'styled-components';
 // Local modules.
 import { IPokemon } from '../models/pokemon';
 import * as Pokemon from '../components/pokemon';
 
 interface SearchPageProps {
+    className?: string;
     pokemons: IPokemon[];
 }
 
 const SearchPage: React.FC<SearchPageProps> = (props) => {
+    const { className } = props;
     const { pokemons } = props;
 
     const [displayPokemons, setDisplayPokemons] = useState<IPokemon[]>(pokemons);
@@ -40,11 +43,11 @@ const SearchPage: React.FC<SearchPageProps> = (props) => {
                 </div>
             </Affix>
 
-            <Row justify='space-between' gutter={[8, 8]}>
+            <Row className={className} justify='space-between' gutter={[8, 8]}>
                 {displayPokemons.map((pokemon, i) => (
-                    <Col key={i} flex='33%' style={{ textAlign: 'center' }}>
+                    <Col key={i} className='pokemon-item' flex='33%'>
                         <Link to={`/willow-pokedex/pokemons/${pokemon.no}/normal`}>
-                            <div style={{ background: '#FFF', borderRadius: '5px' }}>
+                            <div className='pokemon-container'>
                                 {/* Image */}
                                 <LazyLoad height={100} offset={1000}>
                                     <Pokemon.Image
@@ -67,4 +70,19 @@ const SearchPage: React.FC<SearchPageProps> = (props) => {
     );
 };
 
-export default SearchPage;
+const styledSearchPage = styled(SearchPage)`
+& {
+    padding: 12px 12px;
+}
+
+.pokemon-item {
+    text-align: center;
+
+    .pokemon-container {
+        background: #FFF;
+        border-radius: 5px;
+    }
+}
+`;
+
+export default styledSearchPage;

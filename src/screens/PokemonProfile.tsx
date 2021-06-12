@@ -27,7 +27,7 @@ const ProfileTabs = styled(Tabs)`
 }
 .ant-tabs-content > .ant-tabs-tabpane {
     background: #fff;
-    border-radius: 5px;
+    border-radius: 2px;
     padding: 16px;
 }
 .ant-tabs-tab {
@@ -98,13 +98,18 @@ const PokemonProfile: React.FC<PokemonProfileProps> = (props) => {
     return (
         <PageHeader className={className}
             title={displayPokemon.name}
+            subTitle={`#${displayPokemon.no}`}
             extra={[
                 <Select key='1' className='pokemon-forms-select'
                     value={selectedForm}
                     onChange={onChangeForm}
                 >
                     {isomorphicPokemons.map(({ form }, i) => (
-                        <Select.Option key={i} value={String(form).toLowerCase()}>{form}</Select.Option>
+                        <Select.Option key={i}
+                            value={String(form).toLowerCase()}
+                        >
+                            {form}
+                        </Select.Option>
                     ))}
                 </Select>,
                 <Button key='2'
@@ -115,6 +120,7 @@ const PokemonProfile: React.FC<PokemonProfileProps> = (props) => {
                 </Button>,
             ]}
         >
+            {/* Avatar */}
             <Row justify={'center'} align={'middle'}>
                 <Col className='pokemon-avatar' flex={0}>
                     {/* Image */}
@@ -172,20 +178,14 @@ const PokemonProfile: React.FC<PokemonProfileProps> = (props) => {
                             </Row>
                         </Col>
                     </Row>
-                    
-                    <Divider plain orientation='left'>
-                        <Row wrap={false} gutter={5} align='middle' justify='center'>
-                            <Col flex='none'>
-                                <Image preview={false} height={30} width={47}
-                                    src={'/willow-pokedex/assets/pokemon_desc.png'}
-                                />
-                            </Col>
-                            <Col flex='none'>
-                                <Typography.Title className='divider-title' level={5}>
-                                    {'關於'}
-                                </Typography.Title>
-                            </Col>
-                        </Row>
+
+                    <Divider plain orientation='center'>
+                        <Image preview={false} height={30} width={47}
+                            src={'/willow-pokedex/assets/pokemon_desc.png'}
+                        />
+                        <Typography.Title className='divider-title' level={5}>
+                            {'關於'}
+                        </Typography.Title>
                     </Divider>
 
                     <Row align='middle'>
@@ -193,26 +193,20 @@ const PokemonProfile: React.FC<PokemonProfileProps> = (props) => {
                             <Typography.Title level={5}>
                                 {displayPokemon.category}
                             </Typography.Title>
-                            
+
                             <Typography.Paragraph>
                                 {displayPokemon.description}
                             </Typography.Paragraph>
                         </Col>
                     </Row>
 
-                    <Divider plain orientation='left'>
-                        <Row wrap={false} gutter={5} align='middle' justify='center'>
-                            <Col flex='none'>
-                                <Image preview={false} height={30} width={30}
-                                    src={'/willow-pokedex/assets/pokemon_cp.png'}
-                                />
-                            </Col>
-                            <Col flex='none'>
-                                <Typography.Title className='divider-title' level={5}>
-                                    {'最大 CP'}
-                                </Typography.Title>
-                            </Col>
-                        </Row>
+                    <Divider plain orientation='center'>
+                        <Image preview={false} height={30} width={30}
+                            src={'/willow-pokedex/assets/pokemon_cp.png'}
+                        />
+                        <Typography.Title className='divider-title' level={5}>
+                            {'最大 CP'}
+                        </Typography.Title>
                     </Divider>
 
                     <Pokemon.CombatPower cpTable={displayPokemon.cpTable} />
@@ -229,8 +223,6 @@ const PokemonProfile: React.FC<PokemonProfileProps> = (props) => {
                 <ProfileTabs.TabPane tab={'訓練家對戰'} key='pvp'>
                     <Pokemon.CombatRanking pokemon={displayPokemon} />
 
-                    <Divider />
-                    
                     <Pokemon.MoveTable
                         pokemon={displayPokemon}
                         mode={'pvp'}
@@ -243,6 +235,10 @@ const PokemonProfile: React.FC<PokemonProfileProps> = (props) => {
 };
 
 const styledPokemonProfile = styled(PokemonProfile)`
+&.ant-page-header {
+    padding: 16px 16px;
+}
+
 .pokemon-avatar {
     text-align: center;
 }

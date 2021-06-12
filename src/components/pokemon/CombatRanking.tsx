@@ -55,6 +55,7 @@ const PokemonCombatRanking: React.FC<PokemonCombatRankingProps> = (props) => {
 const styledPokemonCombatRanking = styled(PokemonCombatRanking)`
 & {
     margin-top: 2em;
+    margin-bottom: 3em;
 }
 
 .pokemon-ranking {

@@ -26,23 +26,15 @@ const PokemonMoveTable: React.FC<PokemonMoveTableProps> = (props) => {
     const { className } = props;
     const { pokemon, mode, leagueRanking } = props;
 
-    console.log(leagueRanking);
-
     return (
         <div className={className}>
-            <Divider plain orientation='left'>
-                <Row wrap={false} gutter={5} align='middle' justify='center'>
-                    <Col flex='none'>
-                        <Image preview={false} height={30} width={57.7}
-                            src={'/willow-pokedex/assets/quick_move.png'}
-                        />
-                    </Col>
-                    <Col flex='none'>
-                        <Typography.Title className='divider-title' level={5}>
-                            {'一般招式'}
-                        </Typography.Title>
-                    </Col>
-                </Row>
+            <Divider plain orientation='center'>
+                <Image preview={false} height={30} width={57.7}
+                    src={'/willow-pokedex/assets/quick_move.png'}
+                />
+                <Typography.Title className='divider-title' level={5}>
+                    {'一般招式'}
+                </Typography.Title>
             </Divider>
 
             {pokemon.quickMoves.map((move) => (
@@ -62,19 +54,13 @@ const PokemonMoveTable: React.FC<PokemonMoveTableProps> = (props) => {
                 />
             ))}
 
-            <Divider plain orientation='left'>
-                <Row wrap={false} gutter={5} align='middle' justify='center'>
-                    <Col flex='none'>
-                        <Image preview={false} height={30} width={57.7}
-                            src={'/willow-pokedex/assets/cinematic_move.png'}
-                        />
-                    </Col>
-                    <Col flex='none'>
-                        <Typography.Title className='divider-title' level={5}>
-                            {'特殊招式'}
-                        </Typography.Title>
-                    </Col>
-                </Row>
+            <Divider plain orientation='center'>
+                <Image preview={false} height={30} width={57.7}
+                    src={'/willow-pokedex/assets/cinematic_move.png'}
+                />
+                <Typography.Title className='divider-title' level={5}>
+                    {'特殊招式'}
+                </Typography.Title>
             </Divider>
 
             {pokemon.cinematicMoves.map((move) => (
