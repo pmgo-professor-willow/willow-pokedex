@@ -6,15 +6,19 @@ import fetch from 'node-fetch';
 import { IPokemon } from './models/pokemon';
 import SearchPage from './screens/SearchPage';
 import PokemonProfile from './screens/PokemonProfile';
+import { FullLoading } from './components/misc';
 
 const App: React.FC = () => {
-    const [, setLoading] = useState<boolean>(false);
+    const [loading, setLoading] = useState<boolean>(false);
     const [pokemons, setPokemons] = useState<IPokemon[]>([]);
 
     useEffect(() => {
         async function fetchData() {
             setLoading(true);
-            const res = await fetch('/willow-pokedex/data/pokemons.min.json');
+            const [res] = await Promise.all([
+                fetch('/willow-pokedex/data/pokemons.min.json'),
+                new Promise((resolve) => setTimeout(resolve, 1000)),
+            ]);
             const allPokemons: IPokemon[] = await res.json();
             setLoading(false);
             setPokemons(allPokemons);
@@ -22,6 +26,12 @@ const App: React.FC = () => {
 
         fetchData();
     }, []);
+
+    if (loading) {
+        return (
+            <FullLoading />
+        );
+    }
 
     return (
         <Router>
