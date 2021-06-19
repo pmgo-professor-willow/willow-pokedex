@@ -18,6 +18,7 @@ import styled from 'styled-components';
 // Local modules.
 import type { IPokemon, IPokemonStatus, League } from '../models/pokemon';
 import * as Pokemon from '../components/pokemon';
+import { translateForm } from '../utils/translate-form';
 
 const ProfileTabs = styled(Tabs)`
 .ant-tabs-content {
@@ -109,7 +110,7 @@ const PokemonProfile: React.FC<PokemonProfileProps> = (props) => {
                         <Select.Option key={i}
                             value={String(form).toLowerCase()}
                         >
-                            {form}
+                            {translateForm(displayPokemon.no, form)}
                         </Select.Option>
                     ))}
                 </Select>,
@@ -242,6 +243,10 @@ const PokemonProfile: React.FC<PokemonProfileProps> = (props) => {
 const styledPokemonProfile = styled(PokemonProfile)`
 &.ant-page-header {
     padding: 16px 16px;
+}
+
+.pokemon-forms-select {
+    min-width: 100px;
 }
 
 .pokemon-avatar {
