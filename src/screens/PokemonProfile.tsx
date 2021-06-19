@@ -16,10 +16,8 @@ import {
 } from 'antd';
 import styled from 'styled-components';
 // Local modules.
-import type { IPokemon, IPokemonStatus } from '../models/pokemon';
+import type { IPokemon, IPokemonStatus, League } from '../models/pokemon';
 import * as Pokemon from '../components/pokemon';
-
-type League = 'greatLeague' | 'ultraLeague' | 'masterLeague';
 
 const ProfileTabs = styled(Tabs)`
 .ant-tabs-content {
@@ -55,7 +53,7 @@ const PokemonProfile: React.FC<PokemonProfileProps> = (props) => {
     const [displayPokemon, setDisplayPokemon] = useState<IPokemon | undefined>();
     const [selectedForm, setSelectedForm] = useState(pokemonForm);
     const [shiny, setShiny] = useState(false);
-    const [leagueRanking, setLeagueRanking] = useState<IPokemon[League]>();
+    const [league, setLeague] = useState<League>();
     const [maximum, setMaximum] = useState<IPokemonStatus>(displayPokemon?.stats!);
 
     const onChangeForm = useCallback((form: string) => {
@@ -79,11 +77,13 @@ const PokemonProfile: React.FC<PokemonProfileProps> = (props) => {
 
     useEffect(() => {
         if (displayPokemon) {
-            setLeagueRanking(
-                displayPokemon.greatLeague ||
-                displayPokemon.ultraLeague ||
-                displayPokemon.masterLeague
-            );
+            if (displayPokemon.greatLeague) {
+                setLeague('greatLeague');
+            } else if (displayPokemon.ultraLeague) {
+                setLeague('ultraLeague');
+            } else if (displayPokemon.masterLeague) {
+                setLeague('masterLeague');
+            }
         }
     }, [displayPokemon]);
 
@@ -99,6 +99,7 @@ const PokemonProfile: React.FC<PokemonProfileProps> = (props) => {
         <PageHeader className={className}
             title={displayPokemon.name}
             subTitle={`#${displayPokemon.no}`}
+            onBack={() => window.history.back()}
             extra={[
                 <Select key='1' className='pokemon-forms-select'
                     value={selectedForm}
@@ -112,11 +113,11 @@ const PokemonProfile: React.FC<PokemonProfileProps> = (props) => {
                         </Select.Option>
                     ))}
                 </Select>,
-                <Button key='2'
+                <Button key='2' shape='circle'
                     type={shiny ? 'primary' : 'dashed'}
                     onClick={() => setShiny(!shiny)}
                 >
-                    {'異色✨'}
+                    {'✨'}
                 </Button>,
             ]}
         >
@@ -216,17 +217,21 @@ const PokemonProfile: React.FC<PokemonProfileProps> = (props) => {
                     <Pokemon.MoveTable
                         pokemon={displayPokemon}
                         mode={'pve'}
-                        leagueRanking={leagueRanking}
+                        leagueRanking={league && displayPokemon[league]}
                     />
                 </ProfileTabs.TabPane>
 
                 <ProfileTabs.TabPane tab={'訓練家對戰'} key='pvp'>
-                    <Pokemon.CombatRanking pokemon={displayPokemon} />
+                    <Pokemon.CombatRanking
+                        pokemon={displayPokemon}
+                        league={league}
+                        setLeague={setLeague}
+                    />
 
                     <Pokemon.MoveTable
                         pokemon={displayPokemon}
                         mode={'pvp'}
-                        leagueRanking={leagueRanking}
+                        leagueRanking={league && displayPokemon[league]}
                     />
                 </ProfileTabs.TabPane>
             </ProfileTabs>

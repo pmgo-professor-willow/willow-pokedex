@@ -51,6 +51,8 @@ export interface IPokemonStatus {
     baseDefense: number;
 }
 
+export type League = 'greatLeague' | 'ultraLeague' | 'masterLeague';
+
 export interface ILeagueRanking {
     ranking: number;
     quickMoveIds: string[];
