@@ -1,0 +1,46 @@
+name: auto update
+
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: '*/10 * * * *'
+
+jobs:
+  build:
+    name: Auto-update data
+    env:
+      MY_SECRET: ${{ secrets.commit_secret }}
+      USER_NAME: githubaction
+      USER_EMAIL: githubaction@fake.com
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [12.x]
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Installation
+        run: |
+          yarn install
+
+      - name: Generate JSON files
+        run: |
+          yarn gen-pokedex
+
+      - name: Commit files to gh-pages
+        run: |
+          git config --local user.name $USER_NAME
+          git config --local user.email $USER_EMAIL
+          git status
+          git remote add origin https://$MY_SECRET@github.com/$GITHUB_REPOSITORY.git
+          git add --all
+          git commit -m "Auto update pokemon data"
+          git push origin HEAD
+          echo 🤘 deploy complete.
