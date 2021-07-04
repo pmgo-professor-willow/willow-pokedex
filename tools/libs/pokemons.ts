@@ -1,10 +1,10 @@
 // Node modules.
 import { compact } from 'lodash';
 // Local modules.
-import { gameMaster } from './game-master';
+import { getGameMaster } from './game-master';
 import { getRanking } from './league-ranking';
 import { filterResources } from './resources';
-import { mapMoves } from './moves';
+import { getMoveDict, mapMoves } from './moves';
 import { calculateCP } from './cp-calculator';
 
 interface Pokemon {
@@ -28,12 +28,14 @@ interface Pokemon {
     };
 }
 
-const pokemonNameDict = filterResources(/pokemon_name_(\w+)/);
-const pokemonCategoryDict = filterResources(/pokemon_category_(\w+)/);
-const pokemonDescriptionDict = filterResources(/pokemon_desc_(\w+)/);
-
 const getPokemons = (): Pokemon[] => {
-    const pokemons = gameMaster.reduce<any>((prev, template) => {
+    const pokemonNameDict = filterResources(/pokemon_name_(\w+)/);
+    const pokemonCategoryDict = filterResources(/pokemon_category_(\w+)/);
+    const pokemonDescriptionDict = filterResources(/pokemon_desc_(\w+)/);
+
+    const moveDict = getMoveDict();
+
+    const pokemons = getGameMaster().reduce<any>((prev, template) => {
         const matches = template.templateId.match(/^V(\d+)_POKEMON_(\w+)$/);
 
         if (matches) {
@@ -67,14 +69,14 @@ const getPokemons = (): Pokemon[] => {
                     description: pokemonDescriptionDict[noIndex],
                     form,
                     stats: pokemon.stats,
-                    quickMoves: mapMoves(pokemon.quickMoves),
-                    cinematicMoves: mapMoves(compact([
+                    quickMoves: mapMoves(moveDict, pokemon.quickMoves),
+                    cinematicMoves: mapMoves(moveDict, compact([
                         ...pokemon.cinematicMoves || [],
                         form === 'PURIFIED' ? 'RETURN' : null,
                         form === 'SHADOW' ? 'FRUSTRATION' : null,
                     ])),
-                    eliteQuickMoves: mapMoves(pokemon.eliteQuickMove),
-                    eliteCinematicMoves: mapMoves(pokemon.eliteCinematicMove),
+                    eliteQuickMoves: mapMoves(moveDict, pokemon.eliteQuickMove),
+                    eliteCinematicMoves: mapMoves(moveDict, pokemon.eliteCinematicMove),
                     // Extra.
                     cpTable: {
                         15: calculateCP(15.0, ...maxStatuses),

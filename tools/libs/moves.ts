@@ -1,10 +1,13 @@
 // Node modules.
 import _ from 'lodash';
 // Local modules.
-import { gameMaster } from './game-master';
+import { getGameMaster } from './game-master';
 import { filterResources } from './resources';
+import type { Resource } from './resources';
 
-const moveDict = filterResources(/move_name_(\d+)/);
+const getMoveDict = (): Resource => {
+    return filterResources(/move_name_(\d+)/);
+};
 
 interface BaseMoveRaw {
     movementId: string;
@@ -38,8 +41,8 @@ interface BaseMove {
     criticalChance?: number;
 }
 
-const getBaseMoves = (): BaseMove[] => {
-    const moves = gameMaster.reduce<BaseMove[]>((prev, template) => {
+const getBaseMoves = (moveDict: Resource): BaseMove[] => {
+    const moves = getGameMaster().reduce<BaseMove[]>((prev, template) => {
         const matches = template.templateId.match(/^V(\d+)_MOVE_(\w+)$/);
 
         if (matches) {
@@ -65,8 +68,8 @@ const getBaseMoves = (): BaseMove[] => {
     return moves;
 };
 
-const mapBaseMoves = (moveUniqueIds: string[] = []) => {
-    const allMoves = getBaseMoves();
+const mapBaseMoves = (moveDict: Resource, moveUniqueIds: string[] = []) => {
+    const allMoves = getBaseMoves(moveDict);
     return moveUniqueIds.map((moveUniqueId) => allMoves.find((move) => move.uniqueId === moveUniqueId)!);
 };
 
@@ -99,8 +102,8 @@ interface CombatMove {
     buffs?: CombatMoveBuff;
 }
 
-const getCombatMoves = (): CombatMove[] => {
-    const moves = gameMaster.reduce<CombatMove[]>((prev, template) => {
+const getCombatMoves = (moveDict: Resource): CombatMove[] => {
+    const moves = getGameMaster().reduce<CombatMove[]>((prev, template) => {
         const matches = template.templateId.match(/^COMBAT_V(\d+)_MOVE_(\w+)$/);
 
         if (matches) {
@@ -124,14 +127,14 @@ const getCombatMoves = (): CombatMove[] => {
     return moves;
 };
 
-const mapCombatMoves = (moveUniqueIds: string[] = []) => {
-    const allCombatMoves = getCombatMoves();
+const mapCombatMoves = (moveDict: Resource, moveUniqueIds: string[] = []) => {
+    const allCombatMoves = getCombatMoves(moveDict);
     return moveUniqueIds.map((moveUniqueId) => allCombatMoves.find((move) => move.uniqueId === moveUniqueId)!);
 };
 
-const mapMoves = (moveUniqueIds: string[] = []) => {
-    const baseMoves = mapBaseMoves(moveUniqueIds);
-    const combatMoves = mapCombatMoves(moveUniqueIds);
+const mapMoves = (moveDict: Resource, moveUniqueIds: string[] = []) => {
+    const baseMoves = mapBaseMoves(moveDict, moveUniqueIds);
+    const combatMoves = mapCombatMoves(moveDict, moveUniqueIds);
 
     const moves = baseMoves.map((baseMove) => {
         const sameFields = ['id', 'name', 'uniqueId', 'type'];
@@ -148,5 +151,6 @@ const mapMoves = (moveUniqueIds: string[] = []) => {
 };
 
 export {
+    getMoveDict,
     mapMoves,
 };

@@ -284,7 +284,6 @@ const PokemonImage: React.FC<PokemonImageProps> = (props) => {
         size = 200,
     } = props;
 
-
     const [imageUrl, setImageUrl] = useState(unknownImageUrl);
 
     useEffect(() => {

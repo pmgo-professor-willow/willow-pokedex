@@ -14,14 +14,14 @@ type LeagueRanking = {
     [league in League]: Ranking[];
 };
 
-const leagueRanking: LeagueRanking = {
+const getLeagueRanking= (): LeagueRanking => ({
     great: require(`${appRoot.path}/rawdata/rankings-1500.json`),
     ultra: require(`${appRoot.path}/rawdata/rankings-2500.json`),
     master: require(`${appRoot.path}/rawdata/rankings-10000.json`),
-};
+});
 
 const getRanking = (pokemonId: string, league: League, pokemonForm?: string) => {
-    const ranking = leagueRanking[league].find((o) => {
+    const ranking = getLeagueRanking()[league].find((o) => {
         // stunfisk          => [stunfisk]
         // stunfisk_galarian => [stunfisk, galarian]
         const [name, form] = o.id.split('_');
@@ -49,6 +49,6 @@ const getRanking = (pokemonId: string, league: League, pokemonForm?: string) => 
 };
 
 export {
-    leagueRanking,
+    getLeagueRanking,
     getRanking,
 };
