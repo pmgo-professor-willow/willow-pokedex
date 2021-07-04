@@ -1,15 +1,12 @@
-name: auto update
+name: auto update pokemon data
 
 on:
-  push:
-    branches:
-      - main
   schedule:
     - cron: '*/10 * * * *'
 
 jobs:
   build:
-    name: Auto-update data
+    name: Auto-update pokemon data
     env:
       MY_SECRET: ${{ secrets.commit_secret }}
       USER_NAME: githubaction
