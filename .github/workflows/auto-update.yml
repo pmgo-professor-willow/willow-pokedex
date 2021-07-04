@@ -34,12 +34,16 @@ jobs:
         run: |
           yarn gen-pokedex
 
-      - name: Commit files to gh-pages
+      - name: Commit files
         run: |
-          git config --local user.name $USER_NAME
-          git config --local user.email $USER_EMAIL
-          git status
-          git add .
-          git commit -m "Auto update pokemon data"
-          git push origin HEAD
-          echo 🤘 deploy complete.
+          if git diff --quiet; then
+            echo "Everything is already up to date."
+          else
+            git config --local user.name $USER_NAME
+            git config --local user.email $USER_EMAIL
+            git status
+            git add .
+            git commit -m "Auto update pokemon data"
+            git push origin HEAD
+            echo "🤘 deploy complete"
+          fi
