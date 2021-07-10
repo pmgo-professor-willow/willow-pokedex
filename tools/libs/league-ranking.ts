@@ -25,16 +25,25 @@ const getRanking = (pokemonId: string, league: League, pokemonForm?: string) => 
         // stunfisk          => [stunfisk]
         // stunfisk_galarian => [stunfisk, galarian]
         const [name, form] = o.id.split('_');
-        const samePokemon = pokemonId.toLowerCase() === name.toLowerCase();
+        const n1 = pokemonId.toLowerCase();
+        const n2 = name.toLowerCase();
+        const samePokemon = n1 === n2;
+
+        if (!samePokemon) {
+            return false;
+        }
+
+        const f1 = pokemonForm ? pokemonForm.toLowerCase() : undefined;
+        const f2 = form ? form.toLowerCase() : undefined;
         let sameForm = false;
 
-        if (pokemonForm?.toLowerCase() === 'shadow' && form?.toLowerCase() === 'shadow') {
+        if (f1 === f2) {
             sameForm = true;
-        } else if (pokemonForm?.toLowerCase() !== 'shadow' && form === undefined) {
+        } else if (f1 !== 'shadow' && f2 === undefined) {
             sameForm = true;
         }
 
-        return samePokemon && sameForm;
+        return sameForm;
     });
 
     if (ranking) {

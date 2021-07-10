@@ -6,6 +6,7 @@ import { getRanking } from './league-ranking';
 import { filterResources } from './resources';
 import { getMoveDict, mapMoves } from './moves';
 import { calculateCP } from './cp-calculator';
+import { isIgnored } from './ignored-pokemon';
 
 interface Pokemon {
     pokemonId: string;
@@ -60,7 +61,7 @@ const getPokemons = (): Pokemon[] => {
                     return prev;
                 }
 
-                prev.push({
+                const pokemonInstance = {
                     uniqueId: pokemon.pokemonId,
                     no: parseInt(noIndex),
                     name: pokemonNameDict[noIndex],
@@ -90,7 +91,11 @@ const getPokemons = (): Pokemon[] => {
                     greatLeague: getRanking(pokemon.pokemonId, 'great', form),
                     ultraLeague: getRanking(pokemon.pokemonId, 'ultra', form),
                     masterLeague: getRanking(pokemon.pokemonId, 'master', form),
-                });
+                };
+
+                if (!isIgnored(pokemonInstance.no, pokemonInstance.form)) {
+                    prev.push(pokemonInstance);
+                }
             }
         }
 

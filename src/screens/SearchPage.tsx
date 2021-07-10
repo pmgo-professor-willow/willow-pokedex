@@ -1,4 +1,5 @@
 // Node modules.
+import { chain } from 'lodash';
 import React, { useCallback, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Space, Affix, Input, Row, Col, Typography } from 'antd';
@@ -50,7 +51,8 @@ const SearchPage: React.FC<SearchPageProps> = (props) => {
     }, [allPokemons, displayPokemons, hasMore]);
 
     useEffect(() => {
-        const filteredPokemons = pokemons.filter((p) => p.form === 'NORMAL');
+        // Group by no and get the first one.
+        const filteredPokemons = chain(pokemons).groupBy(({ no }) => no).map(([f]) => f).value();
         setAllPokemons(filteredPokemons);
         setDisplayPokemons(filteredPokemons.slice(0, DEFAULT_ITEM_LIMIT));
     }, [pokemons]);
@@ -75,7 +77,7 @@ const SearchPage: React.FC<SearchPageProps> = (props) => {
                 <Row justify='space-between' gutter={[8, 8]}>
                     {displayPokemons.map((pokemon, i) => (
                         <Col key={i} className='pokemon-item' flex='33%'>
-                            <Link to={`/willow-pokedex/pokemons/${pokemon.no}/normal`}>
+                            <Link to={`/willow-pokedex/pokemons/${pokemon.no}/${pokemon.form?.toLowerCase()}`}>
                                 <div className='pokemon-container'>
                                     {/* Image */}
                                     <LazyLoad height={100} offset={1000}>
