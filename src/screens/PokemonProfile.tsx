@@ -21,6 +21,10 @@ import * as Pokemon from '../components/pokemon';
 import { translateForm } from '../utils/translate-form';
 
 const ProfileTabs = styled(Tabs)`
+.ant-tabs-nav-list .ant-tabs-tab:not(.ant-tabs-tab-active) .ant-tabs-tab-btn {
+    color: #ECECEC;
+    text-shadow: #000000 0.1em 0.1em 0.2em;
+}
 .ant-tabs-content {
     margin-top: -16px;
 }
@@ -28,6 +32,7 @@ const ProfileTabs = styled(Tabs)`
     background: #fff;
     border-radius: 2px;
     padding: 16px;
+    z-index: 1;
 }
 .ant-tabs-tab {
     background: transparent !important;
@@ -97,7 +102,7 @@ const PokemonProfile: React.FC<PokemonProfileProps> = (props) => {
     }
 
     return (
-        <PageHeader className={className}
+        <PageHeader className={[className, displayPokemon?.types[0]].join(' ')}
             title={displayPokemon.name}
             subTitle={`#${displayPokemon.no}`}
             onBack={() => window.history.back()}
@@ -241,8 +246,181 @@ const PokemonProfile: React.FC<PokemonProfileProps> = (props) => {
 };
 
 const styledPokemonProfile = styled(PokemonProfile)`
-&.ant-page-header {
-    padding: 16px 16px;
+& {
+    @keyframes background-image-gradient {
+        from {
+            opacity: 0;
+        }
+    }
+
+    @keyframes background-gradient {
+        from {
+            background-color: #ECECEC;
+        }
+    }
+
+    &::before {
+        content: '';
+        background-repeat: no-repeat;
+        background-size: 100%;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: 1;
+        animation: background-image-gradient 5s 1;
+    }
+    
+    animation: background-gradient 1s 1;
+
+    &.POKEMON_TYPE_NORMAL {
+        &::before {
+            background-image: url("/willow-pokedex/type-backgrounds/normal.png");
+        }
+
+        background-color: #D5C398;
+    }
+
+    &.POKEMON_TYPE_FIRE {
+        &::before {
+            background-image: url("/willow-pokedex/type-backgrounds/fire.png");
+        }
+
+        background-color: #5C2A3D;
+    }
+
+    &.POKEMON_TYPE_WATER {
+        &::before {
+            background-image: url("/willow-pokedex/type-backgrounds/water.png");
+        }
+
+        background-color: #0085A1;
+    }
+
+    &.POKEMON_TYPE_GRASS {
+        &::before {
+            background-image: url("/willow-pokedex/type-backgrounds/grass.png");
+        }
+
+        background-color: #AED059;
+    }
+
+    &.POKEMON_TYPE_ELECTRIC {
+        &::before {
+            background-image: url("/willow-pokedex/type-backgrounds/electric.png");
+        }
+
+        background-color: #123A63;
+    }
+
+    &.POKEMON_TYPE_ICE {
+        &::before {
+            background-image: url("/willow-pokedex/type-backgrounds/ice.png");
+        }
+
+        background-color: #416987;
+    }
+
+    &.POKEMON_TYPE_FIGHTING {
+        &::before {
+            background-image: url("/willow-pokedex/type-backgrounds/fighting.png");
+        }
+
+        background-color: #836F52;
+    }
+
+    &.POKEMON_TYPE_POISON {
+        &::before {
+            background-image: url("/willow-pokedex/type-backgrounds/poison.png");
+        }
+
+        background-color: #04102D;
+    } 
+
+    &.POKEMON_TYPE_GROUND {
+        &::before {
+            background-image: url("/willow-pokedex/type-backgrounds/ground.png");
+        }
+
+        background-color: #BE9973;
+    }
+
+    &.POKEMON_TYPE_FLYING {
+        &::before {
+            background-image: url("/willow-pokedex/type-backgrounds/flying.png");
+        }
+
+        background-color: #6CA1EB;
+    }
+
+    &.POKEMON_TYPE_PSYCHIC {
+        &::before {
+            background-image: url("/willow-pokedex/type-backgrounds/psychic.png");
+        }
+
+        background-color: #232CB5;
+    }
+
+    &.POKEMON_TYPE_BUG {
+        &::before {
+            background-image: url("/willow-pokedex/type-backgrounds/bug.png");
+        }
+
+        background-color: #C0A910;
+    }
+
+    &.POKEMON_TYPE_ROCK {
+        &::before {
+            background-image: url("/willow-pokedex/type-backgrounds/rock.png");
+        }
+
+        background-color: #76808E;
+    }
+
+    &.POKEMON_TYPE_GHOST {
+        &::before {
+            background-image: url("/willow-pokedex/type-backgrounds/ghost.png");
+        }
+
+        background-color: #191256;
+    }
+
+    &.POKEMON_TYPE_DARK {
+        &::before {
+            background-image: url("/willow-pokedex/type-backgrounds/dark.png");
+        }
+
+        background-color: #04102D;
+    }
+
+    &.POKEMON_TYPE_DRAGON {
+        &::before {
+            background-image: url("/willow-pokedex/type-backgrounds/dragon.png");
+        }
+
+        background-color: #436B40;
+    }
+
+    &.POKEMON_TYPE_STEEL {
+        &::before {
+            background-image: url("/willow-pokedex/type-backgrounds/steel.png");
+        }
+
+        background-color: #1C2936;
+    }
+
+    &.POKEMON_TYPE_FAIRY {
+        &::before {
+            background-image: url("/willow-pokedex/type-backgrounds/fairy.png");
+        }
+
+        background-color: #8D70E0;
+    }
+    
+    &.ant-page-header {
+        padding: 16px 16px;
+    }
 }
 
 .pokemon-forms-select {
@@ -263,6 +441,20 @@ const styledPokemonProfile = styled(PokemonProfile)`
 
 .divider-title {
     margin: 0;
+}
+
+.ant-page-header-heading .ant-page-header-heading-left {
+    z-index: 1;
+
+    .ant-page-header-back .ant-page-header-back-button {
+        color: #ECECEC;
+        text-shadow: #000000 0.1em 0.1em 0.2em;
+    }
+
+    .ant-page-header-heading-title, .ant-page-header-heading-sub-title {
+        color: #ECECEC;
+        text-shadow: #000000 0.1em 0.1em 0.2em;
+    }
 }
 `;
 
