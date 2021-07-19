@@ -223,6 +223,10 @@ const imageTextTable: { [idx: string]: string } = {
     '25_COSTUME_2020': 'pm0025_00_pgo_4thanniversary', // 飛翔皮卡丘
     '25_ADVENTURE_HAT_2020': 'pm0025_01_pgo_movie2020', // 探險家皮卡丘
     '25_WINTER_2020': 'pm0025_00_pgo_winter2020', // 冬季皮卡丘
+    '25_KARIYUSHI': 'pm0025_01_pikachu_pgo_kariyushi', // 沖繩皮卡丘
+    '25_FLYING_5TH_ANNIV': 'pm0025_01_pgo_5thanniversary', // 五週年飛翔皮卡丘
+    '25_ROCK_STAR': 'pm0025_01_pgo_rockstar', // 硬搖滾皮卡丘
+    '25_POP_STAR': 'pm0025_01_pgo_popstar', // 偶像皮卡丘
 
     // 特殊外觀 - 電影超夢的逆襲
     '3_COPY_2019': 'pm0003_00_pgo_copy2019', // 複製妙蛙花
