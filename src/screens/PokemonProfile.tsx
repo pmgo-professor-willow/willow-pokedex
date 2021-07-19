@@ -21,9 +21,15 @@ import * as Pokemon from '../components/pokemon';
 import { translateForm } from '../utils/translate-form';
 
 const ProfileTabs = styled(Tabs)`
-.ant-tabs-nav-list .ant-tabs-tab:not(.ant-tabs-tab-active) .ant-tabs-tab-btn {
-    color: #ECECEC;
-    text-shadow: #000000 0.1em 0.1em 0.2em;
+.ant-tabs-nav {
+    &::before {
+        border-bottom: none;
+    }
+
+    .ant-tabs-nav-list .ant-tabs-tab:not(.ant-tabs-tab-active) .ant-tabs-tab-btn {
+        color: #ECECEC;
+        text-shadow: #000000 0.1em 0.1em 0.2em;
+    }
 }
 .ant-tabs-content {
     margin-top: -16px;
@@ -429,6 +435,7 @@ const styledPokemonProfile = styled(PokemonProfile)`
 
 .pokemon-avatar {
     text-align: center;
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
 }
 
 .pokemon-meta {
@@ -443,6 +450,7 @@ const styledPokemonProfile = styled(PokemonProfile)`
     margin: 0;
 }
 
+/* Overwrite antd components */
 .ant-page-header-heading .ant-page-header-heading-left {
     z-index: 1;
 
