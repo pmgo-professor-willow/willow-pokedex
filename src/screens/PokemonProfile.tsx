@@ -1,8 +1,8 @@
 // Node modules.
 import { maxBy } from 'lodash';
-import React, { useCallback, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
-import { Redirect } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import {
     PageHeader,
     Row,
@@ -66,14 +66,9 @@ const PokemonProfile: React.FC<PokemonProfileProps> = (props) => {
     const [isomorphicPokemons, setIsomorphicPokemons] = useState<IPokemon[]>([]);
     const [displayPokemon, setDisplayPokemon] = useState<IPokemon | undefined>();
     const [evolutionTree, setEvolutionTree] = useState<IEvolutionNode | null>(null);
-    const [selectedForm, setSelectedForm] = useState(pokemonForm);
     const [shiny, setShiny] = useState(false);
     const [league, setLeague] = useState<League>();
     const [maximum, setMaximum] = useState<IPokemonStatus>(displayPokemon?.stats!);
-
-    const onChangeForm = useCallback((form: string) => {
-        setSelectedForm(form);
-    }, []);
 
     useEffect(() => {
         const newIsomorphicPokemons = pokemons.filter((p) => p.no === parseInt(pokemonNo));
@@ -108,10 +103,6 @@ const PokemonProfile: React.FC<PokemonProfileProps> = (props) => {
         return null;
     }
 
-    if (pokemonForm !== selectedForm) {
-        return <Redirect to={`/willow-pokedex/pokemons/${pokemonNo}/${selectedForm}`} />;
-    }
-
     return (
         <PageHeader className={[className, displayPokemon?.types[0]].join(' ')}
             title={displayPokemon.name}
@@ -119,14 +110,15 @@ const PokemonProfile: React.FC<PokemonProfileProps> = (props) => {
             onBack={() => window.history.back()}
             extra={[
                 <Select key='1' className='pokemon-forms-select'
-                    value={selectedForm}
-                    onChange={onChangeForm}
+                    value={pokemonForm}
                 >
                     {isomorphicPokemons.map(({ form }, i) => (
                         <Select.Option key={i}
                             value={String(form).toLowerCase()}
                         >
-                            {translateForm(displayPokemon.no, form)}
+                            <Link to={`/willow-pokedex/pokemons/${pokemonNo}/${String(form).toLowerCase()}`}>
+                                {translateForm(displayPokemon.no, form)}
+                            </Link>
                         </Select.Option>
                     ))}
                 </Select>,
