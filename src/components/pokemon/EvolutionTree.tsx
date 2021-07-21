@@ -91,7 +91,8 @@ const StyledEvolutionCell = styled(EvolutionCell)`
     }
 
     .pokemon-card {
-        width: 100px;
+        width: calc(20vw);
+        max-width: 100px;
         border-radius: 5px;
         background-color: #FAFAFA;
         padding: 5px;
