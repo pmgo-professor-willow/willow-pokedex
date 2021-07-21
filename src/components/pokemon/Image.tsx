@@ -285,7 +285,7 @@ const PokemonImage: React.FC<PokemonImageProps> = (props) => {
         pokemonNo,
         pokemonForm = 'NORMAL',
         shiny,
-        size = 200,
+        size,
     } = props;
 
     const [imageUrl, setImageUrl] = useState(unknownImageUrl);

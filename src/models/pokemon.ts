@@ -53,6 +53,12 @@ export interface IPokemonStatus {
 
 export type League = 'greatLeague' | 'ultraLeague' | 'masterLeague';
 
+export interface IEvolution {
+    uniqueId: string;
+    form: string;
+    candyCost: number;
+}
+
 export interface ILeagueRanking {
     ranking: number;
     quickMoveIds: string[];
@@ -66,17 +72,21 @@ export interface IPokemon {
     types: PokemonType[];
     category: string;
     description: string;
+    form?: string;
+    // Stats and moves.
     stats: IPokemonStatus;
     quickMoves: IMove[];
     cinematicMoves: IMove[];
     eliteQuickMoves: IMove[];
     eliteCinematicMoves: IMove[];
-    familyId: string;
-    form?: string;
     thirdMove: {
         stardustToUnlock: number;
         candyToUnlock: number;
     };
+    // Evolutions.
+    familyId: string;
+    evolutions: IEvolution[];
+    // Extra.
     cpTable: {
         [level: string]: number;
     };

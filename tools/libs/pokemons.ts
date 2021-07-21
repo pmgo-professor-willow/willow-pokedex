@@ -6,6 +6,7 @@ import { getRanking } from './league-ranking';
 import { filterResources } from './resources';
 import { getMoveDict, mapMoves } from './moves';
 import { calculateCP } from './cp-calculator';
+import { formatEvolutions } from './evolution-formatter';
 import { isIgnored } from './ignored-pokemon';
 
 interface Pokemon {
@@ -27,6 +28,25 @@ interface Pokemon {
         stardustToUnlock: number;
         candyToUnlock: number;
     };
+    evolutionBranch?: {
+        evolution: string;
+        form?: string;
+        candyCost: number;
+        priority?: number;
+        // Evolution requirement
+        evolutionItemRequirement?: string;
+        lureItemRequirement?: string;
+        kmBuddyDistanceRequirement?: number;
+        mustBeBuddy?: boolean;
+        onlyDaytime?: boolean;
+        questDisplay?: {
+            questRequirementTemplateId: string;
+        }[];
+        // Mega evolution
+        temporaryEvolution?: string;
+        temporaryEvolutionEnergyCost?: number;
+        temporaryEvolutionEnergyCostSubsequent?: number;
+    }[];
 }
 
 const getPokemons = (): Pokemon[] => {
@@ -69,6 +89,10 @@ const getPokemons = (): Pokemon[] => {
                     category: pokemonCategoryDict[noIndex],
                     description: pokemonDescriptionDict[noIndex],
                     form,
+                    // Evolutions.
+                    familyId: pokemon.familyId,
+                    evolutions: formatEvolutions(pokemon.evolutionBranch),
+                    // Stats and moves.
                     stats: pokemon.stats,
                     quickMoves: mapMoves(moveDict, pokemon.quickMoves),
                     cinematicMoves: mapMoves(moveDict, compact([

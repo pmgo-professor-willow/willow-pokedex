@@ -19,6 +19,8 @@ import styled from 'styled-components';
 import type { IPokemon, IPokemonStatus, League } from '../models/pokemon';
 import * as Pokemon from '../components/pokemon';
 import { translateForm } from '../utils/translate-form';
+import type { IEvolutionNode } from '../utils/generate-evolution-tree';
+import { genEvolutionTree } from '../utils/generate-evolution-tree';
 
 const ProfileTabs = styled(Tabs)`
 .ant-tabs-nav {
@@ -63,6 +65,7 @@ const PokemonProfile: React.FC<PokemonProfileProps> = (props) => {
 
     const [isomorphicPokemons, setIsomorphicPokemons] = useState<IPokemon[]>([]);
     const [displayPokemon, setDisplayPokemon] = useState<IPokemon | undefined>();
+    const [evolutionTree, setEvolutionTree] = useState<IEvolutionNode | null>(null);
     const [selectedForm, setSelectedForm] = useState(pokemonForm);
     const [shiny, setShiny] = useState(false);
     const [league, setLeague] = useState<League>();
@@ -75,8 +78,10 @@ const PokemonProfile: React.FC<PokemonProfileProps> = (props) => {
     useEffect(() => {
         const newIsomorphicPokemons = pokemons.filter((p) => p.no === parseInt(pokemonNo));
         const newDisplayPokemon = newIsomorphicPokemons.find((p) => p.form?.toLowerCase() === pokemonForm);
+        const newEvolutionTree = genEvolutionTree(pokemons, newDisplayPokemon);
         setIsomorphicPokemons(newIsomorphicPokemons);
         setDisplayPokemon(newDisplayPokemon);
+        setEvolutionTree(newEvolutionTree);
     }, [pokemons, pokemonNo, pokemonForm]);
 
     useEffect(() => {
@@ -212,6 +217,10 @@ const PokemonProfile: React.FC<PokemonProfileProps> = (props) => {
                             </Typography.Paragraph>
                         </Col>
                     </Row>
+                    
+                    <Pokemon.EvolutionTree
+                        evolutionTree={evolutionTree}
+                    />
 
                     <Divider plain orientation='center'>
                         <Image preview={false} height={30} width={30}
