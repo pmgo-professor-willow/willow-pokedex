@@ -2,7 +2,7 @@
 import { maxBy } from 'lodash';
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
-import { Link } from 'react-router-dom';
+import { Link, Redirect } from 'react-router-dom';
 import {
     PageHeader,
     Row,
@@ -63,6 +63,7 @@ const PokemonProfile: React.FC<PokemonProfileProps> = (props) => {
 
     const { pokemonNo, pokemonForm } = useParams<{ pokemonNo: string, pokemonForm: string }>();
 
+    const [redirect, setRedirect] = useState<boolean>(false);
     const [isomorphicPokemons, setIsomorphicPokemons] = useState<IPokemon[]>([]);
     const [displayPokemon, setDisplayPokemon] = useState<IPokemon | undefined>();
     const [evolutionTree, setEvolutionTree] = useState<IEvolutionNode | null>(null);
@@ -103,11 +104,15 @@ const PokemonProfile: React.FC<PokemonProfileProps> = (props) => {
         return null;
     }
 
+    if (redirect) {
+        return <Redirect to={'/willow-pokedex/pokemons'} />
+    }
+
     return (
         <PageHeader className={[className, displayPokemon?.types[0]].join(' ')}
             title={displayPokemon.name}
             subTitle={`#${displayPokemon.no}`}
-            onBack={() => window.location.replace('/willow-pokedex/pokemons')}
+            onBack={() => setRedirect(true)}
             extra={[
                 <Select key='1' className='pokemon-forms-select'
                     value={pokemonForm}
