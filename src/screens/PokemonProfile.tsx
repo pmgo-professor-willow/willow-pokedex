@@ -107,7 +107,7 @@ const PokemonProfile: React.FC<PokemonProfileProps> = (props) => {
         <PageHeader className={[className, displayPokemon?.types[0]].join(' ')}
             title={displayPokemon.name}
             subTitle={`#${displayPokemon.no}`}
-            onBack={() => window.history.back()}
+            onBack={() => window.location.replace('/willow-pokedex/pokemons')}
             extra={[
                 <Select key='1' className='pokemon-forms-select'
                     value={pokemonForm}

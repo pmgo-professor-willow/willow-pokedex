@@ -8,6 +8,7 @@ import styled from 'styled-components';
 import type { IPokemon } from '../../models/pokemon';
 import * as Pokemon from '../../components/pokemon';
 import type { IEvolutionNode } from '../../utils/generate-evolution-tree';
+import { useCallback } from 'react';
 
 const getDistinctId = (pokemon: IPokemon) => `${pokemon.no}-${pokemon.form}`;
 
@@ -21,6 +22,8 @@ const EvolutionCell: React.FC<EvolutionCellProps> = (props) => {
     const { className } = props;
     const { evolutionNode, previousNode } = props;
 
+    const scrollToTop = useCallback(() => window.scrollTo({ top: 0, behavior: 'smooth' }), []);
+
     if (!evolutionNode?.pokemon) {
         return null;
     }
@@ -31,8 +34,11 @@ const EvolutionCell: React.FC<EvolutionCellProps> = (props) => {
     return (
         <div className={className}>
             <Col flex={1}>
-                <Link to={`/willow-pokedex/pokemons/${pokemon.no}/${pokemon.form?.toLowerCase()}`}>
-                    <Card id={getDistinctId(pokemon)} className='pokemon-card'
+                <Link
+                    onClick={scrollToTop}
+                    to={`/willow-pokedex/pokemons/${pokemon.no}/${pokemon.form?.toLowerCase()}`}
+                >
+                    <Card id={getDistinctId(pokemon)} className={`pokemon-card ${hasBranches ? 'can-evolute' : ''}`}
                         hoverable
                         cover={
                             <Pokemon.Image
@@ -48,9 +54,9 @@ const EvolutionCell: React.FC<EvolutionCellProps> = (props) => {
                 </Link>
 
                 {hasBranches &&
-                    <Row className='container' justify='center' align='middle'>
+                    <Row justify='center' align='middle'>
                         {evolutionNode.branches?.map((en) =>
-                            <EvolutionCell
+                            <StyledEvolutionCell
                                 evolutionNode={en}
                                 previousNode={evolutionNode}
                             />
@@ -75,21 +81,35 @@ const EvolutionCell: React.FC<EvolutionCellProps> = (props) => {
 };
 
 const StyledEvolutionCell = styled(EvolutionCell)`
-& .pokemon-card {
-    width: 100px;
-    border-radius: 5px;
-    background-color: #FAFAFA;
-    padding: 5px;
-    margin: 20px auto;
-
-    /* Overwrite antd components */
-    .ant-card-body {
-        padding: 0 0 .5em 0 !important;
-        text-align: center;
+& {
+    &:not(:last-child) {
+        margin-right: .5em;
     }
 
-    .ant-card-meta-title {
-        font-size: .95em;
+    &:not(:first-child) {
+        margin-left: .5em;
+    }
+
+    .pokemon-card {
+        width: 100px;
+        border-radius: 5px;
+        background-color: #FAFAFA;
+        padding: 5px;
+        margin: 0 auto;
+
+        &.can-evolute {
+            margin-bottom: 45px;
+        }
+
+        /* Overwrite antd components */
+        .ant-card-body {
+            padding: 0 0 .5em 0 !important;
+            text-align: center;
+        }
+
+        .ant-card-meta-title {
+            font-size: .95em;
+        }
     }
 }
 `;

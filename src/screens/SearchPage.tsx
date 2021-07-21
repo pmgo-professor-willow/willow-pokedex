@@ -106,6 +106,12 @@ const styledSearchPage = styled(SearchPage)`
 & {
     width: 100%;
     padding: 12px 12px;
+
+    /* Fix the infinite-scroll layout issue */
+    .infinite-scroll-component > .ant-row {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
 }
 
 .pokemon-item {
