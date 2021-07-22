@@ -233,6 +233,7 @@ const formTable: { [idx: string]: string } = {
     '7_FALL_2019': '2019 萬聖節', // 傑尼龜
 
     // 特殊外觀 - 2020萬聖節
+    '94_COSTUME_2020': '2020 萬聖節', // 耿鬼
     '302_COSTUME_2020': '2020 萬聖節', // 勾魂眼
 
     // 特殊外觀 - 2020聖誕節
@@ -258,6 +259,12 @@ function translateForm(no: number, form?: string) {
             return '暗影';
         case 'PURIFIED':
             return '淨化';
+        case 'MEGA':
+            return '超級進化';
+        case 'MEGA_X':
+            return '超級進化 X';
+        case 'MEGA_Y':
+            return '超級進化 Y';
         default:
             return form;
     }

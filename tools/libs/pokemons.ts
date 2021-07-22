@@ -47,7 +47,71 @@ interface Pokemon {
         temporaryEvolutionEnergyCost?: number;
         temporaryEvolutionEnergyCostSubsequent?: number;
     }[];
+    tempEvoOverrides: {
+        tempEvoId: string;
+        stats: {
+            baseStamina: number;
+            baseAttack: number;
+            baseDefense: number;
+        };
+        averageHeightM: number;
+        averageWeightKg: number;
+        typeOverride1: string;
+        typeOverride2: string;
+        camera: {
+            cylinderRadiusM: number;
+            cylinderHeightM: number;
+            cylinderGroundM: number;
+        },
+        modelScaleV2: number;
+        modelHeight: number;
+    }[];
 }
+
+function genMegaPokemonInstances<I> (baseInstance: I, tempEvoOverrides: Pokemon['tempEvoOverrides']): I[] {
+    return tempEvoOverrides.map((o) => {
+        // 'TEMP_EVOLUTION_MEGA_X' => 'MEGA_X'
+        const { 1: form } = o.tempEvoId.match(/^TEMP_EVOLUTION_(\w+)$/)!;
+
+        const pokemonId: string = (baseInstance as any).uniqueId;
+        const maxStatuses: [atk: number, dev: number, hp: number] = [
+            o.stats.baseAttack + 15,
+            o.stats.baseDefense + 15,
+            o.stats.baseStamina + 15,
+        ];
+
+        let name: string = (baseInstance as any).name;
+        if (form === 'MEGA') {
+            name = `超級${name}`;
+        } else if (form === 'MEGA_X') {
+            name = `超級${name}X`;
+        } else if (form === 'MEGA_Y') {
+            name = `超級${name}Y`;
+        }
+
+        return {
+            ...baseInstance,
+            name,
+            form,
+            types: compact([o.typeOverride1, o.typeOverride2]),
+            stats: o.stats,
+            evolutions: [],
+            // Extra.
+            cpTable: {
+                15: calculateCP(15.0, ...maxStatuses),
+                20: calculateCP(20.0, ...maxStatuses),
+                25: calculateCP(25.0, ...maxStatuses),
+                30: calculateCP(30.0, ...maxStatuses),
+                35: calculateCP(35.0, ...maxStatuses),
+                40: calculateCP(40.0, ...maxStatuses),
+                50: calculateCP(50.0, ...maxStatuses),
+            },
+            greatLeague: getRanking(pokemonId, 'great', form),
+            ultraLeague: getRanking(pokemonId, 'ultra', form),
+            masterLeague: getRanking(pokemonId, 'master', form),
+        };
+    });
+};
 
 const getPokemons = (): Pokemon[] => {
     const pokemonNameDict = filterResources(/pokemon_name_(\w+)/);
@@ -81,6 +145,8 @@ const getPokemons = (): Pokemon[] => {
                     return prev;
                 }
 
+                const hasMegaEvolution = !!pokemon.tempEvoOverrides;
+
                 const pokemonInstance = {
                     uniqueId: pokemon.pokemonId,
                     no: parseInt(noIndex),
@@ -91,7 +157,7 @@ const getPokemons = (): Pokemon[] => {
                     form,
                     // Evolutions.
                     familyId: pokemon.familyId,
-                    evolutions: formatEvolutions(pokemon.evolutionBranch),
+                    evolutions: formatEvolutions(pokemon.pokemonId, pokemon.evolutionBranch),
                     // Stats and moves.
                     stats: pokemon.stats,
                     quickMoves: mapMoves(moveDict, pokemon.quickMoves),
@@ -119,6 +185,11 @@ const getPokemons = (): Pokemon[] => {
 
                 if (!isIgnored(pokemonInstance.no, pokemonInstance.form)) {
                     prev.push(pokemonInstance);
+
+                    if (hasMegaEvolution && pokemonInstance.form === 'NORMAL') {
+                        const megaPokemonInstances = genMegaPokemonInstances(pokemonInstance, pokemon.tempEvoOverrides);
+                        prev.push(...megaPokemonInstances);
+                    }
                 }
             }
         }

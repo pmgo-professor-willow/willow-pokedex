@@ -12,33 +12,54 @@ import { useCallback } from 'react';
 
 const getDistinctId = (pokemon: IPokemon) => `${pokemon.no}-${pokemon.form}`;
 
-interface CandyCostBadgeProps {
+interface CostBadgeProps {
     className?: string;
-    candyCost?: number;
+    cost?: number;
+    type?: 'mega' | 'male' | 'female';
 }
 
-const CandyCostBadge: React.FC<CandyCostBadgeProps> = (props) => {
+const CostBadge: React.FC<CostBadgeProps> = (props) => {
     const { className } = props;
-    const { candyCost } = props;
+    const { cost, type } = props;
 
-    if (candyCost === undefined) {
+    if (cost === undefined) {
         return null;
     }
 
     return (
-        <Badge className={className}
-            count={candyCost}
+        <Badge className={[className, type].join(' ')}
+            count={cost}
             overflowCount={999}
             size='small'
         />
     );
 };
 
-const StyledCandyCostBadge = styled(CandyCostBadge)`
+const StyledCostBadge = styled(CostBadge)`
 & {
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
     .ant-badge-count {
         background-color: #ACACAC;
         z-index: 10;
+    }
+
+    &.mega {
+        .ant-badge-count {
+            background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+            background-size: 300% 300%;
+            animation: gradient 3s ease infinite;
+        }
     }
 }
 `;
@@ -61,6 +82,8 @@ const PokemonEvolutionCell: React.FC<PokemonEvolutionCellProps> = (props) => {
 
     const { pokemon, requirement } = evolutionNode;
     const hasBranches = !!evolutionNode.branches?.length;
+
+    const isMegaEvolution = !!requirement?.energyCost;
 
     return (
         <div className={className}>
@@ -101,13 +124,12 @@ const PokemonEvolutionCell: React.FC<PokemonEvolutionCellProps> = (props) => {
                 <Xarrow
                     start={getDistinctId(previousNode.pokemon)}
                     end={getDistinctId(pokemon)}
-                    label={
-                        <StyledCandyCostBadge
-                            candyCost={requirement?.candyCost}
-                        />
+                    label={isMegaEvolution
+                        ? <StyledCostBadge cost={requirement?.energyCost} type='mega' />
+                        : <StyledCostBadge cost={requirement?.candyCost} />
                     }
                     animateDrawing
-                    color='#ACACAC'
+                    color={isMegaEvolution ? '#23D5AB' : '#ACACAC'}
                     dashness={{ strokeLen: 3, nonStrokeLen: 2, animation: 1 }}
                     headSize={4}
                 />
@@ -127,11 +149,11 @@ const StyledPokemonEvolutionCell = styled(PokemonEvolutionCell)`
     }
 
     .pokemon-card {
-        width: calc(20vw);
+        width: calc(23vw);
         max-width: 100px;
         border-radius: 5px;
         background-color: #FAFAFA;
-        padding: 5px;
+        padding: 2px;
         margin: 0 auto;
 
         &.can-evolute {

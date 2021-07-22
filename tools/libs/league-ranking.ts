@@ -39,7 +39,7 @@ const getRanking = (pokemonId: string, league: League, pokemonForm?: string) => 
 
         if (f1 === f2) {
             sameForm = true;
-        } else if (f1 !== 'shadow' && f2 === undefined) {
+        } else if (!['shadow', 'mega', 'mega_x', 'mega_y'].includes(String(f1)) && f2 === undefined) {
             sameForm = true;
         }
 

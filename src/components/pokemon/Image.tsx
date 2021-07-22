@@ -240,6 +240,7 @@ const imageTextTable: { [idx: string]: string } = {
     '7_FALL_2019': 'pm0007_00_pgo_fall2019', // 傑尼龜
 
     // 特殊外觀 - 2020萬聖節
+    '94_COSTUME_2020': '094_26', // 耿鬼
     '302_COSTUME_2020': 'pm0302_00_pgo_fall2020', // 勾魂眼
 
     // 特殊外觀 - 2020聖誕節
@@ -267,6 +268,10 @@ const getImageUrl = (pokemonNo: number, pokemonForm?: string, shiny?: boolean): 
 
     if (pokemonForm === 'PURIFIED' || pokemonForm === 'SHADOW') {
         imageText = defaultImageText;
+    } else if (pokemonForm === 'MEGA' || pokemonForm === 'MEGA_X') {
+        imageText = `${no}_51`;
+    } else if (pokemonForm === 'MEGA_Y') {
+        imageText = `${no}_52`;
     } else {
         imageText = imageTextTable[`${pokemonNo}_${pokemonForm}`] || defaultImageText;
     }

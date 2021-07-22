@@ -9,15 +9,25 @@ interface Evolution {
     temporaryEvolutionEnergyCostSubsequent?: number;
 }
 
-export const formatEvolutions = (evolutions: Evolution[] = []) => {
+export const formatEvolutions = (basePokemonId: string, evolutions: Evolution[] = []) => {
     return evolutions.map((e) => {
-        const uniqueId = e.evolution;
-        const form = e.form ? e.form.split('_')[1] : 'NORMAL';
+        // Normal evolution || Mega evolution.
+        const uniqueId = e.evolution || basePokemonId;
+
+        // TYRANITAR => NORMAL
+        // TYRANITAR_NORMAL => NORMAL
+        // TYRANITAR_SHADOW => SHADOW
+        let form = e.form ? e.form.split('_')[1] : 'NORMAL';
+        // TYRANITAR_MEGA => MEGA
+        if (e.temporaryEvolution) {
+            form = e.temporaryEvolution?.match(/^TEMP_EVOLUTION_(\w+)$/)![1];
+        }
 
         return {
             uniqueId,
             form,
             candyCost: e.candyCost,
+            energyCost: e.temporaryEvolutionEnergyCost,
         };
     });
 };

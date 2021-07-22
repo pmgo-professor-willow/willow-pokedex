@@ -56,7 +56,8 @@ export type League = 'greatLeague' | 'ultraLeague' | 'masterLeague';
 export interface IEvolution {
     uniqueId: string;
     form: string;
-    candyCost: number;
+    candyCost?: number;
+    energyCost?: number;
 }
 
 export interface ILeagueRanking {

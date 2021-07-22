@@ -2,7 +2,8 @@
 import type { IPokemon, IEvolution } from '../models/pokemon';
 
 type EvolutionRequirement = {
-    candyCost: number;
+    candyCost?: number;
+    energyCost?: number;
 } | null;
 
 export interface IEvolutionNode {
@@ -30,11 +31,13 @@ function getNextPokemon(familyPokemons: IPokemon[], evo: IEvolution): IPokemon {
 }
 
 function getEvolutionNode(familyPokemons: IPokemon[], target: IPokemon, requirement: EvolutionRequirement): IEvolutionNode {
-    // TODO: 'target?' is related with MEGA evolution.
-    const nextPokemons = target?.evolutions.length
+    const nextPokemons = target.evolutions.length
         ? target.evolutions.map((e) => {
             const nextPokemon = getNextPokemon(familyPokemons, e);
-            const nextRequirement = { candyCost: e.candyCost };
+            const nextRequirement = {
+                candyCost: e.candyCost,
+                energyCost: e.energyCost,
+            };
             return getEvolutionNode(familyPokemons, nextPokemon, nextRequirement);
         })
         : null;
