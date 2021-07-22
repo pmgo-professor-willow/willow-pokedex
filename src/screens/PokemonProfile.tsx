@@ -1,5 +1,4 @@
 // Node modules.
-import { maxBy } from 'lodash';
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
 import { Link, Redirect } from 'react-router-dom';
@@ -8,15 +7,12 @@ import {
     Row,
     Col,
     Tabs,
-    Typography,
-    Divider,
-    Image,
     Select,
     Button,
 } from 'antd';
 import styled from 'styled-components';
 // Local modules.
-import type { IPokemon, IPokemonStatus, League } from '../models/pokemon';
+import type { IPokemon, League } from '../models/pokemon';
 import * as Pokemon from '../components/pokemon';
 import { translateForm } from '../utils/translate-form';
 import type { IEvolutionNode } from '../utils/generate-evolution-tree';
@@ -69,7 +65,6 @@ const PokemonProfile: React.FC<PokemonProfileProps> = (props) => {
     const [evolutionTree, setEvolutionTree] = useState<IEvolutionNode | null>(null);
     const [shiny, setShiny] = useState(false);
     const [league, setLeague] = useState<League>();
-    const [maximum, setMaximum] = useState<IPokemonStatus>(displayPokemon?.stats!);
 
     useEffect(() => {
         const newIsomorphicPokemons = pokemons.filter((p) => p.no === parseInt(pokemonNo));
@@ -79,14 +74,6 @@ const PokemonProfile: React.FC<PokemonProfileProps> = (props) => {
         setDisplayPokemon(newDisplayPokemon);
         setEvolutionTree(newEvolutionTree);
     }, [pokemons, pokemonNo, pokemonForm]);
-
-    useEffect(() => {
-        setMaximum({
-            baseStamina: maxBy(pokemons, (pokemon) => pokemon.stats.baseStamina)?.stats.baseAttack!,
-            baseAttack: maxBy(pokemons, (pokemon) => pokemon.stats.baseAttack)?.stats.baseAttack!,
-            baseDefense: maxBy(pokemons, (pokemon) => pokemon.stats.baseDefense)?.stats.baseDefense!,
-        });
-    }, [pokemons]);
 
     useEffect(() => {
         if (displayPokemon) {
@@ -150,85 +137,26 @@ const PokemonProfile: React.FC<PokemonProfileProps> = (props) => {
 
             <ProfileTabs type='card' centered>
                 <ProfileTabs.TabPane tab={'基本數據'} key='meta'>
-                    <Row align='middle'>
-                        <Col className='pokemon-meta' flex={3}>
-                            {/* Types */}
-                            <Row justify={'center'} align={'middle'}>
-                                <Col className='pokemon-types' span={12}>
-                                    <Row>
-                                        {displayPokemon.types.map((type, i) => (
-                                            <Col key={i} flex={1}>
-                                                <Pokemon.TypeIcon pokemonType={type} size={35} />
-                                            </Col>
-                                        ))}
-                                    </Row>
-                                </Col>
-                            </Row>
+                    <Pokemon.Types
+                        pokemon={displayPokemon}
+                    />
 
-                            {/* Stats */}
-                            <Row justify={'center'} align={'middle'}>
-                                <Col className='pokemon-stat' span={24}>
-                                    <Pokemon.Stat
-                                        type='attack'
-                                        value={displayPokemon.stats.baseAttack}
-                                        percent={displayPokemon.stats.baseAttack / maximum.baseAttack * 100}
-                                    />
-                                </Col>
+                    <Pokemon.About
+                        pokemon={displayPokemon}
+                    />
 
-                                <Col className='pokemon-stat' span={24}>
-                                    <Pokemon.Stat
-                                        type='defense'
-                                        value={displayPokemon.stats.baseDefense}
-                                        percent={displayPokemon.stats.baseDefense / maximum.baseDefense * 100}
-                                    />
-                                </Col>
-
-                                <Col className='pokemon-stat' span={24}>
-                                    <Pokemon.Stat
-                                        type='stamina'
-                                        value={displayPokemon.stats.baseStamina}
-                                        percent={displayPokemon.stats.baseStamina / maximum.baseDefense * 100}
-                                    />
-                                </Col>
-                            </Row>
-                        </Col>
-                    </Row>
-
-                    <Divider plain orientation='center'>
-                        <Image preview={false} height={30} width={47}
-                            src={'/willow-pokedex/assets/pokemon_desc.png'}
-                        />
-                        <Typography.Title className='divider-title' level={5}>
-                            {'關於'}
-                        </Typography.Title>
-                    </Divider>
-
-                    <Row align='middle'>
-                        <Col className='' flex={1}>
-                            <Typography.Title level={5}>
-                                {displayPokemon.category}
-                            </Typography.Title>
-
-                            <Typography.Paragraph>
-                                {displayPokemon.description}
-                            </Typography.Paragraph>
-                        </Col>
-                    </Row>
-                    
                     <Pokemon.EvolutionTree
                         evolutionTree={evolutionTree}
                     />
 
-                    <Divider plain orientation='center'>
-                        <Image preview={false} height={30} width={30}
-                            src={'/willow-pokedex/assets/pokemon_cp.png'}
-                        />
-                        <Typography.Title className='divider-title' level={5}>
-                            {'最大 CP'}
-                        </Typography.Title>
-                    </Divider>
+                    <Pokemon.Stats
+                        allPokemons={pokemons}
+                        pokemon={displayPokemon}
+                    />
 
-                    <Pokemon.CombatPower cpTable={displayPokemon.cpTable} />
+                    <Pokemon.CombatPower
+                        cpTable={displayPokemon.cpTable}
+                    />
                 </ProfileTabs.TabPane>
 
                 <ProfileTabs.TabPane tab={'道館與團體戰'} key='pve'>
@@ -284,6 +212,7 @@ const styledPokemonProfile = styled(PokemonProfile)`
         animation: background-image-gradient 5s 1;
     }
     
+    min-height: 100vh;
     animation: background-gradient 1s 1;
 
     &.POKEMON_TYPE_NORMAL {
@@ -442,14 +371,6 @@ const styledPokemonProfile = styled(PokemonProfile)`
 .pokemon-avatar {
     text-align: center;
     filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
-}
-
-.pokemon-meta {
-    text-align: center;
-}
-
-.pokemon-stat {
-    text-align: center;
 }
 
 .divider-title {

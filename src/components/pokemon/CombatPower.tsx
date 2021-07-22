@@ -1,14 +1,17 @@
 // Node modules.
 import React from 'react';
-import { Table, Typography } from 'antd';
+import { Divider, Image, Table, Typography } from 'antd';
+import styled from 'styled-components';
 
 interface PokemonCombatPowerProps {
+    className?: string;
     cpTable: {
         [level: string]: number;
     };
 }
 
 const PokemonCombatPower: React.FC<PokemonCombatPowerProps> = (props) => {
+    const { className } = props;
     const { cpTable } = props;
 
     const data = [
@@ -22,34 +25,49 @@ const PokemonCombatPower: React.FC<PokemonCombatPowerProps> = (props) => {
     ];
 
     return (
-        <Table dataSource={data} pagination={false} size='small' showHeader={false}>
-            <Table.Column
-                align='center'
-                key='level'
-                dataIndex='level'
-                render={(value) => (
-                    <Typography.Text strong>
-                        {`等級 ${value}`}
-                    </Typography.Text>
-                )}
-            />
+        <div id='combat-power' className={className}>
+            <Divider plain orientation='center'>
+                <Image preview={false} height={30} width={30}
+                    src={'/willow-pokedex/assets/pokemon_cp.png'}
+                />
 
-            <Table.Column
-                key='description'
-                dataIndex='description'
-                render={(value) => (
-                    <Typography.Text type='secondary'>
-                        {value}
-                    </Typography.Text>
-                )}
-            />
+                <Typography.Title className='divider-title' level={5}>
+                    {'最大 CP'}
+                </Typography.Title>
+            </Divider>
 
-            <Table.Column
-                key='cp'
-                dataIndex='cp'
-            />
-        </Table>
+            <Table dataSource={data} pagination={false} size='small' showHeader={false}>
+                <Table.Column
+                    align='center'
+                    key='level'
+                    dataIndex='level'
+                    render={(value) => (
+                        <Typography.Text strong>
+                            {`等級 ${value}`}
+                        </Typography.Text>
+                    )}
+                />
+
+                <Table.Column
+                    key='description'
+                    dataIndex='description'
+                    render={(value) => (
+                        <Typography.Text type='secondary'>
+                            {value}
+                        </Typography.Text>
+                    )}
+                />
+
+                <Table.Column
+                    key='cp'
+                    dataIndex='cp'
+                />
+            </Table>
+        </div>
     );
 };
 
-export default PokemonCombatPower;
+const styledPokemonCombatPower = styled(PokemonCombatPower)`
+`;
+
+export default styledPokemonCombatPower;

@@ -1,6 +1,8 @@
 export { default as Image } from './Image';
 export { default as TypeIcon } from './TypeIcon';
-export { default as Stat } from './Stat';
+export { default as Types } from './Types';
+export { default as Stats } from './Stats';
+export { default as About } from './About';
 export { default as EvolutionTree } from './EvolutionTree';
 export { default as MoveTable } from './MoveTable';
 export { default as Move } from './Move';

@@ -43,13 +43,13 @@ const StyledCandyCostBadge = styled(CandyCostBadge)`
 }
 `;
 
-interface EvolutionCellProps {
+interface PokemonEvolutionCellProps {
     className?: string;
     evolutionNode?: IEvolutionNode;
     previousNode?: IEvolutionNode;
 }
 
-const EvolutionCell: React.FC<EvolutionCellProps> = (props) => {
+const PokemonEvolutionCell: React.FC<PokemonEvolutionCellProps> = (props) => {
     const { className } = props;
     const { evolutionNode, previousNode } = props;
 
@@ -85,9 +85,9 @@ const EvolutionCell: React.FC<EvolutionCellProps> = (props) => {
                 </Link>
 
                 {hasBranches &&
-                    <Row justify='center' align='middle'>
+                    <Row justify='center' align='top'>
                         {evolutionNode.branches?.map((en) =>
-                            <StyledEvolutionCell
+                            <StyledPokemonEvolutionCell
                                 evolutionNode={en}
                                 previousNode={evolutionNode}
                             />
@@ -116,7 +116,7 @@ const EvolutionCell: React.FC<EvolutionCellProps> = (props) => {
     );
 };
 
-const StyledEvolutionCell = styled(EvolutionCell)`
+const StyledPokemonEvolutionCell = styled(PokemonEvolutionCell)`
 & {
     &:not(:last-child) {
         margin-right: .5em;
@@ -151,12 +151,12 @@ const StyledEvolutionCell = styled(EvolutionCell)`
 }
 `;
 
-interface EvolutionTreeProps {
+interface PokemonEvolutionTreeProps {
     className?: string;
     evolutionTree: IEvolutionNode | null;
 }
 
-const EvolutionTree: React.FC<EvolutionTreeProps> = (props) => {
+const PokemonEvolutionTree: React.FC<PokemonEvolutionTreeProps> = (props) => {
     const { className } = props;
     const { evolutionTree } = props;
 
@@ -176,7 +176,7 @@ const EvolutionTree: React.FC<EvolutionTreeProps> = (props) => {
             </Divider>
 
             <Row className='container' justify='center' align='middle'>
-                <StyledEvolutionCell
+                <StyledPokemonEvolutionCell
                     evolutionNode={evolutionTree}
                 />
             </Row>
@@ -184,7 +184,7 @@ const EvolutionTree: React.FC<EvolutionTreeProps> = (props) => {
     );
 };
 
-const styledEvolutionTree = styled(EvolutionTree)`
+const styledPokemonEvolutionTree = styled(PokemonEvolutionTree)`
 & {
     margin-bottom: 3em;
     position: relative;
@@ -197,4 +197,4 @@ const styledEvolutionTree = styled(EvolutionTree)`
 }
 `;
 
-export default styledEvolutionTree;
+export default styledPokemonEvolutionTree;
