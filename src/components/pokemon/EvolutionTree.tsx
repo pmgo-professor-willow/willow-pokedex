@@ -1,7 +1,7 @@
 // Node modules.
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Col, Row, Divider, Image, Typography, Card } from 'antd';
+import { Col, Row, Divider, Image, Typography, Card, Badge } from 'antd';
 import Xarrow from 'react-xarrows';
 import styled from 'styled-components';
 // Local modules.
@@ -11,6 +11,37 @@ import type { IEvolutionNode } from '../../utils/generate-evolution-tree';
 import { useCallback } from 'react';
 
 const getDistinctId = (pokemon: IPokemon) => `${pokemon.no}-${pokemon.form}`;
+
+interface CandyCostBadgeProps {
+    className?: string;
+    candyCost?: number;
+}
+
+const CandyCostBadge: React.FC<CandyCostBadgeProps> = (props) => {
+    const { className } = props;
+    const { candyCost } = props;
+
+    if (candyCost === undefined) {
+        return null;
+    }
+
+    return (
+        <Badge className={className}
+            count={candyCost}
+            overflowCount={999}
+            size='small'
+        />
+    );
+};
+
+const StyledCandyCostBadge = styled(CandyCostBadge)`
+& {
+    .ant-badge-count {
+        background-color: #ACACAC;
+        z-index: 10;
+    }
+}
+`;
 
 interface EvolutionCellProps {
     className?: string;
@@ -28,7 +59,7 @@ const EvolutionCell: React.FC<EvolutionCellProps> = (props) => {
         return null;
     }
 
-    const { pokemon } = evolutionNode;
+    const { pokemon, requirement } = evolutionNode;
     const hasBranches = !!evolutionNode.branches?.length;
 
     return (
@@ -70,6 +101,11 @@ const EvolutionCell: React.FC<EvolutionCellProps> = (props) => {
                 <Xarrow
                     start={getDistinctId(previousNode.pokemon)}
                     end={getDistinctId(pokemon)}
+                    label={
+                        <StyledCandyCostBadge
+                            candyCost={requirement?.candyCost}
+                        />
+                    }
                     animateDrawing
                     color='#ACACAC'
                     dashness={{ strokeLen: 3, nonStrokeLen: 2, animation: 1 }}

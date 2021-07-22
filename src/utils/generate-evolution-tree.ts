@@ -1,8 +1,13 @@
 // Local modules.
 import type { IPokemon, IEvolution } from '../models/pokemon';
 
+type EvolutionRequirement = {
+    candyCost: number;
+} | null;
+
 export interface IEvolutionNode {
     pokemon: IPokemon;
+    requirement: EvolutionRequirement;
     branches: IEvolutionNode[] | null;
 }
 
@@ -24,17 +29,19 @@ function getNextPokemon(familyPokemons: IPokemon[], evo: IEvolution): IPokemon {
     )!;
 }
 
-function getEvolutionNode(familyPokemons: IPokemon[], target: IPokemon): IEvolutionNode {
+function getEvolutionNode(familyPokemons: IPokemon[], target: IPokemon, requirement: EvolutionRequirement): IEvolutionNode {
     // TODO: 'target?' is related with MEGA evolution.
     const nextPokemons = target?.evolutions.length
         ? target.evolutions.map((e) => {
             const nextPokemon = getNextPokemon(familyPokemons, e);
-            return getEvolutionNode(familyPokemons, nextPokemon);
+            const nextRequirement = { candyCost: e.candyCost };
+            return getEvolutionNode(familyPokemons, nextPokemon, nextRequirement);
         })
         : null;
 
     return {
         pokemon: target,
+        requirement,
         branches: nextPokemons,
     };
 }
@@ -43,7 +50,7 @@ function genEvolutionTree(allPokemons: IPokemon[], target?: IPokemon): IEvolutio
     if (target) {
         const familyPokemons = allPokemons.filter((p) => p.familyId === target.familyId);
         const rootPokemon = getRootPokemon(familyPokemons, target);
-        const root = getEvolutionNode(familyPokemons, rootPokemon);
+        const root = getEvolutionNode(familyPokemons, rootPokemon, null);
 
         return root;
     }
