@@ -109,7 +109,9 @@ const PokemonProfile: React.FC<PokemonProfileProps> = (props) => {
                             value={String(form).toLowerCase()}
                         >
                             <Link to={`/willow-pokedex/pokemons/${pokemonNo}/${String(form).toLowerCase()}`}>
-                                {translateForm(displayPokemon.no, form)}
+                                <div className='pokemon-forms-option'>
+                                    {translateForm(displayPokemon.no, form)}
+                                </div>
                             </Link>
                         </Select.Option>
                     ))}
@@ -366,6 +368,10 @@ const styledPokemonProfile = styled(PokemonProfile)`
 
 .pokemon-forms-select {
     min-width: 100px;
+}
+
+.pokemon-forms-option {
+    width: 100%;
 }
 
 .pokemon-avatar {
