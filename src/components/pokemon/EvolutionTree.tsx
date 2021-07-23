@@ -54,12 +54,18 @@ const StyledCostBadge = styled(CostBadge)`
         z-index: 10;
     }
 
-    &.mega {
-        .ant-badge-count {
-            background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
-            background-size: 300% 300%;
-            animation: gradient 3s ease infinite;
-        }
+    &.mega .ant-badge-count {
+        background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+        background-size: 300% 300%;
+        animation: gradient 3s ease infinite;
+    }
+
+    &.female .ant-badge-count {
+        background-color: #F472B6;
+    }
+
+    &.male .ant-badge-count {
+        background-color: #3B82F6;
     }
 }
 `;
@@ -83,7 +89,23 @@ const PokemonEvolutionCell: React.FC<PokemonEvolutionCellProps> = (props) => {
     const { pokemon, requirement } = evolutionNode;
     const hasBranches = !!evolutionNode.branches?.length;
 
-    const isMegaEvolution = !!requirement?.energyCost;
+    let costBadge = <StyledCostBadge cost={requirement?.candyCost} />;
+    let lineColor = '#ACACAC';
+    // Mega evolution.
+    if (!!requirement?.energyCost) {
+        costBadge = <StyledCostBadge cost={requirement?.energyCost} type='mega' />;
+        lineColor = '#23D5AB';
+    }
+    // Female.
+    else if (requirement?.gender === 'FEMALE') {
+        costBadge = <StyledCostBadge cost={requirement?.candyCost} type='female' />;
+        lineColor = '#F472B6';
+    }
+    // Male.
+    else if (requirement?.gender === 'MALE') {
+        costBadge = <StyledCostBadge cost={requirement?.candyCost} type='male' />;
+        lineColor = '#3B82F6';
+    }
 
     return (
         <div className={className}>
@@ -124,12 +146,9 @@ const PokemonEvolutionCell: React.FC<PokemonEvolutionCellProps> = (props) => {
                 <Xarrow
                     start={getDistinctId(previousNode.pokemon)}
                     end={getDistinctId(pokemon)}
-                    label={isMegaEvolution
-                        ? <StyledCostBadge cost={requirement?.energyCost} type='mega' />
-                        : <StyledCostBadge cost={requirement?.candyCost} />
-                    }
+                    label={costBadge}
                     animateDrawing
-                    color={isMegaEvolution ? '#23D5AB' : '#ACACAC'}
+                    color={lineColor}
                     dashness={{ strokeLen: 3, nonStrokeLen: 2, animation: 1 }}
                     headSize={4}
                 />
@@ -157,7 +176,7 @@ const StyledPokemonEvolutionCell = styled(PokemonEvolutionCell)`
         margin: 0 auto;
 
         &.can-evolute {
-            margin-bottom: 45px;
+            margin-bottom: 60px;
         }
 
         /* Overwrite antd components */
@@ -189,11 +208,11 @@ const PokemonEvolutionTree: React.FC<PokemonEvolutionTreeProps> = (props) => {
     return (
         <div id='evolution-tree' className={className}>
             <Divider plain orientation='center'>
-                <Image preview={false} height={30} width={20}
+                <Image preview={false} height={30} width={32}
                     src={'/willow-pokedex/assets/pokemon_evolution.png'}
                 />
                 <Typography.Title className='divider-title' level={5}>
-                    {'進化'}
+                    {'進化路線'}
                 </Typography.Title>
             </Divider>
 

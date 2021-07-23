@@ -35,6 +35,7 @@ interface Pokemon {
         priority?: number;
         // Evolution requirement
         evolutionItemRequirement?: string;
+        genderRequirement?: 'FEMALE' | 'MALE';
         lureItemRequirement?: string;
         kmBuddyDistanceRequirement?: number;
         mustBeBuddy?: boolean;
@@ -113,7 +114,7 @@ function genMegaPokemonInstances<I> (baseInstance: I, tempEvoOverrides: Pokemon[
     });
 };
 
-const getPokemons = (): Pokemon[] => {
+const getPokemons = () => {
     const pokemonNameDict = filterResources(/pokemon_name_(\w+)/);
     const pokemonCategoryDict = filterResources(/pokemon_category_(\w+)/);
     const pokemonDescriptionDict = filterResources(/pokemon_desc_(\w+)/);

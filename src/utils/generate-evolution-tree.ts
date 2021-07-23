@@ -1,10 +1,9 @@
+// Node modules.
+import { omit } from 'lodash';
 // Local modules.
 import type { IPokemon, IEvolution } from '../models/pokemon';
 
-type EvolutionRequirement = {
-    candyCost?: number;
-    energyCost?: number;
-} | null;
+type EvolutionRequirement = Omit<IEvolution, 'uniqueId' | 'form'> | null;
 
 export interface IEvolutionNode {
     pokemon: IPokemon;
@@ -34,10 +33,7 @@ function getEvolutionNode(familyPokemons: IPokemon[], target: IPokemon, requirem
     const nextPokemons = target.evolutions.length
         ? target.evolutions.map((e) => {
             const nextPokemon = getNextPokemon(familyPokemons, e);
-            const nextRequirement = {
-                candyCost: e.candyCost,
-                energyCost: e.energyCost,
-            };
+            const nextRequirement: EvolutionRequirement = omit(e, ['uniqueId', 'form']);
             return getEvolutionNode(familyPokemons, nextPokemon, nextRequirement);
         })
         : null;

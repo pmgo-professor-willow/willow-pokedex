@@ -58,6 +58,8 @@ export interface IEvolution {
     form: string;
     candyCost?: number;
     energyCost?: number;
+    item?: string;
+    gender?: 'FEMALE' | 'MALE';
 }
 
 export interface ILeagueRanking {

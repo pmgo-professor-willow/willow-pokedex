@@ -3,6 +3,9 @@ interface Evolution {
     form?: string;
     candyCost: number;
     priority?: number;
+    // Evolution requirement
+    evolutionItemRequirement?: string;
+    genderRequirement?: 'FEMALE' | 'MALE';
     // Mega evolution
     temporaryEvolution?: string;
     temporaryEvolutionEnergyCost?: number;
@@ -28,6 +31,8 @@ export const formatEvolutions = (basePokemonId: string, evolutions: Evolution[] 
             form,
             candyCost: e.candyCost,
             energyCost: e.temporaryEvolutionEnergyCost,
+            item: e.evolutionItemRequirement,
+            gender: e.genderRequirement,
         };
     });
 };
