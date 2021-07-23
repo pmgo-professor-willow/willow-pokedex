@@ -108,7 +108,7 @@ const PokemonEvolutionCell: React.FC<PokemonEvolutionCellProps> = (props) => {
             <Col flex={1}>
                 <Link
                     onClick={scrollToTop}
-                    to={`/willow-pokedex/pokemons/${pokemon.no}/${pokemon.form?.toLowerCase()}`}
+                    to={`/pokemons/${pokemon.no}/${pokemon.form?.toLowerCase()}`}
                 >
                     <Card id={getDistinctId(pokemon)} className={`pokemon-card ${hasBranches ? 'can-evolute' : ''}`}
                         hoverable
