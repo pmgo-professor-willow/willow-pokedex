@@ -40,16 +40,16 @@ const App: React.FC = () => {
         <PokemonContext.Provider value={pokemons}>
             <HashRouter>
                 <Switch>
-                    <Route path='/willow-pokedex/pokemons/:pokemonNo/:pokemonForm'
+                    <Route path='/pokemons/:pokemonNo/:pokemonForm'
                         component={withTracker(Screen.PokemonProfileScreen)}
                     />
 
-                    <Route path='/willow-pokedex/pokemons'
+                    <Route path='/pokemons'
                         component={withTracker(Screen.SearchScreen)}
                     />
 
                     <Route>
-                        <Redirect to='/willow-pokedex/pokemons' />
+                        <Redirect to='/pokemons' />
                     </Route>
                 </Switch>
             </HashRouter>

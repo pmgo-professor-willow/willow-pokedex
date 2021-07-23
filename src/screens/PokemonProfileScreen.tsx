@@ -94,7 +94,7 @@ const PokemonProfileScreen: React.FC<PokemonProfileScreenProps> = (props) => {
     }
 
     if (redirect) {
-        return <Redirect to={'/willow-pokedex/pokemons'} />
+        return <Redirect to={'/pokemons'} />
     }
 
     return (
@@ -110,7 +110,7 @@ const PokemonProfileScreen: React.FC<PokemonProfileScreenProps> = (props) => {
                         <Select.Option key={i}
                             value={String(form).toLowerCase()}
                         >
-                            <Link to={`/willow-pokedex/pokemons/${pokemonNo}/${String(form).toLowerCase()}`}>
+                            <Link to={`/pokemons/${pokemonNo}/${String(form).toLowerCase()}`}>
                                 <div className='pokemon-forms-option'>
                                     {translateForm(displayPokemon.no, form)}
                                 </div>

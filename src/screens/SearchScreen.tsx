@@ -78,7 +78,7 @@ const SearchScreen: React.FC<SearchScreenProps> = (props) => {
                 <Row justify='space-between' gutter={[8, 8]}>
                     {displayPokemons.map((pokemon, i) => (
                         <Col key={i} className='pokemon-item' flex='33%'>
-                            <Link to={`/willow-pokedex/pokemons/${pokemon.no}/${pokemon.form?.toLowerCase()}`}>
+                            <Link to={`/pokemons/${pokemon.no}/${pokemon.form?.toLowerCase()}`}>
                                 <div className='pokemon-container'>
                                     {/* Image */}
                                     <LazyLoad height={100} offset={1000}>
