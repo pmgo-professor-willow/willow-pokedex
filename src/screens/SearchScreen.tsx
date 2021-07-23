@@ -1,25 +1,26 @@
 // Node modules.
 import { chain } from 'lodash';
-import React, { useCallback, useEffect, useState } from 'react';
+import React, { useCallback, useContext, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Space, Affix, Input, Row, Col, Typography } from 'antd';
 import LazyLoad from 'react-lazyload';
 import InfiniteScroll from 'react-infinite-scroll-component';
 import styled from 'styled-components';
 // Local modules.
-import { IPokemon } from '../models/pokemon';
+import type { IPokemon } from '../models/pokemon';
+import { PokemonContext } from '../contexts/pokemon';
 import * as Pokemon from '../components/pokemon';
 
-interface SearchPageProps {
+interface SearchScreenProps {
     className?: string;
-    pokemons: IPokemon[];
 }
 
 const DEFAULT_ITEM_LIMIT = 100;
 
-const SearchPage: React.FC<SearchPageProps> = (props) => {
+const SearchScreen: React.FC<SearchScreenProps> = (props) => {
     const { className } = props;
-    const { pokemons } = props;
+
+    const pokemons = useContext(PokemonContext);
 
     const [hasMore, setHasMore] = useState(true);
     const [allPokemons, setAllPokemons] = useState<IPokemon[]>([]);
@@ -102,7 +103,7 @@ const SearchPage: React.FC<SearchPageProps> = (props) => {
     );
 };
 
-const styledSearchPage = styled(SearchPage)`
+const styledSearchScreen = styled(SearchScreen)`
 & {
     width: 100%;
     padding: 12px 12px;
@@ -124,4 +125,4 @@ const styledSearchPage = styled(SearchPage)`
 }
 `;
 
-export default styledSearchPage;
+export default styledSearchScreen;

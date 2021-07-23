@@ -1,11 +1,14 @@
 // Node modules.
 import React, { useEffect, useState } from 'react';
-import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
+import { HashRouter, Switch, Route, Redirect } from 'react-router-dom';
 import fetch from 'node-fetch';
+import { Button } from 'antd';
+import { SendOutlined } from '@ant-design/icons';
 // Local modules.
-import { IPokemon } from './models/pokemon';
-import SearchPage from './screens/SearchPage';
-import PokemonProfile from './screens/PokemonProfile';
+import type { IPokemon } from './models/pokemon';
+import * as Screen from './screens/';
+import { withTracker } from './hoc/ga';
+import { PokemonContext } from './contexts/pokemon';
 import { FullLoading } from './components/misc';
 
 const App: React.FC = () => {
@@ -34,21 +37,31 @@ const App: React.FC = () => {
     }
 
     return (
-        <Router>
-            <Switch>
-                <Route path='/willow-pokedex/pokemons/:pokemonNo/:pokemonForm'
-                    render={() => <PokemonProfile pokemons={pokemons} />}
-                />
+        <PokemonContext.Provider value={pokemons}>
+            <HashRouter>
+                <Switch>
+                    <Route path='/willow-pokedex/pokemons/:pokemonNo/:pokemonForm'
+                        component={withTracker(Screen.PokemonProfileScreen)}
+                    />
 
-                <Route path='/willow-pokedex/pokemons'
-                    render={() => <SearchPage pokemons={pokemons} />}
-                />
+                    <Route path='/willow-pokedex/pokemons'
+                        component={withTracker(Screen.SearchScreen)}
+                    />
 
-                <Route>
-                    <Redirect to='/willow-pokedex/pokemons' />
-                </Route>
-            </Switch>
-        </Router>
+                    <Route>
+                        <Redirect to='/willow-pokedex/pokemons' />
+                    </Route>
+                </Switch>
+            </HashRouter>
+
+            {/* TODO: This is temporary */}
+            <div style={{ position: 'fixed', width: '100%', bottom: 0, zIndex: 100 }}>
+                <Button type='primary' block size='small'>
+                    {'圖鑑尚在測試，歡迎留訊息給博士'}
+                    <SendOutlined />
+                </Button>
+            </div>
+        </PokemonContext.Provider>
     );
 };
 

@@ -1,5 +1,5 @@
 // Node modules.
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { useParams } from 'react-router';
 import { Link, Redirect } from 'react-router-dom';
 import {
@@ -14,6 +14,7 @@ import styled from 'styled-components';
 // Local modules.
 import type { IPokemon, League } from '../models/pokemon';
 import * as Pokemon from '../components/pokemon';
+import { PokemonContext } from '../contexts/pokemon';
 import { translateForm } from '../utils/translate-form';
 import type { IEvolutionNode } from '../utils/generate-evolution-tree';
 import { genEvolutionTree } from '../utils/generate-evolution-tree';
@@ -48,14 +49,15 @@ const ProfileTabs = styled(Tabs)`
 }
 `;
 
-interface PokemonProfileProps {
+interface PokemonProfileScreenProps {
     className?: string;
     pokemons: IPokemon[];
 }
 
-const PokemonProfile: React.FC<PokemonProfileProps> = (props) => {
+const PokemonProfileScreen: React.FC<PokemonProfileScreenProps> = (props) => {
     const { className } = props;
-    const { pokemons } = props;
+
+    const pokemons = useContext(PokemonContext);
 
     const { pokemonNo, pokemonForm } = useParams<{ pokemonNo: string, pokemonForm: string }>();
 
@@ -187,7 +189,7 @@ const PokemonProfile: React.FC<PokemonProfileProps> = (props) => {
     );
 };
 
-const styledPokemonProfile = styled(PokemonProfile)`
+const styledPokemonProfileScreen = styled(PokemonProfileScreen)`
 & {
     @keyframes background-image-gradient {
         from {
@@ -399,4 +401,4 @@ const styledPokemonProfile = styled(PokemonProfile)`
 }
 `;
 
-export default styledPokemonProfile;
+export default styledPokemonProfileScreen;

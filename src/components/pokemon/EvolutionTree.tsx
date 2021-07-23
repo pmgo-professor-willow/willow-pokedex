@@ -89,20 +89,16 @@ const PokemonEvolutionCell: React.FC<PokemonEvolutionCellProps> = (props) => {
     const { pokemon, requirement } = evolutionNode;
     const hasBranches = !!evolutionNode.branches?.length;
 
+    // Mega / Female / Male ... etc
     let costBadge = <StyledCostBadge cost={requirement?.candyCost} />;
     let lineColor = '#ACACAC';
-    // Mega evolution.
     if (!!requirement?.energyCost) {
         costBadge = <StyledCostBadge cost={requirement?.energyCost} type='mega' />;
         lineColor = '#23D5AB';
-    }
-    // Female.
-    else if (requirement?.gender === 'FEMALE') {
+    } else if (requirement?.gender === 'FEMALE') {
         costBadge = <StyledCostBadge cost={requirement?.candyCost} type='female' />;
         lineColor = '#F472B6';
-    }
-    // Male.
-    else if (requirement?.gender === 'MALE') {
+    } else if (requirement?.gender === 'MALE') {
         costBadge = <StyledCostBadge cost={requirement?.candyCost} type='male' />;
         lineColor = '#3B82F6';
     }
