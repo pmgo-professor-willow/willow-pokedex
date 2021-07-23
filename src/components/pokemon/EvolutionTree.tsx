@@ -3,6 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Col, Row, Divider, Image, Typography, Card, Badge } from 'antd';
 import Xarrow from 'react-xarrows';
+import { useVisible } from 'react-hooks-visible';
 import styled from 'styled-components';
 // Local modules.
 import type { IPokemon } from '../../models/pokemon';
@@ -80,7 +81,9 @@ const PokemonEvolutionCell: React.FC<PokemonEvolutionCellProps> = (props) => {
     const { className } = props;
     const { evolutionNode, previousNode } = props;
 
-    const scrollToTop = useCallback(() => window.scrollTo({ top: 0, behavior: 'smooth' }), []);
+    const scrollToTop = useCallback(() => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, []);
 
     if (!evolutionNode?.pokemon) {
         return null;
@@ -197,12 +200,15 @@ const PokemonEvolutionTree: React.FC<PokemonEvolutionTreeProps> = (props) => {
     const { className } = props;
     const { evolutionTree } = props;
 
+    // This is a workaround to force update 'Xarrow' when switching tabs & forms.
+    const [targetRef] = useVisible((visible: number) => visible > 0.1);
+
     if (!evolutionTree) {
         return null;
     }
 
     return (
-        <div id='evolution-tree' className={className}>
+        <div ref={targetRef as any} id='evolution-tree' className={className}>
             <Divider plain orientation='center'>
                 <Image preview={false} height={30} width={32}
                     src={'/willow-pokedex/assets/pokemon_evolution.png'}
