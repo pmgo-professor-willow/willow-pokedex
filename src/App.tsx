@@ -1,34 +1,18 @@
 // Node modules.
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { HashRouter, Switch, Route, Redirect } from 'react-router-dom';
-import fetch from 'node-fetch';
 import { Button } from 'antd';
 import { SendOutlined } from '@ant-design/icons';
 // Local modules.
-import type { IPokemon } from './models/pokemon';
 import * as Screen from './screens/';
 import { withTracker } from './hoc/ga';
+import { usePokemonData } from './hooks/PokemonData';
 import { PokemonContext } from './contexts/pokemon';
 import { FullLoading } from './components/misc';
 
 const App: React.FC = () => {
-    const [loading, setLoading] = useState<boolean>(false);
-    const [pokemons, setPokemons] = useState<IPokemon[]>([]);
+    const [loading, pokemons] = usePokemonData();
 
-    useEffect(() => {
-        async function fetchData() {
-            setLoading(true);
-            const [res] = await Promise.all([
-                fetch('/willow-pokedex/data/pokemons.min.json'),
-                new Promise((resolve) => setTimeout(resolve, 1000)),
-            ]);
-            const allPokemons: IPokemon[] = await res.json();
-            setLoading(false);
-            setPokemons(allPokemons);
-        };
-
-        fetchData();
-    }, []);
 
     if (loading) {
         return (
@@ -56,10 +40,12 @@ const App: React.FC = () => {
 
             {/* TODO: This is temporary */}
             <div style={{ position: 'fixed', width: '100%', bottom: 0, zIndex: 100 }}>
-                <Button type='primary' block size='small'>
-                    {'圖鑑尚在測試，歡迎留訊息給博士'}
-                    <SendOutlined />
-                </Button>
+                <a href={'https://line.me/R/oaMessage/@611mscwy/?給博士，'}>
+                    <Button type='primary' block size='small'>
+                        {'圖鑑尚在測試，歡迎留訊息給博士'}
+                        <SendOutlined />
+                    </Button>
+                </a>
             </div>
         </PokemonContext.Provider>
     );
