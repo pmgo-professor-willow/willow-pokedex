@@ -33,7 +33,9 @@ const SearchScreen: React.FC<SearchScreenProps> = (props) => {
             return;
         }
 
-        const filteredPokemons = allPokemons.filter((p) => p.name.includes(value));
+        const filteredPokemons = allPokemons.filter((p) => {
+            return p.name.includes(value) || p.uniqueId.includes(value.toUpperCase());
+        });
         setHasMore(false);
         setDisplayPokemons(filteredPokemons);
     }, [allPokemons]);
