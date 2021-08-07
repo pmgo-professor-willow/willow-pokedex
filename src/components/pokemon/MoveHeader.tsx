@@ -41,8 +41,11 @@ const styledPokemonMoveHeader = styled(PokemonMoveHeader)`
 .pokemon-move-header {
     .cell {
         text-align: right;
-        font-size: 0.75em;
-        color: rgba(0, 0, 0, 0.55) !important;
+
+        span {
+            font-size: 0.75em;
+            color: rgba(0, 0, 0, 0.55) !important;
+        }
     }
 }
 `;
