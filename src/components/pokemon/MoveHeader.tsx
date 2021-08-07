@@ -1,13 +1,7 @@
 // Node modules.
 import React from 'react';
-import { Row, Col, Tag, Typography } from 'antd';
+import { Row, Col, Typography } from 'antd';
 import styled from 'styled-components';
-import {
-    LikeTwoTone,
-} from '@ant-design/icons';
-// Local modules.
-import { IMove } from '../../models/pokemon';
-import { TypeIcon } from './index';
 
 interface PokemonMoveHeaderProps {
     className?: string;
