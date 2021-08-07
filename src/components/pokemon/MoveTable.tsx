@@ -37,6 +37,8 @@ const PokemonMoveTable: React.FC<PokemonMoveTableProps> = (props) => {
                 </Typography.Title>
             </Divider>
 
+            <Pokemon.MoveHeader />
+
             {pokemon.quickMoves.map((move) => (
                 <Pokemon.Move key={move.uniqueId}
                     move={move}
@@ -62,6 +64,8 @@ const PokemonMoveTable: React.FC<PokemonMoveTableProps> = (props) => {
                     {'特殊招式'}
                 </Typography.Title>
             </Divider>
+
+            <Pokemon.MoveHeader />
 
             {pokemon.cinematicMoves.map((move) => (
                 <Pokemon.Move key={move.uniqueId}

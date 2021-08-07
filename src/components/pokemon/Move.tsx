@@ -213,7 +213,7 @@ const PokemonMove: React.FC<PokemonMoveProps> = (props) => {
 
                 <Col className='numberic' span={3}>
                     <Typography.Text>
-                        {energyDelta}
+                        {energyDelta > 0 ? `+${energyDelta}` : energyDelta}
                     </Typography.Text>
                 </Col>
             </Row>

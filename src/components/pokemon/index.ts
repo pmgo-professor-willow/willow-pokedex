@@ -5,6 +5,7 @@ export { default as Stats } from './Stats';
 export { default as About } from './About';
 export { default as EvolutionTree } from './EvolutionTree';
 export { default as MoveTable } from './MoveTable';
+export { default as MoveHeader } from './MoveHeader';
 export { default as Move } from './Move';
 export { default as CombatRanking } from './CombatRanking';
 export { default as CombatPower } from './CombatPower';
