@@ -136,15 +136,17 @@ interface PokemonMoveProps {
     move: IMove;
     mode: 'pve' | 'pvp';
     legacy?: boolean;
+    detailed?: boolean;
     bestCombatMoveIds?: string[];
 }
 
 const PokemonMove: React.FC<PokemonMoveProps> = (props) => {
     const { className } = props;
-    const { move, mode, legacy, bestCombatMoveIds } = props;
+    const { move, mode, legacy, detailed, bestCombatMoveIds } = props;
 
     const pvp = mode === 'pvp';
     const { power, energyDelta } = pvp ? move.combat : move.base;
+    const { durationMs } = move.base;
 
     // Shadow or purified pokemons.
     const special = ['RETURN', 'FRUSTRATION'].includes(move.uniqueId);
@@ -178,7 +180,7 @@ const PokemonMove: React.FC<PokemonMoveProps> = (props) => {
                                 </Col>
 
                                 {/* Tags */}
-                                {(legacy || special) &&
+                                {(!detailed && (legacy || special)) &&
                                     <Col flex='none'>
                                         {legacy &&
                                             <Tag color='red'>{'絕版'}</Tag>
@@ -196,7 +198,7 @@ const PokemonMove: React.FC<PokemonMoveProps> = (props) => {
                     </Row>
                 </Col>
 
-                {energyDelta < 0 &&
+                {(!detailed && energyDelta < 0) &&
                     <Col className='numberic' span={5}>
                         <PokemonMoveEnergyBar
                             energyDelta={energyDelta}
@@ -216,6 +218,30 @@ const PokemonMove: React.FC<PokemonMoveProps> = (props) => {
                         {energyDelta > 0 ? `+${energyDelta}` : energyDelta}
                     </Typography.Text>
                 </Col>
+
+                {detailed &&
+                    <Col className='numberic' span={3}>
+                        <Typography.Text>
+                            {Math.round(power / durationMs * 1000 * 10) / 10}
+                        </Typography.Text>
+                    </Col>
+                }
+
+                {detailed &&
+                    <Col className='numberic' span={3}>
+                        <Typography.Text>
+                            {Math.round(energyDelta / durationMs * 1000 * 10) / 10}
+                        </Typography.Text>
+                    </Col>
+                }
+
+                {detailed &&
+                    <Col className='numberic' span={3}>
+                        <Typography.Text>
+                            {durationMs}
+                        </Typography.Text>
+                    </Col>
+                }
             </Row>
 
             {pvp &&
@@ -230,37 +256,39 @@ const PokemonMove: React.FC<PokemonMoveProps> = (props) => {
 const styledPokemonMove = styled(PokemonMove)`
 & {
     margin-bottom: 0.75em;
-}
 
-.pokemon-move-main {
-    .pokemon-move-type {
-        display: flex;
-        align-content: center;
+    .pokemon-move-main {
+        line-height: 1.75em;
+
+        .pokemon-move-type {
+            display: flex;
+            align-content: center;
+        }
+
+        .numberic {
+            text-align: end;
+        }
     }
 
-    .numberic {
-        text-align: end;
-    }
-}
+    .pokemon-move-sub {
+        padding-left: 2.5em;
+        margin: 0.25em 0;
 
-.pokemon-move-sub {
-    padding-left: 2.5em;
-    margin: 0.25em 0;
+        .content {
+            display: flex;
+            align-items: center;
 
-    .content {
-        display: flex;
-        align-items: center;
+            .icon {
+                font-size: 1.5em;
+                margin-right: 0.25em;
 
-        .icon {
-            font-size: 1.5em;
-            margin-right: 0.25em;
+                &.green {
+                    color: #52c41a;
+                }
 
-            &.green {
-                color: #52c41a;
-            }
-
-            &.red {
-                color: #f5222d;
+                &.red {
+                    color: #f5222d;
+                }
             }
         }
     }

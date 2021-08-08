@@ -5,15 +5,17 @@ import styled from 'styled-components';
 
 interface PokemonMoveHeaderProps {
     className?: string;
+    detailed?: boolean;
 }
 
 const PokemonMoveHeader: React.FC<PokemonMoveHeaderProps> = (props) => {
     const { className } = props;
+    const { detailed } = props;
 
     return (
         <div className={className}>
             <Row className='pokemon-move-header' wrap={false} gutter={1} align='middle'>
-                <Col span={18} />
+                <Col flex='auto' />
 
                 <Col className='cell' span={3}>
                     <Typography.Text>
@@ -26,6 +28,30 @@ const PokemonMoveHeader: React.FC<PokemonMoveHeaderProps> = (props) => {
                         {'能量'}
                     </Typography.Text>
                 </Col>
+
+                {detailed &&
+                    <Col className='cell' span={3}>
+                        <Typography.Text>
+                            {'DPS'}
+                        </Typography.Text>
+                    </Col>
+                }
+
+                {detailed &&
+                    <Col className='cell' span={3}>
+                        <Typography.Text>
+                            {'EPS'}
+                        </Typography.Text>
+                    </Col>
+                }
+
+                {detailed &&
+                    <Col className='cell' span={3}>
+                        <Typography.Text>
+                            {'時間'}
+                        </Typography.Text>
+                    </Col>
+                }
             </Row>
         </div>
     );
