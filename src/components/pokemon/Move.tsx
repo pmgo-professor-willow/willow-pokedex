@@ -238,7 +238,7 @@ const PokemonMove: React.FC<PokemonMoveProps> = (props) => {
                 {detailed &&
                     <Col className='numberic' span={3}>
                         <Typography.Text>
-                            {durationMs}
+                            {durationMs / 1000}
                         </Typography.Text>
                     </Col>
                 }

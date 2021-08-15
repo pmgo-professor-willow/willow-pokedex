@@ -196,7 +196,7 @@ const PokemonMoveTable: React.FC<PokemonMoveTableProps> = (props) => {
                             </Col>
                             <Col flex={1}>
                                 <Typography.Text>
-                                    {'技能施放時間 (毫秒 ms)'}
+                                    {'技能施放時間 (秒 second)'}
                                 </Typography.Text>
                             </Col>
                         </Row>
