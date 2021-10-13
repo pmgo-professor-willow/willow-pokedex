@@ -67808,7 +67808,13 @@
     "description": "每當阿勃梭魯出現在人們面前，就一定會發生地震或海嘯等災害，所以牠也有災禍寶可夢的別稱。",
     "form": "NORMAL",
     "familyId": "FAMILY_ABSOL",
-    "evolutions": [],
+    "evolutions": [
+      {
+        "uniqueId": "ABSOL",
+        "form": "MEGA",
+        "energyCost": 200
+      }
+    ],
     "stats": {
       "baseStamina": 163,
       "baseAttack": 246,
@@ -67963,6 +67969,146 @@
         "MEGAHORN"
       ]
     }
+  },
+  {
+    "uniqueId": "ABSOL",
+    "no": 359,
+    "name": "超級阿勃梭魯",
+    "types": [
+      "POKEMON_TYPE_DARK"
+    ],
+    "category": "災禍寶可夢",
+    "description": "每當阿勃梭魯出現在人們面前，就一定會發生地震或海嘯等災害，所以牠也有災禍寶可夢的別稱。",
+    "form": "MEGA",
+    "familyId": "FAMILY_ABSOL",
+    "evolutions": [],
+    "stats": {
+      "baseStamina": 163,
+      "baseAttack": 314,
+      "baseDefense": 130
+    },
+    "quickMoves": [
+      {
+        "id": "0226",
+        "name": "精神利刃",
+        "uniqueId": "PSYCHO_CUT_FAST",
+        "type": "POKEMON_TYPE_PSYCHIC",
+        "base": {
+          "power": 5,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.01,
+          "durationMs": 600,
+          "energyDelta": 8
+        },
+        "combat": {
+          "power": 3,
+          "energyDelta": 9,
+          "durationTurns": 1
+        }
+      },
+      {
+        "id": "0278",
+        "name": "大聲咆哮",
+        "uniqueId": "SNARL_FAST",
+        "type": "POKEMON_TYPE_DARK",
+        "base": {
+          "power": 12,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.01,
+          "durationMs": 1100,
+          "energyDelta": 14
+        },
+        "combat": {
+          "power": 5,
+          "energyDelta": 13,
+          "durationTurns": 2
+        }
+      }
+    ],
+    "cinematicMoves": [
+      {
+        "id": "0016",
+        "name": "惡之波動",
+        "uniqueId": "DARK_PULSE",
+        "type": "POKEMON_TYPE_DARK",
+        "base": {
+          "power": 80,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.08,
+          "durationMs": 3000,
+          "energyDelta": -50
+        },
+        "combat": {
+          "power": 80,
+          "energyDelta": -50
+        }
+      },
+      {
+        "id": "0078",
+        "name": "打雷",
+        "uniqueId": "THUNDER",
+        "type": "POKEMON_TYPE_ELECTRIC",
+        "base": {
+          "power": 100,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.11,
+          "durationMs": 2400,
+          "energyDelta": -100
+        },
+        "combat": {
+          "power": 100,
+          "energyDelta": -60
+        }
+      },
+      {
+        "id": "0022",
+        "name": "超級角擊",
+        "uniqueId": "MEGAHORN",
+        "type": "POKEMON_TYPE_BUG",
+        "base": {
+          "power": 110,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.12,
+          "durationMs": 2200,
+          "energyDelta": -100
+        },
+        "combat": {
+          "power": 110,
+          "energyDelta": -55
+        }
+      },
+      {
+        "id": "0333",
+        "name": "以牙還牙",
+        "uniqueId": "PAYBACK",
+        "type": "POKEMON_TYPE_DARK",
+        "base": {
+          "power": 100,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.01,
+          "durationMs": 2200,
+          "energyDelta": -100
+        },
+        "combat": {
+          "power": 110,
+          "energyDelta": -60
+        }
+      }
+    ],
+    "eliteQuickMoves": [],
+    "eliteCinematicMoves": [],
+    "cpTable": {
+      "15": 1414,
+      "20": 1886,
+      "25": 2358,
+      "30": 2829,
+      "35": 3065,
+      "40": 3301,
+      "50": 3732
+    },
+    "greatLeague": null,
+    "ultraLeague": null,
+    "masterLeague": null
   },
   {
     "uniqueId": "WYNAUT",
@@ -131299,6 +131445,136 @@
       }
     ],
     "stats": {
+      "baseStamina": 127,
+      "baseAttack": 122,
+      "baseDefense": 124
+    },
+    "quickMoves": [
+      {
+        "id": "0263",
+        "name": "驚嚇",
+        "uniqueId": "ASTONISH_FAST",
+        "type": "POKEMON_TYPE_GHOST",
+        "base": {
+          "power": 8,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.01,
+          "durationMs": 1100,
+          "energyDelta": 14
+        },
+        "combat": {
+          "power": 5,
+          "energyDelta": 9,
+          "durationTurns": 2
+        }
+      },
+      {
+        "id": "0215",
+        "name": "飛葉快刀",
+        "uniqueId": "RAZOR_LEAF_FAST",
+        "type": "POKEMON_TYPE_GRASS",
+        "base": {
+          "power": 13,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.01,
+          "durationMs": 1000,
+          "energyDelta": 7
+        },
+        "combat": {
+          "power": 10,
+          "energyDelta": 4,
+          "durationTurns": 1
+        }
+      }
+    ],
+    "cinematicMoves": [
+      {
+        "id": "0272",
+        "name": "打草結",
+        "uniqueId": "GRASS_KNOT",
+        "type": "POKEMON_TYPE_GRASS",
+        "base": {
+          "power": 90,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.04,
+          "durationMs": 2600,
+          "energyDelta": -50
+        },
+        "combat": {
+          "power": 90,
+          "energyDelta": -50
+        }
+      },
+      {
+        "id": "0066",
+        "name": "影子偷襲",
+        "uniqueId": "SHADOW_SNEAK",
+        "type": "POKEMON_TYPE_GHOST",
+        "base": {
+          "power": 50,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.04,
+          "durationMs": 2900,
+          "energyDelta": -33
+        },
+        "combat": {
+          "power": 50,
+          "energyDelta": -45
+        }
+      },
+      {
+        "id": "0280",
+        "name": "欺詐",
+        "uniqueId": "FOUL_PLAY",
+        "type": "POKEMON_TYPE_DARK",
+        "base": {
+          "power": 70,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.04,
+          "durationMs": 2000,
+          "energyDelta": -50
+        },
+        "combat": {
+          "power": 70,
+          "energyDelta": -45
+        }
+      }
+    ],
+    "eliteQuickMoves": [],
+    "eliteCinematicMoves": [],
+    "cpTable": {
+      "15": 515,
+      "20": 686,
+      "25": 858,
+      "30": 1030,
+      "35": 1116,
+      "40": 1202,
+      "50": 1359
+    },
+    "greatLeague": null,
+    "ultraLeague": null,
+    "masterLeague": null
+  },
+  {
+    "uniqueId": "PUMPKABOO",
+    "no": 710,
+    "name": "南瓜精",
+    "types": [
+      "POKEMON_TYPE_GHOST",
+      "POKEMON_TYPE_GRASS"
+    ],
+    "category": "南瓜寶可夢",
+    "description": "無法升天的靈魂進入了南瓜。夕陽西下之時就會開始活動。",
+    "form": "AVERAGE",
+    "familyId": "FAMILY_PUMPKABOO",
+    "evolutions": [
+      {
+        "uniqueId": "GOURGEIST",
+        "form": "NORMAL",
+        "candyCost": 50
+      }
+    ],
+    "stats": {
       "baseStamina": 135,
       "baseAttack": 121,
       "baseDefense": 123
@@ -131392,23 +131668,6 @@
           "power": 70,
           "energyDelta": -45
         }
-      },
-      {
-        "id": "0031",
-        "name": "地震",
-        "uniqueId": "EARTHQUAKE",
-        "type": "POKEMON_TYPE_GROUND",
-        "base": {
-          "power": 140,
-          "accuracyChance": 1,
-          "staminaLossScalar": 0.1,
-          "durationMs": 3600,
-          "energyDelta": -100
-        },
-        "combat": {
-          "power": 120,
-          "energyDelta": -65
-        }
       }
     ],
     "eliteQuickMoves": [],
@@ -131427,6 +131686,396 @@
     "masterLeague": null
   },
   {
+    "uniqueId": "PUMPKABOO",
+    "no": 710,
+    "name": "南瓜精",
+    "types": [
+      "POKEMON_TYPE_GHOST",
+      "POKEMON_TYPE_GRASS"
+    ],
+    "category": "南瓜寶可夢",
+    "description": "無法升天的靈魂進入了南瓜。夕陽西下之時就會開始活動。",
+    "form": "LARGE",
+    "familyId": "FAMILY_PUMPKABOO",
+    "evolutions": [
+      {
+        "uniqueId": "GOURGEIST",
+        "form": "NORMAL",
+        "candyCost": 50
+      }
+    ],
+    "stats": {
+      "baseStamina": 144,
+      "baseAttack": 120,
+      "baseDefense": 122
+    },
+    "quickMoves": [
+      {
+        "id": "0263",
+        "name": "驚嚇",
+        "uniqueId": "ASTONISH_FAST",
+        "type": "POKEMON_TYPE_GHOST",
+        "base": {
+          "power": 8,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.01,
+          "durationMs": 1100,
+          "energyDelta": 14
+        },
+        "combat": {
+          "power": 5,
+          "energyDelta": 9,
+          "durationTurns": 2
+        }
+      },
+      {
+        "id": "0215",
+        "name": "飛葉快刀",
+        "uniqueId": "RAZOR_LEAF_FAST",
+        "type": "POKEMON_TYPE_GRASS",
+        "base": {
+          "power": 13,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.01,
+          "durationMs": 1000,
+          "energyDelta": 7
+        },
+        "combat": {
+          "power": 10,
+          "energyDelta": 4,
+          "durationTurns": 1
+        }
+      }
+    ],
+    "cinematicMoves": [
+      {
+        "id": "0272",
+        "name": "打草結",
+        "uniqueId": "GRASS_KNOT",
+        "type": "POKEMON_TYPE_GRASS",
+        "base": {
+          "power": 90,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.04,
+          "durationMs": 2600,
+          "energyDelta": -50
+        },
+        "combat": {
+          "power": 90,
+          "energyDelta": -50
+        }
+      },
+      {
+        "id": "0066",
+        "name": "影子偷襲",
+        "uniqueId": "SHADOW_SNEAK",
+        "type": "POKEMON_TYPE_GHOST",
+        "base": {
+          "power": 50,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.04,
+          "durationMs": 2900,
+          "energyDelta": -33
+        },
+        "combat": {
+          "power": 50,
+          "energyDelta": -45
+        }
+      },
+      {
+        "id": "0280",
+        "name": "欺詐",
+        "uniqueId": "FOUL_PLAY",
+        "type": "POKEMON_TYPE_DARK",
+        "base": {
+          "power": 70,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.04,
+          "durationMs": 2000,
+          "energyDelta": -50
+        },
+        "combat": {
+          "power": 70,
+          "energyDelta": -45
+        }
+      }
+    ],
+    "eliteQuickMoves": [],
+    "eliteCinematicMoves": [],
+    "cpTable": {
+      "15": 533,
+      "20": 711,
+      "25": 888,
+      "30": 1066,
+      "35": 1155,
+      "40": 1244,
+      "50": 1406
+    },
+    "greatLeague": null,
+    "ultraLeague": null,
+    "masterLeague": null
+  },
+  {
+    "uniqueId": "PUMPKABOO",
+    "no": 710,
+    "name": "南瓜精",
+    "types": [
+      "POKEMON_TYPE_GHOST",
+      "POKEMON_TYPE_GRASS"
+    ],
+    "category": "南瓜寶可夢",
+    "description": "無法升天的靈魂進入了南瓜。夕陽西下之時就會開始活動。",
+    "form": "SMALL",
+    "familyId": "FAMILY_PUMPKABOO",
+    "evolutions": [
+      {
+        "uniqueId": "GOURGEIST",
+        "form": "NORMAL",
+        "candyCost": 50
+      }
+    ],
+    "stats": {
+      "baseStamina": 127,
+      "baseAttack": 122,
+      "baseDefense": 124
+    },
+    "quickMoves": [
+      {
+        "id": "0263",
+        "name": "驚嚇",
+        "uniqueId": "ASTONISH_FAST",
+        "type": "POKEMON_TYPE_GHOST",
+        "base": {
+          "power": 8,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.01,
+          "durationMs": 1100,
+          "energyDelta": 14
+        },
+        "combat": {
+          "power": 5,
+          "energyDelta": 9,
+          "durationTurns": 2
+        }
+      },
+      {
+        "id": "0215",
+        "name": "飛葉快刀",
+        "uniqueId": "RAZOR_LEAF_FAST",
+        "type": "POKEMON_TYPE_GRASS",
+        "base": {
+          "power": 13,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.01,
+          "durationMs": 1000,
+          "energyDelta": 7
+        },
+        "combat": {
+          "power": 10,
+          "energyDelta": 4,
+          "durationTurns": 1
+        }
+      }
+    ],
+    "cinematicMoves": [
+      {
+        "id": "0272",
+        "name": "打草結",
+        "uniqueId": "GRASS_KNOT",
+        "type": "POKEMON_TYPE_GRASS",
+        "base": {
+          "power": 90,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.04,
+          "durationMs": 2600,
+          "energyDelta": -50
+        },
+        "combat": {
+          "power": 90,
+          "energyDelta": -50
+        }
+      },
+      {
+        "id": "0066",
+        "name": "影子偷襲",
+        "uniqueId": "SHADOW_SNEAK",
+        "type": "POKEMON_TYPE_GHOST",
+        "base": {
+          "power": 50,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.04,
+          "durationMs": 2900,
+          "energyDelta": -33
+        },
+        "combat": {
+          "power": 50,
+          "energyDelta": -45
+        }
+      },
+      {
+        "id": "0280",
+        "name": "欺詐",
+        "uniqueId": "FOUL_PLAY",
+        "type": "POKEMON_TYPE_DARK",
+        "base": {
+          "power": 70,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.04,
+          "durationMs": 2000,
+          "energyDelta": -50
+        },
+        "combat": {
+          "power": 70,
+          "energyDelta": -45
+        }
+      }
+    ],
+    "eliteQuickMoves": [],
+    "eliteCinematicMoves": [],
+    "cpTable": {
+      "15": 515,
+      "20": 686,
+      "25": 858,
+      "30": 1030,
+      "35": 1116,
+      "40": 1202,
+      "50": 1359
+    },
+    "greatLeague": null,
+    "ultraLeague": null,
+    "masterLeague": null
+  },
+  {
+    "uniqueId": "PUMPKABOO",
+    "no": 710,
+    "name": "南瓜精",
+    "types": [
+      "POKEMON_TYPE_GHOST",
+      "POKEMON_TYPE_GRASS"
+    ],
+    "category": "南瓜寶可夢",
+    "description": "無法升天的靈魂進入了南瓜。夕陽西下之時就會開始活動。",
+    "form": "SUPER",
+    "familyId": "FAMILY_PUMPKABOO",
+    "evolutions": [
+      {
+        "uniqueId": "GOURGEIST",
+        "form": "NORMAL",
+        "candyCost": 50
+      }
+    ],
+    "stats": {
+      "baseStamina": 153,
+      "baseAttack": 118,
+      "baseDefense": 120
+    },
+    "quickMoves": [
+      {
+        "id": "0263",
+        "name": "驚嚇",
+        "uniqueId": "ASTONISH_FAST",
+        "type": "POKEMON_TYPE_GHOST",
+        "base": {
+          "power": 8,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.01,
+          "durationMs": 1100,
+          "energyDelta": 14
+        },
+        "combat": {
+          "power": 5,
+          "energyDelta": 9,
+          "durationTurns": 2
+        }
+      },
+      {
+        "id": "0215",
+        "name": "飛葉快刀",
+        "uniqueId": "RAZOR_LEAF_FAST",
+        "type": "POKEMON_TYPE_GRASS",
+        "base": {
+          "power": 13,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.01,
+          "durationMs": 1000,
+          "energyDelta": 7
+        },
+        "combat": {
+          "power": 10,
+          "energyDelta": 4,
+          "durationTurns": 1
+        }
+      }
+    ],
+    "cinematicMoves": [
+      {
+        "id": "0272",
+        "name": "打草結",
+        "uniqueId": "GRASS_KNOT",
+        "type": "POKEMON_TYPE_GRASS",
+        "base": {
+          "power": 90,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.04,
+          "durationMs": 2600,
+          "energyDelta": -50
+        },
+        "combat": {
+          "power": 90,
+          "energyDelta": -50
+        }
+      },
+      {
+        "id": "0066",
+        "name": "影子偷襲",
+        "uniqueId": "SHADOW_SNEAK",
+        "type": "POKEMON_TYPE_GHOST",
+        "base": {
+          "power": 50,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.04,
+          "durationMs": 2900,
+          "energyDelta": -33
+        },
+        "combat": {
+          "power": 50,
+          "energyDelta": -45
+        }
+      },
+      {
+        "id": "0280",
+        "name": "欺詐",
+        "uniqueId": "FOUL_PLAY",
+        "type": "POKEMON_TYPE_DARK",
+        "base": {
+          "power": 70,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.04,
+          "durationMs": 2000,
+          "energyDelta": -50
+        },
+        "combat": {
+          "power": 70,
+          "energyDelta": -45
+        }
+      }
+    ],
+    "eliteQuickMoves": [],
+    "eliteCinematicMoves": [],
+    "cpTable": {
+      "15": 536,
+      "20": 714,
+      "25": 893,
+      "30": 1072,
+      "35": 1161,
+      "40": 1250,
+      "50": 1414
+    },
+    "greatLeague": null,
+    "ultraLeague": null,
+    "masterLeague": null
+  },
+  {
     "uniqueId": "GOURGEIST",
     "no": 711,
     "name": "南瓜怪人",
@@ -131437,6 +132086,147 @@
     "category": "南瓜寶可夢",
     "description": "每到新月之夜，會一邊用詭異的聲音唱歌一邊在街上徘徊。聽到歌聲者會遭到詛咒。",
     "form": "NORMAL",
+    "familyId": "FAMILY_PUMPKABOO",
+    "evolutions": [],
+    "stats": {
+      "baseStamina": 146,
+      "baseAttack": 171,
+      "baseDefense": 219
+    },
+    "quickMoves": [
+      {
+        "id": "0264",
+        "name": "禍不單行",
+        "uniqueId": "HEX_FAST",
+        "type": "POKEMON_TYPE_GHOST",
+        "base": {
+          "power": 10,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.01,
+          "durationMs": 1200,
+          "energyDelta": 16
+        },
+        "combat": {
+          "power": 6,
+          "energyDelta": 12,
+          "durationTurns": 2
+        }
+      },
+      {
+        "id": "0215",
+        "name": "飛葉快刀",
+        "uniqueId": "RAZOR_LEAF_FAST",
+        "type": "POKEMON_TYPE_GRASS",
+        "base": {
+          "power": 13,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.01,
+          "durationMs": 1000,
+          "energyDelta": 7
+        },
+        "combat": {
+          "power": 10,
+          "energyDelta": 4,
+          "durationTurns": 1
+        }
+      }
+    ],
+    "cinematicMoves": [
+      {
+        "id": "0059",
+        "name": "種子炸彈",
+        "uniqueId": "SEED_BOMB",
+        "type": "POKEMON_TYPE_GRASS",
+        "base": {
+          "power": 55,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.08,
+          "durationMs": 2100,
+          "energyDelta": -33
+        },
+        "combat": {
+          "power": 55,
+          "energyDelta": -40
+        }
+      },
+      {
+        "id": "0070",
+        "name": "暗影球",
+        "uniqueId": "SHADOW_BALL",
+        "type": "POKEMON_TYPE_GHOST",
+        "base": {
+          "power": 100,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.08,
+          "durationMs": 3000,
+          "energyDelta": -50
+        },
+        "combat": {
+          "power": 100,
+          "energyDelta": -55
+        }
+      },
+      {
+        "id": "0280",
+        "name": "欺詐",
+        "uniqueId": "FOUL_PLAY",
+        "type": "POKEMON_TYPE_DARK",
+        "base": {
+          "power": 70,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.04,
+          "durationMs": 2000,
+          "energyDelta": -50
+        },
+        "combat": {
+          "power": 70,
+          "energyDelta": -45
+        }
+      },
+      {
+        "id": "0103",
+        "name": "大字爆炎",
+        "uniqueId": "FIRE_BLAST",
+        "type": "POKEMON_TYPE_FIRE",
+        "base": {
+          "power": 140,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.11,
+          "durationMs": 4200,
+          "energyDelta": -100
+        },
+        "combat": {
+          "power": 140,
+          "energyDelta": -80
+        }
+      }
+    ],
+    "eliteQuickMoves": [],
+    "eliteCinematicMoves": [],
+    "cpTable": {
+      "15": 966,
+      "20": 1288,
+      "25": 1610,
+      "30": 1932,
+      "35": 2093,
+      "40": 2254,
+      "50": 2549
+    },
+    "greatLeague": null,
+    "ultraLeague": null,
+    "masterLeague": null
+  },
+  {
+    "uniqueId": "GOURGEIST",
+    "no": 711,
+    "name": "南瓜怪人",
+    "types": [
+      "POKEMON_TYPE_GHOST",
+      "POKEMON_TYPE_GRASS"
+    ],
+    "category": "南瓜寶可夢",
+    "description": "每到新月之夜，會一邊用詭異的聲音唱歌一邊在街上徘徊。聽到歌聲者會遭到詛咒。",
+    "form": "AVERAGE",
     "familyId": "FAMILY_PUMPKABOO",
     "evolutions": [],
     "stats": {
@@ -131562,6 +132352,429 @@
       "35": 2219,
       "40": 2390,
       "50": 2702
+    },
+    "greatLeague": null,
+    "ultraLeague": null,
+    "masterLeague": null
+  },
+  {
+    "uniqueId": "GOURGEIST",
+    "no": 711,
+    "name": "南瓜怪人",
+    "types": [
+      "POKEMON_TYPE_GHOST",
+      "POKEMON_TYPE_GRASS"
+    ],
+    "category": "南瓜寶可夢",
+    "description": "每到新月之夜，會一邊用詭異的聲音唱歌一邊在街上徘徊。聽到歌聲者會遭到詛咒。",
+    "form": "LARGE",
+    "familyId": "FAMILY_PUMPKABOO",
+    "evolutions": [],
+    "stats": {
+      "baseStamina": 181,
+      "baseAttack": 179,
+      "baseDefense": 206
+    },
+    "quickMoves": [
+      {
+        "id": "0264",
+        "name": "禍不單行",
+        "uniqueId": "HEX_FAST",
+        "type": "POKEMON_TYPE_GHOST",
+        "base": {
+          "power": 10,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.01,
+          "durationMs": 1200,
+          "energyDelta": 16
+        },
+        "combat": {
+          "power": 6,
+          "energyDelta": 12,
+          "durationTurns": 2
+        }
+      },
+      {
+        "id": "0215",
+        "name": "飛葉快刀",
+        "uniqueId": "RAZOR_LEAF_FAST",
+        "type": "POKEMON_TYPE_GRASS",
+        "base": {
+          "power": 13,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.01,
+          "durationMs": 1000,
+          "energyDelta": 7
+        },
+        "combat": {
+          "power": 10,
+          "energyDelta": 4,
+          "durationTurns": 1
+        }
+      }
+    ],
+    "cinematicMoves": [
+      {
+        "id": "0059",
+        "name": "種子炸彈",
+        "uniqueId": "SEED_BOMB",
+        "type": "POKEMON_TYPE_GRASS",
+        "base": {
+          "power": 55,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.08,
+          "durationMs": 2100,
+          "energyDelta": -33
+        },
+        "combat": {
+          "power": 55,
+          "energyDelta": -40
+        }
+      },
+      {
+        "id": "0070",
+        "name": "暗影球",
+        "uniqueId": "SHADOW_BALL",
+        "type": "POKEMON_TYPE_GHOST",
+        "base": {
+          "power": 100,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.08,
+          "durationMs": 3000,
+          "energyDelta": -50
+        },
+        "combat": {
+          "power": 100,
+          "energyDelta": -55
+        }
+      },
+      {
+        "id": "0280",
+        "name": "欺詐",
+        "uniqueId": "FOUL_PLAY",
+        "type": "POKEMON_TYPE_DARK",
+        "base": {
+          "power": 70,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.04,
+          "durationMs": 2000,
+          "energyDelta": -50
+        },
+        "combat": {
+          "power": 70,
+          "energyDelta": -45
+        }
+      },
+      {
+        "id": "0103",
+        "name": "大字爆炎",
+        "uniqueId": "FIRE_BLAST",
+        "type": "POKEMON_TYPE_FIRE",
+        "base": {
+          "power": 140,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.11,
+          "durationMs": 4200,
+          "energyDelta": -100
+        },
+        "combat": {
+          "power": 140,
+          "energyDelta": -80
+        }
+      }
+    ],
+    "eliteQuickMoves": [],
+    "eliteCinematicMoves": [],
+    "cpTable": {
+      "15": 1080,
+      "20": 1440,
+      "25": 1801,
+      "30": 2161,
+      "35": 2341,
+      "40": 2521,
+      "50": 2850
+    },
+    "greatLeague": null,
+    "ultraLeague": null,
+    "masterLeague": null
+  },
+  {
+    "uniqueId": "GOURGEIST",
+    "no": 711,
+    "name": "南瓜怪人",
+    "types": [
+      "POKEMON_TYPE_GHOST",
+      "POKEMON_TYPE_GRASS"
+    ],
+    "category": "南瓜寶可夢",
+    "description": "每到新月之夜，會一邊用詭異的聲音唱歌一邊在街上徘徊。聽到歌聲者會遭到詛咒。",
+    "form": "SMALL",
+    "familyId": "FAMILY_PUMPKABOO",
+    "evolutions": [],
+    "stats": {
+      "baseStamina": 146,
+      "baseAttack": 171,
+      "baseDefense": 219
+    },
+    "quickMoves": [
+      {
+        "id": "0264",
+        "name": "禍不單行",
+        "uniqueId": "HEX_FAST",
+        "type": "POKEMON_TYPE_GHOST",
+        "base": {
+          "power": 10,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.01,
+          "durationMs": 1200,
+          "energyDelta": 16
+        },
+        "combat": {
+          "power": 6,
+          "energyDelta": 12,
+          "durationTurns": 2
+        }
+      },
+      {
+        "id": "0215",
+        "name": "飛葉快刀",
+        "uniqueId": "RAZOR_LEAF_FAST",
+        "type": "POKEMON_TYPE_GRASS",
+        "base": {
+          "power": 13,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.01,
+          "durationMs": 1000,
+          "energyDelta": 7
+        },
+        "combat": {
+          "power": 10,
+          "energyDelta": 4,
+          "durationTurns": 1
+        }
+      }
+    ],
+    "cinematicMoves": [
+      {
+        "id": "0059",
+        "name": "種子炸彈",
+        "uniqueId": "SEED_BOMB",
+        "type": "POKEMON_TYPE_GRASS",
+        "base": {
+          "power": 55,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.08,
+          "durationMs": 2100,
+          "energyDelta": -33
+        },
+        "combat": {
+          "power": 55,
+          "energyDelta": -40
+        }
+      },
+      {
+        "id": "0070",
+        "name": "暗影球",
+        "uniqueId": "SHADOW_BALL",
+        "type": "POKEMON_TYPE_GHOST",
+        "base": {
+          "power": 100,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.08,
+          "durationMs": 3000,
+          "energyDelta": -50
+        },
+        "combat": {
+          "power": 100,
+          "energyDelta": -55
+        }
+      },
+      {
+        "id": "0280",
+        "name": "欺詐",
+        "uniqueId": "FOUL_PLAY",
+        "type": "POKEMON_TYPE_DARK",
+        "base": {
+          "power": 70,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.04,
+          "durationMs": 2000,
+          "energyDelta": -50
+        },
+        "combat": {
+          "power": 70,
+          "energyDelta": -45
+        }
+      },
+      {
+        "id": "0103",
+        "name": "大字爆炎",
+        "uniqueId": "FIRE_BLAST",
+        "type": "POKEMON_TYPE_FIRE",
+        "base": {
+          "power": 140,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.11,
+          "durationMs": 4200,
+          "energyDelta": -100
+        },
+        "combat": {
+          "power": 140,
+          "energyDelta": -80
+        }
+      }
+    ],
+    "eliteQuickMoves": [],
+    "eliteCinematicMoves": [],
+    "cpTable": {
+      "15": 966,
+      "20": 1288,
+      "25": 1610,
+      "30": 1932,
+      "35": 2093,
+      "40": 2254,
+      "50": 2549
+    },
+    "greatLeague": null,
+    "ultraLeague": null,
+    "masterLeague": null
+  },
+  {
+    "uniqueId": "GOURGEIST",
+    "no": 711,
+    "name": "南瓜怪人",
+    "types": [
+      "POKEMON_TYPE_GHOST",
+      "POKEMON_TYPE_GRASS"
+    ],
+    "category": "南瓜寶可夢",
+    "description": "每到新月之夜，會一邊用詭異的聲音唱歌一邊在街上徘徊。聽到歌聲者會遭到詛咒。",
+    "form": "SUPER",
+    "familyId": "FAMILY_PUMPKABOO",
+    "evolutions": [],
+    "stats": {
+      "baseStamina": 198,
+      "baseAttack": 182,
+      "baseDefense": 200
+    },
+    "quickMoves": [
+      {
+        "id": "0264",
+        "name": "禍不單行",
+        "uniqueId": "HEX_FAST",
+        "type": "POKEMON_TYPE_GHOST",
+        "base": {
+          "power": 10,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.01,
+          "durationMs": 1200,
+          "energyDelta": 16
+        },
+        "combat": {
+          "power": 6,
+          "energyDelta": 12,
+          "durationTurns": 2
+        }
+      },
+      {
+        "id": "0215",
+        "name": "飛葉快刀",
+        "uniqueId": "RAZOR_LEAF_FAST",
+        "type": "POKEMON_TYPE_GRASS",
+        "base": {
+          "power": 13,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.01,
+          "durationMs": 1000,
+          "energyDelta": 7
+        },
+        "combat": {
+          "power": 10,
+          "energyDelta": 4,
+          "durationTurns": 1
+        }
+      }
+    ],
+    "cinematicMoves": [
+      {
+        "id": "0059",
+        "name": "種子炸彈",
+        "uniqueId": "SEED_BOMB",
+        "type": "POKEMON_TYPE_GRASS",
+        "base": {
+          "power": 55,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.08,
+          "durationMs": 2100,
+          "energyDelta": -33
+        },
+        "combat": {
+          "power": 55,
+          "energyDelta": -40
+        }
+      },
+      {
+        "id": "0070",
+        "name": "暗影球",
+        "uniqueId": "SHADOW_BALL",
+        "type": "POKEMON_TYPE_GHOST",
+        "base": {
+          "power": 100,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.08,
+          "durationMs": 3000,
+          "energyDelta": -50
+        },
+        "combat": {
+          "power": 100,
+          "energyDelta": -55
+        }
+      },
+      {
+        "id": "0280",
+        "name": "欺詐",
+        "uniqueId": "FOUL_PLAY",
+        "type": "POKEMON_TYPE_DARK",
+        "base": {
+          "power": 70,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.04,
+          "durationMs": 2000,
+          "energyDelta": -50
+        },
+        "combat": {
+          "power": 70,
+          "energyDelta": -45
+        }
+      },
+      {
+        "id": "0103",
+        "name": "大字爆炎",
+        "uniqueId": "FIRE_BLAST",
+        "type": "POKEMON_TYPE_FIRE",
+        "base": {
+          "power": 140,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.11,
+          "durationMs": 4200,
+          "energyDelta": -100
+        },
+        "combat": {
+          "power": 140,
+          "energyDelta": -80
+        }
+      }
+    ],
+    "eliteQuickMoves": [],
+    "eliteCinematicMoves": [],
+    "cpTable": {
+      "15": 1128,
+      "20": 1504,
+      "25": 1880,
+      "30": 2257,
+      "35": 2445,
+      "40": 2633,
+      "50": 2976
     },
     "greatLeague": null,
     "ultraLeague": null,
