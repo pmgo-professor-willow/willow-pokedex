@@ -19093,6 +19093,11 @@
         "uniqueId": "SLOWBRO",
         "form": "GALARIAN",
         "candyCost": 50
+      },
+      {
+        "uniqueId": "SLOWKING",
+        "form": "GALARIAN",
+        "candyCost": 50
       }
     ],
     "stats": {
