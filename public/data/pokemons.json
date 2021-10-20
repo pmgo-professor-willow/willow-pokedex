@@ -131445,8 +131445,8 @@
     "evolutions": [
       {
         "uniqueId": "GOURGEIST",
-        "form": "NORMAL",
-        "candyCost": 50
+        "form": "SMALL",
+        "candyCost": 200
       }
     ],
     "stats": {
@@ -131575,8 +131575,8 @@
     "evolutions": [
       {
         "uniqueId": "GOURGEIST",
-        "form": "NORMAL",
-        "candyCost": 50
+        "form": "AVERAGE",
+        "candyCost": 200
       }
     ],
     "stats": {
@@ -131705,8 +131705,8 @@
     "evolutions": [
       {
         "uniqueId": "GOURGEIST",
-        "form": "NORMAL",
-        "candyCost": 50
+        "form": "LARGE",
+        "candyCost": 200
       }
     ],
     "stats": {
@@ -131835,8 +131835,8 @@
     "evolutions": [
       {
         "uniqueId": "GOURGEIST",
-        "form": "NORMAL",
-        "candyCost": 50
+        "form": "SMALL",
+        "candyCost": 200
       }
     ],
     "stats": {
@@ -131965,8 +131965,8 @@
     "evolutions": [
       {
         "uniqueId": "GOURGEIST",
-        "form": "NORMAL",
-        "candyCost": 50
+        "form": "SUPER",
+        "candyCost": 200
       }
     ],
     "stats": {
