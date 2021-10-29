@@ -130347,23 +130347,6 @@
     ],
     "cinematicMoves": [
       {
-        "id": "0075",
-        "name": "拋物面充電",
-        "uniqueId": "PARABOLIC_CHARGE",
-        "type": "POKEMON_TYPE_ELECTRIC",
-        "base": {
-          "power": 25,
-          "accuracyChance": 1,
-          "staminaLossScalar": 0.05,
-          "durationMs": 2800,
-          "energyDelta": -50
-        },
-        "combat": {
-          "power": 25,
-          "energyDelta": -55
-        }
-      },
-      {
         "id": "0035",
         "name": "放電",
         "uniqueId": "DISCHARGE",
