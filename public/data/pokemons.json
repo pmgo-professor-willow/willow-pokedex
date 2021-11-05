@@ -117145,7 +117145,25 @@
       }
     ],
     "eliteQuickMoves": [],
-    "eliteCinematicMoves": [],
+    "eliteCinematicMoves": [
+      {
+        "id": "0330",
+        "name": "聖劍",
+        "uniqueId": "SACRED_SWORD",
+        "type": "POKEMON_TYPE_FIGHTING",
+        "base": {
+          "power": 55,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.01,
+          "durationMs": 1200,
+          "energyDelta": -33
+        },
+        "combat": {
+          "power": 60,
+          "energyDelta": -35
+        }
+      }
+    ],
     "cpTable": {
       "15": 1585,
       "20": 2113,
@@ -117291,7 +117309,25 @@
       }
     ],
     "eliteQuickMoves": [],
-    "eliteCinematicMoves": [],
+    "eliteCinematicMoves": [
+      {
+        "id": "0330",
+        "name": "聖劍",
+        "uniqueId": "SACRED_SWORD",
+        "type": "POKEMON_TYPE_FIGHTING",
+        "base": {
+          "power": 55,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.01,
+          "durationMs": 1200,
+          "energyDelta": -33
+        },
+        "combat": {
+          "power": 60,
+          "energyDelta": -35
+        }
+      }
+    ],
     "cpTable": {
       "15": 1295,
       "20": 1727,
