@@ -51,6 +51,7 @@ const PokemonAddressedImage: React.FC<PokemonAddressedImageProps> = (props) => {
     useEffect(() => {
         const url = getImageUrl(pokemonNo, pokemonForm, collection, secondGender, shiny);
         setImageUrl(url);
+        setAddressable(true);
     }, [pokemonNo, pokemonForm, collection, secondGender, shiny]);
 
     return (addressable
