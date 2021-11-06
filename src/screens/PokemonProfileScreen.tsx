@@ -130,7 +130,7 @@ const PokemonProfileScreen: React.FC<PokemonProfileScreenProps> = (props) => {
             <Row justify={'center'} align={'middle'}>
                 <Col className='pokemon-avatar' flex={0}>
                     {/* Image */}
-                    <Pokemon.Image
+                    <Pokemon.AddressedImage
                         pokemonNo={displayPokemon.no}
                         pokemonForm={displayPokemon.form}
                         shiny={shiny}

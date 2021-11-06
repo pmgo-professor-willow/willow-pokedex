@@ -1,4 +1,5 @@
 export { default as Image } from './Image';
+export { default as AddressedImage } from './AddressedImage';
 export { default as TypeIcon } from './TypeIcon';
 export { default as Types } from './Types';
 export { default as Stats } from './Stats';

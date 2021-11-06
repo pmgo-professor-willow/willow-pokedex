@@ -85,7 +85,7 @@ const SearchScreen: React.FC<SearchScreenProps> = (props) => {
                                 <div className='pokemon-container'>
                                     {/* Image */}
                                     <LazyLoad height={100} offset={1000}>
-                                        <Pokemon.Image
+                                        <Pokemon.AddressedImage
                                             pokemonNo={pokemon.no}
                                             pokemonForm={pokemon.form}
                                             size={100}

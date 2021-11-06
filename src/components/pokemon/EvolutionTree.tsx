@@ -116,7 +116,7 @@ const PokemonEvolutionCell: React.FC<PokemonEvolutionCellProps> = (props) => {
                     <Card id={getDistinctId(pokemon)} className={`pokemon-card ${hasBranches ? 'can-evolute' : ''}`}
                         hoverable
                         cover={
-                            <Pokemon.Image
+                            <Pokemon.AddressedImage
                                 pokemonNo={pokemon.no}
                                 pokemonForm={pokemon.form}
                             />
