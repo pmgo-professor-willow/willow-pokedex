@@ -30,7 +30,7 @@ function getNextPokemon(familyPokemons: IPokemon[], evo: IEvolution): IPokemon {
 }
 
 function getEvolutionNode(familyPokemons: IPokemon[], target: IPokemon, requirement: EvolutionRequirement): IEvolutionNode {
-    const nextPokemons = target.evolutions.length
+    const nextPokemons = target?.evolutions?.length
         ? target.evolutions.map((e) => {
             const nextPokemon = getNextPokemon(familyPokemons, e);
             const nextRequirement: EvolutionRequirement = omit(e, ['uniqueId', 'form']);
@@ -49,6 +49,7 @@ function genEvolutionTree(allPokemons: IPokemon[], target?: IPokemon): IEvolutio
     if (target) {
         const familyPokemons = allPokemons.filter((p) => p.familyId === target.familyId);
         const rootPokemon = getRootPokemon(familyPokemons, target);
+        console.log(familyPokemons);
         const root = getEvolutionNode(familyPokemons, rootPokemon, null);
 
         return root;
