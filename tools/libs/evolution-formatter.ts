@@ -20,7 +20,9 @@ export const formatEvolutions = (basePokemonId: string, evolutions: Evolution[] 
         // TYRANITAR => NORMAL
         // TYRANITAR_NORMAL => NORMAL
         // TYRANITAR_SHADOW => SHADOW
-        let form = e.form ? e.form.split('_')[1] : 'NORMAL';
+        // MR_RIME => NORMAL (speical case)
+        // TOXTRICITY_LOW_KEY => LOW_KEY (speical case)
+        let form = e.form ? e.form.replace(`${uniqueId}_`, '') : 'NORMAL';
         // TYRANITAR_MEGA => MEGA
         if (e.temporaryEvolution) {
             form = e.temporaryEvolution?.match(/^TEMP_EVOLUTION_(\w+)$/)![1];

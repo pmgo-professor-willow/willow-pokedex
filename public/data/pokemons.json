@@ -28491,7 +28491,7 @@
     "evolutions": [
       {
         "uniqueId": "MR_RIME",
-        "form": "RIME",
+        "form": "NORMAL",
         "candyCost": 50
       }
     ],
@@ -47864,7 +47864,7 @@
     "evolutions": [
       {
         "uniqueId": "PORYGON_Z",
-        "form": "Z",
+        "form": "NORMAL",
         "candyCost": 100,
         "item": "ITEM_GEN4_EVOLUTION_STONE"
       }
@@ -78316,7 +78316,7 @@
     "evolutions": [
       {
         "uniqueId": "GASTRODON",
-        "form": "EAST",
+        "form": "EAST_SEA",
         "candyCost": 50
       }
     ],
@@ -78445,7 +78445,7 @@
     "evolutions": [
       {
         "uniqueId": "GASTRODON",
-        "form": "WEST",
+        "form": "WEST_SEA",
         "candyCost": 50
       }
     ],
@@ -102182,7 +102182,7 @@
     "evolutions": [
       {
         "uniqueId": "DARMANITAN",
-        "form": "GALARIAN",
+        "form": "GALARIAN_STANDARD",
         "candyCost": 50
       }
     ],
@@ -139830,7 +139830,7 @@
     "evolutions": [
       {
         "uniqueId": "TOXTRICITY",
-        "form": "LOW",
+        "form": "LOW_KEY",
         "candyCost": 50
       },
       {
@@ -148306,12 +148306,12 @@
     "evolutions": [
       {
         "uniqueId": "URSHIFU",
-        "form": "SINGLE",
+        "form": "SINGLE_STRIKE",
         "candyCost": 400
       },
       {
         "uniqueId": "URSHIFU",
-        "form": "RAPID",
+        "form": "RAPID_STRIKE",
         "candyCost": 400
       }
     ],
