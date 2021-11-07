@@ -30843,7 +30843,8 @@
         "combat": {
           "power": 90,
           "energyDelta": -55
-        }
+        },
+        "isCommunityMove": true
       },
       {
         "id": "0106",
@@ -31033,7 +31034,8 @@
         "combat": {
           "power": 90,
           "energyDelta": -55
-        }
+        },
+        "isCommunityMove": true
       },
       {
         "id": "0252",
@@ -31227,7 +31229,8 @@
         "combat": {
           "power": 90,
           "energyDelta": -55
-        }
+        },
+        "isCommunityMove": true
       },
       {
         "id": "0042",
@@ -41928,7 +41931,8 @@
         "combat": {
           "power": 90,
           "energyDelta": -55
-        }
+        },
+        "isCommunityMove": true
       },
       {
         "id": "0070",
@@ -42097,7 +42101,8 @@
         "combat": {
           "power": 90,
           "energyDelta": -55
-        }
+        },
+        "isCommunityMove": true
       },
       {
         "id": "0108",
@@ -86556,7 +86561,8 @@
         "combat": {
           "power": 90,
           "energyDelta": -55
-        }
+        },
+        "isCommunityMove": true
       }
     ],
     "cpTable": {
@@ -87475,7 +87481,8 @@
         "combat": {
           "power": 80,
           "energyDelta": -50
-        }
+        },
+        "isCommunityMove": true
       }
     ],
     "cpTable": {
