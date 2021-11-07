@@ -43,6 +43,7 @@ export interface IMove {
             buffActivationChance: number;
         };
     };
+    isCommunityMove?: boolean;
 }
 
 export interface IPokemonStatus {

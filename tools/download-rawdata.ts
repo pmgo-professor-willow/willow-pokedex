@@ -18,3 +18,12 @@ export const downloadI18n = async (locale = 'ChineseTraditional') => {
     await mkdirp('./rawdata');
     await writeFile('./rawdata/resources.txt', text);
 };
+
+export const downloadCommunityDays = async () => {
+    const url = 'https://pmgo-professor-willow.github.io/data-bulbapedia/communityDays.min.json';
+    const res = await fetch(url);
+    const json = await res.json();
+
+    await mkdirp('./rawdata');
+    await writeFile('./rawdata/community-days.json', JSON.stringify(json, null, 2));
+};

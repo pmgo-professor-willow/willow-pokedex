@@ -183,13 +183,16 @@ const PokemonMove: React.FC<PokemonMoveProps> = (props) => {
                                 {(!detailed && (legacy || special)) &&
                                     <Col flex='none'>
                                         {legacy &&
-                                            <Tag color='red'>{'絕版'}</Tag>
+                                            <Tag color='red'>{'絕'}</Tag>
                                         }
                                         {move.uniqueId === 'RETURN' &&
-                                            <Tag color='cyan'>{'淨化'}</Tag>
+                                            <Tag color='cyan'>{'淨'}</Tag>
                                         }
                                         {move.uniqueId === 'FRUSTRATION' &&
-                                            <Tag color='purple'>{'暗影'}</Tag>
+                                            <Tag color='purple'>{'暗'}</Tag>
+                                        }
+                                        {move.isCommunityMove &&
+                                            <Tag color='green'>{'社'}</Tag>
                                         }
                                     </Col>
                                 }

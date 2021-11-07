@@ -6,13 +6,12 @@ import { SendOutlined } from '@ant-design/icons';
 // Local modules.
 import * as Screen from './screens/';
 import { withTracker } from './hoc/ga';
-import { usePokemonData } from './hooks/PokemonData';
+import { usePokemonData } from './hooks/';
 import { PokemonContext } from './contexts/pokemon';
 import { FullLoading } from './components/misc';
 
 const App: React.FC = () => {
     const [loading, pokemons] = usePokemonData();
-
 
     if (loading) {
         return (

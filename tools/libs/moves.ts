@@ -41,8 +41,10 @@ interface BaseMove {
     criticalChance?: number;
 }
 
+const GAME_MASTER = getGameMaster();
+
 const getBaseMoves = (moveDict: Resource): BaseMove[] => {
-    const moves = getGameMaster().reduce<BaseMove[]>((prev, template) => {
+    const moves = GAME_MASTER.reduce<BaseMove[]>((prev, template) => {
         const matches = template.templateId.match(/^V(\d+)_MOVE_(\w+)$/);
 
         if (matches) {
@@ -103,7 +105,7 @@ interface CombatMove {
 }
 
 const getCombatMoves = (moveDict: Resource): CombatMove[] => {
-    const moves = getGameMaster().reduce<CombatMove[]>((prev, template) => {
+    const moves = GAME_MASTER.reduce<CombatMove[]>((prev, template) => {
         const matches = template.templateId.match(/^COMBAT_V(\d+)_MOVE_(\w+)$/);
 
         if (matches) {

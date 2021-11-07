@@ -2,6 +2,7 @@
 import { compact } from 'lodash';
 // Local modules.
 import { getGameMaster } from './game-master';
+import { getCommunityDays } from './community-day';
 import { getRanking } from './league-ranking';
 import { filterResources } from './resources';
 import { getMoveDict, mapMoves } from './moves';
@@ -114,6 +115,30 @@ function genMegaPokemonInstances<I> (baseInstance: I, tempEvoOverrides: Pokemon[
     });
 };
 
+function extendCommunityDayMove(pokemonId: string, pokemonMoves: ReturnType<typeof mapMoves>) {
+    const communityDays = getCommunityDays();
+
+    const communityDayMoveNames = communityDays
+        // Pick same pokemon.
+        .filter(c => c.eligiblePokemon.toUpperCase() === pokemonId)
+        // 'Dragon Breath' => 'DRAGON_BREATH'
+        .flatMap(c => c.moves.map(m => m.toUpperCase().replace(' ', '_')));
+
+    if (communityDayMoveNames.length === 0) {
+        return;
+    }
+
+    pokemonMoves.forEach((move) => {
+        communityDayMoveNames.forEach((communityDayMoveName) => {
+            // case1: 'DRAGON_BREATH_FAST' <=> 'DRAGON_BREATH'
+            // case2: 'BLAST_BURN' <=> 'BLAST_BURN'
+            if (move.uniqueId!.includes(communityDayMoveName)) {
+                Object.assign(move, { isCommunityMove: true });
+            }
+        });
+    })
+}
+
 const getPokemons = () => {
     const pokemonNameDict = filterResources(/pokemon_name_(\w+)/);
     const pokemonCategoryDict = filterResources(/pokemon_category_(\w+)/);
@@ -184,6 +209,11 @@ const getPokemons = () => {
                     masterLeague: getRanking(pokemon.pokemonId, 'master', form),
                 };
 
+                // Extend community day information in moves.
+                extendCommunityDayMove(pokemon.pokemonId, pokemonInstance.eliteQuickMoves);
+                extendCommunityDayMove(pokemon.pokemonId, pokemonInstance.eliteCinematicMoves);
+
+                // Add mega evolution.
                 if (!isIgnored(pokemonInstance.no, pokemonInstance.form)) {
                     prev.push(pokemonInstance);
 

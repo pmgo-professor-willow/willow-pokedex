@@ -158,6 +158,21 @@ const PokemonMoveTable: React.FC<PokemonMoveTableProps> = (props) => {
                             </Row>
                         </Col>
                     }
+
+                    {[...pokemon.eliteQuickMoves, ...pokemon.eliteCinematicMoves].find(m => m.isCommunityMove) &&
+                        <Col span={24}>
+                            <Row align='middle'>
+                                <Col flex={0}>
+                                    <Tag color='green'>{'社群'}</Tag>
+                                </Col>
+                                <Col flex={1}>
+                                    <Typography.Text>
+                                        {'該招式曾釋出於社群日的主題寶可夢'}
+                                    </Typography.Text>
+                                </Col>
+                            </Row>
+                        </Col>
+                    }
                 </Row>
             }
             
