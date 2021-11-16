@@ -125,7 +125,7 @@
       "50": 1260
     },
     "greatLeague": {
-      "ranking": 562,
+      "ranking": 565,
       "quickMoveIds": [
         "VINE_WHIP"
       ],
@@ -257,7 +257,7 @@
       "50": 1260
     },
     "greatLeague": {
-      "ranking": 562,
+      "ranking": 565,
       "quickMoveIds": [
         "VINE_WHIP"
       ],
@@ -554,7 +554,7 @@
       "50": 3075
     },
     "greatLeague": {
-      "ranking": 48,
+      "ranking": 46,
       "quickMoveIds": [
         "VINE_WHIP"
       ],
@@ -564,7 +564,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 29,
+      "ranking": 25,
       "quickMoveIds": [
         "VINE_WHIP"
       ],
@@ -574,7 +574,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 176,
+      "ranking": 177,
       "quickMoveIds": [
         "VINE_WHIP"
       ],
@@ -867,7 +867,7 @@
       "50": 3075
     },
     "greatLeague": {
-      "ranking": 48,
+      "ranking": 46,
       "quickMoveIds": [
         "VINE_WHIP"
       ],
@@ -877,7 +877,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 29,
+      "ranking": 25,
       "quickMoveIds": [
         "VINE_WHIP"
       ],
@@ -887,7 +887,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 176,
+      "ranking": 177,
       "quickMoveIds": [
         "VINE_WHIP"
       ],
@@ -1299,7 +1299,7 @@
       "50": 1868
     },
     "greatLeague": {
-      "ranking": 393,
+      "ranking": 394,
       "quickMoveIds": [
         "EMBER"
       ],
@@ -1538,7 +1538,7 @@
       "50": 3266
     },
     "greatLeague": {
-      "ranking": 196,
+      "ranking": 197,
       "quickMoveIds": [
         "FIRE_SPIN"
       ],
@@ -1548,7 +1548,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 70,
+      "ranking": 65,
       "quickMoveIds": [
         "DRAGON_BREATH"
       ],
@@ -2222,7 +2222,7 @@
       "50": 3266
     },
     "greatLeague": {
-      "ranking": 196,
+      "ranking": 197,
       "quickMoveIds": [
         "FIRE_SPIN"
       ],
@@ -2232,7 +2232,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 70,
+      "ranking": 65,
       "quickMoveIds": [
         "DRAGON_BREATH"
       ],
@@ -2626,7 +2626,7 @@
       "50": 1682
     },
     "greatLeague": {
-      "ranking": 346,
+      "ranking": 347,
       "quickMoveIds": [
         "WATER_GUN"
       ],
@@ -2802,7 +2802,7 @@
       "50": 2788
     },
     "greatLeague": {
-      "ranking": 88,
+      "ranking": 91,
       "quickMoveIds": [
         "WATER_GUN"
       ],
@@ -2812,7 +2812,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 35,
+      "ranking": 33,
       "quickMoveIds": [
         "WATER_GUN"
       ],
@@ -3151,7 +3151,7 @@
       "50": 2788
     },
     "greatLeague": {
-      "ranking": 88,
+      "ranking": 91,
       "quickMoveIds": [
         "WATER_GUN"
       ],
@@ -3161,7 +3161,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 35,
+      "ranking": 33,
       "quickMoveIds": [
         "WATER_GUN"
       ],
@@ -3517,9 +3517,9 @@
       "50": 2065
     },
     "greatLeague": {
-      "ranking": 686,
+      "ranking": 659,
       "quickMoveIds": [
-        "CONFUSION"
+        "BUG_BITE"
       ],
       "cinematicMoveIds": [
         "PSYCHIC",
@@ -3902,7 +3902,7 @@
       "50": 2087
     },
     "greatLeague": {
-      "ranking": 124,
+      "ranking": 121,
       "quickMoveIds": [
         "POISON_JAB"
       ],
@@ -4580,7 +4580,7 @@
       "50": 2407
     },
     "greatLeague": {
-      "ranking": 84,
+      "ranking": 83,
       "quickMoveIds": [
         "GUST"
       ],
@@ -4590,7 +4590,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 43,
+      "ranking": 39,
       "quickMoveIds": [
         "GUST"
       ],
@@ -5194,7 +5194,7 @@
       "50": 1956
     },
     "greatLeague": {
-      "ranking": 642,
+      "ranking": 640,
       "quickMoveIds": [
         "QUICK_ATTACK"
       ],
@@ -5330,7 +5330,7 @@
       "50": 1927
     },
     "greatLeague": {
-      "ranking": 642,
+      "ranking": 640,
       "quickMoveIds": [
         "QUICK_ATTACK"
       ],
@@ -5629,7 +5629,7 @@
       "50": 2257
     },
     "greatLeague": {
-      "ranking": 616,
+      "ranking": 617,
       "quickMoveIds": [
         "PECK"
       ],
@@ -5639,7 +5639,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 479,
+      "ranking": 478,
       "quickMoveIds": [
         "PECK"
       ],
@@ -7898,7 +7898,7 @@
       "50": 2467
     },
     "greatLeague": {
-      "ranking": 183,
+      "ranking": 181,
       "quickMoveIds": [
         "VOLT_SWITCH"
       ],
@@ -7908,7 +7908,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 207,
+      "ranking": 209,
       "quickMoveIds": [
         "VOLT_SWITCH"
       ],
@@ -8083,7 +8083,7 @@
       "50": 2585
     },
     "greatLeague": {
-      "ranking": 183,
+      "ranking": 181,
       "quickMoveIds": [
         "VOLT_SWITCH"
       ],
@@ -8093,7 +8093,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 207,
+      "ranking": 209,
       "quickMoveIds": [
         "VOLT_SWITCH"
       ],
@@ -8526,7 +8526,7 @@
       "50": 2684
     },
     "greatLeague": {
-      "ranking": 517,
+      "ranking": 528,
       "quickMoveIds": [
         "MUD_SHOT"
       ],
@@ -8694,7 +8694,7 @@
       "50": 2750
     },
     "greatLeague": {
-      "ranking": 517,
+      "ranking": 528,
       "quickMoveIds": [
         "MUD_SHOT"
       ],
@@ -8985,7 +8985,7 @@
       "50": 1480
     },
     "greatLeague": {
-      "ranking": 249,
+      "ranking": 245,
       "quickMoveIds": [
         "POISON_STING"
       ],
@@ -9159,7 +9159,7 @@
       "50": 2812
     },
     "greatLeague": {
-      "ranking": 57,
+      "ranking": 56,
       "quickMoveIds": [
         "POISON_JAB"
       ],
@@ -9169,7 +9169,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 102,
+      "ranking": 105,
       "quickMoveIds": [
         "POISON_JAB"
       ],
@@ -9444,7 +9444,7 @@
       "50": 1575
     },
     "greatLeague": {
-      "ranking": 323,
+      "ranking": 319,
       "quickMoveIds": [
         "POISON_JAB"
       ],
@@ -9991,17 +9991,17 @@
       "50": 2755
     },
     "greatLeague": {
-      "ranking": 55,
+      "ranking": 54,
       "quickMoveIds": [
         "CHARM"
       ],
       "cinematicMoveIds": [
-        "METEOR_MASH",
-        "MOONBLAST"
+        "MOONBLAST",
+        "METEOR_MASH"
       ]
     },
     "ultraLeague": {
-      "ranking": 32,
+      "ranking": 30,
       "quickMoveIds": [
         "CHARM"
       ],
@@ -10011,7 +10011,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 137,
+      "ranking": 138,
       "quickMoveIds": [
         "CHARM"
       ],
@@ -10529,7 +10529,7 @@
       "50": 2577
     },
     "greatLeague": {
-      "ranking": 229,
+      "ranking": 225,
       "quickMoveIds": [
         "FIRE_SPIN"
       ],
@@ -10539,7 +10539,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 158,
+      "ranking": 159,
       "quickMoveIds": [
         "FIRE_SPIN"
       ],
@@ -10549,7 +10549,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 319,
+      "ranking": 318,
       "quickMoveIds": [
         "FIRE_SPIN"
       ],
@@ -10732,7 +10732,7 @@
       "50": 2610
     },
     "greatLeague": {
-      "ranking": 229,
+      "ranking": 225,
       "quickMoveIds": [
         "FIRE_SPIN"
       ],
@@ -10742,7 +10742,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 158,
+      "ranking": 159,
       "quickMoveIds": [
         "FIRE_SPIN"
       ],
@@ -10752,7 +10752,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 319,
+      "ranking": 318,
       "quickMoveIds": [
         "FIRE_SPIN"
       ],
@@ -11083,7 +11083,7 @@
       "50": 2178
     },
     "greatLeague": {
-      "ranking": 33,
+      "ranking": 31,
       "quickMoveIds": [
         "CHARM"
       ],
@@ -11093,7 +11093,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 176,
+      "ranking": 175,
       "quickMoveIds": [
         "CHARM"
       ],
@@ -11418,7 +11418,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 259,
+      "ranking": 261,
       "quickMoveIds": [
         "WING_ATTACK"
       ],
@@ -11560,7 +11560,7 @@
       "50": 1389
     },
     "greatLeague": {
-      "ranking": 444,
+      "ranking": 447,
       "quickMoveIds": [
         "RAZOR_LEAF"
       ],
@@ -11863,7 +11863,7 @@
       "50": 2893
     },
     "greatLeague": {
-      "ranking": 309,
+      "ranking": 305,
       "quickMoveIds": [
         "RAZOR_LEAF"
       ],
@@ -11873,7 +11873,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 261,
+      "ranking": 260,
       "quickMoveIds": [
         "RAZOR_LEAF"
       ],
@@ -11883,7 +11883,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 355,
+      "ranking": 354,
       "quickMoveIds": [
         "RAZOR_LEAF"
       ],
@@ -12167,7 +12167,7 @@
       "50": 2102
     },
     "greatLeague": {
-      "ranking": 495,
+      "ranking": 496,
       "quickMoveIds": [
         "FURY_CUTTER"
       ],
@@ -12177,7 +12177,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 471,
+      "ranking": 470,
       "quickMoveIds": [
         "FURY_CUTTER"
       ],
@@ -12509,13 +12509,13 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 406,
+      "ranking": 283,
       "quickMoveIds": [
-        "CONFUSION"
+        "INFESTATION"
       ],
       "cinematicMoveIds": [
         "POISON_FANG",
-        "PSYCHIC"
+        "BUG_BUZZ"
       ]
     },
     "masterLeague": null
@@ -12898,7 +12898,7 @@
       "50": 1760
     },
     "greatLeague": {
-      "ranking": 313,
+      "ranking": 314,
       "quickMoveIds": [
         "MUD_SHOT"
       ],
@@ -13031,7 +13031,7 @@
       "50": 2145
     },
     "greatLeague": {
-      "ranking": 313,
+      "ranking": 314,
       "quickMoveIds": [
         "MUD_SHOT"
       ],
@@ -13613,7 +13613,7 @@
       "50": 1910
     },
     "greatLeague": {
-      "ranking": 577,
+      "ranking": 579,
       "quickMoveIds": [
         "FEINT_ATTACK"
       ],
@@ -13761,7 +13761,7 @@
       "50": 2002
     },
     "greatLeague": {
-      "ranking": 577,
+      "ranking": 579,
       "quickMoveIds": [
         "FEINT_ATTACK"
       ],
@@ -14079,7 +14079,7 @@
       "50": 2770
     },
     "greatLeague": {
-      "ranking": 320,
+      "ranking": 323,
       "quickMoveIds": [
         "WATER_GUN"
       ],
@@ -14099,7 +14099,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 276,
+      "ranking": 277,
       "quickMoveIds": [
         "WATER_GUN"
       ],
@@ -14419,7 +14419,7 @@
       "50": 2586
     },
     "greatLeague": {
-      "ranking": 71,
+      "ranking": 69,
       "quickMoveIds": [
         "COUNTER"
       ],
@@ -14574,7 +14574,7 @@
       "50": 1405
     },
     "greatLeague": {
-      "ranking": 421,
+      "ranking": 418,
       "quickMoveIds": [
         "EMBER"
       ],
@@ -14785,7 +14785,7 @@
       "50": 3425
     },
     "greatLeague": {
-      "ranking": 460,
+      "ranking": 467,
       "quickMoveIds": [
         "SNARL"
       ],
@@ -14805,7 +14805,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 131,
+      "ranking": 132,
       "quickMoveIds": [
         "SNARL"
       ],
@@ -15106,7 +15106,7 @@
       "50": 1604
     },
     "greatLeague": {
-      "ranking": 221,
+      "ranking": 227,
       "quickMoveIds": [
         "MUD_SHOT"
       ],
@@ -15317,7 +15317,7 @@
       "50": 2923
     },
     "greatLeague": {
-      "ranking": 236,
+      "ranking": 238,
       "quickMoveIds": [
         "MUD_SHOT"
       ],
@@ -15327,7 +15327,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 121,
+      "ranking": 122,
       "quickMoveIds": [
         "MUD_SHOT"
       ],
@@ -15337,7 +15337,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 249,
+      "ranking": 250,
       "quickMoveIds": [
         "MUD_SHOT"
       ],
@@ -15806,7 +15806,7 @@
       "50": 3456
     },
     "greatLeague": {
-      "ranking": 419,
+      "ranking": 424,
       "quickMoveIds": [
         "COUNTER"
       ],
@@ -15816,7 +15816,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 361,
+      "ranking": 366,
       "quickMoveIds": [
         "COUNTER"
       ],
@@ -15981,7 +15981,7 @@
       "50": 1445
     },
     "greatLeague": {
-      "ranking": 301,
+      "ranking": 303,
       "quickMoveIds": [
         "KARATE_CHOP"
       ],
@@ -16137,7 +16137,7 @@
       "50": 2296
     },
     "greatLeague": {
-      "ranking": 129,
+      "ranking": 128,
       "quickMoveIds": [
         "KARATE_CHOP"
       ],
@@ -16147,7 +16147,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 283,
+      "ranking": 285,
       "quickMoveIds": [
         "KARATE_CHOP"
       ],
@@ -16388,7 +16388,7 @@
       "50": 3455
     },
     "greatLeague": {
-      "ranking": 44,
+      "ranking": 43,
       "quickMoveIds": [
         "COUNTER"
       ],
@@ -16398,7 +16398,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 61,
+      "ranking": 58,
       "quickMoveIds": [
         "COUNTER"
       ],
@@ -16879,7 +16879,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 179,
+      "ranking": 180,
       "quickMoveIds": [
         "RAZOR_LEAF"
       ],
@@ -17030,7 +17030,7 @@
       "50": 1176
     },
     "greatLeague": {
-      "ranking": 678,
+      "ranking": 679,
       "quickMoveIds": [
         "BUBBLE"
       ],
@@ -17184,7 +17184,7 @@
       "50": 2738
     },
     "greatLeague": {
-      "ranking": 276,
+      "ranking": 277,
       "quickMoveIds": [
         "POISON_JAB"
       ],
@@ -17194,7 +17194,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 170,
+      "ranking": 168,
       "quickMoveIds": [
         "POISON_JAB"
       ],
@@ -17340,7 +17340,7 @@
       "50": 1462
     },
     "greatLeague": {
-      "ranking": 575,
+      "ranking": 578,
       "quickMoveIds": [
         "ROCK_THROW"
       ],
@@ -17479,7 +17479,7 @@
       "50": 1462
     },
     "greatLeague": {
-      "ranking": 575,
+      "ranking": 578,
       "quickMoveIds": [
         "ROCK_THROW"
       ],
@@ -17636,7 +17636,7 @@
       "50": 2145
     },
     "greatLeague": {
-      "ranking": 382,
+      "ranking": 383,
       "quickMoveIds": [
         "MUD_SHOT"
       ],
@@ -17784,7 +17784,7 @@
       "50": 2145
     },
     "greatLeague": {
-      "ranking": 382,
+      "ranking": 383,
       "quickMoveIds": [
         "MUD_SHOT"
       ],
@@ -17948,23 +17948,23 @@
       "50": 3334
     },
     "greatLeague": {
-      "ranking": 300,
+      "ranking": 464,
       "quickMoveIds": [
         "MUD_SHOT"
       ],
       "cinematicMoveIds": [
         "STONE_EDGE",
-        "ROCK_BLAST"
+        "EARTHQUAKE"
       ]
     },
     "ultraLeague": {
-      "ranking": 291,
+      "ranking": 341,
       "quickMoveIds": [
         "MUD_SHOT"
       ],
       "cinematicMoveIds": [
         "STONE_EDGE",
-        "ROCK_BLAST"
+        "EARTHQUAKE"
       ]
     },
     "masterLeague": {
@@ -18103,23 +18103,23 @@
       "50": 3334
     },
     "greatLeague": {
-      "ranking": 300,
+      "ranking": 464,
       "quickMoveIds": [
         "MUD_SHOT"
       ],
       "cinematicMoveIds": [
         "STONE_EDGE",
-        "ROCK_BLAST"
+        "EARTHQUAKE"
       ]
     },
     "ultraLeague": {
-      "ranking": 291,
+      "ranking": 341,
       "quickMoveIds": [
         "MUD_SHOT"
       ],
       "cinematicMoveIds": [
         "STONE_EDGE",
-        "ROCK_BLAST"
+        "EARTHQUAKE"
       ]
     },
     "masterLeague": {
@@ -18280,7 +18280,7 @@
       "50": 1919
     },
     "greatLeague": {
-      "ranking": 449,
+      "ranking": 451,
       "quickMoveIds": [
         "EMBER"
       ],
@@ -18418,7 +18418,7 @@
       "50": 1919
     },
     "greatLeague": {
-      "ranking": 449,
+      "ranking": 451,
       "quickMoveIds": [
         "EMBER"
       ],
@@ -18608,7 +18608,7 @@
       "50": 2782
     },
     "greatLeague": {
-      "ranking": 431,
+      "ranking": 430,
       "quickMoveIds": [
         "INCINERATE"
       ],
@@ -18618,7 +18618,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 208,
+      "ranking": 202,
       "quickMoveIds": [
         "INCINERATE"
       ],
@@ -18628,7 +18628,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 304,
+      "ranking": 306,
       "quickMoveIds": [
         "INCINERATE"
       ],
@@ -18780,7 +18780,7 @@
       "50": 2782
     },
     "greatLeague": {
-      "ranking": 275,
+      "ranking": 276,
       "quickMoveIds": [
         "PSYCHO_CUT"
       ],
@@ -18790,7 +18790,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 208,
+      "ranking": 202,
       "quickMoveIds": [
         "INCINERATE"
       ],
@@ -18946,9 +18946,9 @@
       "50": 1386
     },
     "greatLeague": {
-      "ranking": 479,
+      "ranking": 381,
       "quickMoveIds": [
-        "CONFUSION"
+        "WATER_GUN"
       ],
       "cinematicMoveIds": [
         "PSYSHOCK",
@@ -19088,9 +19088,9 @@
       "50": 1386
     },
     "greatLeague": {
-      "ranking": 479,
+      "ranking": 381,
       "quickMoveIds": [
-        "CONFUSION"
+        "WATER_GUN"
       ],
       "cinematicMoveIds": [
         "PSYSHOCK",
@@ -19235,13 +19235,13 @@
       "50": 1386
     },
     "greatLeague": {
-      "ranking": 446,
+      "ranking": 381,
       "quickMoveIds": [
-        "CONFUSION"
+        "WATER_GUN"
       ],
       "cinematicMoveIds": [
-        "SURF",
-        "PSYSHOCK"
+        "PSYSHOCK",
+        "WATER_PULSE"
       ]
     },
     "ultraLeague": null,
@@ -19377,7 +19377,7 @@
       "50": 2877
     },
     "greatLeague": {
-      "ranking": 507,
+      "ranking": 515,
       "quickMoveIds": [
         "CONFUSION"
       ],
@@ -19387,7 +19387,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 365,
+      "ranking": 368,
       "quickMoveIds": [
         "CONFUSION"
       ],
@@ -19664,7 +19664,7 @@
       "50": 2877
     },
     "greatLeague": {
-      "ranking": 507,
+      "ranking": 515,
       "quickMoveIds": [
         "CONFUSION"
       ],
@@ -19674,7 +19674,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 365,
+      "ranking": 368,
       "quickMoveIds": [
         "CONFUSION"
       ],
@@ -19819,7 +19819,7 @@
       "50": 2764
     },
     "greatLeague": {
-      "ranking": 364,
+      "ranking": 368,
       "quickMoveIds": [
         "POISON_JAB"
       ],
@@ -19829,7 +19829,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 231,
+      "ranking": 234,
       "quickMoveIds": [
         "POISON_JAB"
       ],
@@ -19839,7 +19839,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 310,
+      "ranking": 309,
       "quickMoveIds": [
         "POISON_JAB"
       ],
@@ -19976,7 +19976,7 @@
       "50": 1540
     },
     "greatLeague": {
-      "ranking": 311,
+      "ranking": 312,
       "quickMoveIds": [
         "THUNDER_SHOCK"
       ],
@@ -20154,7 +20154,7 @@
       "50": 2810
     },
     "greatLeague": {
-      "ranking": 285,
+      "ranking": 287,
       "quickMoveIds": [
         "THUNDER_SHOCK"
       ],
@@ -20164,7 +20164,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 265,
+      "ranking": 270,
       "quickMoveIds": [
         "THUNDER_SHOCK"
       ],
@@ -20174,7 +20174,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 194,
+      "ranking": 195,
       "quickMoveIds": [
         "THUNDER_SHOCK"
       ],
@@ -20322,7 +20322,7 @@
       "50": 1397
     },
     "greatLeague": {
-      "ranking": 298,
+      "ranking": 299,
       "quickMoveIds": [
         "FURY_CUTTER"
       ],
@@ -20770,7 +20770,7 @@
       "50": 2670
     },
     "greatLeague": {
-      "ranking": 598,
+      "ranking": 597,
       "quickMoveIds": [
         "FEINT_ATTACK"
       ],
@@ -20780,7 +20780,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 301,
+      "ranking": 297,
       "quickMoveIds": [
         "FEINT_ATTACK"
       ],
@@ -21156,7 +21156,7 @@
       "50": 2245
     },
     "greatLeague": {
-      "ranking": 27,
+      "ranking": 25,
       "quickMoveIds": [
         "ICE_SHARD"
       ],
@@ -21166,7 +21166,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 148,
+      "ranking": 149,
       "quickMoveIds": [
         "ICE_SHARD"
       ],
@@ -21312,7 +21312,7 @@
       "50": 1553
     },
     "greatLeague": {
-      "ranking": 211,
+      "ranking": 212,
       "quickMoveIds": [
         "POISON_JAB"
       ],
@@ -21454,7 +21454,7 @@
       "50": 1553
     },
     "greatLeague": {
-      "ranking": 211,
+      "ranking": 212,
       "quickMoveIds": [
         "POISON_JAB"
       ],
@@ -21642,7 +21642,7 @@
       "50": 3117
     },
     "greatLeague": {
-      "ranking": 220,
+      "ranking": 217,
       "quickMoveIds": [
         "POISON_JAB"
       ],
@@ -21652,7 +21652,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 144,
+      "ranking": 143,
       "quickMoveIds": [
         "POISON_JAB"
       ],
@@ -21831,7 +21831,7 @@
       "50": 3117
     },
     "greatLeague": {
-      "ranking": 220,
+      "ranking": 217,
       "quickMoveIds": [
         "POISON_JAB"
       ],
@@ -21841,7 +21841,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 144,
+      "ranking": 143,
       "quickMoveIds": [
         "POISON_JAB"
       ],
@@ -22157,7 +22157,7 @@
       "50": 2880
     },
     "greatLeague": {
-      "ranking": 341,
+      "ranking": 339,
       "quickMoveIds": [
         "ICE_SHARD"
       ],
@@ -22167,7 +22167,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 134,
+      "ranking": 135,
       "quickMoveIds": [
         "ICE_SHARD"
       ],
@@ -22520,7 +22520,7 @@
       "50": 2219
     },
     "greatLeague": {
-      "ranking": 198,
+      "ranking": 201,
       "quickMoveIds": [
         "SHADOW_CLAW"
       ],
@@ -22769,7 +22769,7 @@
       "50": 3254
     },
     "greatLeague": {
-      "ranking": 167,
+      "ranking": 166,
       "quickMoveIds": [
         "SHADOW_CLAW"
       ],
@@ -22779,7 +22779,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 78,
+      "ranking": 77,
       "quickMoveIds": [
         "SHADOW_CLAW"
       ],
@@ -23270,7 +23270,7 @@
       "50": 3254
     },
     "greatLeague": {
-      "ranking": 167,
+      "ranking": 166,
       "quickMoveIds": [
         "SHADOW_CLAW"
       ],
@@ -23280,7 +23280,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 78,
+      "ranking": 77,
       "quickMoveIds": [
         "SHADOW_CLAW"
       ],
@@ -23466,13 +23466,13 @@
       "50": 1245
     },
     "greatLeague": {
-      "ranking": 529,
+      "ranking": 483,
       "quickMoveIds": [
         "ROCK_THROW"
       ],
       "cinematicMoveIds": [
         "ROCK_SLIDE",
-        "STONE_EDGE"
+        "SAND_TOMB"
       ]
     },
     "ultraLeague": null,
@@ -23608,7 +23608,7 @@
       "50": 1176
     },
     "greatLeague": {
-      "ranking": 665,
+      "ranking": 667,
       "quickMoveIds": [
         "CONFUSION"
       ],
@@ -23840,7 +23840,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 222,
+      "ranking": 224,
       "quickMoveIds": [
         "CONFUSION"
       ],
@@ -24172,7 +24172,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 345,
+      "ranking": 346,
       "quickMoveIds": [
         "MUD_SHOT"
       ],
@@ -24182,7 +24182,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 286,
+      "ranking": 288,
       "quickMoveIds": [
         "MUD_SHOT"
       ],
@@ -24498,7 +24498,7 @@
       "50": 2373
     },
     "greatLeague": {
-      "ranking": 294,
+      "ranking": 292,
       "quickMoveIds": [
         "VOLT_SWITCH"
       ],
@@ -24508,13 +24508,13 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 305,
+      "ranking": 303,
       "quickMoveIds": [
         "VOLT_SWITCH"
       ],
       "cinematicMoveIds": [
-        "DISCHARGE",
-        "FOUL_PLAY"
+        "FOUL_PLAY",
+        "DISCHARGE"
       ]
     },
     "masterLeague": {
@@ -24664,9 +24664,9 @@
       "50": 1328
     },
     "greatLeague": {
-      "ranking": 568,
+      "ranking": 561,
       "quickMoveIds": [
-        "CONFUSION"
+        "BULLET_SEED"
       ],
       "cinematicMoveIds": [
         "SEED_BOMB",
@@ -24838,7 +24838,7 @@
       "50": 3408
     },
     "greatLeague": {
-      "ranking": 563,
+      "ranking": 566,
       "quickMoveIds": [
         "BULLET_SEED"
       ],
@@ -24848,7 +24848,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 378,
+      "ranking": 382,
       "quickMoveIds": [
         "BULLET_SEED"
       ],
@@ -24858,7 +24858,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 301,
+      "ranking": 297,
       "quickMoveIds": [
         "BULLET_SEED"
       ],
@@ -24989,7 +24989,7 @@
       "50": 3407
     },
     "greatLeague": {
-      "ranking": 563,
+      "ranking": 566,
       "quickMoveIds": [
         "BULLET_SEED"
       ],
@@ -24999,7 +24999,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 378,
+      "ranking": 382,
       "quickMoveIds": [
         "BULLET_SEED"
       ],
@@ -25009,7 +25009,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 301,
+      "ranking": 297,
       "quickMoveIds": [
         "BULLET_SEED"
       ],
@@ -25145,7 +25145,7 @@
       "50": 1152
     },
     "greatLeague": {
-      "ranking": 640,
+      "ranking": 641,
       "quickMoveIds": [
         "MUD_SLAP"
       ],
@@ -25277,7 +25277,7 @@
       "50": 2075
     },
     "greatLeague": {
-      "ranking": 345,
+      "ranking": 349,
       "quickMoveIds": [
         "MUD_SLAP"
       ],
@@ -25287,7 +25287,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 437,
+      "ranking": 439,
       "quickMoveIds": [
         "MUD_SLAP"
       ],
@@ -25476,7 +25476,7 @@
       "50": 2075
     },
     "greatLeague": {
-      "ranking": 345,
+      "ranking": 349,
       "quickMoveIds": [
         "MUD_SLAP"
       ],
@@ -25486,7 +25486,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 437,
+      "ranking": 439,
       "quickMoveIds": [
         "MUD_SLAP"
       ],
@@ -25885,7 +25885,7 @@
       "50": 2636
     },
     "greatLeague": {
-      "ranking": 168,
+      "ranking": 167,
       "quickMoveIds": [
         "COUNTER"
       ],
@@ -25895,7 +25895,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 71,
+      "ranking": 72,
       "quickMoveIds": [
         "COUNTER"
       ],
@@ -26059,7 +26059,7 @@
       "50": 1595
     },
     "greatLeague": {
-      "ranking": 20,
+      "ranking": 19,
       "quickMoveIds": [
         "LICK"
       ],
@@ -26196,7 +26196,7 @@
       "50": 1373
     },
     "greatLeague": {
-      "ranking": 651,
+      "ranking": 647,
       "quickMoveIds": [
         "INFESTATION"
       ],
@@ -26344,7 +26344,7 @@
       "50": 2592
     },
     "greatLeague": {
-      "ranking": 480,
+      "ranking": 487,
       "quickMoveIds": [
         "INFESTATION"
       ],
@@ -26354,13 +26354,13 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 272,
+      "ranking": 327,
       "quickMoveIds": [
         "INFESTATION"
       ],
       "cinematicMoveIds": [
-        "SLUDGE_BOMB",
-        "SHADOW_BALL"
+        "SHADOW_BALL",
+        "DARK_PULSE"
       ]
     },
     "masterLeague": {
@@ -26514,7 +26514,7 @@
       "50": 2592
     },
     "greatLeague": {
-      "ranking": 480,
+      "ranking": 487,
       "quickMoveIds": [
         "INFESTATION"
       ],
@@ -26524,13 +26524,13 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 272,
+      "ranking": 327,
       "quickMoveIds": [
         "INFESTATION"
       ],
       "cinematicMoveIds": [
-        "SLUDGE_BOMB",
-        "SHADOW_BALL"
+        "SHADOW_BALL",
+        "DARK_PULSE"
       ]
     },
     "masterLeague": {
@@ -26671,13 +26671,13 @@
       "50": 1867
     },
     "greatLeague": {
-      "ranking": 522,
+      "ranking": 537,
       "quickMoveIds": [
         "MUD_SLAP"
       ],
       "cinematicMoveIds": [
         "STOMP",
-        "HORN_ATTACK"
+        "BULLDOZE"
       ]
     },
     "ultraLeague": null,
@@ -26829,7 +26829,7 @@
       "50": 3594
     },
     "greatLeague": {
-      "ranking": 477,
+      "ranking": 484,
       "quickMoveIds": [
         "MUD_SLAP"
       ],
@@ -26839,7 +26839,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 392,
+      "ranking": 393,
       "quickMoveIds": [
         "MUD_SLAP"
       ],
@@ -26989,7 +26989,7 @@
       "50": 1418
     },
     "greatLeague": {
-      "ranking": 50,
+      "ranking": 47,
       "quickMoveIds": [
         "POUND"
       ],
@@ -26999,7 +26999,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 511,
+      "ranking": 510,
       "quickMoveIds": [
         "POUND"
       ],
@@ -27155,7 +27155,7 @@
       "50": 2530
     },
     "greatLeague": {
-      "ranking": 380,
+      "ranking": 375,
       "quickMoveIds": [
         "VINE_WHIP"
       ],
@@ -27165,7 +27165,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 220,
+      "ranking": 214,
       "quickMoveIds": [
         "VINE_WHIP"
       ],
@@ -27365,7 +27365,7 @@
       "50": 2924
     },
     "greatLeague": {
-      "ranking": 427,
+      "ranking": 426,
       "quickMoveIds": [
         "MUD_SLAP"
       ],
@@ -27375,7 +27375,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 317,
+      "ranking": 320,
       "quickMoveIds": [
         "MUD_SLAP"
       ],
@@ -27670,7 +27670,7 @@
       "50": 2366
     },
     "greatLeague": {
-      "ranking": 684,
+      "ranking": 685,
       "quickMoveIds": [
         "DRAGON_BREATH"
       ],
@@ -27680,7 +27680,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 481,
+      "ranking": 480,
       "quickMoveIds": [
         "DRAGON_BREATH"
       ],
@@ -27817,7 +27817,7 @@
       "50": 1302
     },
     "greatLeague": {
-      "ranking": 634,
+      "ranking": 633,
       "quickMoveIds": [
         "MUD_SHOT"
       ],
@@ -28007,7 +28007,7 @@
       "50": 2444
     },
     "greatLeague": {
-      "ranking": 125,
+      "ranking": 124,
       "quickMoveIds": [
         "POISON_JAB"
       ],
@@ -28017,7 +28017,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 138,
+      "ranking": 140,
       "quickMoveIds": [
         "POISON_JAB"
       ],
@@ -28344,7 +28344,7 @@
       "50": 2922
     },
     "greatLeague": {
-      "ranking": 655,
+      "ranking": 654,
       "quickMoveIds": [
         "WATER_GUN"
       ],
@@ -28359,8 +28359,8 @@
         "WATER_GUN"
       ],
       "cinematicMoveIds": [
-        "PSYCHIC",
-        "ICE_BEAM"
+        "ICE_BEAM",
+        "PSYCHIC"
       ]
     },
     "masterLeague": {
@@ -28808,7 +28808,7 @@
       "50": 3060
     },
     "greatLeague": {
-      "ranking": 510,
+      "ranking": 514,
       "quickMoveIds": [
         "FURY_CUTTER"
       ],
@@ -29013,7 +29013,7 @@
       "50": 2888
     },
     "greatLeague": {
-      "ranking": 654,
+      "ranking": 651,
       "quickMoveIds": [
         "CONFUSION"
       ],
@@ -29023,7 +29023,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 460,
+      "ranking": 462,
       "quickMoveIds": [
         "CONFUSION"
       ],
@@ -29170,7 +29170,7 @@
       "50": 2639
     },
     "greatLeague": {
-      "ranking": 370,
+      "ranking": 369,
       "quickMoveIds": [
         "THUNDER_SHOCK"
       ],
@@ -29180,7 +29180,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 337,
+      "ranking": 334,
       "quickMoveIds": [
         "THUNDER_SHOCK"
       ],
@@ -29327,7 +29327,7 @@
       "50": 2706
     },
     "greatLeague": {
-      "ranking": 430,
+      "ranking": 436,
       "quickMoveIds": [
         "KARATE_CHOP"
       ],
@@ -29337,7 +29337,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 314,
+      "ranking": 306,
       "quickMoveIds": [
         "KARATE_CHOP"
       ],
@@ -29347,7 +29347,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 363,
+      "ranking": 362,
       "quickMoveIds": [
         "KARATE_CHOP"
       ],
@@ -29537,7 +29537,7 @@
       "50": 3345
     },
     "greatLeague": {
-      "ranking": 240,
+      "ranking": 241,
       "quickMoveIds": [
         "FURY_CUTTER"
       ],
@@ -29547,7 +29547,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 167,
+      "ranking": 169,
       "quickMoveIds": [
         "FURY_CUTTER"
       ],
@@ -29557,7 +29557,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 203,
+      "ranking": 202,
       "quickMoveIds": [
         "FURY_CUTTER"
       ],
@@ -30009,9 +30009,9 @@
       "50": 3834
     },
     "greatLeague": {
-      "ranking": 248,
+      "ranking": 224,
       "quickMoveIds": [
-        "DRAGON_BREATH"
+        "WATERFALL"
       ],
       "cinematicMoveIds": [
         "AQUA_TAIL",
@@ -30019,7 +30019,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 63,
+      "ranking": 60,
       "quickMoveIds": [
         "DRAGON_BREATH"
       ],
@@ -30450,7 +30450,7 @@
       "50": 2985
     },
     "greatLeague": {
-      "ranking": 79,
+      "ranking": 82,
       "quickMoveIds": [
         "ICE_SHARD"
       ],
@@ -30460,7 +30460,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 17,
+      "ranking": 16,
       "quickMoveIds": [
         "ICE_SHARD"
       ],
@@ -30725,7 +30725,7 @@
       "50": 1210
     },
     "greatLeague": {
-      "ranking": 672,
+      "ranking": 671,
       "quickMoveIds": [
         "QUICK_ATTACK"
       ],
@@ -30879,7 +30879,7 @@
       "50": 3521
     },
     "greatLeague": {
-      "ranking": 195,
+      "ranking": 196,
       "quickMoveIds": [
         "WATER_GUN"
       ],
@@ -30889,17 +30889,17 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 197,
+      "ranking": 152,
       "quickMoveIds": [
         "WATER_GUN"
       ],
       "cinematicMoveIds": [
         "AQUA_TAIL",
-        "LAST_RESORT"
+        "SCALD"
       ]
     },
     "masterLeague": {
-      "ranking": 125,
+      "ranking": 126,
       "quickMoveIds": [
         "WATER_GUN"
       ],
@@ -31070,7 +31070,7 @@
       "50": 3265
     },
     "greatLeague": {
-      "ranking": 471,
+      "ranking": 476,
       "quickMoveIds": [
         "VOLT_SWITCH"
       ],
@@ -31080,7 +31080,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 355,
+      "ranking": 356,
       "quickMoveIds": [
         "VOLT_SWITCH"
       ],
@@ -31090,7 +31090,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 202,
+      "ranking": 203,
       "quickMoveIds": [
         "VOLT_SWITCH"
       ],
@@ -31282,7 +31282,7 @@
       "50": 3424
     },
     "greatLeague": {
-      "ranking": 521,
+      "ranking": 526,
       "quickMoveIds": [
         "FIRE_SPIN"
       ],
@@ -31292,7 +31292,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 364,
+      "ranking": 363,
       "quickMoveIds": [
         "FIRE_SPIN"
       ],
@@ -31302,7 +31302,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 217,
+      "ranking": 219,
       "quickMoveIds": [
         "FIRE_SPIN"
       ],
@@ -31536,7 +31536,7 @@
       "50": 1944
     },
     "greatLeague": {
-      "ranking": 581,
+      "ranking": 580,
       "quickMoveIds": [
         "QUICK_ATTACK"
       ],
@@ -31718,7 +31718,7 @@
       "50": 1746
     },
     "greatLeague": {
-      "ranking": 548,
+      "ranking": 556,
       "quickMoveIds": [
         "MUD_SHOT"
       ],
@@ -31892,7 +31892,7 @@
       "50": 3150
     },
     "greatLeague": {
-      "ranking": 435,
+      "ranking": 439,
       "quickMoveIds": [
         "MUD_SHOT"
       ],
@@ -31902,7 +31902,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 322,
+      "ranking": 321,
       "quickMoveIds": [
         "MUD_SHOT"
       ],
@@ -32227,7 +32227,7 @@
       "50": 3067
     },
     "greatLeague": {
-      "ranking": 487,
+      "ranking": 494,
       "quickMoveIds": [
         "MUD_SHOT"
       ],
@@ -32237,7 +32237,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 386,
+      "ranking": 387,
       "quickMoveIds": [
         "MUD_SHOT"
       ],
@@ -32438,7 +32438,7 @@
       "50": 3147
     },
     "greatLeague": {
-      "ranking": 559,
+      "ranking": 560,
       "quickMoveIds": [
         "ROCK_THROW"
       ],
@@ -32448,7 +32448,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 372,
+      "ranking": 373,
       "quickMoveIds": [
         "ROCK_THROW"
       ],
@@ -32681,7 +32681,7 @@
       "50": 3647
     },
     "greatLeague": {
-      "ranking": 85,
+      "ranking": 89,
       "quickMoveIds": [
         "LICK"
       ],
@@ -32691,7 +32691,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 49,
+      "ranking": 56,
       "quickMoveIds": [
         "LICK"
       ],
@@ -32876,7 +32876,7 @@
       "50": 3450
     },
     "greatLeague": {
-      "ranking": 110,
+      "ranking": 109,
       "quickMoveIds": [
         "ICE_SHARD"
       ],
@@ -32886,7 +32886,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 24,
+      "ranking": 23,
       "quickMoveIds": [
         "ICE_SHARD"
       ],
@@ -33071,7 +33071,7 @@
       "50": 3987
     },
     "greatLeague": {
-      "ranking": 86,
+      "ranking": 87,
       "quickMoveIds": [
         "THUNDER_SHOCK"
       ],
@@ -33081,7 +33081,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 125,
+      "ranking": 123,
       "quickMoveIds": [
         "THUNDER_SHOCK"
       ],
@@ -33266,7 +33266,7 @@
       "50": 3917
     },
     "greatLeague": {
-      "ranking": 362,
+      "ranking": 360,
       "quickMoveIds": [
         "FIRE_SPIN"
       ],
@@ -33276,7 +33276,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 199,
+      "ranking": 193,
       "quickMoveIds": [
         "FIRE_SPIN"
       ],
@@ -33549,7 +33549,7 @@
       "50": 2012
     },
     "greatLeague": {
-      "ranking": 157,
+      "ranking": 150,
       "quickMoveIds": [
         "DRAGON_BREATH"
       ],
@@ -33756,7 +33756,7 @@
       "50": 4287
     },
     "greatLeague": {
-      "ranking": 191,
+      "ranking": 183,
       "quickMoveIds": [
         "DRAGON_BREATH"
       ],
@@ -33997,7 +33997,7 @@
     },
     "greatLeague": null,
     "ultraLeague": {
-      "ranking": 350,
+      "ranking": 351,
       "quickMoveIds": [
         "PSYCHO_CUT"
       ],
@@ -34173,7 +34173,7 @@
     },
     "greatLeague": null,
     "ultraLeague": {
-      "ranking": 350,
+      "ranking": 351,
       "quickMoveIds": [
         "PSYCHO_CUT"
       ],
@@ -34927,7 +34927,7 @@
       "50": 3691
     },
     "greatLeague": {
-      "ranking": 70,
+      "ranking": 73,
       "quickMoveIds": [
         "SHADOW_CLAW"
       ],
@@ -34937,7 +34937,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 136,
+      "ranking": 139,
       "quickMoveIds": [
         "SHADOW_CLAW"
       ],
@@ -35223,7 +35223,7 @@
       "50": 1644
     },
     "greatLeague": {
-      "ranking": 256,
+      "ranking": 252,
       "quickMoveIds": [
         "RAZOR_LEAF"
       ],
@@ -35374,7 +35374,7 @@
       "50": 2725
     },
     "greatLeague": {
-      "ranking": 45,
+      "ranking": 44,
       "quickMoveIds": [
         "VINE_WHIP"
       ],
@@ -35384,7 +35384,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 14,
+      "ranking": 13,
       "quickMoveIds": [
         "VINE_WHIP"
       ],
@@ -35665,7 +35665,7 @@
       "50": 1868
     },
     "greatLeague": {
-      "ranking": 463,
+      "ranking": 470,
       "quickMoveIds": [
         "EMBER"
       ],
@@ -35838,7 +35838,7 @@
       "50": 3266
     },
     "greatLeague": {
-      "ranking": 213,
+      "ranking": 214,
       "quickMoveIds": [
         "INCINERATE"
       ],
@@ -35848,7 +35848,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 114,
+      "ranking": 116,
       "quickMoveIds": [
         "SHADOW_CLAW"
       ],
@@ -35858,7 +35858,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 140,
+      "ranking": 141,
       "quickMoveIds": [
         "INCINERATE"
       ],
@@ -35996,7 +35996,7 @@
       "50": 1279
     },
     "greatLeague": {
-      "ranking": 657,
+      "ranking": 658,
       "quickMoveIds": [
         "WATER_GUN"
       ],
@@ -36136,7 +36136,7 @@
       "50": 1947
     },
     "greatLeague": {
-      "ranking": 319,
+      "ranking": 322,
       "quickMoveIds": [
         "WATER_GUN"
       ],
@@ -36336,7 +36336,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 262,
+      "ranking": 266,
       "quickMoveIds": [
         "ICE_FANG"
       ],
@@ -36604,7 +36604,7 @@
       "50": 1987
     },
     "greatLeague": {
-      "ranking": 554,
+      "ranking": 555,
       "quickMoveIds": [
         "QUICK_ATTACK"
       ],
@@ -36614,7 +36614,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 503,
+      "ranking": 502,
       "quickMoveIds": [
         "QUICK_ATTACK"
       ],
@@ -36880,7 +36880,7 @@
       "50": 2288
     },
     "greatLeague": {
-      "ranking": 120,
+      "ranking": 119,
       "quickMoveIds": [
         "WING_ATTACK"
       ],
@@ -36890,7 +36890,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 209,
+      "ranking": 208,
       "quickMoveIds": [
         "WING_ATTACK"
       ],
@@ -36900,7 +36900,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 362,
+      "ranking": 363,
       "quickMoveIds": [
         "WING_ATTACK"
       ],
@@ -37172,7 +37172,7 @@
       "50": 1522
     },
     "greatLeague": {
-      "ranking": 305,
+      "ranking": 302,
       "quickMoveIds": [
         "BUG_BITE"
       ],
@@ -37472,7 +37472,7 @@
       "50": 2003
     },
     "greatLeague": {
-      "ranking": 87,
+      "ranking": 84,
       "quickMoveIds": [
         "POISON_STING"
       ],
@@ -37646,7 +37646,7 @@
       "50": 2992
     },
     "greatLeague": {
-      "ranking": 226,
+      "ranking": 229,
       "quickMoveIds": [
         "AIR_SLASH"
       ],
@@ -37656,7 +37656,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 137,
+      "ranking": 138,
       "quickMoveIds": [
         "AIR_SLASH"
       ],
@@ -37957,7 +37957,7 @@
       "50": 2357
     },
     "greatLeague": {
-      "ranking": 78,
+      "ranking": 81,
       "quickMoveIds": [
         "SPARK"
       ],
@@ -37967,9 +37967,9 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 194,
+      "ranking": 257,
       "quickMoveIds": [
-        "SPARK"
+        "WATER_GUN"
       ],
       "cinematicMoveIds": [
         "THUNDERBOLT",
@@ -38750,23 +38750,23 @@
       "50": 1931
     },
     "greatLeague": {
-      "ranking": 518,
+      "ranking": 423,
       "quickMoveIds": [
         "HIDDEN_POWER_FLYING"
       ],
       "cinematicMoveIds": [
         "AERIAL_ACE",
-        "ANCIENT_POWER"
+        "DAZZLING_GLEAM"
       ]
     },
     "ultraLeague": {
-      "ranking": 499,
+      "ranking": 498,
       "quickMoveIds": [
         "HIDDEN_POWER_FLYING"
       ],
       "cinematicMoveIds": [
         "AERIAL_ACE",
-        "ANCIENT_POWER"
+        "DAZZLING_GLEAM"
       ]
     },
     "masterLeague": null
@@ -39027,7 +39027,7 @@
       "50": 2474
     },
     "greatLeague": {
-      "ranking": 627,
+      "ranking": 628,
       "quickMoveIds": [
         "AIR_SLASH"
       ],
@@ -39037,7 +39037,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 473,
+      "ranking": 474,
       "quickMoveIds": [
         "AIR_SLASH"
       ],
@@ -39310,7 +39310,7 @@
       "50": 1720
     },
     "greatLeague": {
-      "ranking": 630,
+      "ranking": 629,
       "quickMoveIds": [
         "CHARGE_BEAM"
       ],
@@ -39505,7 +39505,7 @@
       "50": 3225
     },
     "greatLeague": {
-      "ranking": 289,
+      "ranking": 291,
       "quickMoveIds": [
         "VOLT_SWITCH"
       ],
@@ -39525,7 +39525,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 126,
+      "ranking": 127,
       "quickMoveIds": [
         "VOLT_SWITCH"
       ],
@@ -39854,7 +39854,7 @@
       "50": 2578
     },
     "greatLeague": {
-      "ranking": 115,
+      "ranking": 111,
       "quickMoveIds": [
         "BULLET_SEED"
       ],
@@ -39864,13 +39864,13 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 77,
+      "ranking": 37,
       "quickMoveIds": [
         "BULLET_SEED"
       ],
       "cinematicMoveIds": [
         "LEAF_BLADE",
-        "RETURN"
+        "DAZZLING_GLEAM"
       ]
     },
     "masterLeague": {
@@ -40148,13 +40148,13 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 450,
+      "ranking": 449,
       "quickMoveIds": [
         "BUBBLE"
       ],
       "cinematicMoveIds": [
-        "ICE_BEAM",
-        "PLAY_ROUGH"
+        "PLAY_ROUGH",
+        "ICE_BEAM"
       ]
     },
     "masterLeague": null
@@ -40279,7 +40279,7 @@
       "50": 2428
     },
     "greatLeague": {
-      "ranking": 225,
+      "ranking": 228,
       "quickMoveIds": [
         "COUNTER"
       ],
@@ -40289,7 +40289,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 204,
+      "ranking": 203,
       "quickMoveIds": [
         "COUNTER"
       ],
@@ -40299,7 +40299,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 327,
+      "ranking": 326,
       "quickMoveIds": [
         "COUNTER"
       ],
@@ -40464,7 +40464,7 @@
       "50": 2769
     },
     "greatLeague": {
-      "ranking": 63,
+      "ranking": 64,
       "quickMoveIds": [
         "MUD_SHOT"
       ],
@@ -40898,13 +40898,13 @@
       "50": 1850
     },
     "greatLeague": {
-      "ranking": 172,
+      "ranking": 168,
       "quickMoveIds": [
         "BULLET_SEED"
       ],
       "cinematicMoveIds": [
-        "AERIAL_ACE",
-        "ENERGY_BALL"
+        "ENERGY_BALL",
+        "AERIAL_ACE"
       ]
     },
     "ultraLeague": {
@@ -40913,8 +40913,8 @@
         "BULLET_SEED"
       ],
       "cinematicMoveIds": [
-        "AERIAL_ACE",
-        "ENERGY_BALL"
+        "ENERGY_BALL",
+        "AERIAL_ACE"
       ]
     },
     "masterLeague": null
@@ -41045,7 +41045,7 @@
       "50": 1524
     },
     "greatLeague": {
-      "ranking": 639,
+      "ranking": 636,
       "quickMoveIds": [
         "SCRATCH"
       ],
@@ -41331,23 +41331,23 @@
       "50": 2421
     },
     "greatLeague": {
-      "ranking": 465,
+      "ranking": 462,
       "quickMoveIds": [
         "BULLET_SEED"
       ],
       "cinematicMoveIds": [
-        "SLUDGE_BOMB",
-        "LEAF_STORM"
+        "LEAF_STORM",
+        "SLUDGE_BOMB"
       ]
     },
     "ultraLeague": {
-      "ranking": 384,
+      "ranking": 388,
       "quickMoveIds": [
         "BULLET_SEED"
       ],
       "cinematicMoveIds": [
-        "SLUDGE_BOMB",
-        "LEAF_STORM"
+        "LEAF_STORM",
+        "SLUDGE_BOMB"
       ]
     },
     "masterLeague": null
@@ -41490,7 +41490,7 @@
       "50": 1662
     },
     "greatLeague": {
-      "ranking": 588,
+      "ranking": 589,
       "quickMoveIds": [
         "WING_ATTACK"
       ],
@@ -41772,7 +41772,7 @@
       "50": 2252
     },
     "greatLeague": {
-      "ranking": 42,
+      "ranking": 45,
       "quickMoveIds": [
         "MUD_SHOT"
       ],
@@ -41782,7 +41782,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 192,
+      "ranking": 194,
       "quickMoveIds": [
         "MUD_SHOT"
       ],
@@ -41968,8 +41968,8 @@
         "CONFUSION"
       ],
       "cinematicMoveIds": [
-        "PSYCHIC",
-        "SHADOW_BALL"
+        "SHADOW_BALL",
+        "PSYCHIC"
       ]
     },
     "ultraLeague": {
@@ -41978,8 +41978,8 @@
         "CONFUSION"
       ],
       "cinematicMoveIds": [
-        "PSYCHIC",
-        "SHADOW_BALL"
+        "SHADOW_BALL",
+        "PSYCHIC"
       ]
     },
     "masterLeague": {
@@ -42137,7 +42137,7 @@
       "50": 2416
     },
     "greatLeague": {
-      "ranking": 24,
+      "ranking": 23,
       "quickMoveIds": [
         "SNARL"
       ],
@@ -42147,7 +42147,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 28,
+      "ranking": 29,
       "quickMoveIds": [
         "SNARL"
       ],
@@ -42157,7 +42157,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 277,
+      "ranking": 275,
       "quickMoveIds": [
         "SNARL"
       ],
@@ -42295,7 +42295,7 @@
       "50": 1766
     },
     "greatLeague": {
-      "ranking": 452,
+      "ranking": 449,
       "quickMoveIds": [
         "FEINT_ATTACK"
       ],
@@ -42431,7 +42431,7 @@
       "50": 2877
     },
     "greatLeague": {
-      "ranking": 497,
+      "ranking": 503,
       "quickMoveIds": [
         "CONFUSION"
       ],
@@ -42441,7 +42441,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 331,
+      "ranking": 332,
       "quickMoveIds": [
         "CONFUSION"
       ],
@@ -42600,7 +42600,7 @@
       "50": 3072
     },
     "greatLeague": {
-      "ranking": 497,
+      "ranking": 503,
       "quickMoveIds": [
         "CONFUSION"
       ],
@@ -42610,7 +42610,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 323,
+      "ranking": 322,
       "quickMoveIds": [
         "HEX"
       ],
@@ -42762,7 +42762,7 @@
       "50": 2178
     },
     "greatLeague": {
-      "ranking": 576,
+      "ranking": 584,
       "quickMoveIds": [
         "HEX"
       ],
@@ -42772,7 +42772,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 492,
+      "ranking": 493,
       "quickMoveIds": [
         "HEX"
       ],
@@ -42964,7 +42964,7 @@
       "50": 1160
     },
     "greatLeague": {
-      "ranking": 40,
+      "ranking": 39,
       "quickMoveIds": [
         "COUNTER"
       ],
@@ -43100,7 +43100,7 @@
       "50": 2314
     },
     "greatLeague": {
-      "ranking": 632,
+      "ranking": 630,
       "quickMoveIds": [
         "CONFUSION"
       ],
@@ -43433,7 +43433,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 76,
+      "ranking": 74,
       "quickMoveIds": [
         "BUG_BITE"
       ],
@@ -43572,7 +43572,7 @@
       "50": 1909
     },
     "greatLeague": {
-      "ranking": 351,
+      "ranking": 354,
       "quickMoveIds": [
         "BITE"
       ],
@@ -43582,7 +43582,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 474,
+      "ranking": 475,
       "quickMoveIds": [
         "BITE"
       ],
@@ -43724,7 +43724,7 @@
       "50": 2099
     },
     "greatLeague": {
-      "ranking": 158,
+      "ranking": 152,
       "quickMoveIds": [
         "WING_ATTACK"
       ],
@@ -43734,7 +43734,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 412,
+      "ranking": 415,
       "quickMoveIds": [
         "WING_ATTACK"
       ],
@@ -43888,7 +43888,7 @@
       "50": 2729
     },
     "greatLeague": {
-      "ranking": 56,
+      "ranking": 57,
       "quickMoveIds": [
         "DRAGON_TAIL"
       ],
@@ -43898,7 +43898,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 9,
+      "ranking": 10,
       "quickMoveIds": [
         "DRAGON_TAIL"
       ],
@@ -43908,7 +43908,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 106,
+      "ranking": 105,
       "quickMoveIds": [
         "DRAGON_TAIL"
       ],
@@ -44203,7 +44203,7 @@
       "50": 2885
     },
     "greatLeague": {
-      "ranking": 149,
+      "ranking": 148,
       "quickMoveIds": [
         "CHARM"
       ],
@@ -44213,7 +44213,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 143,
+      "ranking": 142,
       "quickMoveIds": [
         "CHARM"
       ],
@@ -44395,7 +44395,7 @@
       "50": 2318
     },
     "greatLeague": {
-      "ranking": 166,
+      "ranking": 159,
       "quickMoveIds": [
         "POISON_STING"
       ],
@@ -44405,7 +44405,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 303,
+      "ranking": 299,
       "quickMoveIds": [
         "POISON_STING"
       ],
@@ -44540,7 +44540,7 @@
       "50": 3393
     },
     "greatLeague": {
-      "ranking": 293,
+      "ranking": 294,
       "quickMoveIds": [
         "BULLET_PUNCH"
       ],
@@ -44560,7 +44560,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 168,
+      "ranking": 169,
       "quickMoveIds": [
         "FURY_CUTTER"
       ],
@@ -44846,7 +44846,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 84,
+      "ranking": 83,
       "quickMoveIds": [
         "COUNTER"
       ],
@@ -44856,7 +44856,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 75,
+      "ranking": 74,
       "quickMoveIds": [
         "COUNTER"
       ],
@@ -44994,7 +44994,7 @@
       "50": 2319
     },
     "greatLeague": {
-      "ranking": 441,
+      "ranking": 442,
       "quickMoveIds": [
         "ICE_SHARD"
       ],
@@ -45004,7 +45004,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 351,
+      "ranking": 352,
       "quickMoveIds": [
         "ICE_SHARD"
       ],
@@ -45143,7 +45143,7 @@
       "50": 1502
     },
     "greatLeague": {
-      "ranking": 546,
+      "ranking": 552,
       "quickMoveIds": [
         "LICK"
       ],
@@ -45297,17 +45297,17 @@
       "50": 3329
     },
     "greatLeague": {
-      "ranking": 540,
+      "ranking": 300,
       "quickMoveIds": [
-        "COUNTER"
+        "SHADOW_CLAW"
       ],
       "cinematicMoveIds": [
         "CLOSE_COMBAT",
-        "HYPER_BEAM"
+        "PLAY_ROUGH"
       ]
     },
     "ultraLeague": {
-      "ranking": 201,
+      "ranking": 199,
       "quickMoveIds": [
         "SHADOW_CLAW"
       ],
@@ -45585,7 +45585,7 @@
       "50": 1924
     },
     "greatLeague": {
-      "ranking": 437,
+      "ranking": 429,
       "quickMoveIds": [
         "EMBER"
       ],
@@ -45595,7 +45595,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 483,
+      "ranking": 482,
       "quickMoveIds": [
         "EMBER"
       ],
@@ -45867,7 +45867,7 @@
       "50": 2652
     },
     "greatLeague": {
-      "ranking": 224,
+      "ranking": 226,
       "quickMoveIds": [
         "POWDER_SNOW"
       ],
@@ -45877,7 +45877,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 98,
+      "ranking": 102,
       "quickMoveIds": [
         "POWDER_SNOW"
       ],
@@ -46021,7 +46021,7 @@
       "50": 1558
     },
     "greatLeague": {
-      "ranking": 336,
+      "ranking": 337,
       "quickMoveIds": [
         "BUBBLE"
       ],
@@ -46322,7 +46322,7 @@
       "50": 2617
     },
     "greatLeague": {
-      "ranking": 652,
+      "ranking": 650,
       "quickMoveIds": [
         "WATER_GUN"
       ],
@@ -46332,7 +46332,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 457,
+      "ranking": 456,
       "quickMoveIds": [
         "WATER_GUN"
       ],
@@ -46732,7 +46732,7 @@
       "50": 2383
     },
     "greatLeague": {
-      "ranking": 52,
+      "ranking": 48,
       "quickMoveIds": [
         "BUBBLE"
       ],
@@ -46742,7 +46742,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 213,
+      "ranking": 212,
       "quickMoveIds": [
         "WING_ATTACK"
       ],
@@ -46897,7 +46897,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 52,
+      "ranking": 50,
       "quickMoveIds": [
         "AIR_SLASH"
       ],
@@ -46907,7 +46907,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 309,
+      "ranking": 312,
       "quickMoveIds": [
         "AIR_SLASH"
       ],
@@ -47208,7 +47208,7 @@
       "50": 2979
     },
     "greatLeague": {
-      "ranking": 405,
+      "ranking": 407,
       "quickMoveIds": [
         "SNARL"
       ],
@@ -47218,7 +47218,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 269,
+      "ranking": 267,
       "quickMoveIds": [
         "SNARL"
       ],
@@ -47542,7 +47542,7 @@
       "50": 2986
     },
     "greatLeague": {
-      "ranking": 348,
+      "ranking": 343,
       "quickMoveIds": [
         "DRAGON_BREATH"
       ],
@@ -47552,7 +47552,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 155,
+      "ranking": 156,
       "quickMoveIds": [
         "DRAGON_BREATH"
       ],
@@ -47562,7 +47562,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 241,
+      "ranking": 240,
       "quickMoveIds": [
         "DRAGON_BREATH"
       ],
@@ -47864,7 +47864,7 @@
       "50": 3407
     },
     "greatLeague": {
-      "ranking": 524,
+      "ranking": 530,
       "quickMoveIds": [
         "COUNTER"
       ],
@@ -47874,13 +47874,13 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 285,
+      "ranking": 349,
       "quickMoveIds": [
         "COUNTER"
       ],
       "cinematicMoveIds": [
         "EARTHQUAKE",
-        "HEAVY_SLAM"
+        "PLAY_ROUGH"
       ]
     },
     "masterLeague": {
@@ -48064,7 +48064,7 @@
       "50": 3065
     },
     "greatLeague": {
-      "ranking": 343,
+      "ranking": 342,
       "quickMoveIds": [
         "LOCK_ON"
       ],
@@ -48074,7 +48074,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 214,
+      "ranking": 213,
       "quickMoveIds": [
         "LOCK_ON"
       ],
@@ -48534,7 +48534,7 @@
       "50": 2438
     },
     "greatLeague": {
-      "ranking": 59,
+      "ranking": 63,
       "quickMoveIds": [
         "COUNTER"
       ],
@@ -48544,7 +48544,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 48,
+      "ranking": 52,
       "quickMoveIds": [
         "COUNTER"
       ],
@@ -48710,7 +48710,7 @@
       "50": 1460
     },
     "greatLeague": {
-      "ranking": 469,
+      "ranking": 471,
       "quickMoveIds": [
         "POWDER_SNOW"
       ],
@@ -48866,7 +48866,7 @@
       "50": 1364
     },
     "greatLeague": {
-      "ranking": 545,
+      "ranking": 548,
       "quickMoveIds": [
         "THUNDER_SHOCK"
       ],
@@ -49187,7 +49187,7 @@
       "50": 2662
     },
     "greatLeague": {
-      "ranking": 574,
+      "ranking": 575,
       "quickMoveIds": [
         "TACKLE"
       ],
@@ -49197,7 +49197,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 375,
+      "ranking": 376,
       "quickMoveIds": [
         "TACKLE"
       ],
@@ -49341,7 +49341,7 @@
       "50": 3117
     },
     "greatLeague": {
-      "ranking": 532,
+      "ranking": 535,
       "quickMoveIds": [
         "POUND"
       ],
@@ -49351,7 +49351,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 339,
+      "ranking": 336,
       "quickMoveIds": [
         "POUND"
       ],
@@ -49512,7 +49512,7 @@
       "50": 3902
     },
     "greatLeague": {
-      "ranking": 139,
+      "ranking": 138,
       "quickMoveIds": [
         "THUNDER_SHOCK"
       ],
@@ -49704,27 +49704,27 @@
       "50": 3926
     },
     "greatLeague": {
-      "ranking": 410,
+      "ranking": 444,
       "quickMoveIds": [
         "FIRE_SPIN"
       ],
       "cinematicMoveIds": [
         "FLAME_CHARGE",
-        "IRON_HEAD"
+        "OVERHEAT"
       ]
     },
     "ultraLeague": {
-      "ranking": 245,
+      "ranking": 207,
       "quickMoveIds": [
         "FIRE_SPIN"
       ],
       "cinematicMoveIds": [
         "FLAME_CHARGE",
-        "IRON_HEAD"
+        "OVERHEAT"
       ]
     },
     "masterLeague": {
-      "ranking": 105,
+      "ranking": 106,
       "quickMoveIds": [
         "FIRE_SPIN"
       ],
@@ -49912,7 +49912,7 @@
       "50": 3372
     },
     "greatLeague": {
-      "ranking": 107,
+      "ranking": 105,
       "quickMoveIds": [
         "SNARL"
       ],
@@ -50215,7 +50215,7 @@
       "50": 1996
     },
     "greatLeague": {
-      "ranking": 661,
+      "ranking": 660,
       "quickMoveIds": [
         "BITE"
       ],
@@ -50371,7 +50371,7 @@
       "50": 4335
     },
     "greatLeague": {
-      "ranking": 512,
+      "ranking": 519,
       "quickMoveIds": [
         "SMACK_DOWN"
       ],
@@ -50381,7 +50381,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 373,
+      "ranking": 377,
       "quickMoveIds": [
         "SMACK_DOWN"
       ],
@@ -50544,7 +50544,7 @@
       "50": 4186
     },
     "greatLeague": {
-      "ranking": 137,
+      "ranking": 135,
       "quickMoveIds": [
         "DRAGON_TAIL"
       ],
@@ -50554,7 +50554,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 27,
+      "ranking": 26,
       "quickMoveIds": [
         "DRAGON_TAIL"
       ],
@@ -50564,7 +50564,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 1,
+      "ranking": 2,
       "quickMoveIds": [
         "DRAGON_TAIL"
       ],
@@ -50919,7 +50919,7 @@
       "50": 3691
     },
     "greatLeague": {
-      "ranking": 496,
+      "ranking": 501,
       "quickMoveIds": [
         "CONFUSION"
       ],
@@ -50929,7 +50929,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 318,
+      "ranking": 319,
       "quickMoveIds": [
         "CONFUSION"
       ],
@@ -50939,7 +50939,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 231,
+      "ranking": 230,
       "quickMoveIds": [
         "CONFUSION"
       ],
@@ -51375,7 +51375,7 @@
       "50": 3117
     },
     "greatLeague": {
-      "ranking": 184,
+      "ranking": 178,
       "quickMoveIds": [
         "BULLET_SEED"
       ],
@@ -51385,7 +51385,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 82,
+      "ranking": 80,
       "quickMoveIds": [
         "BULLET_SEED"
       ],
@@ -51395,7 +51395,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 270,
+      "ranking": 269,
       "quickMoveIds": [
         "BULLET_SEED"
       ],
@@ -51668,13 +51668,13 @@
       "50": 1868
     },
     "greatLeague": {
-      "ranking": 457,
+      "ranking": 459,
       "quickMoveIds": [
         "EMBER"
       ],
       "cinematicMoveIds": [
-        "ROCK_SLIDE",
-        "FLAME_CHARGE"
+        "FLAME_CHARGE",
+        "ROCK_SLIDE"
       ]
     },
     "ultraLeague": null,
@@ -51862,7 +51862,7 @@
       "50": 3219
     },
     "greatLeague": {
-      "ranking": 160,
+      "ranking": 162,
       "quickMoveIds": [
         "COUNTER"
       ],
@@ -51882,7 +51882,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 123,
+      "ranking": 124,
       "quickMoveIds": [
         "COUNTER"
       ],
@@ -52145,7 +52145,7 @@
       "50": 2008
     },
     "greatLeague": {
-      "ranking": 178,
+      "ranking": 180,
       "quickMoveIds": [
         "MUD_SHOT"
       ],
@@ -52155,7 +52155,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 435,
+      "ranking": 436,
       "quickMoveIds": [
         "MUD_SHOT"
       ],
@@ -52346,7 +52346,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 44,
+      "ranking": 43,
       "quickMoveIds": [
         "MUD_SHOT"
       ],
@@ -52655,7 +52655,7 @@
       "50": 2177
     },
     "greatLeague": {
-      "ranking": 387,
+      "ranking": 390,
       "quickMoveIds": [
         "ICE_FANG"
       ],
@@ -53052,7 +53052,7 @@
       "50": 1879
     },
     "greatLeague": {
-      "ranking": 159,
+      "ranking": 157,
       "quickMoveIds": [
         "SHADOW_CLAW"
       ],
@@ -53190,7 +53190,7 @@
       "50": 1879
     },
     "greatLeague": {
-      "ranking": 159,
+      "ranking": 157,
       "quickMoveIds": [
         "SHADOW_CLAW"
       ],
@@ -53522,7 +53522,7 @@
       "50": 1996
     },
     "greatLeague": {
-      "ranking": 667,
+      "ranking": 664,
       "quickMoveIds": [
         "INFESTATION"
       ],
@@ -53757,7 +53757,7 @@
       "50": 1384
     },
     "greatLeague": {
-      "ranking": 434,
+      "ranking": 435,
       "quickMoveIds": [
         "CONFUSION"
       ],
@@ -54020,7 +54020,7 @@
       "50": 1353
     },
     "greatLeague": {
-      "ranking": 418,
+      "ranking": 412,
       "quickMoveIds": [
         "BUBBLE"
       ],
@@ -54212,7 +54212,7 @@
       "50": 2626
     },
     "greatLeague": {
-      "ranking": 193,
+      "ranking": 191,
       "quickMoveIds": [
         "BUBBLE"
       ],
@@ -54502,7 +54502,7 @@
       "50": 1387
     },
     "greatLeague": {
-      "ranking": 388,
+      "ranking": 385,
       "quickMoveIds": [
         "FEINT_ATTACK"
       ],
@@ -54694,7 +54694,7 @@
       "50": 2637
     },
     "greatLeague": {
-      "ranking": 108,
+      "ranking": 103,
       "quickMoveIds": [
         "SNARL"
       ],
@@ -54704,7 +54704,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 33,
+      "ranking": 32,
       "quickMoveIds": [
         "SNARL"
       ],
@@ -54945,7 +54945,7 @@
       "50": 2170
     },
     "greatLeague": {
-      "ranking": 355,
+      "ranking": 351,
       "quickMoveIds": [
         "WING_ATTACK"
       ],
@@ -55223,7 +55223,7 @@
       "50": 2404
     },
     "greatLeague": {
-      "ranking": 96,
+      "ranking": 93,
       "quickMoveIds": [
         "WING_ATTACK"
       ],
@@ -55233,7 +55233,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 127,
+      "ranking": 124,
       "quickMoveIds": [
         "WING_ATTACK"
       ],
@@ -55686,7 +55686,7 @@
       "50": 3497
     },
     "greatLeague": {
-      "ranking": 192,
+      "ranking": 198,
       "quickMoveIds": [
         "CHARM"
       ],
@@ -55696,17 +55696,17 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 282,
+      "ranking": 277,
       "quickMoveIds": [
         "CHARM"
       ],
       "cinematicMoveIds": [
-        "SYNCHRONOISE",
-        "SHADOW_BALL"
+        "SHADOW_BALL",
+        "SYNCHRONOISE"
       ]
     },
     "masterLeague": {
-      "ranking": 74,
+      "ranking": 76,
       "quickMoveIds": [
         "CHARM"
       ],
@@ -56027,7 +56027,7 @@
       "50": 2567
     },
     "greatLeague": {
-      "ranking": 448,
+      "ranking": 445,
       "quickMoveIds": [
         "AIR_SLASH"
       ],
@@ -56037,7 +56037,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 312,
+      "ranking": 311,
       "quickMoveIds": [
         "INFESTATION"
       ],
@@ -56328,7 +56328,7 @@
       "50": 2971
     },
     "greatLeague": {
-      "ranking": 482,
+      "ranking": 486,
       "quickMoveIds": [
         "COUNTER"
       ],
@@ -56338,7 +56338,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 299,
+      "ranking": 295,
       "quickMoveIds": [
         "COUNTER"
       ],
@@ -56348,7 +56348,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 288,
+      "ranking": 287,
       "quickMoveIds": [
         "COUNTER"
       ],
@@ -56596,7 +56596,7 @@
       "50": 2225
     },
     "greatLeague": {
-      "ranking": 53,
+      "ranking": 50,
       "quickMoveIds": [
         "COUNTER"
       ],
@@ -56606,7 +56606,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 302,
+      "ranking": 300,
       "quickMoveIds": [
         "COUNTER"
       ],
@@ -57026,7 +57026,7 @@
       "50": 2226
     },
     "greatLeague": {
-      "ranking": 453,
+      "ranking": 450,
       "quickMoveIds": [
         "FURY_CUTTER"
       ],
@@ -57434,7 +57434,7 @@
       "50": 1500
     },
     "greatLeague": {
-      "ranking": 611,
+      "ranking": 613,
       "quickMoveIds": [
         "BITE"
       ],
@@ -57579,7 +57579,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 396,
+      "ranking": 400,
       "quickMoveIds": [
         "BITE"
       ],
@@ -57873,7 +57873,7 @@
       "50": 3198
     },
     "greatLeague": {
-      "ranking": 113,
+      "ranking": 116,
       "quickMoveIds": [
         "COUNTER"
       ],
@@ -57883,7 +57883,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 56,
+      "ranking": 55,
       "quickMoveIds": [
         "COUNTER"
       ],
@@ -58161,9 +58161,9 @@
       "50": 1123
     },
     "greatLeague": {
-      "ranking": 628,
+      "ranking": 677,
       "quickMoveIds": [
-        "ROCK_THROW"
+        "SPARK"
       ],
       "cinematicMoveIds": [
         "ROCK_SLIDE",
@@ -58447,7 +58447,7 @@
       "50": 1691
     },
     "greatLeague": {
-      "ranking": 254,
+      "ranking": 253,
       "quickMoveIds": [
         "CHARM"
       ],
@@ -59040,7 +59040,7 @@
       "50": 1478
     },
     "greatLeague": {
-      "ranking": 596,
+      "ranking": 598,
       "quickMoveIds": [
         "METAL_CLAW"
       ],
@@ -59179,7 +59179,7 @@
       "50": 2324
     },
     "greatLeague": {
-      "ranking": 461,
+      "ranking": 468,
       "quickMoveIds": [
         "METAL_CLAW"
       ],
@@ -59189,7 +59189,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 413,
+      "ranking": 414,
       "quickMoveIds": [
         "METAL_CLAW"
       ],
@@ -59348,7 +59348,7 @@
       "50": 3391
     },
     "greatLeague": {
-      "ranking": 390,
+      "ranking": 393,
       "quickMoveIds": [
         "SMACK_DOWN"
       ],
@@ -59358,9 +59358,9 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 281,
+      "ranking": 238,
       "quickMoveIds": [
-        "SMACK_DOWN"
+        "DRAGON_TAIL"
       ],
       "cinematicMoveIds": [
         "STONE_EDGE",
@@ -59368,7 +59368,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 121,
+      "ranking": 122,
       "quickMoveIds": [
         "SMACK_DOWN"
       ],
@@ -59964,7 +59964,7 @@
       "50": 2646
     },
     "greatLeague": {
-      "ranking": 278,
+      "ranking": 279,
       "quickMoveIds": [
         "SNARL"
       ],
@@ -59974,7 +59974,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 258,
+      "ranking": 254,
       "quickMoveIds": [
         "SNARL"
       ],
@@ -59984,7 +59984,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 350,
+      "ranking": 349,
       "quickMoveIds": [
         "SNARL"
       ],
@@ -60297,7 +60297,7 @@
       "50": 2010
     },
     "greatLeague": {
-      "ranking": 462,
+      "ranking": 465,
       "quickMoveIds": [
         "SPARK"
       ],
@@ -60446,7 +60446,7 @@
       "50": 1915
     },
     "greatLeague": {
-      "ranking": 302,
+      "ranking": 304,
       "quickMoveIds": [
         "SPARK"
       ],
@@ -60586,17 +60586,17 @@
       "50": 2002
     },
     "greatLeague": {
-      "ranking": 646,
+      "ranking": 644,
       "quickMoveIds": [
         "STRUGGLE_BUG"
       ],
       "cinematicMoveIds": [
-        "SIGNAL_BEAM",
-        "THUNDERBOLT"
+        "THUNDERBOLT",
+        "SIGNAL_BEAM"
       ]
     },
     "ultraLeague": {
-      "ranking": 512,
+      "ranking": 511,
       "quickMoveIds": [
         "STRUGGLE_BUG"
       ],
@@ -60735,7 +60735,7 @@
       "50": 2002
     },
     "greatLeague": {
-      "ranking": 650,
+      "ranking": 649,
       "quickMoveIds": [
         "STRUGGLE_BUG"
       ],
@@ -60745,7 +60745,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 509,
+      "ranking": 508,
       "quickMoveIds": [
         "STRUGGLE_BUG"
       ],
@@ -60884,7 +60884,7 @@
       "50": 2114
     },
     "greatLeague": {
-      "ranking": 579,
+      "ranking": 574,
       "quickMoveIds": [
         "POISON_JAB"
       ],
@@ -61166,7 +61166,7 @@
       "50": 2236
     },
     "greatLeague": {
-      "ranking": 297,
+      "ranking": 298,
       "quickMoveIds": [
         "INFESTATION"
       ],
@@ -61176,13 +61176,13 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 371,
+      "ranking": 375,
       "quickMoveIds": [
         "INFESTATION"
       ],
       "cinematicMoveIds": [
-        "SLUDGE_BOMB",
-        "ICE_BEAM"
+        "ICE_BEAM",
+        "SLUDGE_BOMB"
       ]
     },
     "masterLeague": {
@@ -61461,7 +61461,7 @@
       "50": 2466
     },
     "greatLeague": {
-      "ranking": 454,
+      "ranking": 457,
       "quickMoveIds": [
         "WATERFALL"
       ],
@@ -61471,7 +61471,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 389,
+      "ranking": 390,
       "quickMoveIds": [
         "WATERFALL"
       ],
@@ -61736,7 +61736,7 @@
       "50": 2577
     },
     "greatLeague": {
-      "ranking": 252,
+      "ranking": 251,
       "quickMoveIds": [
         "WATER_GUN"
       ],
@@ -61746,7 +61746,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 187,
+      "ranking": 186,
       "quickMoveIds": [
         "WATER_GUN"
       ],
@@ -62041,7 +62041,7 @@
       "50": 2479
     },
     "greatLeague": {
-      "ranking": 622,
+      "ranking": 621,
       "quickMoveIds": [
         "EMBER"
       ],
@@ -62051,13 +62051,13 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 431,
+      "ranking": 433,
       "quickMoveIds": [
         "EMBER"
       ],
       "cinematicMoveIds": [
-        "OVERHEAT",
-        "EARTH_POWER"
+        "EARTH_POWER",
+        "OVERHEAT"
       ]
     },
     "masterLeague": null
@@ -62186,7 +62186,7 @@
       "50": 2366
     },
     "greatLeague": {
-      "ranking": 374,
+      "ranking": 376,
       "quickMoveIds": [
         "FIRE_SPIN"
       ],
@@ -62196,7 +62196,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 298,
+      "ranking": 292,
       "quickMoveIds": [
         "FIRE_SPIN"
       ],
@@ -62481,18 +62481,18 @@
         "EXTRASENSORY"
       ],
       "cinematicMoveIds": [
-        "PSYCHIC",
-        "SHADOW_BALL"
+        "SHADOW_BALL",
+        "PSYCHIC"
       ]
     },
     "ultraLeague": {
-      "ranking": 407,
+      "ranking": 408,
       "quickMoveIds": [
         "EXTRASENSORY"
       ],
       "cinematicMoveIds": [
-        "PSYCHIC",
-        "SHADOW_BALL"
+        "SHADOW_BALL",
+        "PSYCHIC"
       ]
     },
     "masterLeague": {
@@ -62776,13 +62776,13 @@
       "50": 1441
     },
     "greatLeague": {
-      "ranking": 626,
+      "ranking": 666,
       "quickMoveIds": [
         "MUD_SHOT"
       ],
       "cinematicMoveIds": [
         "CRUNCH",
-        "RETURN"
+        "SAND_TOMB"
       ]
     },
     "ultraLeague": null,
@@ -62922,7 +62922,7 @@
       "50": 1384
     },
     "greatLeague": {
-      "ranking": 485,
+      "ranking": 489,
       "quickMoveIds": [
         "DRAGON_BREATH"
       ],
@@ -63078,7 +63078,7 @@
       "50": 3008
     },
     "greatLeague": {
-      "ranking": 177,
+      "ranking": 172,
       "quickMoveIds": [
         "MUD_SHOT"
       ],
@@ -63088,7 +63088,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 88,
+      "ranking": 92,
       "quickMoveIds": [
         "DRAGON_TAIL"
       ],
@@ -63392,7 +63392,7 @@
       "50": 2598
     },
     "greatLeague": {
-      "ranking": 649,
+      "ranking": 645,
       "quickMoveIds": [
         "POISON_JAB"
       ],
@@ -63402,9 +63402,9 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 420,
+      "ranking": 396,
       "quickMoveIds": [
-        "POISON_JAB"
+        "SUCKER_PUNCH"
       ],
       "cinematicMoveIds": [
         "GRASS_KNOT",
@@ -63692,7 +63692,7 @@
       "50": 2266
     },
     "greatLeague": {
-      "ranking": 8,
+      "ranking": 7,
       "quickMoveIds": [
         "DRAGON_BREATH"
       ],
@@ -63702,7 +63702,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 103,
+      "ranking": 104,
       "quickMoveIds": [
         "DRAGON_BREATH"
       ],
@@ -63995,7 +63995,7 @@
       "50": 2733
     },
     "greatLeague": {
-      "ranking": 119,
+      "ranking": 120,
       "quickMoveIds": [
         "SHADOW_CLAW"
       ],
@@ -64005,7 +64005,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 54,
+      "ranking": 48,
       "quickMoveIds": [
         "SHADOW_CLAW"
       ],
@@ -64153,7 +64153,7 @@
       "50": 2380
     },
     "greatLeague": {
-      "ranking": 200,
+      "ranking": 202,
       "quickMoveIds": [
         "POISON_JAB"
       ],
@@ -64163,7 +64163,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 284,
+      "ranking": 279,
       "quickMoveIds": [
         "POISON_JAB"
       ],
@@ -64303,7 +64303,7 @@
       "50": 2631
     },
     "greatLeague": {
-      "ranking": 601,
+      "ranking": 603,
       "quickMoveIds": [
         "CONFUSION"
       ],
@@ -64313,13 +64313,13 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 427,
+      "ranking": 413,
       "quickMoveIds": [
         "CONFUSION"
       ],
       "cinematicMoveIds": [
         "ROCK_SLIDE",
-        "PSYCHIC"
+        "MOONBLAST"
       ]
     },
     "masterLeague": {
@@ -64458,7 +64458,7 @@
       "50": 2631
     },
     "greatLeague": {
-      "ranking": 602,
+      "ranking": 604,
       "quickMoveIds": [
         "CONFUSION"
       ],
@@ -64468,7 +64468,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 428,
+      "ranking": 429,
       "quickMoveIds": [
         "CONFUSION"
       ],
@@ -64747,7 +64747,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 115,
+      "ranking": 120,
       "quickMoveIds": [
         "MUD_SHOT"
       ],
@@ -64757,7 +64757,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 229,
+      "ranking": 228,
       "quickMoveIds": [
         "MUD_SHOT"
       ],
@@ -65069,7 +65069,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 171,
+      "ranking": 172,
       "quickMoveIds": [
         "SNARL"
       ],
@@ -65079,7 +65079,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 275,
+      "ranking": 276,
       "quickMoveIds": [
         "SNARL"
       ],
@@ -65417,7 +65417,7 @@
       "50": 2229
     },
     "greatLeague": {
-      "ranking": 440,
+      "ranking": 446,
       "quickMoveIds": [
         "CONFUSION"
       ],
@@ -65427,13 +65427,13 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 463,
+      "ranking": 458,
       "quickMoveIds": [
         "CONFUSION"
       ],
       "cinematicMoveIds": [
         "EARTH_POWER",
-        "PSYCHIC"
+        "SHADOW_BALL"
       ]
     },
     "masterLeague": {
@@ -65579,7 +65579,7 @@
       "50": 1460
     },
     "greatLeague": {
-      "ranking": 306,
+      "ranking": 311,
       "quickMoveIds": [
         "BULLET_SEED"
       ],
@@ -65730,17 +65730,17 @@
       "50": 2499
     },
     "greatLeague": {
-      "ranking": 132,
+      "ranking": 133,
       "quickMoveIds": [
         "BULLET_SEED"
       ],
       "cinematicMoveIds": [
-        "STONE_EDGE",
-        "GRASS_KNOT"
+        "GRASS_KNOT",
+        "STONE_EDGE"
       ]
     },
     "ultraLeague": {
-      "ranking": 58,
+      "ranking": 57,
       "quickMoveIds": [
         "BULLET_SEED"
       ],
@@ -65750,7 +65750,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 329,
+      "ranking": 327,
       "quickMoveIds": [
         "BULLET_SEED"
       ],
@@ -66031,17 +66031,17 @@
       "50": 3220
     },
     "greatLeague": {
-      "ranking": 555,
+      "ranking": 558,
       "quickMoveIds": [
         "FURY_CUTTER"
       ],
       "cinematicMoveIds": [
-        "ROCK_BLAST",
-        "CROSS_POISON"
+        "CROSS_POISON",
+        "ROCK_BLAST"
       ]
     },
     "ultraLeague": {
-      "ranking": 395,
+      "ranking": 397,
       "quickMoveIds": [
         "FURY_CUTTER"
       ],
@@ -66051,7 +66051,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 259,
+      "ranking": 256,
       "quickMoveIds": [
         "FURY_CUTTER"
       ],
@@ -66273,9 +66273,9 @@
       "50": 3398
     },
     "greatLeague": {
-      "ranking": 208,
+      "ranking": 192,
       "quickMoveIds": [
-        "DRAGON_TAIL"
+        "WATERFALL"
       ],
       "cinematicMoveIds": [
         "SURF",
@@ -66283,7 +66283,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 75,
+      "ranking": 73,
       "quickMoveIds": [
         "DRAGON_TAIL"
       ],
@@ -66293,7 +66293,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 62,
+      "ranking": 61,
       "quickMoveIds": [
         "DRAGON_TAIL"
       ],
@@ -66409,7 +66409,7 @@
       "50": 1845
     },
     "greatLeague": {
-      "ranking": 185,
+      "ranking": 186,
       "quickMoveIds": [
         "HEX"
       ],
@@ -66539,7 +66539,7 @@
       "50": 1845
     },
     "greatLeague": {
-      "ranking": 49,
+      "ranking": 51,
       "quickMoveIds": [
         "WATER_GUN"
       ],
@@ -66670,7 +66670,7 @@
       "50": 1845
     },
     "greatLeague": {
-      "ranking": 43,
+      "ranking": 41,
       "quickMoveIds": [
         "POWDER_SNOW"
       ],
@@ -66801,7 +66801,7 @@
       "50": 1845
     },
     "greatLeague": {
-      "ranking": 185,
+      "ranking": 186,
       "quickMoveIds": [
         "HEX"
       ],
@@ -67240,7 +67240,7 @@
       "50": 2599
     },
     "greatLeague": {
-      "ranking": 365,
+      "ranking": 371,
       "quickMoveIds": [
         "SHADOW_CLAW"
       ],
@@ -67250,7 +67250,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 257,
+      "ranking": 255,
       "quickMoveIds": [
         "SHADOW_CLAW"
       ],
@@ -67522,7 +67522,7 @@
       "50": 1799
     },
     "greatLeague": {
-      "ranking": 205,
+      "ranking": 207,
       "quickMoveIds": [
         "HEX"
       ],
@@ -67655,7 +67655,7 @@
       "50": 2194
     },
     "greatLeague": {
-      "ranking": 47,
+      "ranking": 42,
       "quickMoveIds": [
         "AIR_SLASH"
       ],
@@ -67665,7 +67665,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 203,
+      "ranking": 201,
       "quickMoveIds": [
         "AIR_SLASH"
       ],
@@ -67826,7 +67826,7 @@
       "50": 2554
     },
     "greatLeague": {
-      "ranking": 511,
+      "ranking": 523,
       "quickMoveIds": [
         "EXTRASENSORY"
       ],
@@ -67836,7 +67836,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 368,
+      "ranking": 370,
       "quickMoveIds": [
         "EXTRASENSORY"
       ],
@@ -67846,7 +67846,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 402,
+      "ranking": 401,
       "quickMoveIds": [
         "EXTRASENSORY"
       ],
@@ -67999,7 +67999,7 @@
       "50": 2856
     },
     "greatLeague": {
-      "ranking": 621,
+      "ranking": 622,
       "quickMoveIds": [
         "SNARL"
       ],
@@ -68522,7 +68522,7 @@
       "50": 2380
     },
     "greatLeague": {
-      "ranking": 237,
+      "ranking": 236,
       "quickMoveIds": [
         "ICE_SHARD"
       ],
@@ -68532,7 +68532,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 166,
+      "ranking": 164,
       "quickMoveIds": [
         "ICE_SHARD"
       ],
@@ -68807,7 +68807,7 @@
       "50": 1938
     },
     "greatLeague": {
-      "ranking": 148,
+      "ranking": 144,
       "quickMoveIds": [
         "POWDER_SNOW"
       ],
@@ -68949,7 +68949,7 @@
       "50": 3081
     },
     "greatLeague": {
-      "ranking": 567,
+      "ranking": 570,
       "quickMoveIds": [
         "WATERFALL"
       ],
@@ -68959,7 +68959,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 356,
+      "ranking": 354,
       "quickMoveIds": [
         "WATERFALL"
       ],
@@ -69091,7 +69091,7 @@
       "50": 1436
     },
     "greatLeague": {
-      "ranking": 483,
+      "ranking": 488,
       "quickMoveIds": [
         "WATER_GUN"
       ],
@@ -69225,7 +69225,7 @@
       "50": 2645
     },
     "greatLeague": {
-      "ranking": 406,
+      "ranking": 411,
       "quickMoveIds": [
         "WATER_GUN"
       ],
@@ -69378,7 +69378,7 @@
       "50": 2820
     },
     "greatLeague": {
-      "ranking": 676,
+      "ranking": 675,
       "quickMoveIds": [
         "WATER_GUN"
       ],
@@ -69533,7 +69533,7 @@
       "50": 2858
     },
     "greatLeague": {
-      "ranking": 245,
+      "ranking": 248,
       "quickMoveIds": [
         "WATER_GUN"
       ],
@@ -69543,7 +69543,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 215,
+      "ranking": 210,
       "quickMoveIds": [
         "WATER_GUN"
       ],
@@ -69940,7 +69940,7 @@
       "50": 2296
     },
     "greatLeague": {
-      "ranking": 288,
+      "ranking": 283,
       "quickMoveIds": [
         "DRAGON_BREATH"
       ],
@@ -69950,7 +69950,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 399,
+      "ranking": 403,
       "quickMoveIds": [
         "DRAGON_BREATH"
       ],
@@ -70122,7 +70122,7 @@
       "50": 4239
     },
     "greatLeague": {
-      "ranking": 607,
+      "ranking": 605,
       "quickMoveIds": [
         "DRAGON_TAIL"
       ],
@@ -70132,7 +70132,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 410,
+      "ranking": 412,
       "quickMoveIds": [
         "DRAGON_TAIL"
       ],
@@ -70360,7 +70360,7 @@
       "50": 1946
     },
     "greatLeague": {
-      "ranking": 494,
+      "ranking": 506,
       "quickMoveIds": [
         "METAL_CLAW"
       ],
@@ -70370,7 +70370,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 498,
+      "ranking": 499,
       "quickMoveIds": [
         "METAL_CLAW"
       ],
@@ -70525,7 +70525,7 @@
       "50": 4286
     },
     "greatLeague": {
-      "ranking": 489,
+      "ranking": 495,
       "quickMoveIds": [
         "BULLET_PUNCH"
       ],
@@ -70535,7 +70535,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 313,
+      "ranking": 312,
       "quickMoveIds": [
         "BULLET_PUNCH"
       ],
@@ -70696,13 +70696,13 @@
       "50": 3530
     },
     "greatLeague": {
-      "ranking": 18,
+      "ranking": 75,
       "quickMoveIds": [
         "LOCK_ON"
       ],
       "cinematicMoveIds": [
         "STONE_EDGE",
-        "FOCUS_BLAST"
+        "ZAP_CANNON"
       ]
     },
     "ultraLeague": {
@@ -70863,7 +70863,7 @@
       "50": 3530
     },
     "greatLeague": {
-      "ranking": 105,
+      "ranking": 106,
       "quickMoveIds": [
         "LOCK_ON"
       ],
@@ -70873,7 +70873,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 20,
+      "ranking": 19,
       "quickMoveIds": [
         "LOCK_ON"
       ],
@@ -71202,7 +71202,7 @@
       "50": 3968
     },
     "greatLeague": {
-      "ranking": 422,
+      "ranking": 420,
       "quickMoveIds": [
         "DRAGON_BREATH"
       ],
@@ -71212,7 +71212,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 330,
+      "ranking": 331,
       "quickMoveIds": [
         "DRAGON_BREATH"
       ],
@@ -71356,7 +71356,7 @@
       "50": 4310
     },
     "greatLeague": {
-      "ranking": 291,
+      "ranking": 285,
       "quickMoveIds": [
         "DRAGON_BREATH"
       ],
@@ -71366,7 +71366,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 276,
+      "ranking": 275,
       "quickMoveIds": [
         "DRAGON_BREATH"
       ],
@@ -71506,13 +71506,13 @@
     },
     "greatLeague": null,
     "ultraLeague": {
-      "ranking": 248,
+      "ranking": 301,
       "quickMoveIds": [
         "WATERFALL"
       ],
       "cinematicMoveIds": [
         "SURF",
-        "THUNDER"
+        "BLIZZARD"
       ]
     },
     "masterLeague": {
@@ -71670,12 +71670,12 @@
         "MUD_SHOT"
       ],
       "cinematicMoveIds": [
-        "FIRE_PUNCH",
-        "EARTHQUAKE"
+        "EARTHQUAKE",
+        "FIRE_PUNCH"
       ]
     },
     "masterLeague": {
-      "ranking": 21,
+      "ranking": 19,
       "quickMoveIds": [
         "MUD_SHOT"
       ],
@@ -71829,7 +71829,7 @@
       "50": 4336
     },
     "greatLeague": {
-      "ranking": 413,
+      "ranking": 405,
       "quickMoveIds": [
         "DRAGON_TAIL"
       ],
@@ -71839,7 +71839,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 263,
+      "ranking": 265,
       "quickMoveIds": [
         "DRAGON_TAIL"
       ],
@@ -71984,7 +71984,7 @@
       "50": 3691
     },
     "greatLeague": {
-      "ranking": 253,
+      "ranking": 255,
       "quickMoveIds": [
         "CONFUSION"
       ],
@@ -72004,7 +72004,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 117,
+      "ranking": 116,
       "quickMoveIds": [
         "CONFUSION"
       ],
@@ -72731,7 +72731,7 @@
       "50": 1342
     },
     "greatLeague": {
-      "ranking": 455,
+      "ranking": 458,
       "quickMoveIds": [
         "RAZOR_LEAF"
       ],
@@ -72872,7 +72872,7 @@
       "50": 2137
     },
     "greatLeague": {
-      "ranking": 255,
+      "ranking": 254,
       "quickMoveIds": [
         "RAZOR_LEAF"
       ],
@@ -72882,7 +72882,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 391,
+      "ranking": 392,
       "quickMoveIds": [
         "RAZOR_LEAF"
       ],
@@ -73053,7 +73053,7 @@
       "50": 3318
     },
     "greatLeague": {
-      "ranking": 375,
+      "ranking": 377,
       "quickMoveIds": [
         "RAZOR_LEAF"
       ],
@@ -73063,7 +73063,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 256,
+      "ranking": 259,
       "quickMoveIds": [
         "RAZOR_LEAF"
       ],
@@ -73073,7 +73073,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 251,
+      "ranking": 252,
       "quickMoveIds": [
         "RAZOR_LEAF"
       ],
@@ -73342,7 +73342,7 @@
       "50": 1780
     },
     "greatLeague": {
-      "ranking": 438,
+      "ranking": 437,
       "quickMoveIds": [
         "EMBER"
       ],
@@ -73498,7 +73498,7 @@
       "50": 3033
     },
     "greatLeague": {
-      "ranking": 337,
+      "ranking": 335,
       "quickMoveIds": [
         "FIRE_SPIN"
       ],
@@ -73508,7 +73508,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 244,
+      "ranking": 240,
       "quickMoveIds": [
         "FIRE_SPIN"
       ],
@@ -73518,7 +73518,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 228,
+      "ranking": 229,
       "quickMoveIds": [
         "FIRE_SPIN"
       ],
@@ -73662,7 +73662,7 @@
       "50": 1215
     },
     "greatLeague": {
-      "ranking": 681,
+      "ranking": 683,
       "quickMoveIds": [
         "BUBBLE"
       ],
@@ -73808,7 +73808,7 @@
       "50": 1923
     },
     "greatLeague": {
-      "ranking": 241,
+      "ranking": 242,
       "quickMoveIds": [
         "BUBBLE"
       ],
@@ -73977,7 +73977,7 @@
       "50": 3279
     },
     "greatLeague": {
-      "ranking": 58,
+      "ranking": 59,
       "quickMoveIds": [
         "WATERFALL"
       ],
@@ -73987,7 +73987,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 99,
+      "ranking": 100,
       "quickMoveIds": [
         "WATERFALL"
       ],
@@ -73997,7 +73997,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 132,
+      "ranking": 133,
       "quickMoveIds": [
         "WATERFALL"
       ],
@@ -74254,7 +74254,7 @@
       "50": 1468
     },
     "greatLeague": {
-      "ranking": 432,
+      "ranking": 428,
       "quickMoveIds": [
         "WING_ATTACK"
       ],
@@ -74395,7 +74395,7 @@
       "50": 3194
     },
     "greatLeague": {
-      "ranking": 381,
+      "ranking": 382,
       "quickMoveIds": [
         "WING_ATTACK"
       ],
@@ -74405,7 +74405,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 232,
+      "ranking": 225,
       "quickMoveIds": [
         "WING_ATTACK"
       ],
@@ -74415,7 +74415,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 218,
+      "ranking": 217,
       "quickMoveIds": [
         "WING_ATTACK"
       ],
@@ -74751,7 +74751,7 @@
       "50": 2061
     },
     "greatLeague": {
-      "ranking": 201,
+      "ranking": 203,
       "quickMoveIds": [
         "WATER_GUN"
       ],
@@ -74761,7 +74761,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 451,
+      "ranking": 450,
       "quickMoveIds": [
         "WATER_GUN"
       ],
@@ -74988,7 +74988,7 @@
       "50": 1869
     },
     "greatLeague": {
-      "ranking": 458,
+      "ranking": 461,
       "quickMoveIds": [
         "FURY_CUTTER"
       ],
@@ -75261,7 +75261,7 @@
       "50": 1680
     },
     "greatLeague": {
-      "ranking": 282,
+      "ranking": 281,
       "quickMoveIds": [
         "SPARK"
       ],
@@ -75419,19 +75419,19 @@
       "50": 3265
     },
     "greatLeague": {
-      "ranking": 307,
+      "ranking": 259,
       "quickMoveIds": [
-        "SPARK"
+        "SNARL"
       ],
       "cinematicMoveIds": [
         "WILD_CHARGE",
-        "CRUNCH"
+        "PSYCHIC_FANGS"
       ]
     },
     "ultraLeague": {
-      "ranking": 251,
+      "ranking": 230,
       "quickMoveIds": [
-        "SPARK"
+        "SNARL"
       ],
       "cinematicMoveIds": [
         "WILD_CHARGE",
@@ -75439,13 +75439,13 @@
       ]
     },
     "masterLeague": {
-      "ranking": 147,
+      "ranking": 123,
       "quickMoveIds": [
         "SPARK"
       ],
       "cinematicMoveIds": [
         "WILD_CHARGE",
-        "CRUNCH"
+        "PSYCHIC_FANGS"
       ]
     }
   },
@@ -75764,7 +75764,7 @@
       "50": 3359
     },
     "greatLeague": {
-      "ranking": 179,
+      "ranking": 175,
       "quickMoveIds": [
         "BULLET_SEED"
       ],
@@ -75774,9 +75774,9 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 163,
+      "ranking": 242,
       "quickMoveIds": [
-        "POISON_JAB"
+        "BULLET_SEED"
       ],
       "cinematicMoveIds": [
         "WEATHER_BALL_FIRE",
@@ -75784,7 +75784,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 133,
+      "ranking": 134,
       "quickMoveIds": [
         "POISON_JAB"
       ],
@@ -76049,7 +76049,7 @@
     },
     "greatLeague": null,
     "ultraLeague": {
-      "ranking": 475,
+      "ranking": 473,
       "quickMoveIds": [
         "SMACK_DOWN"
       ],
@@ -76334,7 +76334,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 401,
+      "ranking": 402,
       "quickMoveIds": [
         "SMACK_DOWN"
       ],
@@ -76770,7 +76770,7 @@
       "50": 2005
     },
     "greatLeague": {
-      "ranking": 544,
+      "ranking": 543,
       "quickMoveIds": [
         "BUG_BITE"
       ],
@@ -76780,7 +76780,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 476,
+      "ranking": 472,
       "quickMoveIds": [
         "BUG_BITE"
       ],
@@ -76915,7 +76915,7 @@
       "50": 2005
     },
     "greatLeague": {
-      "ranking": 513,
+      "ranking": 520,
       "quickMoveIds": [
         "BUG_BITE"
       ],
@@ -77060,7 +77060,7 @@
       "50": 1802
     },
     "greatLeague": {
-      "ranking": 242,
+      "ranking": 244,
       "quickMoveIds": [
         "CONFUSION"
       ],
@@ -77196,9 +77196,9 @@
       "50": 2052
     },
     "greatLeague": {
-      "ranking": 617,
+      "ranking": 610,
       "quickMoveIds": [
-        "BUG_BITE"
+        "AIR_SLASH"
       ],
       "cinematicMoveIds": [
         "AERIAL_ACE",
@@ -77492,7 +77492,7 @@
       "50": 2267
     },
     "greatLeague": {
-      "ranking": 247,
+      "ranking": 243,
       "quickMoveIds": [
         "FURY_CUTTER"
       ],
@@ -77502,7 +77502,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 344,
+      "ranking": 347,
       "quickMoveIds": [
         "FURY_CUTTER"
       ],
@@ -77642,7 +77642,7 @@
       "50": 1372
     },
     "greatLeague": {
-      "ranking": 39,
+      "ranking": 37,
       "quickMoveIds": [
         "VOLT_SWITCH"
       ],
@@ -77901,7 +77901,7 @@
       "50": 2762
     },
     "greatLeague": {
-      "ranking": 605,
+      "ranking": 606,
       "quickMoveIds": [
         "WATERFALL"
       ],
@@ -77911,7 +77911,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 434,
+      "ranking": 435,
       "quickMoveIds": [
         "WATERFALL"
       ],
@@ -78194,7 +78194,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 462,
+      "ranking": 463,
       "quickMoveIds": [
         "BULLET_SEED"
       ],
@@ -78342,7 +78342,7 @@
       "50": 2315
     },
     "greatLeague": {
-      "ranking": 268,
+      "ranking": 264,
       "quickMoveIds": [
         "BULLET_SEED"
       ],
@@ -78352,7 +78352,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 273,
+      "ranking": 271,
       "quickMoveIds": [
         "BULLET_SEED"
       ],
@@ -78996,7 +78996,7 @@
       "50": 2733
     },
     "greatLeague": {
-      "ranking": 660,
+      "ranking": 657,
       "quickMoveIds": [
         "SCRATCH"
       ],
@@ -79006,7 +79006,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 482,
+      "ranking": 483,
       "quickMoveIds": [
         "SCRATCH"
       ],
@@ -79162,7 +79162,7 @@
       "50": 1353
     },
     "greatLeague": {
-      "ranking": 214,
+      "ranking": 216,
       "quickMoveIds": [
         "HEX"
       ],
@@ -79304,7 +79304,7 @@
       "50": 2693
     },
     "greatLeague": {
-      "ranking": 37,
+      "ranking": 38,
       "quickMoveIds": [
         "HEX"
       ],
@@ -79314,17 +79314,17 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 37,
+      "ranking": 35,
       "quickMoveIds": [
         "HEX"
       ],
       "cinematicMoveIds": [
-        "ICY_WIND",
-        "SHADOW_BALL"
+        "SHADOW_BALL",
+        "ICY_WIND"
       ]
     },
     "masterLeague": {
-      "ranking": 196,
+      "ranking": 197,
       "quickMoveIds": [
         "HEX"
       ],
@@ -79443,7 +79443,7 @@
       "50": 1423
     },
     "greatLeague": {
-      "ranking": 671,
+      "ranking": 670,
       "quickMoveIds": [
         "QUICK_ATTACK"
       ],
@@ -79591,7 +79591,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 510,
+      "ranking": 509,
       "quickMoveIds": [
         "LOW_KICK"
       ],
@@ -79855,7 +79855,7 @@
       "50": 2957
     },
     "greatLeague": {
-      "ranking": 443,
+      "ranking": 448,
       "quickMoveIds": [
         "HEX"
       ],
@@ -79865,7 +79865,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 321,
+      "ranking": 323,
       "quickMoveIds": [
         "HEX"
       ],
@@ -79875,7 +79875,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 306,
+      "ranking": 305,
       "quickMoveIds": [
         "HEX"
       ],
@@ -80031,7 +80031,7 @@
       "50": 3065
     },
     "greatLeague": {
-      "ranking": 189,
+      "ranking": 190,
       "quickMoveIds": [
         "SNARL"
       ],
@@ -80041,7 +80041,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 117,
+      "ranking": 118,
       "quickMoveIds": [
         "SNARL"
       ],
@@ -80308,7 +80308,7 @@
       "50": 2208
     },
     "greatLeague": {
-      "ranking": 415,
+      "ranking": 414,
       "quickMoveIds": [
         "SHADOW_CLAW"
       ],
@@ -80318,7 +80318,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 455,
+      "ranking": 453,
       "quickMoveIds": [
         "SHADOW_CLAW"
       ],
@@ -80723,7 +80723,7 @@
       "50": 2666
     },
     "greatLeague": {
-      "ranking": 102,
+      "ranking": 98,
       "quickMoveIds": [
         "POISON_JAB"
       ],
@@ -80733,7 +80733,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 90,
+      "ranking": 88,
       "quickMoveIds": [
         "POISON_JAB"
       ],
@@ -81075,7 +81075,7 @@
       "50": 2531
     },
     "greatLeague": {
-      "ranking": 230,
+      "ranking": 234,
       "quickMoveIds": [
         "CONFUSION"
       ],
@@ -81085,7 +81085,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 183,
+      "ranking": 187,
       "quickMoveIds": [
         "CONFUSION"
       ],
@@ -81597,7 +81597,7 @@
       "50": 2025
     },
     "greatLeague": {
-      "ranking": 664,
+      "ranking": 661,
       "quickMoveIds": [
         "PECK"
       ],
@@ -81735,7 +81735,7 @@
       "50": 2343
     },
     "greatLeague": {
-      "ranking": 308,
+      "ranking": 313,
       "quickMoveIds": [
         "SUCKER_PUNCH"
       ],
@@ -81745,7 +81745,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 338,
+      "ranking": 340,
       "quickMoveIds": [
         "SUCKER_PUNCH"
       ],
@@ -82022,7 +82022,7 @@
       "50": 2119
     },
     "greatLeague": {
-      "ranking": 516,
+      "ranking": 517,
       "quickMoveIds": [
         "MUD_SHOT"
       ],
@@ -82032,7 +82032,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 491,
+      "ranking": 492,
       "quickMoveIds": [
         "MUD_SHOT"
       ],
@@ -82208,7 +82208,7 @@
       "50": 4479
     },
     "greatLeague": {
-      "ranking": 399,
+      "ranking": 398,
       "quickMoveIds": [
         "DRAGON_TAIL"
       ],
@@ -82218,7 +82218,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 252,
+      "ranking": 256,
       "quickMoveIds": [
         "DRAGON_TAIL"
       ],
@@ -82372,7 +82372,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 388,
+      "ranking": 389,
       "quickMoveIds": [
         "LICK"
       ],
@@ -82684,7 +82684,7 @@
       "50": 3056
     },
     "greatLeague": {
-      "ranking": 41,
+      "ranking": 40,
       "quickMoveIds": [
         "COUNTER"
       ],
@@ -82704,7 +82704,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 130,
+      "ranking": 131,
       "quickMoveIds": [
         "COUNTER"
       ],
@@ -82838,13 +82838,13 @@
       "50": 1535
     },
     "greatLeague": {
-      "ranking": 557,
+      "ranking": 562,
       "quickMoveIds": [
         "BITE"
       ],
       "cinematicMoveIds": [
         "BODY_SLAM",
-        "ROCK_TOMB"
+        "DIG"
       ]
     },
     "ultraLeague": null,
@@ -83043,9 +83043,9 @@
       "50": 3488
     },
     "greatLeague": {
-      "ranking": 416,
+      "ranking": 493,
       "quickMoveIds": [
-        "ICE_FANG"
+        "THUNDER_FANG"
       ],
       "cinematicMoveIds": [
         "WEATHER_BALL_ROCK",
@@ -83053,7 +83053,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 295,
+      "ranking": 296,
       "quickMoveIds": [
         "ICE_FANG"
       ],
@@ -83204,7 +83204,7 @@
       "50": 1141
     },
     "greatLeague": {
-      "ranking": 620,
+      "ranking": 618,
       "quickMoveIds": [
         "POISON_STING"
       ],
@@ -83407,7 +83407,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 91,
+      "ranking": 90,
       "quickMoveIds": [
         "POISON_STING"
       ],
@@ -83678,7 +83678,7 @@
       "50": 2813
     },
     "greatLeague": {
-      "ranking": 138,
+      "ranking": 139,
       "quickMoveIds": [
         "COUNTER"
       ],
@@ -83688,7 +83688,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 141,
+      "ranking": 137,
       "quickMoveIds": [
         "COUNTER"
       ],
@@ -83835,17 +83835,17 @@
       "50": 2441
     },
     "greatLeague": {
-      "ranking": 273,
+      "ranking": 270,
       "quickMoveIds": [
         "VINE_WHIP"
       ],
       "cinematicMoveIds": [
-        "CRUNCH",
-        "POWER_WHIP"
+        "POWER_WHIP",
+        "CRUNCH"
       ]
     },
     "ultraLeague": {
-      "ranking": 221,
+      "ranking": 216,
       "quickMoveIds": [
         "VINE_WHIP"
       ],
@@ -84122,23 +84122,23 @@
       "50": 2050
     },
     "greatLeague": {
-      "ranking": 408,
+      "ranking": 438,
       "quickMoveIds": [
         "WATER_GUN"
       ],
       "cinematicMoveIds": [
         "BLIZZARD",
-        "SILVER_WIND"
+        "WATER_PULSE"
       ]
     },
     "ultraLeague": {
-      "ranking": 466,
+      "ranking": 481,
       "quickMoveIds": [
         "WATER_GUN"
       ],
       "cinematicMoveIds": [
         "BLIZZARD",
-        "SILVER_WIND"
+        "WATER_PULSE"
       ]
     },
     "masterLeague": null
@@ -84269,7 +84269,7 @@
       "50": 1411
     },
     "greatLeague": {
-      "ranking": 312,
+      "ranking": 308,
       "quickMoveIds": [
         "BUBBLE"
       ],
@@ -84412,7 +84412,7 @@
       "50": 1311
     },
     "greatLeague": {
-      "ranking": 523,
+      "ranking": 518,
       "quickMoveIds": [
         "POWDER_SNOW"
       ],
@@ -84572,7 +84572,7 @@
       "50": 2670
     },
     "greatLeague": {
-      "ranking": 61,
+      "ranking": 55,
       "quickMoveIds": [
         "POWDER_SNOW"
       ],
@@ -84582,7 +84582,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 11,
+      "ranking": 9,
       "quickMoveIds": [
         "POWDER_SNOW"
       ],
@@ -84592,7 +84592,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 134,
+      "ranking": 135,
       "quickMoveIds": [
         "POWDER_SNOW"
       ],
@@ -84896,7 +84896,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 264,
+      "ranking": 263,
       "quickMoveIds": [
         "SNARL"
       ],
@@ -85066,7 +85066,7 @@
       "50": 3623
     },
     "greatLeague": {
-      "ranking": 80,
+      "ranking": 78,
       "quickMoveIds": [
         "SPARK"
       ],
@@ -85250,7 +85250,7 @@
       "50": 2789
     },
     "greatLeague": {
-      "ranking": 128,
+      "ranking": 127,
       "quickMoveIds": [
         "LICK"
       ],
@@ -85260,7 +85260,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 39,
+      "ranking": 38,
       "quickMoveIds": [
         "LICK"
       ],
@@ -85270,7 +85270,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 179,
+      "ranking": 180,
       "quickMoveIds": [
         "LICK"
       ],
@@ -85463,7 +85463,7 @@
       "50": 4221
     },
     "greatLeague": {
-      "ranking": 464,
+      "ranking": 473,
       "quickMoveIds": [
         "MUD_SLAP"
       ],
@@ -85473,7 +85473,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 369,
+      "ranking": 372,
       "quickMoveIds": [
         "MUD_SLAP"
       ],
@@ -85652,7 +85652,7 @@
       "50": 3425
     },
     "greatLeague": {
-      "ranking": 194,
+      "ranking": 195,
       "quickMoveIds": [
         "VINE_WHIP"
       ],
@@ -85662,7 +85662,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 106,
+      "ranking": 103,
       "quickMoveIds": [
         "VINE_WHIP"
       ],
@@ -85672,7 +85672,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 127,
+      "ranking": 128,
       "quickMoveIds": [
         "VINE_WHIP"
       ],
@@ -85842,7 +85842,7 @@
       "50": 3481
     },
     "greatLeague": {
-      "ranking": 133,
+      "ranking": 134,
       "quickMoveIds": [
         "THUNDER_SHOCK"
       ],
@@ -85852,7 +85852,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 178,
+      "ranking": 179,
       "quickMoveIds": [
         "THUNDER_SHOCK"
       ],
@@ -86042,7 +86042,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 315,
+      "ranking": 313,
       "quickMoveIds": [
         "KARATE_CHOP"
       ],
@@ -86223,7 +86223,7 @@
       "50": 3767
     },
     "greatLeague": {
-      "ranking": 117,
+      "ranking": 113,
       "quickMoveIds": [
         "CHARM"
       ],
@@ -86233,7 +86233,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 104,
+      "ranking": 99,
       "quickMoveIds": [
         "CHARM"
       ],
@@ -86382,7 +86382,7 @@
       "50": 3330
     },
     "greatLeague": {
-      "ranking": 520,
+      "ranking": 521,
       "quickMoveIds": [
         "WING_ATTACK"
       ],
@@ -86392,7 +86392,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 385,
+      "ranking": 386,
       "quickMoveIds": [
         "WING_ATTACK"
       ],
@@ -86575,7 +86575,7 @@
       "50": 3328
     },
     "greatLeague": {
-      "ranking": 244,
+      "ranking": 240,
       "quickMoveIds": [
         "BULLET_SEED"
       ],
@@ -86585,7 +86585,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 131,
+      "ranking": 130,
       "quickMoveIds": [
         "BULLET_SEED"
       ],
@@ -86595,7 +86595,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 195,
+      "ranking": 194,
       "quickMoveIds": [
         "BULLET_SEED"
       ],
@@ -86765,7 +86765,7 @@
       "50": 3535
     },
     "greatLeague": {
-      "ranking": 451,
+      "ranking": 455,
       "quickMoveIds": [
         "ICE_SHARD"
       ],
@@ -86940,7 +86940,7 @@
       "50": 3043
     },
     "greatLeague": {
-      "ranking": 118,
+      "ranking": 117,
       "quickMoveIds": [
         "WING_ATTACK"
       ],
@@ -86950,9 +86950,9 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 50,
+      "ranking": 81,
       "quickMoveIds": [
-        "FURY_CUTTER"
+        "WING_ATTACK"
       ],
       "cinematicMoveIds": [
         "NIGHT_SLASH",
@@ -86960,7 +86960,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 143,
+      "ranking": 144,
       "quickMoveIds": [
         "WING_ATTACK"
       ],
@@ -87115,7 +87115,7 @@
       "50": 3763
     },
     "greatLeague": {
-      "ranking": 356,
+      "ranking": 355,
       "quickMoveIds": [
         "POWDER_SNOW"
       ],
@@ -87125,7 +87125,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 149,
+      "ranking": 153,
       "quickMoveIds": [
         "POWDER_SNOW"
       ],
@@ -87495,7 +87495,7 @@
       "50": 3497
     },
     "greatLeague": {
-      "ranking": 270,
+      "ranking": 273,
       "quickMoveIds": [
         "CONFUSION"
       ],
@@ -87505,7 +87505,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 188,
+      "ranking": 190,
       "quickMoveIds": [
         "CONFUSION"
       ],
@@ -87515,7 +87515,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 129,
+      "ranking": 130,
       "quickMoveIds": [
         "CONFUSION"
       ],
@@ -87646,7 +87646,7 @@
       "50": 2351
     },
     "greatLeague": {
-      "ranking": 152,
+      "ranking": 156,
       "quickMoveIds": [
         "SPARK"
       ],
@@ -87656,7 +87656,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 278,
+      "ranking": 276,
       "quickMoveIds": [
         "SPARK"
       ],
@@ -87666,7 +87666,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 250,
+      "ranking": 251,
       "quickMoveIds": [
         "SPARK"
       ],
@@ -87824,7 +87824,7 @@
       "50": 2700
     },
     "greatLeague": {
-      "ranking": 322,
+      "ranking": 328,
       "quickMoveIds": [
         "HEX"
       ],
@@ -87834,7 +87834,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 237,
+      "ranking": 244,
       "quickMoveIds": [
         "HEX"
       ],
@@ -87979,7 +87979,7 @@
       "50": 2306
     },
     "greatLeague": {
-      "ranking": 38,
+      "ranking": 36,
       "quickMoveIds": [
         "POWDER_SNOW"
       ],
@@ -87989,7 +87989,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 243,
+      "ranking": 246,
       "quickMoveIds": [
         "POWDER_SNOW"
       ],
@@ -88760,7 +88760,7 @@
       "50": 2916
     },
     "greatLeague": {
-      "ranking": 429,
+      "ranking": 431,
       "quickMoveIds": [
         "THUNDER_SHOCK"
       ],
@@ -88770,7 +88770,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 340,
+      "ranking": 339,
       "quickMoveIds": [
         "THUNDER_SHOCK"
       ],
@@ -88780,7 +88780,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 269,
+      "ranking": 270,
       "quickMoveIds": [
         "THUNDER_SHOCK"
       ],
@@ -88910,7 +88910,7 @@
       "50": 2853
     },
     "greatLeague": {
-      "ranking": 360,
+      "ranking": 362,
       "quickMoveIds": [
         "CONFUSION"
       ],
@@ -88920,7 +88920,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 216,
+      "ranking": 215,
       "quickMoveIds": [
         "CONFUSION"
       ],
@@ -88930,7 +88930,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 287,
+      "ranking": 286,
       "quickMoveIds": [
         "CONFUSION"
       ],
@@ -89060,7 +89060,7 @@
       "50": 3457
     },
     "greatLeague": {
-      "ranking": 666,
+      "ranking": 665,
       "quickMoveIds": [
         "CONFUSION"
       ],
@@ -89070,7 +89070,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 458,
+      "ranking": 460,
       "quickMoveIds": [
         "CONFUSION"
       ],
@@ -89210,7 +89210,7 @@
       "50": 3629
     },
     "greatLeague": {
-      "ranking": 695,
+      "ranking": 694,
       "quickMoveIds": [
         "CONFUSION"
       ],
@@ -89365,13 +89365,13 @@
     },
     "greatLeague": null,
     "ultraLeague": {
-      "ranking": 293,
+      "ranking": 280,
       "quickMoveIds": [
         "DRAGON_BREATH"
       ],
       "cinematicMoveIds": [
         "IRON_HEAD",
-        "THUNDER"
+        "DRACO_METEOR"
       ]
     },
     "masterLeague": {
@@ -89527,7 +89527,7 @@
     },
     "greatLeague": null,
     "ultraLeague": {
-      "ranking": 210,
+      "ranking": 206,
       "quickMoveIds": [
         "DRAGON_TAIL"
       ],
@@ -89685,17 +89685,17 @@
     },
     "greatLeague": null,
     "ultraLeague": {
-      "ranking": 311,
+      "ranking": 305,
       "quickMoveIds": [
         "FIRE_SPIN"
       ],
       "cinematicMoveIds": [
-        "STONE_EDGE",
-        "FLAMETHROWER"
+        "FLAMETHROWER",
+        "STONE_EDGE"
       ]
     },
     "masterLeague": {
-      "ranking": 43,
+      "ranking": 42,
       "quickMoveIds": [
         "FIRE_SPIN"
       ],
@@ -89826,9 +89826,9 @@
     },
     "greatLeague": null,
     "ultraLeague": {
-      "ranking": 508,
+      "ranking": 512,
       "quickMoveIds": [
-        "HIDDEN_POWER_ROCK"
+        "HIDDEN_POWER_FIGHTING"
       ],
       "cinematicMoveIds": [
         "THUNDER",
@@ -89972,7 +89972,7 @@
     },
     "greatLeague": null,
     "ultraLeague": {
-      "ranking": 12,
+      "ranking": 14,
       "quickMoveIds": [
         "SHADOW_CLAW"
       ],
@@ -90119,7 +90119,7 @@
     },
     "greatLeague": null,
     "ultraLeague": {
-      "ranking": 41,
+      "ranking": 43,
       "quickMoveIds": [
         "SHADOW_CLAW"
       ],
@@ -90281,7 +90281,7 @@
       "50": 3230
     },
     "greatLeague": {
-      "ranking": 22,
+      "ranking": 21,
       "quickMoveIds": [
         "PSYCHO_CUT"
       ],
@@ -90690,7 +90690,7 @@
     },
     "greatLeague": null,
     "ultraLeague": {
-      "ranking": 429,
+      "ranking": 431,
       "quickMoveIds": [
         "SNARL"
       ],
@@ -93339,7 +93339,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 227,
+      "ranking": 226,
       "quickMoveIds": [
         "CONFUSION"
       ],
@@ -93621,7 +93621,7 @@
       "50": 1629
     },
     "greatLeague": {
-      "ranking": 202,
+      "ranking": 204,
       "quickMoveIds": [
         "VINE_WHIP"
       ],
@@ -93776,7 +93776,7 @@
       "50": 2574
     },
     "greatLeague": {
-      "ranking": 111,
+      "ranking": 110,
       "quickMoveIds": [
         "VINE_WHIP"
       ],
@@ -93786,7 +93786,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 51,
+      "ranking": 49,
       "quickMoveIds": [
         "VINE_WHIP"
       ],
@@ -93796,7 +93796,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 299,
+      "ranking": 300,
       "quickMoveIds": [
         "VINE_WHIP"
       ],
@@ -94068,7 +94068,7 @@
       "50": 2175
     },
     "greatLeague": {
-      "ranking": 503,
+      "ranking": 507,
       "quickMoveIds": [
         "EMBER"
       ],
@@ -94078,7 +94078,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 453,
+      "ranking": 452,
       "quickMoveIds": [
         "EMBER"
       ],
@@ -94250,7 +94250,7 @@
       "50": 3372
     },
     "greatLeague": {
-      "ranking": 486,
+      "ranking": 492,
       "quickMoveIds": [
         "EMBER"
       ],
@@ -94260,7 +94260,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 346,
+      "ranking": 345,
       "quickMoveIds": [
         "EMBER"
       ],
@@ -94270,7 +94270,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 197,
+      "ranking": 196,
       "quickMoveIds": [
         "EMBER"
       ],
@@ -94535,7 +94535,7 @@
       "50": 1968
     },
     "greatLeague": {
-      "ranking": 338,
+      "ranking": 340,
       "quickMoveIds": [
         "FURY_CUTTER"
       ],
@@ -94706,23 +94706,23 @@
       "50": 3194
     },
     "greatLeague": {
-      "ranking": 98,
+      "ranking": 194,
       "quickMoveIds": [
         "FURY_CUTTER"
       ],
       "cinematicMoveIds": [
         "HYDRO_CANNON",
-        "MEGAHORN"
+        "RAZOR_SHELL"
       ]
     },
     "ultraLeague": {
-      "ranking": 79,
+      "ranking": 147,
       "quickMoveIds": [
         "FURY_CUTTER"
       ],
       "cinematicMoveIds": [
         "HYDRO_CANNON",
-        "MEGAHORN"
+        "RAZOR_SHELL"
       ]
     },
     "masterLeague": {
@@ -94992,7 +94992,7 @@
       ],
       "cinematicMoveIds": [
         "CRUNCH",
-        "HYPER_FANG"
+        "GRASS_KNOT"
       ]
     },
     "ultraLeague": null,
@@ -95251,7 +95251,7 @@
       "50": 1789
     },
     "greatLeague": {
-      "ranking": 658,
+      "ranking": 655,
       "quickMoveIds": [
         "LICK"
       ],
@@ -95408,7 +95408,7 @@
       "50": 3196
     },
     "greatLeague": {
-      "ranking": 504,
+      "ranking": 509,
       "quickMoveIds": [
         "LICK"
       ],
@@ -95418,7 +95418,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 226,
+      "ranking": 227,
       "quickMoveIds": [
         "LICK"
       ],
@@ -95428,7 +95428,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 169,
+      "ranking": 168,
       "quickMoveIds": [
         "LICK"
       ],
@@ -95707,7 +95707,7 @@
       "50": 2087
     },
     "greatLeague": {
-      "ranking": 571,
+      "ranking": 573,
       "quickMoveIds": [
         "SNARL"
       ],
@@ -95979,17 +95979,17 @@
       "50": 2657
     },
     "greatLeague": {
-      "ranking": 354,
+      "ranking": 350,
       "quickMoveIds": [
         "VINE_WHIP"
       ],
       "cinematicMoveIds": [
-        "CRUNCH",
-        "GRASS_KNOT"
+        "GRASS_KNOT",
+        "CRUNCH"
       ]
     },
     "ultraLeague": {
-      "ranking": 196,
+      "ranking": 195,
       "quickMoveIds": [
         "VINE_WHIP"
       ],
@@ -96269,7 +96269,7 @@
       "50": 2657
     },
     "greatLeague": {
-      "ranking": 539,
+      "ranking": 542,
       "quickMoveIds": [
         "FIRE_SPIN"
       ],
@@ -96279,7 +96279,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 327,
+      "ranking": 324,
       "quickMoveIds": [
         "FIRE_SPIN"
       ],
@@ -96553,7 +96553,7 @@
       "50": 2657
     },
     "greatLeague": {
-      "ranking": 423,
+      "ranking": 422,
       "quickMoveIds": [
         "WATER_GUN"
       ],
@@ -96563,7 +96563,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 336,
+      "ranking": 338,
       "quickMoveIds": [
         "WATER_GUN"
       ],
@@ -96842,7 +96842,7 @@
       "50": 3079
     },
     "greatLeague": {
-      "ranking": 637,
+      "ranking": 638,
       "quickMoveIds": [
         "CHARGE_BEAM"
       ],
@@ -97129,7 +97129,7 @@
       "50": 1631
     },
     "greatLeague": {
-      "ranking": 389,
+      "ranking": 386,
       "quickMoveIds": [
         "AIR_SLASH"
       ],
@@ -97262,7 +97262,7 @@
       "50": 3091
     },
     "greatLeague": {
-      "ranking": 519,
+      "ranking": 524,
       "quickMoveIds": [
         "AIR_SLASH"
       ],
@@ -97272,7 +97272,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 354,
+      "ranking": 353,
       "quickMoveIds": [
         "AIR_SLASH"
       ],
@@ -97553,7 +97553,7 @@
       "50": 2745
     },
     "greatLeague": {
-      "ranking": 180,
+      "ranking": 179,
       "quickMoveIds": [
         "SPARK"
       ],
@@ -97708,7 +97708,7 @@
       "50": 1362
     },
     "greatLeague": {
-      "ranking": 558,
+      "ranking": 564,
       "quickMoveIds": [
         "SMACK_DOWN"
       ],
@@ -97846,7 +97846,7 @@
       "50": 2293
     },
     "greatLeague": {
-      "ranking": 550,
+      "ranking": 551,
       "quickMoveIds": [
         "SMACK_DOWN"
       ],
@@ -97856,7 +97856,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 447,
+      "ranking": 445,
       "quickMoveIds": [
         "SMACK_DOWN"
       ],
@@ -98009,7 +98009,7 @@
       "50": 3650
     },
     "greatLeague": {
-      "ranking": 475,
+      "ranking": 479,
       "quickMoveIds": [
         "SMACK_DOWN"
       ],
@@ -98019,7 +98019,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 362,
+      "ranking": 361,
       "quickMoveIds": [
         "SMACK_DOWN"
       ],
@@ -98294,7 +98294,7 @@
       "50": 1940
     },
     "greatLeague": {
-      "ranking": 593,
+      "ranking": 592,
       "quickMoveIds": [
         "CONFUSION"
       ],
@@ -98431,7 +98431,7 @@
       "50": 1555
     },
     "greatLeague": {
-      "ranking": 633,
+      "ranking": 632,
       "quickMoveIds": [
         "MUD_SLAP"
       ],
@@ -98599,7 +98599,7 @@
       "50": 3667
     },
     "greatLeague": {
-      "ranking": 162,
+      "ranking": 163,
       "quickMoveIds": [
         "MUD_SHOT"
       ],
@@ -98609,7 +98609,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 128,
+      "ranking": 129,
       "quickMoveIds": [
         "MUD_SHOT"
       ],
@@ -98619,7 +98619,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 20,
+      "ranking": 21,
       "quickMoveIds": [
         "MUD_SHOT"
       ],
@@ -98749,7 +98749,7 @@
       "50": 1902
     },
     "greatLeague": {
-      "ranking": 674,
+      "ranking": 672,
       "quickMoveIds": [
         "POUND"
       ],
@@ -99034,7 +99034,7 @@
       "50": 2452
     },
     "greatLeague": {
-      "ranking": 310,
+      "ranking": 307,
       "quickMoveIds": [
         "POISON_JAB"
       ],
@@ -99044,7 +99044,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 333,
+      "ranking": 330,
       "quickMoveIds": [
         "POISON_JAB"
       ],
@@ -99184,7 +99184,7 @@
       "50": 3773
     },
     "greatLeague": {
-      "ranking": 318,
+      "ranking": 317,
       "quickMoveIds": [
         "COUNTER"
       ],
@@ -99194,7 +99194,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 184,
+      "ranking": 183,
       "quickMoveIds": [
         "COUNTER"
       ],
@@ -99474,7 +99474,7 @@
       "50": 1574
     },
     "greatLeague": {
-      "ranking": 283,
+      "ranking": 289,
       "quickMoveIds": [
         "MUD_SHOT"
       ],
@@ -99625,7 +99625,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 185,
+      "ranking": 188,
       "quickMoveIds": [
         "MUD_SHOT"
       ],
@@ -99765,7 +99765,7 @@
       "50": 2896
     },
     "greatLeague": {
-      "ranking": 673,
+      "ranking": 674,
       "quickMoveIds": [
         "LOW_KICK"
       ],
@@ -99775,7 +99775,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 445,
+      "ranking": 446,
       "quickMoveIds": [
         "LOW_KICK"
       ],
@@ -99915,7 +99915,7 @@
       "50": 3152
     },
     "greatLeague": {
-      "ranking": 526,
+      "ranking": 529,
       "quickMoveIds": [
         "POISON_JAB"
       ],
@@ -99925,7 +99925,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 380,
+      "ranking": 378,
       "quickMoveIds": [
         "POISON_JAB"
       ],
@@ -100222,7 +100222,7 @@
       "50": 1549
     },
     "greatLeague": {
-      "ranking": 476,
+      "ranking": 474,
       "quickMoveIds": [
         "BUG_BITE"
       ],
@@ -100380,7 +100380,7 @@
       "50": 2917
     },
     "greatLeague": {
-      "ranking": 284,
+      "ranking": 278,
       "quickMoveIds": [
         "RAZOR_LEAF"
       ],
@@ -100390,7 +100390,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 206,
+      "ranking": 205,
       "quickMoveIds": [
         "BUG_BITE"
       ],
@@ -100675,7 +100675,7 @@
       "50": 1293
     },
     "greatLeague": {
-      "ranking": 589,
+      "ranking": 585,
       "quickMoveIds": [
         "POISON_STING"
       ],
@@ -100824,7 +100824,7 @@
       "50": 2766
     },
     "greatLeague": {
-      "ranking": 262,
+      "ranking": 261,
       "quickMoveIds": [
         "POISON_JAB"
       ],
@@ -100834,7 +100834,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 122,
+      "ranking": 121,
       "quickMoveIds": [
         "POISON_JAB"
       ],
@@ -100844,7 +100844,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 263,
+      "ranking": 262,
       "quickMoveIds": [
         "POISON_JAB"
       ],
@@ -101114,7 +101114,7 @@
       "50": 2277
     },
     "greatLeague": {
-      "ranking": 93,
+      "ranking": 86,
       "quickMoveIds": [
         "CHARM"
       ],
@@ -101124,7 +101124,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 164,
+      "ranking": 160,
       "quickMoveIds": [
         "CHARM"
       ],
@@ -101372,7 +101372,7 @@
       "50": 2883
     },
     "greatLeague": {
-      "ranking": 525,
+      "ranking": 527,
       "quickMoveIds": [
         "CHARM"
       ],
@@ -101382,7 +101382,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 402,
+      "ranking": 404,
       "quickMoveIds": [
         "CHARM"
       ],
@@ -101392,7 +101392,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 311,
+      "ranking": 310,
       "quickMoveIds": [
         "CHARM"
       ],
@@ -101524,7 +101524,7 @@
       "50": 2363
     },
     "greatLeague": {
-      "ranking": 478,
+      "ranking": 482,
       "quickMoveIds": [
         "WATER_GUN"
       ],
@@ -101534,7 +101534,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 404,
+      "ranking": 406,
       "quickMoveIds": [
         "WATER_GUN"
       ],
@@ -101667,7 +101667,7 @@
       "50": 2363
     },
     "greatLeague": {
-      "ranking": 478,
+      "ranking": 482,
       "quickMoveIds": [
         "WATER_GUN"
       ],
@@ -101677,7 +101677,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 404,
+      "ranking": 406,
       "quickMoveIds": [
         "WATER_GUN"
       ],
@@ -101951,7 +101951,7 @@
       "50": 1603
     },
     "greatLeague": {
-      "ranking": 583,
+      "ranking": 587,
       "quickMoveIds": [
         "MUD_SLAP"
       ],
@@ -102088,7 +102088,7 @@
       "50": 3444
     },
     "greatLeague": {
-      "ranking": 281,
+      "ranking": 284,
       "quickMoveIds": [
         "SNARL"
       ],
@@ -102098,7 +102098,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 212,
+      "ranking": 222,
       "quickMoveIds": [
         "SNARL"
       ],
@@ -102230,7 +102230,7 @@
       "50": 1630
     },
     "greatLeague": {
-      "ranking": 414,
+      "ranking": 410,
       "quickMoveIds": [
         "FIRE_FANG"
       ],
@@ -102350,7 +102350,7 @@
       "50": 1630
     },
     "greatLeague": {
-      "ranking": 414,
+      "ranking": 410,
       "quickMoveIds": [
         "FIRE_FANG"
       ],
@@ -102821,7 +102821,7 @@
       "50": 3511
     },
     "greatLeague": {
-      "ranking": 386,
+      "ranking": 392,
       "quickMoveIds": [
         "INCINERATE"
       ],
@@ -102831,7 +102831,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 172,
+      "ranking": 170,
       "quickMoveIds": [
         "INCINERATE"
       ],
@@ -103137,7 +103137,7 @@
       "50": 2571
     },
     "greatLeague": {
-      "ranking": 556,
+      "ranking": 557,
       "quickMoveIds": [
         "BULLET_SEED"
       ],
@@ -103147,9 +103147,9 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 387,
+      "ranking": 367,
       "quickMoveIds": [
-        "POISON_JAB"
+        "BULLET_SEED"
       ],
       "cinematicMoveIds": [
         "AERIAL_ACE",
@@ -103293,7 +103293,7 @@
       "50": 1384
     },
     "greatLeague": {
-      "ranking": 442,
+      "ranking": 440,
       "quickMoveIds": [
         "SMACK_DOWN"
       ],
@@ -103425,7 +103425,7 @@
       "50": 2874
     },
     "greatLeague": {
-      "ranking": 287,
+      "ranking": 286,
       "quickMoveIds": [
         "FURY_CUTTER"
       ],
@@ -103445,7 +103445,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 240,
+      "ranking": 241,
       "quickMoveIds": [
         "FURY_CUTTER"
       ],
@@ -103737,7 +103737,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 26,
+      "ranking": 27,
       "quickMoveIds": [
         "COUNTER"
       ],
@@ -103905,13 +103905,13 @@
       "50": 2883
     },
     "greatLeague": {
-      "ranking": 647,
+      "ranking": 646,
       "quickMoveIds": [
         "AIR_SLASH"
       ],
       "cinematicMoveIds": [
-        "ANCIENT_POWER",
-        "SIGNAL_BEAM"
+        "SIGNAL_BEAM",
+        "ANCIENT_POWER"
       ]
     },
     "ultraLeague": {
@@ -103920,8 +103920,8 @@
         "AIR_SLASH"
       ],
       "cinematicMoveIds": [
-        "ANCIENT_POWER",
-        "SIGNAL_BEAM"
+        "SIGNAL_BEAM",
+        "ANCIENT_POWER"
       ]
     },
     "masterLeague": {
@@ -104306,7 +104306,7 @@
       "50": 2570
     },
     "greatLeague": {
-      "ranking": 23,
+      "ranking": 22,
       "quickMoveIds": [
         "SHADOW_CLAW"
       ],
@@ -104316,7 +104316,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 38,
+      "ranking": 41,
       "quickMoveIds": [
         "SHADOW_CLAW"
       ],
@@ -104326,7 +104326,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 219,
+      "ranking": 218,
       "quickMoveIds": [
         "SHADOW_CLAW"
       ],
@@ -104466,7 +104466,7 @@
       "50": 1683
     },
     "greatLeague": {
-      "ranking": 246,
+      "ranking": 250,
       "quickMoveIds": [
         "WATER_GUN"
       ],
@@ -104603,7 +104603,7 @@
       "50": 2964
     },
     "greatLeague": {
-      "ranking": 295,
+      "ranking": 297,
       "quickMoveIds": [
         "WATER_GUN"
       ],
@@ -104613,7 +104613,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 332,
+      "ranking": 328,
       "quickMoveIds": [
         "WATER_GUN"
       ],
@@ -104769,7 +104769,7 @@
       "50": 2083
     },
     "greatLeague": {
-      "ranking": 535,
+      "ranking": 539,
       "quickMoveIds": [
         "WING_ATTACK"
       ],
@@ -104911,7 +104911,7 @@
       "50": 3766
     },
     "greatLeague": {
-      "ranking": 541,
+      "ranking": 545,
       "quickMoveIds": [
         "WING_ATTACK"
       ],
@@ -105211,7 +105211,7 @@
       "50": 2651
     },
     "greatLeague": {
-      "ranking": 528,
+      "ranking": 532,
       "quickMoveIds": [
         "INFESTATION"
       ],
@@ -105742,7 +105742,7 @@
       "50": 2535
     },
     "greatLeague": {
-      "ranking": 436,
+      "ranking": 434,
       "quickMoveIds": [
         "CHARM"
       ],
@@ -106035,7 +106035,7 @@
       "50": 1813
     },
     "greatLeague": {
-      "ranking": 501,
+      "ranking": 510,
       "quickMoveIds": [
         "CONFUSION"
       ],
@@ -106171,7 +106171,7 @@
       "50": 2735
     },
     "greatLeague": {
-      "ranking": 506,
+      "ranking": 512,
       "quickMoveIds": [
         "CONFUSION"
       ],
@@ -106181,7 +106181,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 347,
+      "ranking": 350,
       "quickMoveIds": [
         "CONFUSION"
       ],
@@ -106597,13 +106597,13 @@
       "50": 3309
     },
     "greatLeague": {
-      "ranking": 711,
+      "ranking": 712,
       "quickMoveIds": [
         "HIDDEN_POWER_FIGHTING"
       ],
       "cinematicMoveIds": [
-        "FUTURE_SIGHT",
-        "SHADOW_BALL"
+        "SHADOW_BALL",
+        "FUTURE_SIGHT"
       ]
     },
     "ultraLeague": {
@@ -107182,7 +107182,7 @@
       "50": 1799
     },
     "greatLeague": {
-      "ranking": 534,
+      "ranking": 536,
       "quickMoveIds": [
         "FROST_BREATH"
       ],
@@ -107319,7 +107319,7 @@
       "50": 3190
     },
     "greatLeague": {
-      "ranking": 685,
+      "ranking": 686,
       "quickMoveIds": [
         "FROST_BREATH"
       ],
@@ -107329,7 +107329,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 478,
+      "ranking": 477,
       "quickMoveIds": [
         "FROST_BREATH"
       ],
@@ -107339,7 +107339,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 300,
+      "ranking": 301,
       "quickMoveIds": [
         "FROST_BREATH"
       ],
@@ -107483,7 +107483,7 @@
       "50": 1283
     },
     "greatLeague": {
-      "ranking": 712,
+      "ranking": 711,
       "quickMoveIds": [
         "TACKLE"
       ],
@@ -107629,7 +107629,7 @@
       "50": 1283
     },
     "greatLeague": {
-      "ranking": 712,
+      "ranking": 711,
       "quickMoveIds": [
         "TACKLE"
       ],
@@ -107775,7 +107775,7 @@
       "50": 1283
     },
     "greatLeague": {
-      "ranking": 712,
+      "ranking": 711,
       "quickMoveIds": [
         "TACKLE"
       ],
@@ -107921,7 +107921,7 @@
       "50": 1283
     },
     "greatLeague": {
-      "ranking": 712,
+      "ranking": 711,
       "quickMoveIds": [
         "TACKLE"
       ],
@@ -108075,7 +108075,7 @@
       "50": 2732
     },
     "greatLeague": {
-      "ranking": 629,
+      "ranking": 627,
       "quickMoveIds": [
         "FEINT_ATTACK"
       ],
@@ -108085,7 +108085,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 363,
+      "ranking": 362,
       "quickMoveIds": [
         "FEINT_ATTACK"
       ],
@@ -108247,7 +108247,7 @@
       "50": 2732
     },
     "greatLeague": {
-      "ranking": 629,
+      "ranking": 627,
       "quickMoveIds": [
         "FEINT_ATTACK"
       ],
@@ -108257,7 +108257,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 363,
+      "ranking": 362,
       "quickMoveIds": [
         "FEINT_ATTACK"
       ],
@@ -108419,7 +108419,7 @@
       "50": 2732
     },
     "greatLeague": {
-      "ranking": 629,
+      "ranking": 627,
       "quickMoveIds": [
         "FEINT_ATTACK"
       ],
@@ -108429,7 +108429,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 363,
+      "ranking": 362,
       "quickMoveIds": [
         "FEINT_ATTACK"
       ],
@@ -108591,7 +108591,7 @@
       "50": 2732
     },
     "greatLeague": {
-      "ranking": 629,
+      "ranking": 627,
       "quickMoveIds": [
         "FEINT_ATTACK"
       ],
@@ -108601,7 +108601,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 363,
+      "ranking": 362,
       "quickMoveIds": [
         "FEINT_ATTACK"
       ],
@@ -108742,7 +108742,7 @@
       "50": 1847
     },
     "greatLeague": {
-      "ranking": 277,
+      "ranking": 275,
       "quickMoveIds": [
         "THUNDER_SHOCK"
       ],
@@ -108901,7 +108901,7 @@
       "50": 1336
     },
     "greatLeague": {
-      "ranking": 493,
+      "ranking": 502,
       "quickMoveIds": [
         "FURY_CUTTER"
       ],
@@ -109054,7 +109054,7 @@
       "50": 3266
     },
     "greatLeague": {
-      "ranking": 74,
+      "ranking": 76,
       "quickMoveIds": [
         "COUNTER"
       ],
@@ -109064,7 +109064,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 25,
+      "ranking": 24,
       "quickMoveIds": [
         "COUNTER"
       ],
@@ -109339,17 +109339,17 @@
       "50": 2420
     },
     "greatLeague": {
-      "ranking": 426,
+      "ranking": 416,
       "quickMoveIds": [
         "FEINT_ATTACK"
       ],
       "cinematicMoveIds": [
         "GRASS_KNOT",
-        "SLUDGE_BOMB"
+        "FOUL_PLAY"
       ]
     },
     "ultraLeague": {
-      "ranking": 225,
+      "ranking": 223,
       "quickMoveIds": [
         "FEINT_ATTACK"
       ],
@@ -109501,7 +109501,7 @@
       "50": 1421
     },
     "greatLeague": {
-      "ranking": 472,
+      "ranking": 481,
       "quickMoveIds": [
         "HEX"
       ],
@@ -109645,7 +109645,7 @@
       "50": 1421
     },
     "greatLeague": {
-      "ranking": 472,
+      "ranking": 481,
       "quickMoveIds": [
         "HEX"
       ],
@@ -109782,7 +109782,7 @@
       "50": 2644
     },
     "greatLeague": {
-      "ranking": 7,
+      "ranking": 8,
       "quickMoveIds": [
         "HEX"
       ],
@@ -109937,7 +109937,7 @@
       "50": 2644
     },
     "greatLeague": {
-      "ranking": 7,
+      "ranking": 8,
       "quickMoveIds": [
         "HEX"
       ],
@@ -110091,23 +110091,23 @@
       "50": 2452
     },
     "greatLeague": {
-      "ranking": 72,
+      "ranking": 70,
       "quickMoveIds": [
         "WATERFALL"
       ],
       "cinematicMoveIds": [
-        "PSYCHIC",
-        "HYDRO_PUMP"
+        "HYDRO_PUMP",
+        "PSYCHIC"
       ]
     },
     "ultraLeague": {
-      "ranking": 116,
+      "ranking": 113,
       "quickMoveIds": [
         "WATERFALL"
       ],
       "cinematicMoveIds": [
-        "PSYCHIC",
-        "HYDRO_PUMP"
+        "HYDRO_PUMP",
+        "PSYCHIC"
       ]
     },
     "masterLeague": {
@@ -110429,7 +110429,7 @@
       "50": 2494
     },
     "greatLeague": {
-      "ranking": 136,
+      "ranking": 137,
       "quickMoveIds": [
         "VOLT_SWITCH"
       ],
@@ -110439,7 +110439,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 168,
+      "ranking": 167,
       "quickMoveIds": [
         "VOLT_SWITCH"
       ],
@@ -110751,7 +110751,7 @@
       "50": 2624
     },
     "greatLeague": {
-      "ranking": 91,
+      "ranking": 92,
       "quickMoveIds": [
         "BULLET_SEED"
       ],
@@ -110761,7 +110761,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 22,
+      "ranking": 21,
       "quickMoveIds": [
         "BULLET_SEED"
       ],
@@ -110771,7 +110771,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 305,
+      "ranking": 304,
       "quickMoveIds": [
         "BULLET_SEED"
       ],
@@ -111044,7 +111044,7 @@
       "50": 2088
     },
     "greatLeague": {
-      "ranking": 314,
+      "ranking": 309,
       "quickMoveIds": [
         "THUNDER_SHOCK"
       ],
@@ -111054,7 +111054,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 472,
+      "ranking": 471,
       "quickMoveIds": [
         "THUNDER_SHOCK"
       ],
@@ -111210,7 +111210,7 @@
       "50": 2981
     },
     "greatLeague": {
-      "ranking": 315,
+      "ranking": 310,
       "quickMoveIds": [
         "THUNDER_SHOCK"
       ],
@@ -111464,7 +111464,7 @@
       "50": 1939
     },
     "greatLeague": {
-      "ranking": 450,
+      "ranking": 454,
       "quickMoveIds": [
         "SPARK"
       ],
@@ -111631,7 +111631,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 382,
+      "ranking": 384,
       "quickMoveIds": [
         "SPARK"
       ],
@@ -111641,7 +111641,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 264,
+      "ranking": 265,
       "quickMoveIds": [
         "SPARK"
       ],
@@ -111781,7 +111781,7 @@
       "50": 1566
     },
     "greatLeague": {
-      "ranking": 643,
+      "ranking": 642,
       "quickMoveIds": [
         "CONFUSION"
       ],
@@ -111917,7 +111917,7 @@
       "50": 3112
     },
     "greatLeague": {
-      "ranking": 625,
+      "ranking": 626,
       "quickMoveIds": [
         "CONFUSION"
       ],
@@ -111927,13 +111927,13 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 449,
+      "ranking": 425,
       "quickMoveIds": [
         "CONFUSION"
       ],
       "cinematicMoveIds": [
         "ROCK_SLIDE",
-        "PSYCHIC"
+        "DARK_PULSE"
       ]
     },
     "masterLeague": {
@@ -112213,7 +112213,7 @@
       "50": 1931
     },
     "greatLeague": {
-      "ranking": 564,
+      "ranking": 569,
       "quickMoveIds": [
         "EMBER"
       ],
@@ -112393,13 +112393,13 @@
       "50": 3695
     },
     "greatLeague": {
-      "ranking": 398,
+      "ranking": 403,
       "quickMoveIds": [
         "INCINERATE"
       ],
       "cinematicMoveIds": [
-        "FLAME_CHARGE",
-        "SHADOW_BALL"
+        "SHADOW_BALL",
+        "FLAME_CHARGE"
       ]
     },
     "ultraLeague": {
@@ -112413,7 +112413,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 146,
+      "ranking": 147,
       "quickMoveIds": [
         "INCINERATE"
       ],
@@ -112690,7 +112690,7 @@
       "50": 2526
     },
     "greatLeague": {
-      "ranking": 299,
+      "ranking": 295,
       "quickMoveIds": [
         "DRAGON_TAIL"
       ],
@@ -112852,7 +112852,7 @@
       "50": 4062
     },
     "greatLeague": {
-      "ranking": 330,
+      "ranking": 324,
       "quickMoveIds": [
         "COUNTER"
       ],
@@ -112862,7 +112862,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 326,
+      "ranking": 325,
       "quickMoveIds": [
         "COUNTER"
       ],
@@ -113262,7 +113262,7 @@
       "50": 3439
     },
     "greatLeague": {
-      "ranking": 392,
+      "ranking": 387,
       "quickMoveIds": [
         "POWDER_SNOW"
       ],
@@ -113272,7 +113272,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 296,
+      "ranking": 291,
       "quickMoveIds": [
         "POWDER_SNOW"
       ],
@@ -113433,7 +113433,7 @@
       "50": 3163
     },
     "greatLeague": {
-      "ranking": 409,
+      "ranking": 404,
       "quickMoveIds": [
         "ICE_SHARD"
       ],
@@ -113443,7 +113443,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 230,
+      "ranking": 233,
       "quickMoveIds": [
         "ICE_SHARD"
       ],
@@ -113453,7 +113453,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 135,
+      "ranking": 136,
       "quickMoveIds": [
         "ICE_SHARD"
       ],
@@ -113751,7 +113751,7 @@
       "50": 2760
     },
     "greatLeague": {
-      "ranking": 679,
+      "ranking": 678,
       "quickMoveIds": [
         "INFESTATION"
       ],
@@ -113761,7 +113761,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 446,
+      "ranking": 444,
       "quickMoveIds": [
         "INFESTATION"
       ],
@@ -113906,7 +113906,7 @@
       "50": 2445
     },
     "greatLeague": {
-      "ranking": 106,
+      "ranking": 112,
       "quickMoveIds": [
         "THUNDER_SHOCK"
       ],
@@ -113916,7 +113916,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 147,
+      "ranking": 148,
       "quickMoveIds": [
         "MUD_SHOT"
       ],
@@ -113926,7 +113926,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 230,
+      "ranking": 231,
       "quickMoveIds": [
         "MUD_SHOT"
       ],
@@ -114366,7 +114366,7 @@
       "50": 3064
     },
     "greatLeague": {
-      "ranking": 552,
+      "ranking": 553,
       "quickMoveIds": [
         "POISON_JAB"
       ],
@@ -114649,7 +114649,7 @@
       "50": 1344
     },
     "greatLeague": {
-      "ranking": 543,
+      "ranking": 549,
       "quickMoveIds": [
         "MUD_SLAP"
       ],
@@ -114786,17 +114786,17 @@
       "50": 3226
     },
     "greatLeague": {
-      "ranking": 396,
+      "ranking": 417,
       "quickMoveIds": [
         "MUD_SLAP"
       ],
       "cinematicMoveIds": [
         "SHADOW_PUNCH",
-        "DYNAMIC_PUNCH"
+        "EARTH_POWER"
       ]
     },
     "ultraLeague": {
-      "ranking": 352,
+      "ranking": 359,
       "quickMoveIds": [
         "MUD_SLAP"
       ],
@@ -114806,7 +114806,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 252,
+      "ranking": 248,
       "quickMoveIds": [
         "MUD_SLAP"
       ],
@@ -114945,7 +114945,7 @@
       "50": 1620
     },
     "greatLeague": {
-      "ranking": 339,
+      "ranking": 341,
       "quickMoveIds": [
         "FURY_CUTTER"
       ],
@@ -115095,7 +115095,7 @@
       "50": 3215
     },
     "greatLeague": {
-      "ranking": 350,
+      "ranking": 352,
       "quickMoveIds": [
         "SNARL"
       ],
@@ -115105,7 +115105,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 236,
+      "ranking": 243,
       "quickMoveIds": [
         "SNARL"
       ],
@@ -115115,7 +115115,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 124,
+      "ranking": 125,
       "quickMoveIds": [
         "SNARL"
       ],
@@ -115266,7 +115266,7 @@
       "50": 3163
     },
     "greatLeague": {
-      "ranking": 324,
+      "ranking": 320,
       "quickMoveIds": [
         "MUD_SHOT"
       ],
@@ -115276,7 +115276,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 181,
+      "ranking": 184,
       "quickMoveIds": [
         "MUD_SHOT"
       ],
@@ -115427,7 +115427,7 @@
       "50": 1686
     },
     "greatLeague": {
-      "ranking": 335,
+      "ranking": 333,
       "quickMoveIds": [
         "WING_ATTACK"
       ],
@@ -115595,7 +115595,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 306,
+      "ranking": 302,
       "quickMoveIds": [
         "AIR_SLASH"
       ],
@@ -115746,7 +115746,7 @@
       "50": 1437
     },
     "greatLeague": {
-      "ranking": 143,
+      "ranking": 140,
       "quickMoveIds": [
         "AIR_SLASH"
       ],
@@ -115896,7 +115896,7 @@
       "50": 2417
     },
     "greatLeague": {
-      "ranking": 21,
+      "ranking": 20,
       "quickMoveIds": [
         "SNARL"
       ],
@@ -115906,7 +115906,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 13,
+      "ranking": 12,
       "quickMoveIds": [
         "SNARL"
       ],
@@ -115916,7 +115916,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 235,
+      "ranking": 234,
       "quickMoveIds": [
         "SNARL"
       ],
@@ -116049,7 +116049,7 @@
       "50": 2708
     },
     "greatLeague": {
-      "ranking": 473,
+      "ranking": 480,
       "quickMoveIds": [
         "FIRE_SPIN"
       ],
@@ -116059,7 +116059,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 294,
+      "ranking": 289,
       "quickMoveIds": [
         "FIRE_SPIN"
       ],
@@ -116069,7 +116069,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 354,
+      "ranking": 356,
       "quickMoveIds": [
         "FIRE_SPIN"
       ],
@@ -116199,7 +116199,7 @@
       "50": 3007
     },
     "greatLeague": {
-      "ranking": 342,
+      "ranking": 346,
       "quickMoveIds": [
         "BUG_BITE"
       ],
@@ -116209,7 +116209,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 205,
+      "ranking": 204,
       "quickMoveIds": [
         "BUG_BITE"
       ],
@@ -116486,7 +116486,7 @@
       "50": 2079
     },
     "greatLeague": {
-      "ranking": 28,
+      "ranking": 27,
       "quickMoveIds": [
         "DRAGON_BREATH"
       ],
@@ -116626,7 +116626,7 @@
       "50": 4098
     },
     "greatLeague": {
-      "ranking": 404,
+      "ranking": 399,
       "quickMoveIds": [
         "DRAGON_BREATH"
       ],
@@ -116636,7 +116636,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 343,
+      "ranking": 342,
       "quickMoveIds": [
         "DRAGON_BREATH"
       ],
@@ -116646,7 +116646,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 89,
+      "ranking": 87,
       "quickMoveIds": [
         "DRAGON_BREATH"
       ],
@@ -117085,7 +117085,7 @@
     },
     "greatLeague": null,
     "ultraLeague": {
-      "ranking": 156,
+      "ranking": 158,
       "quickMoveIds": [
         "METAL_CLAW"
       ],
@@ -117095,7 +117095,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 61,
+      "ranking": 62,
       "quickMoveIds": [
         "METAL_CLAW"
       ],
@@ -117249,7 +117249,7 @@
     },
     "greatLeague": null,
     "ultraLeague": {
-      "ranking": 329,
+      "ranking": 326,
       "quickMoveIds": [
         "SMACK_DOWN"
       ],
@@ -117413,7 +117413,7 @@
     },
     "greatLeague": null,
     "ultraLeague": {
-      "ranking": 118,
+      "ranking": 119,
       "quickMoveIds": [
         "QUICK_ATTACK"
       ],
@@ -117570,13 +117570,13 @@
     },
     "greatLeague": null,
     "ultraLeague": {
-      "ranking": 470,
+      "ranking": 457,
       "quickMoveIds": [
         "AIR_SLASH"
       ],
       "cinematicMoveIds": [
         "GRASS_KNOT",
-        "HURRICANE"
+        "DARK_PULSE"
       ]
     },
     "masterLeague": {
@@ -117732,7 +117732,7 @@
     },
     "greatLeague": null,
     "ultraLeague": {
-      "ranking": 400,
+      "ranking": 401,
       "quickMoveIds": [
         "GUST"
       ],
@@ -117895,7 +117895,7 @@
     },
     "greatLeague": null,
     "ultraLeague": {
-      "ranking": 286,
+      "ranking": 282,
       "quickMoveIds": [
         "THUNDER_SHOCK"
       ],
@@ -118053,7 +118053,7 @@
     },
     "greatLeague": null,
     "ultraLeague": {
-      "ranking": 409,
+      "ranking": 407,
       "quickMoveIds": [
         "VOLT_SWITCH"
       ],
@@ -118223,7 +118223,7 @@
     },
     "greatLeague": null,
     "ultraLeague": {
-      "ranking": 249,
+      "ranking": 248,
       "quickMoveIds": [
         "DRAGON_BREATH"
       ],
@@ -118389,7 +118389,7 @@
     },
     "greatLeague": null,
     "ultraLeague": {
-      "ranking": 165,
+      "ranking": 163,
       "quickMoveIds": [
         "DRAGON_BREATH"
       ],
@@ -118552,7 +118552,7 @@
     },
     "greatLeague": null,
     "ultraLeague": {
-      "ranking": 169,
+      "ranking": 171,
       "quickMoveIds": [
         "MUD_SHOT"
       ],
@@ -118716,7 +118716,7 @@
     },
     "greatLeague": null,
     "ultraLeague": {
-      "ranking": 271,
+      "ranking": 273,
       "quickMoveIds": [
         "MUD_SHOT"
       ],
@@ -118861,7 +118861,7 @@
     },
     "greatLeague": null,
     "ultraLeague": {
-      "ranking": 270,
+      "ranking": 269,
       "quickMoveIds": [
         "DRAGON_BREATH"
       ],
@@ -119020,7 +119020,7 @@
     },
     "greatLeague": null,
     "ultraLeague": {
-      "ranking": 270,
+      "ranking": 269,
       "quickMoveIds": [
         "DRAGON_BREATH"
       ],
@@ -119183,7 +119183,7 @@
     },
     "greatLeague": null,
     "ultraLeague": {
-      "ranking": 270,
+      "ranking": 269,
       "quickMoveIds": [
         "DRAGON_BREATH"
       ],
@@ -119632,7 +119632,7 @@
     },
     "greatLeague": null,
     "ultraLeague": {
-      "ranking": 359,
+      "ranking": 360,
       "quickMoveIds": [
         "CONFUSION"
       ],
@@ -119917,7 +119917,7 @@
       "50": 3791
     },
     "greatLeague": {
-      "ranking": 290,
+      "ranking": 293,
       "quickMoveIds": [
         "FURY_CUTTER"
       ],
@@ -119927,7 +119927,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 193,
+      "ranking": 191,
       "quickMoveIds": [
         "FURY_CUTTER"
       ],
@@ -120067,7 +120067,7 @@
       "50": 3791
     },
     "greatLeague": {
-      "ranking": 290,
+      "ranking": 293,
       "quickMoveIds": [
         "FURY_CUTTER"
       ],
@@ -120077,7 +120077,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 87,
+      "ranking": 85,
       "quickMoveIds": [
         "FURY_CUTTER"
       ],
@@ -120087,7 +120087,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 42,
+      "ranking": 44,
       "quickMoveIds": [
         "FURY_CUTTER"
       ],
@@ -120217,7 +120217,7 @@
       "50": 3791
     },
     "greatLeague": {
-      "ranking": 290,
+      "ranking": 293,
       "quickMoveIds": [
         "FURY_CUTTER"
       ],
@@ -120227,7 +120227,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 193,
+      "ranking": 191,
       "quickMoveIds": [
         "FURY_CUTTER"
       ],
@@ -120367,7 +120367,7 @@
       "50": 3791
     },
     "greatLeague": {
-      "ranking": 290,
+      "ranking": 293,
       "quickMoveIds": [
         "FURY_CUTTER"
       ],
@@ -120377,7 +120377,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 62,
+      "ranking": 67,
       "quickMoveIds": [
         "FURY_CUTTER"
       ],
@@ -120521,7 +120521,7 @@
       "50": 3791
     },
     "greatLeague": {
-      "ranking": 290,
+      "ranking": 293,
       "quickMoveIds": [
         "FURY_CUTTER"
       ],
@@ -120531,7 +120531,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 193,
+      "ranking": 191,
       "quickMoveIds": [
         "FURY_CUTTER"
       ],
@@ -120677,7 +120677,7 @@
       "50": 1239
     },
     "greatLeague": {
-      "ranking": 603,
+      "ranking": 599,
       "quickMoveIds": [
         "VINE_WHIP"
       ],
@@ -120819,7 +120819,7 @@
       "50": 1943
     },
     "greatLeague": {
-      "ranking": 182,
+      "ranking": 177,
       "quickMoveIds": [
         "VINE_WHIP"
       ],
@@ -120996,7 +120996,7 @@
       "50": 3340
     },
     "greatLeague": {
-      "ranking": 51,
+      "ranking": 52,
       "quickMoveIds": [
         "VINE_WHIP"
       ],
@@ -121016,7 +121016,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 139,
+      "ranking": 140,
       "quickMoveIds": [
         "VINE_WHIP"
       ],
@@ -121287,7 +121287,7 @@
       "50": 2049
     },
     "greatLeague": {
-      "ranking": 467,
+      "ranking": 472,
       "quickMoveIds": [
         "EMBER"
       ],
@@ -121462,7 +121462,7 @@
       "50": 3459
     },
     "greatLeague": {
-      "ranking": 527,
+      "ranking": 533,
       "quickMoveIds": [
         "FIRE_SPIN"
       ],
@@ -121472,7 +121472,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 342,
+      "ranking": 344,
       "quickMoveIds": [
         "FIRE_SPIN"
       ],
@@ -121482,7 +121482,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 178,
+      "ranking": 179,
       "quickMoveIds": [
         "FIRE_SPIN"
       ],
@@ -121747,7 +121747,7 @@
       "50": 1850
     },
     "greatLeague": {
-      "ranking": 542,
+      "ranking": 546,
       "quickMoveIds": [
         "BUBBLE"
       ],
@@ -121901,7 +121901,7 @@
       "50": 3001
     },
     "greatLeague": {
-      "ranking": 361,
+      "ranking": 363,
       "quickMoveIds": [
         "BUBBLE"
       ],
@@ -121911,7 +121911,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 240,
+      "ranking": 239,
       "quickMoveIds": [
         "BUBBLE"
       ],
@@ -121921,7 +121921,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 257,
+      "ranking": 255,
       "quickMoveIds": [
         "BUBBLE"
       ],
@@ -122489,7 +122489,7 @@
       "50": 1661
     },
     "greatLeague": {
-      "ranking": 368,
+      "ranking": 365,
       "quickMoveIds": [
         "EMBER"
       ],
@@ -122685,7 +122685,7 @@
       "50": 2493
     },
     "greatLeague": {
-      "ranking": 60,
+      "ranking": 65,
       "quickMoveIds": [
         "INCINERATE"
       ],
@@ -122705,7 +122705,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 283,
+      "ranking": 285,
       "quickMoveIds": [
         "INCINERATE"
       ],
@@ -123400,7 +123400,7 @@
       "50": 3129
     },
     "greatLeague": {
-      "ranking": 488,
+      "ranking": 491,
       "quickMoveIds": [
         "FIRE_FANG"
       ],
@@ -123410,13 +123410,13 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 349,
+      "ranking": 333,
       "quickMoveIds": [
         "FIRE_FANG"
       ],
       "cinematicMoveIds": [
         "FLAME_CHARGE",
-        "OVERHEAT"
+        "DARK_PULSE"
       ]
     },
     "masterLeague": {
@@ -123576,7 +123576,7 @@
       "50": 3129
     },
     "greatLeague": {
-      "ranking": 488,
+      "ranking": 491,
       "quickMoveIds": [
         "FIRE_FANG"
       ],
@@ -123586,13 +123586,13 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 349,
+      "ranking": 333,
       "quickMoveIds": [
         "FIRE_FANG"
       ],
       "cinematicMoveIds": [
         "FLAME_CHARGE",
-        "OVERHEAT"
+        "DARK_PULSE"
       ]
     },
     "masterLeague": {
@@ -124627,7 +124627,7 @@
       "50": 3281
     },
     "greatLeague": {
-      "ranking": 153,
+      "ranking": 154,
       "quickMoveIds": [
         "SNARL"
       ],
@@ -124637,7 +124637,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 123,
+      "ranking": 126,
       "quickMoveIds": [
         "SNARL"
       ],
@@ -124794,7 +124794,7 @@
       "50": 2387
     },
     "greatLeague": {
-      "ranking": 395,
+      "ranking": 396,
       "quickMoveIds": [
         "SUCKER_PUNCH"
       ],
@@ -124804,7 +124804,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 328,
+      "ranking": 329,
       "quickMoveIds": [
         "SUCKER_PUNCH"
       ],
@@ -124961,7 +124961,7 @@
       "50": 2387
     },
     "greatLeague": {
-      "ranking": 395,
+      "ranking": 396,
       "quickMoveIds": [
         "SUCKER_PUNCH"
       ],
@@ -124971,7 +124971,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 328,
+      "ranking": 329,
       "quickMoveIds": [
         "SUCKER_PUNCH"
       ],
@@ -125128,7 +125128,7 @@
       "50": 2387
     },
     "greatLeague": {
-      "ranking": 395,
+      "ranking": 396,
       "quickMoveIds": [
         "SUCKER_PUNCH"
       ],
@@ -125138,7 +125138,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 328,
+      "ranking": 329,
       "quickMoveIds": [
         "SUCKER_PUNCH"
       ],
@@ -125295,7 +125295,7 @@
       "50": 2387
     },
     "greatLeague": {
-      "ranking": 395,
+      "ranking": 396,
       "quickMoveIds": [
         "SUCKER_PUNCH"
       ],
@@ -125305,7 +125305,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 328,
+      "ranking": 329,
       "quickMoveIds": [
         "SUCKER_PUNCH"
       ],
@@ -125462,7 +125462,7 @@
       "50": 2387
     },
     "greatLeague": {
-      "ranking": 395,
+      "ranking": 396,
       "quickMoveIds": [
         "SUCKER_PUNCH"
       ],
@@ -125472,7 +125472,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 328,
+      "ranking": 329,
       "quickMoveIds": [
         "SUCKER_PUNCH"
       ],
@@ -125629,7 +125629,7 @@
       "50": 2387
     },
     "greatLeague": {
-      "ranking": 395,
+      "ranking": 396,
       "quickMoveIds": [
         "SUCKER_PUNCH"
       ],
@@ -125639,7 +125639,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 328,
+      "ranking": 329,
       "quickMoveIds": [
         "SUCKER_PUNCH"
       ],
@@ -125796,7 +125796,7 @@
       "50": 2387
     },
     "greatLeague": {
-      "ranking": 395,
+      "ranking": 396,
       "quickMoveIds": [
         "SUCKER_PUNCH"
       ],
@@ -125806,7 +125806,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 328,
+      "ranking": 329,
       "quickMoveIds": [
         "SUCKER_PUNCH"
       ],
@@ -125963,7 +125963,7 @@
       "50": 2387
     },
     "greatLeague": {
-      "ranking": 395,
+      "ranking": 396,
       "quickMoveIds": [
         "SUCKER_PUNCH"
       ],
@@ -125973,7 +125973,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 328,
+      "ranking": 329,
       "quickMoveIds": [
         "SUCKER_PUNCH"
       ],
@@ -126130,7 +126130,7 @@
       "50": 2387
     },
     "greatLeague": {
-      "ranking": 395,
+      "ranking": 396,
       "quickMoveIds": [
         "SUCKER_PUNCH"
       ],
@@ -126140,7 +126140,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 328,
+      "ranking": 329,
       "quickMoveIds": [
         "SUCKER_PUNCH"
       ],
@@ -126297,7 +126297,7 @@
       "50": 2387
     },
     "greatLeague": {
-      "ranking": 395,
+      "ranking": 396,
       "quickMoveIds": [
         "SUCKER_PUNCH"
       ],
@@ -126307,7 +126307,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 328,
+      "ranking": 329,
       "quickMoveIds": [
         "SUCKER_PUNCH"
       ],
@@ -126464,7 +126464,7 @@
       "50": 2387
     },
     "greatLeague": {
-      "ranking": 395,
+      "ranking": 396,
       "quickMoveIds": [
         "SUCKER_PUNCH"
       ],
@@ -126474,7 +126474,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 328,
+      "ranking": 329,
       "quickMoveIds": [
         "SUCKER_PUNCH"
       ],
@@ -126634,7 +126634,7 @@
       "50": 1424
     },
     "greatLeague": {
-      "ranking": 536,
+      "ranking": 540,
       "quickMoveIds": [
         "CONFUSION"
       ],
@@ -126774,7 +126774,7 @@
       "50": 2401
     },
     "greatLeague": {
-      "ranking": 599,
+      "ranking": 601,
       "quickMoveIds": [
         "CONFUSION"
       ],
@@ -126784,13 +126784,13 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 456,
+      "ranking": 455,
       "quickMoveIds": [
         "CONFUSION"
       ],
       "cinematicMoveIds": [
         "PSYCHIC",
-        "THUNDERBOLT"
+        "ENERGY_BALL"
       ]
     },
     "masterLeague": {
@@ -126932,7 +126932,7 @@
       "50": 2401
     },
     "greatLeague": {
-      "ranking": 584,
+      "ranking": 583,
       "quickMoveIds": [
         "CONFUSION"
       ],
@@ -126942,13 +126942,13 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 444,
+      "ranking": 447,
       "quickMoveIds": [
         "CONFUSION"
       ],
       "cinematicMoveIds": [
-        "PSYCHIC",
-        "SHADOW_BALL"
+        "SHADOW_BALL",
+        "PSYCHIC"
       ]
     },
     "masterLeague": {
@@ -127405,7 +127405,7 @@
       "50": 1415
     },
     "greatLeague": {
-      "ranking": 92,
+      "ranking": 94,
       "quickMoveIds": [
         "CHARM"
       ],
@@ -127562,7 +127562,7 @@
       "50": 2647
     },
     "greatLeague": {
-      "ranking": 73,
+      "ranking": 71,
       "quickMoveIds": [
         "CHARM"
       ],
@@ -127572,7 +127572,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 93,
+      "ranking": 89,
       "quickMoveIds": [
         "CHARM"
       ],
@@ -127582,7 +127582,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 177,
+      "ranking": 176,
       "quickMoveIds": [
         "CHARM"
       ],
@@ -127838,7 +127838,7 @@
       "50": 2486
     },
     "greatLeague": {
-      "ranking": 83,
+      "ranking": 85,
       "quickMoveIds": [
         "CHARM"
       ],
@@ -127848,7 +127848,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 107,
+      "ranking": 109,
       "quickMoveIds": [
         "CHARM"
       ],
@@ -127858,7 +127858,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 208,
+      "ranking": 209,
       "quickMoveIds": [
         "CHARM"
       ],
@@ -128127,7 +128127,7 @@
       "50": 2667
     },
     "greatLeague": {
-      "ranking": 174,
+      "ranking": 176,
       "quickMoveIds": [
         "PSYCHO_CUT"
       ],
@@ -128137,13 +128137,13 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 113,
+      "ranking": 115,
       "quickMoveIds": [
         "PSYCHO_CUT"
       ],
       "cinematicMoveIds": [
-        "SUPER_POWER",
-        "FOUL_PLAY"
+        "FOUL_PLAY",
+        "SUPER_POWER"
       ]
     },
     "masterLeague": {
@@ -128449,7 +128449,7 @@
       "50": 3025
     },
     "greatLeague": {
-      "ranking": 207,
+      "ranking": 210,
       "quickMoveIds": [
         "FURY_CUTTER"
       ],
@@ -128459,7 +128459,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 200,
+      "ranking": 196,
       "quickMoveIds": [
         "FURY_CUTTER"
       ],
@@ -128622,7 +128622,7 @@
       "50": 1202
     },
     "greatLeague": {
-      "ranking": 474,
+      "ranking": 477,
       "quickMoveIds": [
         "WATER_GUN"
       ],
@@ -128789,7 +128789,7 @@
       "50": 2694
     },
     "greatLeague": {
-      "ranking": 144,
+      "ranking": 145,
       "quickMoveIds": [
         "DRAGON_TAIL"
       ],
@@ -128809,7 +128809,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 256,
+      "ranking": 258,
       "quickMoveIds": [
         "DRAGON_TAIL"
       ],
@@ -128948,7 +128948,7 @@
       "50": 1230
     },
     "greatLeague": {
-      "ranking": 636,
+      "ranking": 637,
       "quickMoveIds": [
         "WATER_GUN"
       ],
@@ -129100,7 +129100,7 @@
       "50": 3124
     },
     "greatLeague": {
-      "ranking": 618,
+      "ranking": 620,
       "quickMoveIds": [
         "WATER_GUN"
       ],
@@ -129110,7 +129110,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 415,
+      "ranking": 417,
       "quickMoveIds": [
         "WATER_GUN"
       ],
@@ -130219,7 +130219,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 23,
+      "ranking": 22,
       "quickMoveIds": [
         "CHARM"
       ],
@@ -130929,7 +130929,7 @@
       "50": 2303
     },
     "greatLeague": {
-      "ranking": 369,
+      "ranking": 364,
       "quickMoveIds": [
         "WATER_GUN"
       ],
@@ -130939,7 +130939,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 417,
+      "ranking": 419,
       "quickMoveIds": [
         "WATER_GUN"
       ],
@@ -131102,7 +131102,7 @@
       "50": 3963
     },
     "greatLeague": {
-      "ranking": 121,
+      "ranking": 118,
       "quickMoveIds": [
         "DRAGON_BREATH"
       ],
@@ -131112,7 +131112,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 142,
+      "ranking": 144,
       "quickMoveIds": [
         "DRAGON_BREATH"
       ],
@@ -131269,7 +131269,7 @@
       "50": 2204
     },
     "greatLeague": {
-      "ranking": 606,
+      "ranking": 607,
       "quickMoveIds": [
         "ASTONISH"
       ],
@@ -131279,7 +131279,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 480,
+      "ranking": 479,
       "quickMoveIds": [
         "ASTONISH"
       ],
@@ -131560,7 +131560,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 136,
+      "ranking": 137,
       "quickMoveIds": [
         "SHADOW_CLAW"
       ],
@@ -131827,7 +131827,7 @@
       "50": 1381
     },
     "greatLeague": {
-      "ranking": 373,
+      "ranking": 374,
       "quickMoveIds": [
         "RAZOR_LEAF"
       ],
@@ -131966,7 +131966,7 @@
       "50": 1406
     },
     "greatLeague": {
-      "ranking": 357,
+      "ranking": 358,
       "quickMoveIds": [
         "RAZOR_LEAF"
       ],
@@ -132105,7 +132105,7 @@
       "50": 1359
     },
     "greatLeague": {
-      "ranking": 412,
+      "ranking": 413,
       "quickMoveIds": [
         "RAZOR_LEAF"
       ],
@@ -132244,7 +132244,7 @@
       "50": 1414
     },
     "greatLeague": {
-      "ranking": 334,
+      "ranking": 336,
       "quickMoveIds": [
         "RAZOR_LEAF"
       ],
@@ -132535,7 +132535,7 @@
       "50": 2702
     },
     "greatLeague": {
-      "ranking": 94,
+      "ranking": 95,
       "quickMoveIds": [
         "HEX"
       ],
@@ -132545,7 +132545,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 73,
+      "ranking": 75,
       "quickMoveIds": [
         "HEX"
       ],
@@ -132555,7 +132555,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 248,
+      "ranking": 249,
       "quickMoveIds": [
         "HEX"
       ],
@@ -132703,7 +132703,7 @@
       "50": 2850
     },
     "greatLeague": {
-      "ranking": 76,
+      "ranking": 72,
       "quickMoveIds": [
         "HEX"
       ],
@@ -132713,7 +132713,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 74,
+      "ranking": 76,
       "quickMoveIds": [
         "HEX"
       ],
@@ -132723,7 +132723,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 212,
+      "ranking": 211,
       "quickMoveIds": [
         "HEX"
       ],
@@ -132871,7 +132871,7 @@
       "50": 2549
     },
     "greatLeague": {
-      "ranking": 89,
+      "ranking": 88,
       "quickMoveIds": [
         "HEX"
       ],
@@ -132881,7 +132881,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 97,
+      "ranking": 98,
       "quickMoveIds": [
         "HEX"
       ],
@@ -133049,7 +133049,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 68,
+      "ranking": 69,
       "quickMoveIds": [
         "HEX"
       ],
@@ -133638,7 +133638,7 @@
       "50": 3125
     },
     "greatLeague": {
-      "ranking": 659,
+      "ranking": 652,
       "quickMoveIds": [
         "AIR_SLASH"
       ],
@@ -133648,13 +133648,13 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 419,
+      "ranking": 466,
       "quickMoveIds": [
         "AIR_SLASH"
       ],
       "cinematicMoveIds": [
         "HURRICANE",
-        "PSYCHIC"
+        "DRACO_METEOR"
       ]
     },
     "masterLeague": {
@@ -134028,7 +134028,7 @@
     },
     "greatLeague": null,
     "ultraLeague": {
-      "ranking": 177,
+      "ranking": 178,
       "quickMoveIds": [
         "SNARL"
       ],
@@ -134495,7 +134495,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 285,
+      "ranking": 283,
       "quickMoveIds": [
         "CONFUSION"
       ],
@@ -134650,7 +134650,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 285,
+      "ranking": 283,
       "quickMoveIds": [
         "CONFUSION"
       ],
@@ -134805,7 +134805,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 285,
+      "ranking": 283,
       "quickMoveIds": [
         "CONFUSION"
       ],
@@ -135235,7 +135235,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 154,
+      "ranking": 155,
       "quickMoveIds": [
         "THUNDER_SHOCK"
       ],
@@ -135245,7 +135245,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 2,
+      "ranking": 1,
       "quickMoveIds": [
         "THUNDER_SHOCK"
       ],
@@ -136580,7 +136580,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 19,
+      "ranking": 20,
       "quickMoveIds": [
         "BULLET_SEED"
       ],
@@ -137989,7 +137989,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 433,
+      "ranking": 434,
       "quickMoveIds": [
         "TACKLE"
       ],
@@ -142865,7 +142865,7 @@
       "50": 2999
     },
     "greatLeague": {
-      "ranking": 82,
+      "ranking": 79,
       "quickMoveIds": [
         "COUNTER"
       ],
@@ -142875,7 +142875,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 67,
+      "ranking": 68,
       "quickMoveIds": [
         "COUNTER"
       ],
@@ -143036,7 +143036,7 @@
       "50": 2697
     },
     "greatLeague": {
-      "ranking": 154,
+      "ranking": 155,
       "quickMoveIds": [
         "SHADOW_CLAW"
       ],
@@ -143056,7 +143056,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 209,
+      "ranking": 208,
       "quickMoveIds": [
         "SHADOW_CLAW"
       ],
@@ -143364,7 +143364,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 124,
+      "ranking": 125,
       "quickMoveIds": [
         "COUNTER"
       ],
@@ -143668,7 +143668,7 @@
       ]
     },
     "ultraLeague": {
-      "ranking": 487,
+      "ranking": 489,
       "quickMoveIds": [
         "ASTONISH"
       ],
@@ -144033,7 +144033,7 @@
       "50": 2665
     },
     "greatLeague": {
-      "ranking": 75,
+      "ranking": 77,
       "quickMoveIds": [
         "COUNTER"
       ],
@@ -147491,7 +147491,7 @@
     },
     "greatLeague": null,
     "ultraLeague": {
-      "ranking": 289,
+      "ranking": 286,
       "quickMoveIds": [
         "SNARL"
       ],
@@ -147501,7 +147501,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 19,
+      "ranking": 20,
       "quickMoveIds": [
         "SNARL"
       ],
@@ -148075,7 +148075,7 @@
     },
     "greatLeague": null,
     "ultraLeague": {
-      "ranking": 180,
+      "ranking": 182,
       "quickMoveIds": [
         "SNARL"
       ],
@@ -149084,7 +149084,7 @@
     },
     "greatLeague": null,
     "ultraLeague": {
-      "ranking": 119,
+      "ranking": 117,
       "quickMoveIds": [
         "VINE_WHIP"
       ],
@@ -149094,7 +149094,7 @@
       ]
     },
     "masterLeague": {
-      "ranking": 77,
+      "ranking": 75,
       "quickMoveIds": [
         "VINE_WHIP"
       ],
