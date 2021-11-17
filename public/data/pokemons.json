@@ -540,7 +540,8 @@
         "combat": {
           "power": 100,
           "energyDelta": -45
-        }
+        },
+        "isCommunityMove": true
       }
     ],
     "cpTable": {
@@ -709,7 +710,8 @@
         "combat": {
           "power": 100,
           "energyDelta": -45
-        }
+        },
+        "isCommunityMove": true
       }
     ],
     "cpTable": {
@@ -851,7 +853,8 @@
         "combat": {
           "power": 100,
           "energyDelta": -45
-        }
+        },
+        "isCommunityMove": true
       }
     ],
     "cpTable": {
@@ -1484,7 +1487,8 @@
         "combat": {
           "power": 4,
           "energyDelta": 3
-        }
+        },
+        "isCommunityMove": true
       }
     ],
     "eliteCinematicMoves": [
@@ -1503,7 +1507,8 @@
         "combat": {
           "power": 110,
           "energyDelta": -50
-        }
+        },
+        "isCommunityMove": true
       },
       {
         "id": "0024",
@@ -1728,7 +1733,8 @@
         "combat": {
           "power": 4,
           "energyDelta": 3
-        }
+        },
+        "isCommunityMove": true
       }
     ],
     "eliteCinematicMoves": [
@@ -1747,7 +1753,8 @@
         "combat": {
           "power": 110,
           "energyDelta": -50
-        }
+        },
+        "isCommunityMove": true
       },
       {
         "id": "0024",
@@ -1945,7 +1952,8 @@
         "combat": {
           "power": 4,
           "energyDelta": 3
-        }
+        },
+        "isCommunityMove": true
       }
     ],
     "eliteCinematicMoves": [
@@ -1964,7 +1972,8 @@
         "combat": {
           "power": 110,
           "energyDelta": -50
-        }
+        },
+        "isCommunityMove": true
       },
       {
         "id": "0024",
@@ -2162,7 +2171,8 @@
         "combat": {
           "power": 4,
           "energyDelta": 3
-        }
+        },
+        "isCommunityMove": true
       }
     ],
     "eliteCinematicMoves": [
@@ -2181,7 +2191,8 @@
         "combat": {
           "power": 110,
           "energyDelta": -50
-        }
+        },
+        "isCommunityMove": true
       },
       {
         "id": "0024",
@@ -2777,7 +2788,8 @@
         "combat": {
           "power": 80,
           "energyDelta": -40
-        }
+        },
+        "isCommunityMove": true
       }
     ],
     "cpTable": {
@@ -2964,7 +2976,8 @@
         "combat": {
           "power": 80,
           "energyDelta": -40
-        }
+        },
+        "isCommunityMove": true
       }
     ],
     "cpTable": {
@@ -3124,7 +3137,8 @@
         "combat": {
           "power": 80,
           "energyDelta": -40
-        }
+        },
+        "isCommunityMove": true
       }
     ],
     "cpTable": {
@@ -3874,7 +3888,8 @@
         "combat": {
           "power": 80,
           "energyDelta": -45
-        }
+        },
+        "isCommunityMove": true
       }
     ],
     "cpTable": {
@@ -4073,7 +4088,8 @@
         "combat": {
           "power": 80,
           "energyDelta": -45
-        }
+        },
+        "isCommunityMove": true
       }
     ],
     "cpTable": {
@@ -6118,7 +6134,8 @@
         "combat": {
           "power": 65,
           "energyDelta": -40
-        }
+        },
+        "isCommunityMove": true
       },
       {
         "id": "0078",
@@ -6299,7 +6316,8 @@
         "combat": {
           "power": 65,
           "energyDelta": -40
-        }
+        },
+        "isCommunityMove": true
       },
       {
         "id": "0078",
@@ -6480,7 +6498,8 @@
         "combat": {
           "power": 65,
           "energyDelta": -40
-        }
+        },
+        "isCommunityMove": true
       },
       {
         "id": "0078",
@@ -6805,7 +6824,8 @@
         "combat": {
           "power": 65,
           "energyDelta": -40
-        }
+        },
+        "isCommunityMove": true
       },
       {
         "id": "0078",
@@ -7645,7 +7665,8 @@
         "combat": {
           "power": 65,
           "energyDelta": -40
-        }
+        },
+        "isCommunityMove": true
       },
       {
         "id": "0078",
@@ -15731,7 +15752,8 @@
           "power": 8,
           "energyDelta": 7,
           "durationTurns": 1
-        }
+        },
+        "isCommunityMove": true
       }
     ],
     "eliteCinematicMoves": [
@@ -16352,7 +16374,8 @@
         "combat": {
           "power": 110,
           "energyDelta": -60
-        }
+        },
+        "isCommunityMove": true
       }
     ],
     "cpTable": {
@@ -22732,7 +22755,8 @@
         "combat": {
           "power": 40,
           "energyDelta": -35
-        }
+        },
+        "isCommunityMove": true
       }
     ],
     "cpTable": {
@@ -22992,7 +23016,8 @@
         "combat": {
           "power": 40,
           "energyDelta": -35
-        }
+        },
+        "isCommunityMove": true
       }
     ],
     "cpTable": {
@@ -23231,7 +23256,8 @@
         "combat": {
           "power": 40,
           "energyDelta": -35
-        }
+        },
+        "isCommunityMove": true
       }
     ],
     "cpTable": {
@@ -29969,7 +29995,8 @@
         "combat": {
           "power": 50,
           "energyDelta": -35
-        }
+        },
+        "isCommunityMove": true
       }
     ],
     "cpTable": {
@@ -30211,7 +30238,8 @@
         "combat": {
           "power": 50,
           "energyDelta": -35
-        }
+        },
+        "isCommunityMove": true
       }
     ],
     "cpTable": {
@@ -30666,7 +30694,8 @@
         "combat": {
           "power": 90,
           "energyDelta": -55
-        }
+        },
+        "isCommunityMove": true
       },
       {
         "id": "0131",
@@ -30814,7 +30843,8 @@
         "combat": {
           "power": 90,
           "energyDelta": -55
-        }
+        },
+        "isCommunityMove": true
       },
       {
         "id": "0106",
@@ -30835,7 +30865,8 @@
             "targetAttackStatStageChange": -1,
             "buffActivationChance": 0.3
           }
-        }
+        },
+        "isCommunityMove": true
       }
     ],
     "cpTable": {
@@ -31003,7 +31034,8 @@
         "combat": {
           "power": 90,
           "energyDelta": -55
-        }
+        },
+        "isCommunityMove": true
       },
       {
         "id": "0252",
@@ -31024,7 +31056,8 @@
             "targetAttackStatStageChange": -1,
             "buffActivationChance": 1
           }
-        }
+        },
+        "isCommunityMove": true
       }
     ],
     "cpTable": {
@@ -31196,7 +31229,8 @@
         "combat": {
           "power": 90,
           "energyDelta": -55
-        }
+        },
+        "isCommunityMove": true
       },
       {
         "id": "0042",
@@ -33691,7 +33725,8 @@
             "attackerAttackStatStageChange": -2,
             "buffActivationChance": 1
           }
-        }
+        },
+        "isCommunityMove": true
       },
       {
         "id": "0082",
@@ -35325,7 +35360,8 @@
         "combat": {
           "power": 100,
           "energyDelta": -45
-        }
+        },
+        "isCommunityMove": true
       }
     ],
     "cpTable": {
@@ -35788,7 +35824,8 @@
         "combat": {
           "power": 110,
           "energyDelta": -50
-        }
+        },
+        "isCommunityMove": true
       }
     ],
     "cpTable": {
@@ -36275,7 +36312,8 @@
         "combat": {
           "power": 80,
           "energyDelta": -40
-        }
+        },
+        "isCommunityMove": true
       }
     ],
     "cpTable": {
@@ -39453,7 +39491,8 @@
         "combat": {
           "power": 90,
           "energyDelta": -60
-        }
+        },
+        "isCommunityMove": true
       }
     ],
     "cpTable": {
@@ -39660,7 +39699,8 @@
         "combat": {
           "power": 90,
           "energyDelta": -60
-        }
+        },
+        "isCommunityMove": true
       }
     ],
     "cpTable": {
@@ -41891,7 +41931,8 @@
         "combat": {
           "power": 90,
           "energyDelta": -55
-        }
+        },
+        "isCommunityMove": true
       },
       {
         "id": "0070",
@@ -41908,7 +41949,8 @@
         "combat": {
           "power": 100,
           "energyDelta": -55
-        }
+        },
+        "isCommunityMove": true
       }
     ],
     "cpTable": {
@@ -42059,7 +42101,8 @@
         "combat": {
           "power": 90,
           "energyDelta": -55
-        }
+        },
+        "isCommunityMove": true
       },
       {
         "id": "0108",
@@ -42080,7 +42123,8 @@
             "targetDefenseStatStageChange": -1,
             "buffActivationChance": 0.1
           }
-        }
+        },
+        "isCommunityMove": true
       }
     ],
     "cpTable": {
@@ -50312,7 +50356,8 @@
           "power": 12,
           "energyDelta": 8,
           "durationTurns": 2
-        }
+        },
+        "isCommunityMove": true
       }
     ],
     "eliteCinematicMoves": [],
@@ -51316,7 +51361,8 @@
         "combat": {
           "power": 100,
           "energyDelta": -45
-        }
+        },
+        "isCommunityMove": true
       }
     ],
     "cpTable": {
@@ -51785,7 +51831,8 @@
         "combat": {
           "power": 110,
           "energyDelta": -50
-        }
+        },
+        "isCommunityMove": true
       },
       {
         "id": "0032",
@@ -52265,7 +52312,8 @@
         "combat": {
           "power": 80,
           "energyDelta": -40
-        }
+        },
+        "isCommunityMove": true
       }
     ],
     "cpTable": {
@@ -54631,7 +54679,8 @@
           "power": 5,
           "energyDelta": 13,
           "durationTurns": 2
-        }
+        },
+        "isCommunityMove": true
       }
     ],
     "eliteCinematicMoves": [],
@@ -55623,7 +55672,8 @@
         "combat": {
           "power": 80,
           "energyDelta": -50
-        }
+        },
+        "isCommunityMove": true
       }
     ],
     "cpTable": {
@@ -56672,7 +56722,8 @@
         "combat": {
           "power": 60,
           "energyDelta": -35
-        }
+        },
+        "isCommunityMove": true
       }
     ],
     "cpTable": {
@@ -63013,7 +63064,8 @@
             "targetDefenseStatStageChange": -1,
             "buffActivationChance": 0.1
           }
-        }
+        },
+        "isCommunityMove": true
       }
     ],
     "cpTable": {
@@ -63626,7 +63678,8 @@
             "targetAttackStatStageChange": -1,
             "buffActivationChance": 0.1
           }
-        }
+        },
+        "isCommunityMove": true
       }
     ],
     "cpTable": {
@@ -63798,7 +63851,8 @@
             "targetAttackStatStageChange": -1,
             "buffActivationChance": 0.1
           }
-        }
+        },
+        "isCommunityMove": true
       }
     ],
     "cpTable": {
@@ -70054,7 +70108,8 @@
         "combat": {
           "power": 110,
           "energyDelta": -60
-        }
+        },
+        "isCommunityMove": true
       }
     ],
     "cpTable": {
@@ -70456,7 +70511,8 @@
         "combat": {
           "power": 100,
           "energyDelta": -50
-        }
+        },
+        "isCommunityMove": true
       }
     ],
     "cpTable": {
@@ -72983,7 +73039,8 @@
         "combat": {
           "power": 100,
           "energyDelta": -45
-        }
+        },
+        "isCommunityMove": true
       }
     ],
     "cpTable": {
@@ -73427,7 +73484,8 @@
         "combat": {
           "power": 110,
           "energyDelta": -50
-        }
+        },
+        "isCommunityMove": true
       }
     ],
     "cpTable": {
@@ -73905,7 +73963,8 @@
         "combat": {
           "power": 80,
           "energyDelta": -40
-        }
+        },
+        "isCommunityMove": true
       }
     ],
     "cpTable": {
@@ -75671,7 +75730,8 @@
           "power": 5,
           "energyDelta": 13,
           "durationTurns": 2
-        }
+        },
+        "isCommunityMove": true
       }
     ],
     "eliteCinematicMoves": [
@@ -75690,7 +75750,8 @@
         "combat": {
           "power": 55,
           "energyDelta": -35
-        }
+        },
+        "isCommunityMove": true
       }
     ],
     "cpTable": {
@@ -82133,7 +82194,8 @@
             "targetDefenseStatStageChange": -1,
             "buffActivationChance": 0.1
           }
-        }
+        },
+        "isCommunityMove": true
       }
     ],
     "cpTable": {
@@ -85387,7 +85449,8 @@
         "combat": {
           "power": 110,
           "energyDelta": -50
-        }
+        },
+        "isCommunityMove": true
       }
     ],
     "cpTable": {
@@ -85765,7 +85828,8 @@
         "combat": {
           "power": 90,
           "energyDelta": -55
-        }
+        },
+        "isCommunityMove": true
       }
     ],
     "cpTable": {
@@ -85954,7 +86018,8 @@
         "combat": {
           "power": 90,
           "energyDelta": -55
-        }
+        },
+        "isCommunityMove": true
       }
     ],
     "cpTable": {
@@ -86476,7 +86541,8 @@
           "power": 5,
           "energyDelta": 13,
           "durationTurns": 2
-        }
+        },
+        "isCommunityMove": true
       }
     ],
     "eliteCinematicMoves": [
@@ -86495,7 +86561,8 @@
         "combat": {
           "power": 90,
           "energyDelta": -55
-        }
+        },
+        "isCommunityMove": true
       }
     ],
     "cpTable": {
@@ -86684,7 +86751,8 @@
         "combat": {
           "power": 70,
           "energyDelta": -60
-        }
+        },
+        "isCommunityMove": true
       }
     ],
     "cpTable": {
@@ -87033,7 +87101,8 @@
             "attackerDefenseStatStageChange": 2,
             "buffActivationChance": 0.1
           }
-        }
+        },
+        "isCommunityMove": true
       }
     ],
     "cpTable": {
@@ -87412,7 +87481,8 @@
         "combat": {
           "power": 80,
           "energyDelta": -50
-        }
+        },
+        "isCommunityMove": true
       }
     ],
     "cpTable": {
@@ -87740,7 +87810,8 @@
         "combat": {
           "power": 100,
           "energyDelta": -55
-        }
+        },
+        "isCommunityMove": true
       }
     ],
     "cpTable": {
@@ -93691,7 +93762,8 @@
         "combat": {
           "power": 100,
           "energyDelta": -45
-        }
+        },
+        "isCommunityMove": true
       }
     ],
     "cpTable": {
@@ -94164,7 +94236,8 @@
         "combat": {
           "power": 110,
           "energyDelta": -50
-        }
+        },
+        "isCommunityMove": true
       }
     ],
     "cpTable": {
@@ -94619,7 +94692,8 @@
         "combat": {
           "power": 80,
           "energyDelta": -40
-        }
+        },
+        "isCommunityMove": true
       }
     ],
     "cpTable": {
@@ -122596,7 +122670,8 @@
           "power": 15,
           "energyDelta": 20,
           "durationTurns": 4
-        }
+        },
+        "isCommunityMove": true
       }
     ],
     "eliteCinematicMoves": [],
@@ -130120,7 +130195,8 @@
         "combat": {
           "power": 70,
           "energyDelta": -45
-        }
+        },
+        "isCommunityMove": true
       }
     ],
     "cpTable": {
