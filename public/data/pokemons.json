@@ -142182,6 +142182,351 @@
     "masterLeague": null
   },
   {
+    "uniqueId": "ORICORIO",
+    "no": 741,
+    "name": "花舞鳥",
+    "types": [
+      "POKEMON_TYPE_FIRE",
+      "POKEMON_TYPE_FLYING"
+    ],
+    "category": "舞蹈寶可夢",
+    "description": "吸食了朱紅色花蜜的花舞鳥。訓練家如果做出了錯誤的指示，感情起伏激烈的牠就會非常生氣。",
+    "form": "NORMAL",
+    "familyId": "FAMILY_ORICORIO",
+    "evolutions": [],
+    "stats": {
+      "baseStamina": 181,
+      "baseAttack": 196,
+      "baseDefense": 145
+    },
+    "quickMoves": [
+      {
+        "id": "0133",
+        "name": "掙扎",
+        "uniqueId": "STRUGGLE",
+        "type": "POKEMON_TYPE_NORMAL",
+        "base": {
+          "power": 35,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.1,
+          "durationMs": 2200
+        },
+        "combat": {
+          "power": 35,
+          "energyDelta": -100
+        }
+      }
+    ],
+    "cinematicMoves": [
+      {
+        "id": "0133",
+        "name": "掙扎",
+        "uniqueId": "STRUGGLE",
+        "type": "POKEMON_TYPE_NORMAL",
+        "base": {
+          "power": 35,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.1,
+          "durationMs": 2200
+        },
+        "combat": {
+          "power": 35,
+          "energyDelta": -100
+        }
+      }
+    ],
+    "eliteQuickMoves": [],
+    "eliteCinematicMoves": [],
+    "cpTable": {
+      "15": 1000,
+      "20": 1333,
+      "25": 1667,
+      "30": 2000,
+      "35": 2167,
+      "40": 2333,
+      "50": 2638
+    },
+    "greatLeague": null,
+    "ultraLeague": null,
+    "masterLeague": null
+  },
+  {
+    "uniqueId": "ORICORIO",
+    "no": 741,
+    "name": "花舞鳥",
+    "types": [
+      "POKEMON_TYPE_FIRE",
+      "POKEMON_TYPE_FLYING"
+    ],
+    "category": "舞蹈寶可夢",
+    "description": "吸食了朱紅色花蜜的花舞鳥。訓練家如果做出了錯誤的指示，感情起伏激烈的牠就會非常生氣。",
+    "form": "BAILE",
+    "familyId": "FAMILY_ORICORIO",
+    "evolutions": [],
+    "stats": {
+      "baseStamina": 181,
+      "baseAttack": 196,
+      "baseDefense": 145
+    },
+    "quickMoves": [
+      {
+        "id": "0133",
+        "name": "掙扎",
+        "uniqueId": "STRUGGLE",
+        "type": "POKEMON_TYPE_NORMAL",
+        "base": {
+          "power": 35,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.1,
+          "durationMs": 2200
+        },
+        "combat": {
+          "power": 35,
+          "energyDelta": -100
+        }
+      }
+    ],
+    "cinematicMoves": [
+      {
+        "id": "0133",
+        "name": "掙扎",
+        "uniqueId": "STRUGGLE",
+        "type": "POKEMON_TYPE_NORMAL",
+        "base": {
+          "power": 35,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.1,
+          "durationMs": 2200
+        },
+        "combat": {
+          "power": 35,
+          "energyDelta": -100
+        }
+      }
+    ],
+    "eliteQuickMoves": [],
+    "eliteCinematicMoves": [],
+    "cpTable": {
+      "15": 1000,
+      "20": 1333,
+      "25": 1667,
+      "30": 2000,
+      "35": 2167,
+      "40": 2333,
+      "50": 2638
+    },
+    "greatLeague": null,
+    "ultraLeague": null,
+    "masterLeague": null
+  },
+  {
+    "uniqueId": "ORICORIO",
+    "no": 741,
+    "name": "花舞鳥",
+    "types": [
+      "POKEMON_TYPE_PSYCHIC",
+      "POKEMON_TYPE_FLYING"
+    ],
+    "category": "舞蹈寶可夢",
+    "description": "吸食了朱紅色花蜜的花舞鳥。訓練家如果做出了錯誤的指示，感情起伏激烈的牠就會非常生氣。",
+    "form": "PAU",
+    "familyId": "FAMILY_ORICORIO",
+    "evolutions": [],
+    "stats": {
+      "baseStamina": 181,
+      "baseAttack": 196,
+      "baseDefense": 145
+    },
+    "quickMoves": [
+      {
+        "id": "0133",
+        "name": "掙扎",
+        "uniqueId": "STRUGGLE",
+        "type": "POKEMON_TYPE_NORMAL",
+        "base": {
+          "power": 35,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.1,
+          "durationMs": 2200
+        },
+        "combat": {
+          "power": 35,
+          "energyDelta": -100
+        }
+      }
+    ],
+    "cinematicMoves": [
+      {
+        "id": "0133",
+        "name": "掙扎",
+        "uniqueId": "STRUGGLE",
+        "type": "POKEMON_TYPE_NORMAL",
+        "base": {
+          "power": 35,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.1,
+          "durationMs": 2200
+        },
+        "combat": {
+          "power": 35,
+          "energyDelta": -100
+        }
+      }
+    ],
+    "eliteQuickMoves": [],
+    "eliteCinematicMoves": [],
+    "cpTable": {
+      "15": 1000,
+      "20": 1333,
+      "25": 1667,
+      "30": 2000,
+      "35": 2167,
+      "40": 2333,
+      "50": 2638
+    },
+    "greatLeague": null,
+    "ultraLeague": null,
+    "masterLeague": null
+  },
+  {
+    "uniqueId": "ORICORIO",
+    "no": 741,
+    "name": "花舞鳥",
+    "types": [
+      "POKEMON_TYPE_ELECTRIC",
+      "POKEMON_TYPE_FLYING"
+    ],
+    "category": "舞蹈寶可夢",
+    "description": "吸食了朱紅色花蜜的花舞鳥。訓練家如果做出了錯誤的指示，感情起伏激烈的牠就會非常生氣。",
+    "form": "POMPOM",
+    "familyId": "FAMILY_ORICORIO",
+    "evolutions": [],
+    "stats": {
+      "baseStamina": 181,
+      "baseAttack": 196,
+      "baseDefense": 145
+    },
+    "quickMoves": [
+      {
+        "id": "0133",
+        "name": "掙扎",
+        "uniqueId": "STRUGGLE",
+        "type": "POKEMON_TYPE_NORMAL",
+        "base": {
+          "power": 35,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.1,
+          "durationMs": 2200
+        },
+        "combat": {
+          "power": 35,
+          "energyDelta": -100
+        }
+      }
+    ],
+    "cinematicMoves": [
+      {
+        "id": "0133",
+        "name": "掙扎",
+        "uniqueId": "STRUGGLE",
+        "type": "POKEMON_TYPE_NORMAL",
+        "base": {
+          "power": 35,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.1,
+          "durationMs": 2200
+        },
+        "combat": {
+          "power": 35,
+          "energyDelta": -100
+        }
+      }
+    ],
+    "eliteQuickMoves": [],
+    "eliteCinematicMoves": [],
+    "cpTable": {
+      "15": 1000,
+      "20": 1333,
+      "25": 1667,
+      "30": 2000,
+      "35": 2167,
+      "40": 2333,
+      "50": 2638
+    },
+    "greatLeague": null,
+    "ultraLeague": null,
+    "masterLeague": null
+  },
+  {
+    "uniqueId": "ORICORIO",
+    "no": 741,
+    "name": "花舞鳥",
+    "types": [
+      "POKEMON_TYPE_GHOST",
+      "POKEMON_TYPE_FLYING"
+    ],
+    "category": "舞蹈寶可夢",
+    "description": "吸食了朱紅色花蜜的花舞鳥。訓練家如果做出了錯誤的指示，感情起伏激烈的牠就會非常生氣。",
+    "form": "SENSU",
+    "familyId": "FAMILY_ORICORIO",
+    "evolutions": [],
+    "stats": {
+      "baseStamina": 181,
+      "baseAttack": 196,
+      "baseDefense": 145
+    },
+    "quickMoves": [
+      {
+        "id": "0133",
+        "name": "掙扎",
+        "uniqueId": "STRUGGLE",
+        "type": "POKEMON_TYPE_NORMAL",
+        "base": {
+          "power": 35,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.1,
+          "durationMs": 2200
+        },
+        "combat": {
+          "power": 35,
+          "energyDelta": -100
+        }
+      }
+    ],
+    "cinematicMoves": [
+      {
+        "id": "0133",
+        "name": "掙扎",
+        "uniqueId": "STRUGGLE",
+        "type": "POKEMON_TYPE_NORMAL",
+        "base": {
+          "power": 35,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.1,
+          "durationMs": 2200
+        },
+        "combat": {
+          "power": 35,
+          "energyDelta": -100
+        }
+      }
+    ],
+    "eliteQuickMoves": [],
+    "eliteCinematicMoves": [],
+    "cpTable": {
+      "15": 1000,
+      "20": 1333,
+      "25": 1667,
+      "30": 2000,
+      "35": 2167,
+      "40": 2333,
+      "50": 2638
+    },
+    "greatLeague": null,
+    "ultraLeague": null,
+    "masterLeague": null
+  },
+  {
     "uniqueId": "CUTIEFLY",
     "no": 742,
     "name": "萌虻",
