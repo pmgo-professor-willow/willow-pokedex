@@ -142201,37 +142201,92 @@
     },
     "quickMoves": [
       {
-        "id": "0133",
-        "name": "掙扎",
-        "uniqueId": "STRUGGLE",
+        "id": "0222",
+        "name": "拍擊",
+        "uniqueId": "POUND_FAST",
         "type": "POKEMON_TYPE_NORMAL",
         "base": {
-          "power": 35,
+          "power": 7,
           "accuracyChance": 1,
-          "staminaLossScalar": 0.1,
-          "durationMs": 2200
+          "staminaLossScalar": 0.01,
+          "durationMs": 600,
+          "energyDelta": 6
         },
         "combat": {
-          "power": 35,
-          "energyDelta": -100
+          "power": 4,
+          "energyDelta": 4,
+          "durationTurns": 1
+        }
+      },
+      {
+        "id": "0255",
+        "name": "空氣斬",
+        "uniqueId": "AIR_SLASH_FAST",
+        "type": "POKEMON_TYPE_FLYING",
+        "base": {
+          "power": 14,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.01,
+          "durationMs": 1200,
+          "energyDelta": 10
+        },
+        "combat": {
+          "power": 9,
+          "energyDelta": 9,
+          "durationTurns": 2
         }
       }
     ],
     "cinematicMoves": [
       {
-        "id": "0133",
-        "name": "掙扎",
-        "uniqueId": "STRUGGLE",
-        "type": "POKEMON_TYPE_NORMAL",
+        "id": "0045",
+        "name": "燕返",
+        "uniqueId": "AERIAL_ACE",
+        "type": "POKEMON_TYPE_FLYING",
         "base": {
-          "power": 35,
+          "power": 55,
           "accuracyChance": 1,
-          "staminaLossScalar": 0.1,
-          "durationMs": 2200
+          "staminaLossScalar": 0.06,
+          "durationMs": 2400,
+          "energyDelta": -33
         },
         "combat": {
-          "power": 35,
+          "power": 55,
+          "energyDelta": -45
+        }
+      },
+      {
+        "id": "0121",
+        "name": "空氣利刃",
+        "uniqueId": "AIR_CUTTER",
+        "type": "POKEMON_TYPE_FLYING",
+        "base": {
+          "power": 60,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.06,
+          "durationMs": 2700,
+          "energyDelta": -50
+        },
+        "combat": {
+          "power": 60,
+          "energyDelta": -55
+        }
+      },
+      {
+        "id": "0122",
+        "name": "暴風",
+        "uniqueId": "HURRICANE",
+        "type": "POKEMON_TYPE_FLYING",
+        "base": {
+          "power": 110,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.11,
+          "durationMs": 2700,
           "energyDelta": -100
+        },
+        "combat": {
+          "power": 110,
+          "energyDelta": -65
         }
       }
     ],
@@ -142270,37 +142325,92 @@
     },
     "quickMoves": [
       {
-        "id": "0133",
-        "name": "掙扎",
-        "uniqueId": "STRUGGLE",
+        "id": "0222",
+        "name": "拍擊",
+        "uniqueId": "POUND_FAST",
         "type": "POKEMON_TYPE_NORMAL",
         "base": {
-          "power": 35,
+          "power": 7,
           "accuracyChance": 1,
-          "staminaLossScalar": 0.1,
-          "durationMs": 2200
+          "staminaLossScalar": 0.01,
+          "durationMs": 600,
+          "energyDelta": 6
         },
         "combat": {
-          "power": 35,
-          "energyDelta": -100
+          "power": 4,
+          "energyDelta": 4,
+          "durationTurns": 1
+        }
+      },
+      {
+        "id": "0255",
+        "name": "空氣斬",
+        "uniqueId": "AIR_SLASH_FAST",
+        "type": "POKEMON_TYPE_FLYING",
+        "base": {
+          "power": 14,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.01,
+          "durationMs": 1200,
+          "energyDelta": 10
+        },
+        "combat": {
+          "power": 9,
+          "energyDelta": 9,
+          "durationTurns": 2
         }
       }
     ],
     "cinematicMoves": [
       {
-        "id": "0133",
-        "name": "掙扎",
-        "uniqueId": "STRUGGLE",
-        "type": "POKEMON_TYPE_NORMAL",
+        "id": "0045",
+        "name": "燕返",
+        "uniqueId": "AERIAL_ACE",
+        "type": "POKEMON_TYPE_FLYING",
         "base": {
-          "power": 35,
+          "power": 55,
           "accuracyChance": 1,
-          "staminaLossScalar": 0.1,
-          "durationMs": 2200
+          "staminaLossScalar": 0.06,
+          "durationMs": 2400,
+          "energyDelta": -33
         },
         "combat": {
-          "power": 35,
+          "power": 55,
+          "energyDelta": -45
+        }
+      },
+      {
+        "id": "0121",
+        "name": "空氣利刃",
+        "uniqueId": "AIR_CUTTER",
+        "type": "POKEMON_TYPE_FLYING",
+        "base": {
+          "power": 60,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.06,
+          "durationMs": 2700,
+          "energyDelta": -50
+        },
+        "combat": {
+          "power": 60,
+          "energyDelta": -55
+        }
+      },
+      {
+        "id": "0122",
+        "name": "暴風",
+        "uniqueId": "HURRICANE",
+        "type": "POKEMON_TYPE_FLYING",
+        "base": {
+          "power": 110,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.11,
+          "durationMs": 2700,
           "energyDelta": -100
+        },
+        "combat": {
+          "power": 110,
+          "energyDelta": -65
         }
       }
     ],
@@ -142339,37 +142449,92 @@
     },
     "quickMoves": [
       {
-        "id": "0133",
-        "name": "掙扎",
-        "uniqueId": "STRUGGLE",
+        "id": "0222",
+        "name": "拍擊",
+        "uniqueId": "POUND_FAST",
         "type": "POKEMON_TYPE_NORMAL",
         "base": {
-          "power": 35,
+          "power": 7,
           "accuracyChance": 1,
-          "staminaLossScalar": 0.1,
-          "durationMs": 2200
+          "staminaLossScalar": 0.01,
+          "durationMs": 600,
+          "energyDelta": 6
         },
         "combat": {
-          "power": 35,
-          "energyDelta": -100
+          "power": 4,
+          "energyDelta": 4,
+          "durationTurns": 1
+        }
+      },
+      {
+        "id": "0255",
+        "name": "空氣斬",
+        "uniqueId": "AIR_SLASH_FAST",
+        "type": "POKEMON_TYPE_FLYING",
+        "base": {
+          "power": 14,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.01,
+          "durationMs": 1200,
+          "energyDelta": 10
+        },
+        "combat": {
+          "power": 9,
+          "energyDelta": 9,
+          "durationTurns": 2
         }
       }
     ],
     "cinematicMoves": [
       {
-        "id": "0133",
-        "name": "掙扎",
-        "uniqueId": "STRUGGLE",
-        "type": "POKEMON_TYPE_NORMAL",
+        "id": "0045",
+        "name": "燕返",
+        "uniqueId": "AERIAL_ACE",
+        "type": "POKEMON_TYPE_FLYING",
         "base": {
-          "power": 35,
+          "power": 55,
           "accuracyChance": 1,
-          "staminaLossScalar": 0.1,
-          "durationMs": 2200
+          "staminaLossScalar": 0.06,
+          "durationMs": 2400,
+          "energyDelta": -33
         },
         "combat": {
-          "power": 35,
+          "power": 55,
+          "energyDelta": -45
+        }
+      },
+      {
+        "id": "0121",
+        "name": "空氣利刃",
+        "uniqueId": "AIR_CUTTER",
+        "type": "POKEMON_TYPE_FLYING",
+        "base": {
+          "power": 60,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.06,
+          "durationMs": 2700,
+          "energyDelta": -50
+        },
+        "combat": {
+          "power": 60,
+          "energyDelta": -55
+        }
+      },
+      {
+        "id": "0122",
+        "name": "暴風",
+        "uniqueId": "HURRICANE",
+        "type": "POKEMON_TYPE_FLYING",
+        "base": {
+          "power": 110,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.11,
+          "durationMs": 2700,
           "energyDelta": -100
+        },
+        "combat": {
+          "power": 110,
+          "energyDelta": -65
         }
       }
     ],
@@ -142408,37 +142573,92 @@
     },
     "quickMoves": [
       {
-        "id": "0133",
-        "name": "掙扎",
-        "uniqueId": "STRUGGLE",
+        "id": "0222",
+        "name": "拍擊",
+        "uniqueId": "POUND_FAST",
         "type": "POKEMON_TYPE_NORMAL",
         "base": {
-          "power": 35,
+          "power": 7,
           "accuracyChance": 1,
-          "staminaLossScalar": 0.1,
-          "durationMs": 2200
+          "staminaLossScalar": 0.01,
+          "durationMs": 600,
+          "energyDelta": 6
         },
         "combat": {
-          "power": 35,
-          "energyDelta": -100
+          "power": 4,
+          "energyDelta": 4,
+          "durationTurns": 1
+        }
+      },
+      {
+        "id": "0255",
+        "name": "空氣斬",
+        "uniqueId": "AIR_SLASH_FAST",
+        "type": "POKEMON_TYPE_FLYING",
+        "base": {
+          "power": 14,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.01,
+          "durationMs": 1200,
+          "energyDelta": 10
+        },
+        "combat": {
+          "power": 9,
+          "energyDelta": 9,
+          "durationTurns": 2
         }
       }
     ],
     "cinematicMoves": [
       {
-        "id": "0133",
-        "name": "掙扎",
-        "uniqueId": "STRUGGLE",
-        "type": "POKEMON_TYPE_NORMAL",
+        "id": "0045",
+        "name": "燕返",
+        "uniqueId": "AERIAL_ACE",
+        "type": "POKEMON_TYPE_FLYING",
         "base": {
-          "power": 35,
+          "power": 55,
           "accuracyChance": 1,
-          "staminaLossScalar": 0.1,
-          "durationMs": 2200
+          "staminaLossScalar": 0.06,
+          "durationMs": 2400,
+          "energyDelta": -33
         },
         "combat": {
-          "power": 35,
+          "power": 55,
+          "energyDelta": -45
+        }
+      },
+      {
+        "id": "0121",
+        "name": "空氣利刃",
+        "uniqueId": "AIR_CUTTER",
+        "type": "POKEMON_TYPE_FLYING",
+        "base": {
+          "power": 60,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.06,
+          "durationMs": 2700,
+          "energyDelta": -50
+        },
+        "combat": {
+          "power": 60,
+          "energyDelta": -55
+        }
+      },
+      {
+        "id": "0122",
+        "name": "暴風",
+        "uniqueId": "HURRICANE",
+        "type": "POKEMON_TYPE_FLYING",
+        "base": {
+          "power": 110,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.11,
+          "durationMs": 2700,
           "energyDelta": -100
+        },
+        "combat": {
+          "power": 110,
+          "energyDelta": -65
         }
       }
     ],
@@ -142477,37 +142697,92 @@
     },
     "quickMoves": [
       {
-        "id": "0133",
-        "name": "掙扎",
-        "uniqueId": "STRUGGLE",
+        "id": "0222",
+        "name": "拍擊",
+        "uniqueId": "POUND_FAST",
         "type": "POKEMON_TYPE_NORMAL",
         "base": {
-          "power": 35,
+          "power": 7,
           "accuracyChance": 1,
-          "staminaLossScalar": 0.1,
-          "durationMs": 2200
+          "staminaLossScalar": 0.01,
+          "durationMs": 600,
+          "energyDelta": 6
         },
         "combat": {
-          "power": 35,
-          "energyDelta": -100
+          "power": 4,
+          "energyDelta": 4,
+          "durationTurns": 1
+        }
+      },
+      {
+        "id": "0255",
+        "name": "空氣斬",
+        "uniqueId": "AIR_SLASH_FAST",
+        "type": "POKEMON_TYPE_FLYING",
+        "base": {
+          "power": 14,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.01,
+          "durationMs": 1200,
+          "energyDelta": 10
+        },
+        "combat": {
+          "power": 9,
+          "energyDelta": 9,
+          "durationTurns": 2
         }
       }
     ],
     "cinematicMoves": [
       {
-        "id": "0133",
-        "name": "掙扎",
-        "uniqueId": "STRUGGLE",
-        "type": "POKEMON_TYPE_NORMAL",
+        "id": "0045",
+        "name": "燕返",
+        "uniqueId": "AERIAL_ACE",
+        "type": "POKEMON_TYPE_FLYING",
         "base": {
-          "power": 35,
+          "power": 55,
           "accuracyChance": 1,
-          "staminaLossScalar": 0.1,
-          "durationMs": 2200
+          "staminaLossScalar": 0.06,
+          "durationMs": 2400,
+          "energyDelta": -33
         },
         "combat": {
-          "power": 35,
+          "power": 55,
+          "energyDelta": -45
+        }
+      },
+      {
+        "id": "0121",
+        "name": "空氣利刃",
+        "uniqueId": "AIR_CUTTER",
+        "type": "POKEMON_TYPE_FLYING",
+        "base": {
+          "power": 60,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.06,
+          "durationMs": 2700,
+          "energyDelta": -50
+        },
+        "combat": {
+          "power": 60,
+          "energyDelta": -55
+        }
+      },
+      {
+        "id": "0122",
+        "name": "暴風",
+        "uniqueId": "HURRICANE",
+        "type": "POKEMON_TYPE_FLYING",
+        "base": {
+          "power": 110,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.11,
+          "durationMs": 2700,
           "energyDelta": -100
+        },
+        "combat": {
+          "power": 110,
+          "energyDelta": -65
         }
       }
     ],
@@ -148406,37 +148681,113 @@
     },
     "quickMoves": [
       {
-        "id": "0133",
-        "name": "掙扎",
-        "uniqueId": "STRUGGLE",
-        "type": "POKEMON_TYPE_NORMAL",
+        "id": "0235",
+        "name": "念力",
+        "uniqueId": "CONFUSION_FAST",
+        "type": "POKEMON_TYPE_PSYCHIC",
         "base": {
-          "power": 35,
+          "power": 20,
           "accuracyChance": 1,
-          "staminaLossScalar": 0.1,
-          "durationMs": 2200
+          "staminaLossScalar": 0.01,
+          "durationMs": 1600,
+          "energyDelta": 15
         },
         "combat": {
-          "power": 35,
-          "energyDelta": -100
+          "power": 16,
+          "energyDelta": 12,
+          "durationTurns": 3
+        }
+      },
+      {
+        "id": "0263",
+        "name": "驚嚇",
+        "uniqueId": "ASTONISH_FAST",
+        "type": "POKEMON_TYPE_GHOST",
+        "base": {
+          "power": 8,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.01,
+          "durationMs": 1100,
+          "energyDelta": 14
+        },
+        "combat": {
+          "power": 5,
+          "energyDelta": 9,
+          "durationTurns": 2
         }
       }
     ],
     "cinematicMoves": [
       {
-        "id": "0133",
-        "name": "掙扎",
-        "uniqueId": "STRUGGLE",
-        "type": "POKEMON_TYPE_NORMAL",
+        "id": "0060",
+        "name": "精神衝擊",
+        "uniqueId": "PSYSHOCK",
+        "type": "POKEMON_TYPE_PSYCHIC",
         "base": {
-          "power": 35,
+          "power": 65,
           "accuracyChance": 1,
-          "staminaLossScalar": 0.1,
-          "durationMs": 2200
+          "staminaLossScalar": 0.08,
+          "durationMs": 2700,
+          "energyDelta": -33
         },
         "combat": {
-          "power": 35,
+          "power": 70,
+          "energyDelta": -45
+        }
+      },
+      {
+        "id": "0087",
+        "name": "月亮之力",
+        "uniqueId": "MOONBLAST",
+        "type": "POKEMON_TYPE_FAIRY",
+        "base": {
+          "power": 130,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.095,
+          "durationMs": 3900,
           "energyDelta": -100
+        },
+        "combat": {
+          "power": 110,
+          "energyDelta": -60,
+          "buffs": {
+            "targetAttackStatStageChange": -1,
+            "buffActivationChance": 0.1
+          }
+        }
+      },
+      {
+        "id": "0247",
+        "name": "真氣彈",
+        "uniqueId": "FOCUS_BLAST",
+        "type": "POKEMON_TYPE_FIGHTING",
+        "base": {
+          "power": 140,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.04,
+          "durationMs": 3500,
+          "energyDelta": -100
+        },
+        "combat": {
+          "power": 150,
+          "energyDelta": -75
+        }
+      },
+      {
+        "id": "0275",
+        "name": "預知未來",
+        "uniqueId": "FUTURESIGHT",
+        "type": "POKEMON_TYPE_PSYCHIC",
+        "base": {
+          "power": 120,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.04,
+          "durationMs": 2700,
+          "energyDelta": -100
+        },
+        "combat": {
+          "power": 120,
+          "energyDelta": -65
         }
       }
     ],
