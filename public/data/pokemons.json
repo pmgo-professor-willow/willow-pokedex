@@ -8538,7 +8538,30 @@
       }
     ],
     "eliteQuickMoves": [],
-    "eliteCinematicMoves": [],
+    "eliteCinematicMoves": [
+      {
+        "id": "0051",
+        "name": "暗襲要害",
+        "uniqueId": "NIGHT_SLASH",
+        "type": "POKEMON_TYPE_DARK",
+        "base": {
+          "power": 50,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.07,
+          "durationMs": 2200,
+          "energyDelta": -33
+        },
+        "combat": {
+          "power": 50,
+          "energyDelta": -35,
+          "buffs": {
+            "attackerAttackStatStageChange": 2,
+            "buffActivationChance": 0.125
+          }
+        },
+        "isCommunityMove": true
+      }
+    ],
     "cpTable": {
       "15": 1017,
       "20": 1356,
@@ -8705,7 +8728,27 @@
         }
       }
     ],
-    "eliteQuickMoves": [],
+    "eliteQuickMoves": [
+      {
+        "id": "0213",
+        "name": "暗影爪",
+        "uniqueId": "SHADOW_CLAW_FAST",
+        "type": "POKEMON_TYPE_GHOST",
+        "base": {
+          "power": 9,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.01,
+          "durationMs": 700,
+          "energyDelta": 6
+        },
+        "combat": {
+          "power": 6,
+          "energyDelta": 8,
+          "durationTurns": 1
+        },
+        "isCommunityMove": true
+      }
+    ],
     "eliteCinematicMoves": [],
     "cpTable": {
       "15": 1042,
