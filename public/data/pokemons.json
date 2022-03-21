@@ -144376,37 +144376,79 @@
     },
     "quickMoves": [
       {
-        "id": "0133",
-        "name": "掙扎",
-        "uniqueId": "STRUGGLE",
-        "type": "POKEMON_TYPE_NORMAL",
+        "id": "0215",
+        "name": "飛葉快刀",
+        "uniqueId": "RAZOR_LEAF_FAST",
+        "type": "POKEMON_TYPE_GRASS",
         "base": {
-          "power": 35,
+          "power": 13,
           "accuracyChance": 1,
-          "staminaLossScalar": 0.1,
-          "durationMs": 2200
+          "staminaLossScalar": 0.01,
+          "durationMs": 1000,
+          "energyDelta": 7
         },
         "combat": {
-          "power": 35,
-          "energyDelta": -100
+          "power": 10,
+          "energyDelta": 4,
+          "durationTurns": 1
+        }
+      },
+      {
+        "id": "0271",
+        "name": "種子機關槍",
+        "uniqueId": "BULLET_SEED_FAST",
+        "type": "POKEMON_TYPE_GRASS",
+        "base": {
+          "power": 8,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.01,
+          "durationMs": 1100,
+          "energyDelta": 14
+        },
+        "combat": {
+          "power": 5,
+          "energyDelta": 13,
+          "durationTurns": 2
         }
       }
     ],
     "cinematicMoves": [
       {
-        "id": "0133",
-        "name": "掙扎",
-        "uniqueId": "STRUGGLE",
-        "type": "POKEMON_TYPE_NORMAL",
+        "id": "0273",
+        "name": "能量球",
+        "uniqueId": "ENERGY_BALL",
+        "type": "POKEMON_TYPE_GRASS",
         "base": {
-          "power": 35,
+          "power": 90,
           "accuracyChance": 1,
-          "staminaLossScalar": 0.1,
-          "durationMs": 2200
+          "staminaLossScalar": 0.04,
+          "durationMs": 3900,
+          "energyDelta": -50
         },
         "combat": {
-          "power": 35,
-          "energyDelta": -100
+          "power": 90,
+          "energyDelta": -55,
+          "buffs": {
+            "targetDefenseStatStageChange": -1,
+            "buffActivationChance": 0.1
+          }
+        }
+      },
+      {
+        "id": "0272",
+        "name": "打草結",
+        "uniqueId": "GRASS_KNOT",
+        "type": "POKEMON_TYPE_GRASS",
+        "base": {
+          "power": 90,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.04,
+          "durationMs": 2600,
+          "energyDelta": -50
+        },
+        "combat": {
+          "power": 90,
+          "energyDelta": -50
         }
       }
     ],
@@ -144444,37 +144486,79 @@
     },
     "quickMoves": [
       {
-        "id": "0133",
-        "name": "掙扎",
-        "uniqueId": "STRUGGLE",
-        "type": "POKEMON_TYPE_NORMAL",
+        "id": "0215",
+        "name": "飛葉快刀",
+        "uniqueId": "RAZOR_LEAF_FAST",
+        "type": "POKEMON_TYPE_GRASS",
         "base": {
-          "power": 35,
+          "power": 13,
           "accuracyChance": 1,
-          "staminaLossScalar": 0.1,
-          "durationMs": 2200
+          "staminaLossScalar": 0.01,
+          "durationMs": 1000,
+          "energyDelta": 7
         },
         "combat": {
-          "power": 35,
-          "energyDelta": -100
+          "power": 10,
+          "energyDelta": 4,
+          "durationTurns": 1
+        }
+      },
+      {
+        "id": "0271",
+        "name": "種子機關槍",
+        "uniqueId": "BULLET_SEED_FAST",
+        "type": "POKEMON_TYPE_GRASS",
+        "base": {
+          "power": 8,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.01,
+          "durationMs": 1100,
+          "energyDelta": 14
+        },
+        "combat": {
+          "power": 5,
+          "energyDelta": 13,
+          "durationTurns": 2
         }
       }
     ],
     "cinematicMoves": [
       {
-        "id": "0133",
-        "name": "掙扎",
-        "uniqueId": "STRUGGLE",
-        "type": "POKEMON_TYPE_NORMAL",
+        "id": "0273",
+        "name": "能量球",
+        "uniqueId": "ENERGY_BALL",
+        "type": "POKEMON_TYPE_GRASS",
         "base": {
-          "power": 35,
+          "power": 90,
           "accuracyChance": 1,
-          "staminaLossScalar": 0.1,
-          "durationMs": 2200
+          "staminaLossScalar": 0.04,
+          "durationMs": 3900,
+          "energyDelta": -50
         },
         "combat": {
-          "power": 35,
-          "energyDelta": -100
+          "power": 90,
+          "energyDelta": -55,
+          "buffs": {
+            "targetDefenseStatStageChange": -1,
+            "buffActivationChance": 0.1
+          }
+        }
+      },
+      {
+        "id": "0272",
+        "name": "打草結",
+        "uniqueId": "GRASS_KNOT",
+        "type": "POKEMON_TYPE_GRASS",
+        "base": {
+          "power": 90,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.04,
+          "durationMs": 2600,
+          "energyDelta": -50
+        },
+        "combat": {
+          "power": 90,
+          "energyDelta": -50
         }
       }
     ],
