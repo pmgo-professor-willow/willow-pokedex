@@ -144394,25 +144394,41 @@
         }
       },
       {
-        "id": "0271",
-        "name": "種子機關槍",
-        "uniqueId": "BULLET_SEED_FAST",
-        "type": "POKEMON_TYPE_GRASS",
+        "id": "0200",
+        "name": "連斬",
+        "uniqueId": "FURY_CUTTER_FAST",
+        "type": "POKEMON_TYPE_BUG",
         "base": {
-          "power": 8,
+          "power": 3,
           "accuracyChance": 1,
           "staminaLossScalar": 0.01,
-          "durationMs": 1100,
-          "energyDelta": 14
+          "durationMs": 400,
+          "energyDelta": 6
         },
         "combat": {
-          "power": 5,
-          "energyDelta": 13,
-          "durationTurns": 2
+          "power": 2,
+          "energyDelta": 4
         }
       }
     ],
     "cinematicMoves": [
+      {
+        "id": "0117",
+        "name": "葉刃",
+        "uniqueId": "LEAF_BLADE",
+        "type": "POKEMON_TYPE_GRASS",
+        "base": {
+          "power": 70,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.09,
+          "durationMs": 2400,
+          "energyDelta": -33
+        },
+        "combat": {
+          "power": 70,
+          "energyDelta": -35
+        }
+      },
       {
         "id": "0273",
         "name": "能量球",
@@ -144504,61 +144520,99 @@
         }
       },
       {
-        "id": "0271",
-        "name": "種子機關槍",
-        "uniqueId": "BULLET_SEED_FAST",
-        "type": "POKEMON_TYPE_GRASS",
+        "id": "0200",
+        "name": "連斬",
+        "uniqueId": "FURY_CUTTER_FAST",
+        "type": "POKEMON_TYPE_BUG",
         "base": {
-          "power": 8,
+          "power": 3,
           "accuracyChance": 1,
           "staminaLossScalar": 0.01,
-          "durationMs": 1100,
-          "energyDelta": 14
+          "durationMs": 400,
+          "energyDelta": 6
         },
         "combat": {
-          "power": 5,
-          "energyDelta": 13,
-          "durationTurns": 2
+          "power": 2,
+          "energyDelta": 4
         }
       }
     ],
     "cinematicMoves": [
       {
-        "id": "0273",
-        "name": "能量球",
-        "uniqueId": "ENERGY_BALL",
+        "id": "0117",
+        "name": "葉刃",
+        "uniqueId": "LEAF_BLADE",
         "type": "POKEMON_TYPE_GRASS",
         "base": {
-          "power": 90,
+          "power": 70,
           "accuracyChance": 1,
-          "staminaLossScalar": 0.04,
-          "durationMs": 3900,
-          "energyDelta": -50
+          "staminaLossScalar": 0.09,
+          "durationMs": 2400,
+          "energyDelta": -33
         },
         "combat": {
-          "power": 90,
+          "power": 70,
+          "energyDelta": -35
+        }
+      },
+      {
+        "id": "0343",
+        "name": "飛葉風暴",
+        "uniqueId": "LEAF_STORM",
+        "type": "POKEMON_TYPE_GRASS",
+        "base": {
+          "power": 130,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.01,
+          "durationMs": 2500,
+          "energyDelta": -100
+        },
+        "combat": {
+          "power": 130,
           "energyDelta": -55,
           "buffs": {
-            "targetDefenseStatStageChange": -1,
-            "buffActivationChance": 0.1
+            "attackerAttackStatStageChange": -2,
+            "buffActivationChance": 1
           }
         }
       },
       {
-        "id": "0272",
-        "name": "打草結",
-        "uniqueId": "GRASS_KNOT",
-        "type": "POKEMON_TYPE_GRASS",
+        "id": "0310",
+        "name": "蠻力",
+        "uniqueId": "SUPER_POWER",
+        "type": "POKEMON_TYPE_FIGHTING",
         "base": {
-          "power": 90,
+          "power": 85,
           "accuracyChance": 1,
-          "staminaLossScalar": 0.04,
-          "durationMs": 2600,
+          "staminaLossScalar": 0.01,
+          "durationMs": 3000,
           "energyDelta": -50
         },
         "combat": {
-          "power": 90,
-          "energyDelta": -50
+          "power": 85,
+          "energyDelta": -40,
+          "buffs": {
+            "attackerAttackStatStageChange": -1,
+            "attackerDefenseStatStageChange": -1,
+            "buffActivationChance": 1
+          }
+        }
+      },
+      {
+        "id": "0100",
+        "name": "十字剪",
+        "uniqueId": "X_SCISSOR",
+        "type": "POKEMON_TYPE_BUG",
+        "base": {
+          "power": 45,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.08,
+          "durationMs": 1600,
+          "energyDelta": -33
+        },
+        "combat": {
+          "power": 45,
+          "energyDelta": -35
         }
       }
     ],
