@@ -41505,7 +41505,7 @@
     "eliteCinematicMoves": [
       {
         "id": "0364",
-        "name": "Acrobatics",
+        "name": "雜技",
         "uniqueId": "ACROBATICS",
         "type": "POKEMON_TYPE_FLYING",
         "base": {
@@ -52509,7 +52509,7 @@
       },
       {
         "id": "0358",
-        "name": "Sacred Fire",
+        "name": "神聖之火",
         "uniqueId": "SACRED_FIRE",
         "type": "POKEMON_TYPE_FIRE",
         "base": {
@@ -52712,7 +52712,7 @@
       },
       {
         "id": "0358",
-        "name": "Sacred Fire",
+        "name": "神聖之火",
         "uniqueId": "SACRED_FIRE",
         "type": "POKEMON_TYPE_FIRE",
         "base": {
