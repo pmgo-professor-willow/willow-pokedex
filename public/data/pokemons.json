@@ -144233,37 +144233,99 @@
     },
     "quickMoves": [
       {
-        "id": "0133",
-        "name": "掙扎",
-        "uniqueId": "STRUGGLE",
-        "type": "POKEMON_TYPE_NORMAL",
+        "id": "0230",
+        "name": "水槍",
+        "uniqueId": "WATER_GUN_FAST",
+        "type": "POKEMON_TYPE_WATER",
         "base": {
-          "power": 35,
+          "power": 5,
           "accuracyChance": 1,
-          "staminaLossScalar": 0.1,
-          "durationMs": 2200
+          "staminaLossScalar": 0.01,
+          "durationMs": 500,
+          "energyDelta": 5
         },
         "combat": {
-          "power": 35,
-          "energyDelta": -100
+          "power": 3,
+          "energyDelta": 3
+        }
+      },
+      {
+        "id": "0237",
+        "name": "泡沫",
+        "uniqueId": "BUBBLE_FAST",
+        "type": "POKEMON_TYPE_WATER",
+        "base": {
+          "power": 12,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.01,
+          "durationMs": 1200,
+          "energyDelta": 14
+        },
+        "combat": {
+          "power": 7,
+          "energyDelta": 11,
+          "durationTurns": 2
         }
       }
     ],
     "cinematicMoves": [
       {
-        "id": "0133",
-        "name": "掙扎",
-        "uniqueId": "STRUGGLE",
-        "type": "POKEMON_TYPE_NORMAL",
+        "id": "0105",
+        "name": "水之波動",
+        "uniqueId": "WATER_PULSE",
+        "type": "POKEMON_TYPE_WATER",
         "base": {
-          "power": 35,
+          "power": 70,
           "accuracyChance": 1,
-          "staminaLossScalar": 0.1,
-          "durationMs": 2200
+          "staminaLossScalar": 0.06,
+          "durationMs": 3200,
+          "energyDelta": -50
         },
         "combat": {
-          "power": 35,
-          "energyDelta": -100
+          "power": 70,
+          "energyDelta": -60
+        }
+      },
+      {
+        "id": "0053",
+        "name": "泡沫光線",
+        "uniqueId": "BUBBLE_BEAM",
+        "type": "POKEMON_TYPE_WATER",
+        "base": {
+          "power": 45,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.065,
+          "durationMs": 1900,
+          "energyDelta": -33
+        },
+        "combat": {
+          "power": 25,
+          "energyDelta": -40,
+          "buffs": {
+            "targetAttackStatStageChange": -1,
+            "buffActivationChance": 1
+          }
+        }
+      },
+      {
+        "id": "0279",
+        "name": "咬碎",
+        "uniqueId": "CRUNCH",
+        "type": "POKEMON_TYPE_DARK",
+        "base": {
+          "power": 70,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.04,
+          "durationMs": 3200,
+          "energyDelta": -33
+        },
+        "combat": {
+          "power": 70,
+          "energyDelta": -45,
+          "buffs": {
+            "targetDefenseStatStageChange": -1,
+            "buffActivationChance": 0.3
+          }
         }
       }
     ],
@@ -144302,37 +144364,121 @@
     },
     "quickMoves": [
       {
-        "id": "0133",
-        "name": "掙扎",
-        "uniqueId": "STRUGGLE",
-        "type": "POKEMON_TYPE_NORMAL",
+        "id": "0260",
+        "name": "死纏爛打",
+        "uniqueId": "INFESTATION_FAST",
+        "type": "POKEMON_TYPE_BUG",
         "base": {
-          "power": 35,
+          "power": 10,
           "accuracyChance": 1,
-          "staminaLossScalar": 0.1,
-          "durationMs": 2200
+          "staminaLossScalar": 0.01,
+          "durationMs": 1100,
+          "energyDelta": 14
         },
         "combat": {
-          "power": 35,
-          "energyDelta": -100
+          "power": 6,
+          "energyDelta": 12,
+          "durationTurns": 2
+        }
+      },
+      {
+        "id": "0237",
+        "name": "泡沫",
+        "uniqueId": "BUBBLE_FAST",
+        "type": "POKEMON_TYPE_WATER",
+        "base": {
+          "power": 12,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.01,
+          "durationMs": 1200,
+          "energyDelta": 14
+        },
+        "combat": {
+          "power": 7,
+          "energyDelta": 11,
+          "durationTurns": 2
+        }
+      },
+      {
+        "id": "0276",
+        "name": "鏡面反射",
+        "uniqueId": "MIRROR_COAT",
+        "type": "POKEMON_TYPE_PSYCHIC",
+        "base": {
+          "power": 60,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.04,
+          "durationMs": 2600,
+          "energyDelta": -50
+        },
+        "combat": {
+          "power": 60,
+          "energyDelta": -55
         }
       }
     ],
     "cinematicMoves": [
       {
-        "id": "0133",
-        "name": "掙扎",
-        "uniqueId": "STRUGGLE",
-        "type": "POKEMON_TYPE_NORMAL",
+        "id": "0306",
+        "name": "猛撲",
+        "uniqueId": "LUNGE",
+        "type": "POKEMON_TYPE_BUG",
         "base": {
-          "power": 35,
+          "power": 55,
           "accuracyChance": 1,
-          "staminaLossScalar": 0.1,
-          "durationMs": 2200
+          "staminaLossScalar": 0.01,
+          "durationMs": 2900,
+          "energyDelta": -33
         },
         "combat": {
-          "power": 35,
-          "energyDelta": -100
+          "power": 60,
+          "energyDelta": -45,
+          "buffs": {
+            "targetAttackStatStageChange": -1,
+            "buffActivationChance": 1
+          }
+        }
+      },
+      {
+        "id": "0053",
+        "name": "泡沫光線",
+        "uniqueId": "BUBBLE_BEAM",
+        "type": "POKEMON_TYPE_WATER",
+        "base": {
+          "power": 45,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.065,
+          "durationMs": 1900,
+          "energyDelta": -33
+        },
+        "combat": {
+          "power": 25,
+          "energyDelta": -40,
+          "buffs": {
+            "targetAttackStatStageChange": -1,
+            "buffActivationChance": 1
+          }
+        }
+      },
+      {
+        "id": "0279",
+        "name": "咬碎",
+        "uniqueId": "CRUNCH",
+        "type": "POKEMON_TYPE_DARK",
+        "base": {
+          "power": 70,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.04,
+          "durationMs": 3200,
+          "energyDelta": -33
+        },
+        "combat": {
+          "power": 70,
+          "energyDelta": -45,
+          "buffs": {
+            "targetDefenseStatStageChange": -1,
+            "buffActivationChance": 0.3
+          }
         }
       }
     ],
@@ -144829,37 +144975,96 @@
     },
     "quickMoves": [
       {
-        "id": "0133",
-        "name": "掙扎",
-        "uniqueId": "STRUGGLE",
-        "type": "POKEMON_TYPE_NORMAL",
+        "id": "0209",
+        "name": "火花",
+        "uniqueId": "EMBER_FAST",
+        "type": "POKEMON_TYPE_FIRE",
         "base": {
-          "power": 35,
+          "power": 10,
           "accuracyChance": 1,
-          "staminaLossScalar": 0.1,
-          "durationMs": 2200
+          "staminaLossScalar": 0.01,
+          "durationMs": 1000,
+          "energyDelta": 10
         },
         "combat": {
-          "power": 35,
-          "energyDelta": -100
+          "power": 7,
+          "energyDelta": 6,
+          "durationTurns": 1
+        }
+      },
+      {
+        "id": "0224",
+        "name": "毒擊",
+        "uniqueId": "POISON_JAB_FAST",
+        "type": "POKEMON_TYPE_POISON",
+        "base": {
+          "power": 10,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.01,
+          "durationMs": 800,
+          "energyDelta": 7
+        },
+        "combat": {
+          "power": 7,
+          "energyDelta": 7,
+          "durationTurns": 1
         }
       }
     ],
     "cinematicMoves": [
       {
-        "id": "0133",
-        "name": "掙扎",
-        "uniqueId": "STRUGGLE",
-        "type": "POKEMON_TYPE_NORMAL",
+        "id": "0050",
+        "name": "劇毒牙",
+        "uniqueId": "POISON_FANG",
+        "type": "POKEMON_TYPE_POISON",
         "base": {
           "power": 35,
           "accuracyChance": 1,
-          "staminaLossScalar": 0.1,
-          "durationMs": 2200
+          "staminaLossScalar": 0.05,
+          "durationMs": 1700,
+          "energyDelta": -33
         },
         "combat": {
-          "power": 35,
-          "energyDelta": -100
+          "power": 40,
+          "energyDelta": -35,
+          "buffs": {
+            "targetDefenseStatStageChange": -1,
+            "buffActivationChance": 1
+          }
+        }
+      },
+      {
+        "id": "0024",
+        "name": "噴射火焰",
+        "uniqueId": "FLAMETHROWER",
+        "type": "POKEMON_TYPE_FIRE",
+        "base": {
+          "power": 70,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.09,
+          "durationMs": 2200,
+          "energyDelta": -50
+        },
+        "combat": {
+          "power": 90,
+          "energyDelta": -55
+        }
+      },
+      {
+        "id": "0082",
+        "name": "龍之波動",
+        "uniqueId": "DRAGON_PULSE",
+        "type": "POKEMON_TYPE_DRAGON",
+        "base": {
+          "power": 90,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.085,
+          "durationMs": 3600,
+          "energyDelta": -50
+        },
+        "combat": {
+          "power": 90,
+          "energyDelta": -60
         }
       }
     ],
@@ -144898,37 +145103,113 @@
     },
     "quickMoves": [
       {
-        "id": "0133",
-        "name": "掙扎",
-        "uniqueId": "STRUGGLE",
-        "type": "POKEMON_TYPE_NORMAL",
+        "id": "0346",
+        "name": "燒盡",
+        "uniqueId": "INCINERATE_FAST",
+        "type": "POKEMON_TYPE_FIRE",
         "base": {
-          "power": 35,
+          "power": 29,
           "accuracyChance": 1,
-          "staminaLossScalar": 0.1,
-          "durationMs": 2200
+          "staminaLossScalar": 0.01,
+          "durationMs": 2300,
+          "energyDelta": 20
         },
         "combat": {
-          "power": 35,
-          "energyDelta": -100
+          "power": 15,
+          "energyDelta": 20,
+          "durationTurns": 4
+        }
+      },
+      {
+        "id": "0224",
+        "name": "毒擊",
+        "uniqueId": "POISON_JAB_FAST",
+        "type": "POKEMON_TYPE_POISON",
+        "base": {
+          "power": 10,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.01,
+          "durationMs": 800,
+          "energyDelta": 7
+        },
+        "combat": {
+          "power": 7,
+          "energyDelta": 7,
+          "durationTurns": 1
         }
       }
     ],
     "cinematicMoves": [
       {
-        "id": "0133",
-        "name": "掙扎",
-        "uniqueId": "STRUGGLE",
-        "type": "POKEMON_TYPE_NORMAL",
+        "id": "0050",
+        "name": "劇毒牙",
+        "uniqueId": "POISON_FANG",
+        "type": "POKEMON_TYPE_POISON",
         "base": {
           "power": 35,
           "accuracyChance": 1,
-          "staminaLossScalar": 0.1,
-          "durationMs": 2200
+          "staminaLossScalar": 0.05,
+          "durationMs": 1700,
+          "energyDelta": -33
         },
         "combat": {
-          "power": 35,
+          "power": 40,
+          "energyDelta": -35,
+          "buffs": {
+            "targetDefenseStatStageChange": -1,
+            "buffActivationChance": 1
+          }
+        }
+      },
+      {
+        "id": "0103",
+        "name": "大字爆炎",
+        "uniqueId": "FIRE_BLAST",
+        "type": "POKEMON_TYPE_FIRE",
+        "base": {
+          "power": 140,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.11,
+          "durationMs": 4200,
           "energyDelta": -100
+        },
+        "combat": {
+          "power": 140,
+          "energyDelta": -80
+        }
+      },
+      {
+        "id": "0082",
+        "name": "龍之波動",
+        "uniqueId": "DRAGON_PULSE",
+        "type": "POKEMON_TYPE_DRAGON",
+        "base": {
+          "power": 90,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.085,
+          "durationMs": 3600,
+          "energyDelta": -50
+        },
+        "combat": {
+          "power": 90,
+          "energyDelta": -60
+        }
+      },
+      {
+        "id": "0091",
+        "name": "污泥波",
+        "uniqueId": "SLUDGE_WAVE",
+        "type": "POKEMON_TYPE_POISON",
+        "base": {
+          "power": 110,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.095,
+          "durationMs": 3200,
+          "energyDelta": -100
+        },
+        "combat": {
+          "power": 110,
+          "energyDelta": -65
         }
       }
     ],
@@ -144973,37 +145254,96 @@
     },
     "quickMoves": [
       {
-        "id": "0133",
-        "name": "掙扎",
-        "uniqueId": "STRUGGLE",
+        "id": "0221",
+        "name": "撞擊",
+        "uniqueId": "TACKLE_FAST",
         "type": "POKEMON_TYPE_NORMAL",
         "base": {
-          "power": 35,
+          "power": 5,
           "accuracyChance": 1,
-          "staminaLossScalar": 0.1,
-          "durationMs": 2200
+          "staminaLossScalar": 0.01,
+          "durationMs": 500,
+          "energyDelta": 5
         },
         "combat": {
-          "power": 35,
-          "energyDelta": -100
+          "power": 3,
+          "energyDelta": 2
+        }
+      },
+      {
+        "id": "0282",
+        "name": "猛撞",
+        "uniqueId": "TAKE_DOWN_FAST",
+        "type": "POKEMON_TYPE_NORMAL",
+        "base": {
+          "power": 8,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.01,
+          "durationMs": 1200,
+          "energyDelta": 10
+        },
+        "combat": {
+          "power": 5,
+          "energyDelta": 8,
+          "durationTurns": 2
         }
       }
     ],
     "cinematicMoves": [
       {
-        "id": "0133",
-        "name": "掙扎",
-        "uniqueId": "STRUGGLE",
-        "type": "POKEMON_TYPE_NORMAL",
+        "id": "0310",
+        "name": "蠻力",
+        "uniqueId": "SUPER_POWER",
+        "type": "POKEMON_TYPE_FIGHTING",
         "base": {
-          "power": 35,
+          "power": 85,
           "accuracyChance": 1,
-          "staminaLossScalar": 0.1,
-          "durationMs": 2200
+          "staminaLossScalar": 0.01,
+          "durationMs": 3000,
+          "energyDelta": -50
         },
         "combat": {
-          "power": 35,
-          "energyDelta": -100
+          "power": 85,
+          "energyDelta": -40,
+          "buffs": {
+            "attackerAttackStatStageChange": -1,
+            "attackerDefenseStatStageChange": -1,
+            "buffActivationChance": 1
+          }
+        }
+      },
+      {
+        "id": "0123",
+        "name": "劈瓦",
+        "uniqueId": "BRICK_BREAK",
+        "type": "POKEMON_TYPE_FIGHTING",
+        "base": {
+          "power": 40,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.075,
+          "durationMs": 1600,
+          "energyDelta": -33
+        },
+        "combat": {
+          "power": 40,
+          "energyDelta": -35
+        }
+      },
+      {
+        "id": "0127",
+        "name": "踩踏",
+        "uniqueId": "STOMP",
+        "type": "POKEMON_TYPE_NORMAL",
+        "base": {
+          "power": 55,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.065,
+          "durationMs": 1700,
+          "energyDelta": -50
+        },
+        "combat": {
+          "power": 55,
+          "energyDelta": -40
         }
       }
     ],
@@ -145042,37 +145382,114 @@
     },
     "quickMoves": [
       {
-        "id": "0133",
-        "name": "掙扎",
-        "uniqueId": "STRUGGLE",
+        "id": "0221",
+        "name": "撞擊",
+        "uniqueId": "TACKLE_FAST",
         "type": "POKEMON_TYPE_NORMAL",
         "base": {
-          "power": 35,
+          "power": 5,
           "accuracyChance": 1,
-          "staminaLossScalar": 0.1,
-          "durationMs": 2200
+          "staminaLossScalar": 0.01,
+          "durationMs": 500,
+          "energyDelta": 5
         },
         "combat": {
-          "power": 35,
-          "energyDelta": -100
+          "power": 3,
+          "energyDelta": 2
+        }
+      },
+      {
+        "id": "0207",
+        "name": "踢倒",
+        "uniqueId": "LOW_KICK_FAST",
+        "type": "POKEMON_TYPE_FIGHTING",
+        "base": {
+          "power": 6,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.01,
+          "durationMs": 600,
+          "energyDelta": 6
+        },
+        "combat": {
+          "power": 4,
+          "energyDelta": 5,
+          "durationTurns": 1
+        }
+      },
+      {
+        "id": "0213",
+        "name": "暗影爪",
+        "uniqueId": "SHADOW_CLAW_FAST",
+        "type": "POKEMON_TYPE_GHOST",
+        "base": {
+          "power": 9,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.01,
+          "durationMs": 700,
+          "energyDelta": 6
+        },
+        "combat": {
+          "power": 6,
+          "energyDelta": 8,
+          "durationTurns": 1
         }
       }
     ],
     "cinematicMoves": [
       {
-        "id": "0133",
-        "name": "掙扎",
-        "uniqueId": "STRUGGLE",
-        "type": "POKEMON_TYPE_NORMAL",
+        "id": "0310",
+        "name": "蠻力",
+        "uniqueId": "SUPER_POWER",
+        "type": "POKEMON_TYPE_FIGHTING",
         "base": {
-          "power": 35,
+          "power": 85,
           "accuracyChance": 1,
-          "staminaLossScalar": 0.1,
-          "durationMs": 2200
+          "staminaLossScalar": 0.01,
+          "durationMs": 3000,
+          "energyDelta": -50
         },
         "combat": {
-          "power": 35,
+          "power": 85,
+          "energyDelta": -40,
+          "buffs": {
+            "attackerAttackStatStageChange": -1,
+            "attackerDefenseStatStageChange": -1,
+            "buffActivationChance": 1
+          }
+        }
+      },
+      {
+        "id": "0333",
+        "name": "以牙還牙",
+        "uniqueId": "PAYBACK",
+        "type": "POKEMON_TYPE_DARK",
+        "base": {
+          "power": 100,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.01,
+          "durationMs": 2200,
           "energyDelta": -100
+        },
+        "combat": {
+          "power": 110,
+          "energyDelta": -60
+        }
+      },
+      {
+        "id": "0127",
+        "name": "踩踏",
+        "uniqueId": "STOMP",
+        "type": "POKEMON_TYPE_NORMAL",
+        "base": {
+          "power": 55,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.065,
+          "durationMs": 1700,
+          "energyDelta": -50
+        },
+        "combat": {
+          "power": 55,
+          "energyDelta": -40
         }
       }
     ],
@@ -145477,37 +145894,112 @@
     },
     "quickMoves": [
       {
-        "id": "0133",
-        "name": "掙扎",
-        "uniqueId": "STRUGGLE",
-        "type": "POKEMON_TYPE_NORMAL",
+        "id": "0235",
+        "name": "念力",
+        "uniqueId": "CONFUSION_FAST",
+        "type": "POKEMON_TYPE_PSYCHIC",
         "base": {
-          "power": 35,
+          "power": 20,
           "accuracyChance": 1,
-          "staminaLossScalar": 0.1,
-          "durationMs": 2200
+          "staminaLossScalar": 0.01,
+          "durationMs": 1600,
+          "energyDelta": 15
         },
         "combat": {
-          "power": 35,
-          "energyDelta": -100
+          "power": 16,
+          "energyDelta": 12,
+          "durationTurns": 3
+        }
+      },
+      {
+        "id": "0234",
+        "name": "意念頭錘",
+        "uniqueId": "ZEN_HEADBUTT_FAST",
+        "type": "POKEMON_TYPE_PSYCHIC",
+        "base": {
+          "power": 12,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.01,
+          "durationMs": 1100,
+          "energyDelta": 10
+        },
+        "combat": {
+          "power": 8,
+          "energyDelta": 6,
+          "durationTurns": 2
+        }
+      },
+      {
+        "id": "0287",
+        "name": "哈欠",
+        "uniqueId": "YAWN_FAST",
+        "type": "POKEMON_TYPE_NORMAL",
+        "base": {
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.01,
+          "durationMs": 1700,
+          "energyDelta": 15
+        },
+        "combat": {
+          "energyDelta": 12,
+          "durationTurns": 3
         }
       }
     ],
     "cinematicMoves": [
       {
-        "id": "0133",
-        "name": "掙扎",
-        "uniqueId": "STRUGGLE",
-        "type": "POKEMON_TYPE_NORMAL",
+        "id": "0108",
+        "name": "精神強念",
+        "uniqueId": "PSYCHIC",
+        "type": "POKEMON_TYPE_PSYCHIC",
         "base": {
-          "power": 35,
+          "power": 90,
           "accuracyChance": 1,
-          "staminaLossScalar": 0.1,
-          "durationMs": 2200
+          "staminaLossScalar": 0.09,
+          "durationMs": 2800,
+          "energyDelta": -50
         },
         "combat": {
-          "power": 35,
+          "power": 90,
+          "energyDelta": -55,
+          "buffs": {
+            "targetDefenseStatStageChange": -1,
+            "buffActivationChance": 0.1
+          }
+        }
+      },
+      {
+        "id": "0280",
+        "name": "欺詐",
+        "uniqueId": "FOUL_PLAY",
+        "type": "POKEMON_TYPE_DARK",
+        "base": {
+          "power": 70,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.04,
+          "durationMs": 2000,
+          "energyDelta": -50
+        },
+        "combat": {
+          "power": 70,
+          "energyDelta": -45
+        }
+      },
+      {
+        "id": "0275",
+        "name": "預知未來",
+        "uniqueId": "FUTURESIGHT",
+        "type": "POKEMON_TYPE_PSYCHIC",
+        "base": {
+          "power": 120,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.04,
+          "durationMs": 2700,
           "energyDelta": -100
+        },
+        "combat": {
+          "power": 120,
+          "energyDelta": -65
         }
       }
     ],
@@ -149115,37 +149607,109 @@
     },
     "quickMoves": [
       {
-        "id": "0133",
-        "name": "掙扎",
-        "uniqueId": "STRUGGLE",
-        "type": "POKEMON_TYPE_NORMAL",
+        "id": "0271",
+        "name": "種子機關槍",
+        "uniqueId": "BULLET_SEED_FAST",
+        "type": "POKEMON_TYPE_GRASS",
         "base": {
-          "power": 35,
+          "power": 8,
           "accuracyChance": 1,
-          "staminaLossScalar": 0.1,
-          "durationMs": 2200
+          "staminaLossScalar": 0.01,
+          "durationMs": 1100,
+          "energyDelta": 14
         },
         "combat": {
-          "power": 35,
-          "energyDelta": -100
+          "power": 5,
+          "energyDelta": 13,
+          "durationTurns": 2
+        }
+      },
+      {
+        "id": "0241",
+        "name": "碎岩",
+        "uniqueId": "ROCK_SMASH_FAST",
+        "type": "POKEMON_TYPE_FIGHTING",
+        "base": {
+          "power": 15,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.01,
+          "durationMs": 1300,
+          "energyDelta": 10
+        },
+        "combat": {
+          "power": 9,
+          "energyDelta": 7,
+          "durationTurns": 2
         }
       }
     ],
     "cinematicMoves": [
       {
-        "id": "0133",
-        "name": "掙扎",
-        "uniqueId": "STRUGGLE",
-        "type": "POKEMON_TYPE_NORMAL",
+        "id": "0272",
+        "name": "打草結",
+        "uniqueId": "GRASS_KNOT",
+        "type": "POKEMON_TYPE_GRASS",
         "base": {
-          "power": 35,
+          "power": 90,
           "accuracyChance": 1,
-          "staminaLossScalar": 0.1,
-          "durationMs": 2200
+          "staminaLossScalar": 0.04,
+          "durationMs": 2600,
+          "energyDelta": -50
         },
         "combat": {
-          "power": 35,
+          "power": 90,
+          "energyDelta": -50
+        }
+      },
+      {
+        "id": "0086",
+        "name": "魔法閃耀",
+        "uniqueId": "DAZZLING_GLEAM",
+        "type": "POKEMON_TYPE_FAIRY",
+        "base": {
+          "power": 100,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.08,
+          "durationMs": 3500,
+          "energyDelta": -50
+        },
+        "combat": {
+          "power": 110,
+          "energyDelta": -70
+        }
+      },
+      {
+        "id": "0022",
+        "name": "超級角擊",
+        "uniqueId": "MEGAHORN",
+        "type": "POKEMON_TYPE_BUG",
+        "base": {
+          "power": 110,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.12,
+          "durationMs": 2200,
           "energyDelta": -100
+        },
+        "combat": {
+          "power": 110,
+          "energyDelta": -55
+        }
+      },
+      {
+        "id": "0116",
+        "name": "日光束",
+        "uniqueId": "SOLAR_BEAM",
+        "type": "POKEMON_TYPE_GRASS",
+        "base": {
+          "power": 180,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.12,
+          "durationMs": 4900,
+          "energyDelta": -100
+        },
+        "combat": {
+          "power": 150,
+          "energyDelta": -80
         }
       }
     ],
@@ -149184,37 +149748,112 @@
     },
     "quickMoves": [
       {
-        "id": "0133",
-        "name": "掙扎",
-        "uniqueId": "STRUGGLE",
-        "type": "POKEMON_TYPE_NORMAL",
+        "id": "0230",
+        "name": "水槍",
+        "uniqueId": "WATER_GUN_FAST",
+        "type": "POKEMON_TYPE_WATER",
         "base": {
-          "power": 35,
+          "power": 5,
           "accuracyChance": 1,
-          "staminaLossScalar": 0.1,
-          "durationMs": 2200
+          "staminaLossScalar": 0.01,
+          "durationMs": 500,
+          "energyDelta": 5
         },
         "combat": {
-          "power": 35,
-          "energyDelta": -100
+          "power": 3,
+          "energyDelta": 3
+        }
+      },
+      {
+        "id": "0281",
+        "name": "覺醒力量",
+        "uniqueId": "HIDDEN_POWER_FAST",
+        "type": "POKEMON_TYPE_NORMAL",
+        "base": {
+          "power": 15,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.01,
+          "durationMs": 1500,
+          "energyDelta": 15
+        },
+        "combat": {
+          "power": 9,
+          "energyDelta": 8,
+          "durationTurns": 2
         }
       }
     ],
     "cinematicMoves": [
       {
-        "id": "0133",
-        "name": "掙扎",
-        "uniqueId": "STRUGGLE",
-        "type": "POKEMON_TYPE_NORMAL",
+        "id": "0284",
+        "name": "衝浪",
+        "uniqueId": "SURF",
+        "type": "POKEMON_TYPE_WATER",
         "base": {
-          "power": 35,
+          "power": 65,
           "accuracyChance": 1,
-          "staminaLossScalar": 0.1,
-          "durationMs": 2200
+          "staminaLossScalar": 0.01,
+          "durationMs": 1700,
+          "energyDelta": -50
         },
         "combat": {
-          "power": 35,
+          "power": 65,
+          "energyDelta": -40
+        }
+      },
+      {
+        "id": "0087",
+        "name": "月亮之力",
+        "uniqueId": "MOONBLAST",
+        "type": "POKEMON_TYPE_FAIRY",
+        "base": {
+          "power": 130,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.095,
+          "durationMs": 3900,
           "energyDelta": -100
+        },
+        "combat": {
+          "power": 110,
+          "energyDelta": -60,
+          "buffs": {
+            "targetAttackStatStageChange": -1,
+            "buffActivationChance": 0.1
+          }
+        }
+      },
+      {
+        "id": "0039",
+        "name": "冰凍光束",
+        "uniqueId": "ICE_BEAM",
+        "type": "POKEMON_TYPE_ICE",
+        "base": {
+          "power": 90,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.09,
+          "durationMs": 3300,
+          "energyDelta": -50
+        },
+        "combat": {
+          "power": 90,
+          "energyDelta": -55
+        }
+      },
+      {
+        "id": "0107",
+        "name": "水炮",
+        "uniqueId": "HYDRO_PUMP",
+        "type": "POKEMON_TYPE_WATER",
+        "base": {
+          "power": 130,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.11,
+          "durationMs": 3300,
+          "energyDelta": -100
+        },
+        "combat": {
+          "power": 130,
+          "energyDelta": -75
         }
       }
     ],
