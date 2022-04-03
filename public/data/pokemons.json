@@ -144398,23 +144398,6 @@
           "energyDelta": 11,
           "durationTurns": 2
         }
-      },
-      {
-        "id": "0276",
-        "name": "鏡面反射",
-        "uniqueId": "MIRROR_COAT",
-        "type": "POKEMON_TYPE_PSYCHIC",
-        "base": {
-          "power": 60,
-          "accuracyChance": 1,
-          "staminaLossScalar": 0.04,
-          "durationMs": 2600,
-          "energyDelta": -50
-        },
-        "combat": {
-          "power": 60,
-          "energyDelta": -55
-        }
       }
     ],
     "cinematicMoves": [
@@ -144479,6 +144462,23 @@
             "targetDefenseStatStageChange": -1,
             "buffActivationChance": 0.3
           }
+        }
+      },
+      {
+        "id": "0276",
+        "name": "鏡面反射",
+        "uniqueId": "MIRROR_COAT",
+        "type": "POKEMON_TYPE_PSYCHIC",
+        "base": {
+          "power": 60,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.04,
+          "durationMs": 2600,
+          "energyDelta": -50
+        },
+        "combat": {
+          "power": 60,
+          "energyDelta": -55
         }
       }
     ],
