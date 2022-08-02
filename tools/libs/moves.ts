@@ -70,7 +70,14 @@ const getBaseMoves = (moveDict: Resource): BaseMove[] => {
 
 const mapBaseMoves = (moveDict: Resource, moveUniqueIds: string[] = []) => {
     const allMoves = getBaseMoves(moveDict);
-    return moveUniqueIds.map((moveUniqueId) => allMoves.find((move) => move.uniqueId === moveUniqueId)!);
+    return moveUniqueIds.flatMap((moveUniqueId) => {
+        const baseMove = allMoves.find((move) => move.uniqueId === moveUniqueId);
+        if (!baseMove) {
+            console.error(`Cannot find '${moveUniqueId}'`);
+            return [];
+        }
+        return [baseMove];
+    });
 };
 
 interface CombatMoveBuff {
@@ -129,7 +136,14 @@ const getCombatMoves = (moveDict: Resource): CombatMove[] => {
 
 const mapCombatMoves = (moveDict: Resource, moveUniqueIds: string[] = []) => {
     const allCombatMoves = getCombatMoves(moveDict);
-    return moveUniqueIds.map((moveUniqueId) => allCombatMoves.find((move) => move.uniqueId === moveUniqueId)!);
+    return moveUniqueIds.flatMap((moveUniqueId) => {
+        const combatMove = allCombatMoves.find((move) => move.uniqueId === moveUniqueId);
+        if (!combatMove) {
+            console.error(`Cannot find '${moveUniqueId}'`);
+            return [];
+        }
+        return [combatMove];
+    });
 };
 
 const mapMoves = (moveDict: Resource, moveUniqueIds: string[] = []) => {
