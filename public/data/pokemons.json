@@ -47129,9 +47129,9 @@
     "familyId": "FAMILY_SCYTHER",
     "evolutions": [],
     "stats": {
-      "baseStamina": 233,
-      "baseAttack": 246,
-      "baseDefense": 210
+      "baseStamina": 172,
+      "baseAttack": 279,
+      "baseDefense": 250
     },
     "quickMoves": [
       {
@@ -47230,13 +47230,13 @@
     "eliteQuickMoves": [],
     "eliteCinematicMoves": [],
     "cpTable": {
-      "15": 1650,
-      "20": 2200,
-      "25": 2750,
-      "30": 3300,
-      "35": 3575,
-      "40": 3850,
-      "50": 4353
+      "15": 1751,
+      "20": 2335,
+      "25": 2919,
+      "30": 3503,
+      "35": 3795,
+      "40": 4087,
+      "50": 4621
     },
     "greatLeague": null,
     "ultraLeague": null,
