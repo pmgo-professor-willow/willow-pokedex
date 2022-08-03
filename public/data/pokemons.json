@@ -46967,7 +46967,13 @@
     "description": "有著鋼鐵般堅硬的身體，普通的攻擊根本無法傷其分毫。會揮動翅膀調節體溫。",
     "form": "NORMAL",
     "familyId": "FAMILY_SCYTHER",
-    "evolutions": [],
+    "evolutions": [
+      {
+        "uniqueId": "SCIZOR",
+        "form": "MEGA",
+        "energyCost": 200
+      }
+    ],
     "stats": {
       "baseStamina": 172,
       "baseAttack": 236,
@@ -47108,6 +47114,133 @@
         "X_SCISSOR"
       ]
     }
+  },
+  {
+    "uniqueId": "SCIZOR",
+    "no": 212,
+    "name": "超級巨鉗螳螂",
+    "types": [
+      "POKEMON_TYPE_BUG",
+      "POKEMON_TYPE_STEEL"
+    ],
+    "category": "鉗子寶可夢",
+    "description": "有著鋼鐵般堅硬的身體，普通的攻擊根本無法傷其分毫。會揮動翅膀調節體溫。",
+    "form": "MEGA",
+    "familyId": "FAMILY_SCYTHER",
+    "evolutions": [],
+    "stats": {
+      "baseStamina": 233,
+      "baseAttack": 246,
+      "baseDefense": 210
+    },
+    "quickMoves": [
+      {
+        "id": "0229",
+        "name": "子彈拳",
+        "uniqueId": "BULLET_PUNCH_FAST",
+        "type": "POKEMON_TYPE_STEEL",
+        "base": {
+          "power": 9,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.01,
+          "durationMs": 900,
+          "energyDelta": 10
+        },
+        "combat": {
+          "power": 6,
+          "energyDelta": 7,
+          "durationTurns": 1
+        }
+      },
+      {
+        "id": "0200",
+        "name": "連斬",
+        "uniqueId": "FURY_CUTTER_FAST",
+        "type": "POKEMON_TYPE_BUG",
+        "base": {
+          "power": 3,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.01,
+          "durationMs": 400,
+          "energyDelta": 6
+        },
+        "combat": {
+          "power": 2,
+          "energyDelta": 4
+        }
+      }
+    ],
+    "cinematicMoves": [
+      {
+        "id": "0100",
+        "name": "十字剪",
+        "uniqueId": "X_SCISSOR",
+        "type": "POKEMON_TYPE_BUG",
+        "base": {
+          "power": 45,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.08,
+          "durationMs": 1600,
+          "energyDelta": -33
+        },
+        "combat": {
+          "power": 45,
+          "energyDelta": -35
+        }
+      },
+      {
+        "id": "0074",
+        "name": "鐵頭",
+        "uniqueId": "IRON_HEAD",
+        "type": "POKEMON_TYPE_STEEL",
+        "base": {
+          "power": 60,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.08,
+          "durationMs": 1900,
+          "energyDelta": -50
+        },
+        "combat": {
+          "power": 70,
+          "energyDelta": -50
+        }
+      },
+      {
+        "id": "0051",
+        "name": "暗襲要害",
+        "uniqueId": "NIGHT_SLASH",
+        "type": "POKEMON_TYPE_DARK",
+        "base": {
+          "power": 50,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.07,
+          "durationMs": 2200,
+          "energyDelta": -33
+        },
+        "combat": {
+          "power": 50,
+          "energyDelta": -35,
+          "buffs": {
+            "attackerAttackStatStageChange": 2,
+            "buffActivationChance": 0.125
+          }
+        }
+      }
+    ],
+    "eliteQuickMoves": [],
+    "eliteCinematicMoves": [],
+    "cpTable": {
+      "15": 1650,
+      "20": 2200,
+      "25": 2750,
+      "30": 3300,
+      "35": 3575,
+      "40": 3850,
+      "50": 4353
+    },
+    "greatLeague": null,
+    "ultraLeague": null,
+    "masterLeague": null
   },
   {
     "uniqueId": "SHUCKLE",
