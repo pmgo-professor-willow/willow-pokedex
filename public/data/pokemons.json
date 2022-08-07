@@ -7189,6 +7189,194 @@
     ],
     "category": "鼠寶可夢",
     "description": "會對第一次看見的東西發出電擊。當有燒焦的樹果落下時，就是牠搞錯了電擊強度的證明。",
+    "form": "GOFEST_2022",
+    "familyId": "FAMILY_PIKACHU",
+    "evolutions": [
+      {
+        "uniqueId": "RAICHU",
+        "form": "NORMAL",
+        "candyCost": 50
+      }
+    ],
+    "stats": {
+      "baseStamina": 111,
+      "baseAttack": 112,
+      "baseDefense": 96
+    },
+    "quickMoves": [
+      {
+        "id": "0205",
+        "name": "電擊",
+        "uniqueId": "THUNDER_SHOCK_FAST",
+        "type": "POKEMON_TYPE_ELECTRIC",
+        "base": {
+          "power": 5,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.01,
+          "durationMs": 600,
+          "energyDelta": 8
+        },
+        "combat": {
+          "power": 3,
+          "energyDelta": 9,
+          "durationTurns": 1
+        }
+      },
+      {
+        "id": "0219",
+        "name": "電光一閃",
+        "uniqueId": "QUICK_ATTACK_FAST",
+        "type": "POKEMON_TYPE_NORMAL",
+        "base": {
+          "power": 8,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.01,
+          "durationMs": 800,
+          "energyDelta": 10
+        },
+        "combat": {
+          "power": 5,
+          "energyDelta": 7,
+          "durationTurns": 1
+        }
+      }
+    ],
+    "cinematicMoves": [
+      {
+        "id": "0035",
+        "name": "放電",
+        "uniqueId": "DISCHARGE",
+        "type": "POKEMON_TYPE_ELECTRIC",
+        "base": {
+          "power": 65,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.08,
+          "durationMs": 2500,
+          "energyDelta": -33
+        },
+        "combat": {
+          "power": 65,
+          "energyDelta": -45
+        }
+      },
+      {
+        "id": "0079",
+        "name": "十萬伏特",
+        "uniqueId": "THUNDERBOLT",
+        "type": "POKEMON_TYPE_ELECTRIC",
+        "base": {
+          "power": 80,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.09,
+          "durationMs": 2500,
+          "energyDelta": -50
+        },
+        "combat": {
+          "power": 90,
+          "energyDelta": -55
+        }
+      },
+      {
+        "id": "0251",
+        "name": "瘋狂伏特",
+        "uniqueId": "WILD_CHARGE",
+        "type": "POKEMON_TYPE_ELECTRIC",
+        "base": {
+          "power": 90,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.04,
+          "durationMs": 2600,
+          "energyDelta": -50
+        },
+        "combat": {
+          "power": 100,
+          "energyDelta": -45,
+          "buffs": {
+            "attackerDefenseStatStageChange": -2,
+            "buffActivationChance": 1
+          }
+        }
+      }
+    ],
+    "eliteQuickMoves": [
+      {
+        "id": "0291",
+        "name": "禮物",
+        "uniqueId": "PRESENT_FAST",
+        "type": "POKEMON_TYPE_NORMAL",
+        "base": {
+          "power": 5,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.01,
+          "durationMs": 1300,
+          "energyDelta": 20
+        },
+        "combat": {
+          "power": 3,
+          "energyDelta": 12,
+          "durationTurns": 2
+        }
+      }
+    ],
+    "eliteCinematicMoves": [
+      {
+        "id": "0284",
+        "name": "衝浪",
+        "uniqueId": "SURF",
+        "type": "POKEMON_TYPE_WATER",
+        "base": {
+          "power": 65,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.01,
+          "durationMs": 1700,
+          "energyDelta": -50
+        },
+        "combat": {
+          "power": 65,
+          "energyDelta": -40
+        },
+        "isCommunityMove": true
+      },
+      {
+        "id": "0078",
+        "name": "打雷",
+        "uniqueId": "THUNDER",
+        "type": "POKEMON_TYPE_ELECTRIC",
+        "base": {
+          "power": 100,
+          "accuracyChance": 1,
+          "staminaLossScalar": 0.11,
+          "durationMs": 2400,
+          "energyDelta": -100
+        },
+        "combat": {
+          "power": 100,
+          "energyDelta": -60
+        }
+      }
+    ],
+    "cpTable": {
+      "15": 402,
+      "20": 536,
+      "25": 670,
+      "30": 804,
+      "35": 871,
+      "40": 938,
+      "50": 1060
+    },
+    "greatLeague": null,
+    "ultraLeague": null,
+    "masterLeague": null
+  },
+  {
+    "uniqueId": "PIKACHU",
+    "no": 25,
+    "name": "皮卡丘",
+    "types": [
+      "POKEMON_TYPE_ELECTRIC"
+    ],
+    "category": "鼠寶可夢",
+    "description": "會對第一次看見的東西發出電擊。當有燒焦的樹果落下時，就是牠搞錯了電擊強度的證明。",
     "form": "KARIYUSHI",
     "familyId": "FAMILY_PIKACHU",
     "evolutions": [],
