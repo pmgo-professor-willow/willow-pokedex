@@ -184,6 +184,10 @@ const StyledPokemonEvolutionCell = styled(PokemonEvolutionCell)`
             text-align: center;
         }
 
+        .ant-card-meta {
+            justify-content: center;
+        }
+
         .ant-card-meta-title {
             font-size: .95em;
         }
