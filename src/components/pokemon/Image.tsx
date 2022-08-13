@@ -253,6 +253,7 @@ const imageTextTable: { [idx: string]: string } = {
 };
 
 interface PokemonImageProps {
+    className?: string;
     pokemonNo: number;
     pokemonForm?: string;
     shiny?: boolean;
@@ -286,6 +287,8 @@ const getImageUrl = (pokemonNo: number, pokemonForm?: string, shiny?: boolean): 
 const unknownImageUrl = '/willow-pokedex/assets/unknown-pokemon.png';
 
 const PokemonImage: React.FC<PokemonImageProps> = (props) => {
+    const { className } = props;
+
     const {
         pokemonNo,
         pokemonForm = 'NORMAL',
@@ -301,7 +304,7 @@ const PokemonImage: React.FC<PokemonImageProps> = (props) => {
     }, [pokemonNo, pokemonForm, shiny])
 
     return (
-        <Image preview={false} width={size} height={size}
+        <Image className={className} preview={false} width={size} height={size}
             src={imageUrl}
             onError={() => setImageUrl(unknownImageUrl)}
         />

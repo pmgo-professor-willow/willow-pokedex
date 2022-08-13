@@ -1,10 +1,12 @@
 // Node modules.
 import React, { useEffect, useState } from 'react';
 import { Image } from 'antd';
+import styled from 'styled-components';
 // Local modules.
 import LegacyImage from './Image';
 
 interface PokemonAddressedImageProps {
+    className?: string;
     pokemonNo: number;
     pokemonForm?: string;
     collection?: string;
@@ -36,6 +38,8 @@ const getImageUrl = (pokemonNo: number, pokemonForm?: string, collection?: strin
 const unknownImageUrl = '/willow-pokedex/assets/unknown-pokemon.png';
 
 const PokemonAddressedImage: React.FC<PokemonAddressedImageProps> = (props) => {
+    const { className } = props;
+
     const {
         pokemonNo,
         pokemonForm = 'NORMAL',
@@ -55,11 +59,11 @@ const PokemonAddressedImage: React.FC<PokemonAddressedImageProps> = (props) => {
     }, [pokemonNo, pokemonForm, collection, secondGender, shiny]);
 
     return (addressable
-        ? <Image preview={false} width={size} height={size}
+        ? <Image className={className} preview={false} width={size} height={size}
             src={imageUrl}
             onError={() => setAddressable(false)}
         />
-        : <LegacyImage
+        : <LegacyImage className={className}
             pokemonNo={pokemonNo}
             pokemonForm={pokemonForm}
             shiny={shiny}
@@ -68,4 +72,10 @@ const PokemonAddressedImage: React.FC<PokemonAddressedImageProps> = (props) => {
     );
 };
 
-export default PokemonAddressedImage;
+const styledPokemonAddressedImage = styled(PokemonAddressedImage)`
+& {
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
+}
+`;
+
+export default styledPokemonAddressedImage;

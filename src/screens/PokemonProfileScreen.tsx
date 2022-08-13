@@ -397,6 +397,8 @@ const styledPokemonProfileScreen = styled(PokemonProfileScreen)`
     .ant-page-header-heading-title, .ant-page-header-heading-sub-title {
         color: #ECECEC;
         text-shadow: #000000 0.1em 0.1em 0.2em;
+        padding-right: .5em;
+        margin-right: 0;
     }
 }
 `;
