@@ -2,12 +2,12 @@
 import { chain } from 'lodash';
 import React, { useCallback, useContext, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Space, Affix, Input, Row, Col, Typography } from 'antd';
+import { Space, Affix, Input, Row, Col, Typography, Divider, Spin } from 'antd';
 import LazyLoad from 'react-lazyload';
 import InfiniteScroll from 'react-infinite-scroll-component';
 import styled from 'styled-components';
 // Local modules.
-import type { IPokemon } from '../models/pokemon';
+import type { IGeneration } from '../models/generation';
 import { PokemonContext } from '../contexts/pokemon';
 import * as Pokemon from '../components/pokemon';
 
@@ -15,7 +15,7 @@ interface SearchScreenProps {
     className?: string;
 }
 
-const DEFAULT_ITEM_LIMIT = 100;
+const DEFAULT_SCROLL_THRESHOLD = '2000px';
 
 const SearchScreen: React.FC<SearchScreenProps> = (props) => {
     const { className } = props;
@@ -23,47 +23,77 @@ const SearchScreen: React.FC<SearchScreenProps> = (props) => {
     const pokemons = useContext(PokemonContext);
 
     const [hasMore, setHasMore] = useState(true);
-    const [allPokemons, setAllPokemons] = useState<IPokemon[]>([]);
-    const [displayPokemons, setDisplayPokemons] = useState<IPokemon[]>([]);
+    const [generations, setGenerations] = useState<IGeneration[]>([]);
+    const [displayGenerations, setDisplayGenerations] = useState<IGeneration[]>([]);
 
     const onSearch = useCallback((value: string) => {
         if (!value) {
             setHasMore(true);
-            setDisplayPokemons(allPokemons.slice(0, DEFAULT_ITEM_LIMIT));
+            setDisplayGenerations(generations.slice(0, 1));
             return;
         }
 
-        const filteredPokemons = allPokemons.filter((p) => {
-            return p.name?.includes(value) || p.uniqueId?.includes(value.toUpperCase());
-        });
         setHasMore(false);
-        setDisplayPokemons(filteredPokemons);
-    }, [allPokemons]);
+
+        const displayGenerations = generations.map((generation) => ({
+            ...generation,
+            pokemons: generation.pokemons.filter((pokemon) =>
+                pokemon.name?.includes(value) || pokemon.uniqueId?.includes(value.toUpperCase())
+            ),
+        }));
+        setDisplayGenerations(displayGenerations);
+    }, [generations]);
 
     const fetchMoreData = useCallback(() => {
-        if (!hasMore || displayPokemons.length >= allPokemons.length) {
+        if (!hasMore || displayGenerations.length >= generations.length) {
             setHasMore(false);
             return;
         }
 
         const [startIdx, endIdx] = [
-            displayPokemons.length,
-            displayPokemons.length + DEFAULT_ITEM_LIMIT,
+            displayGenerations.length,
+            displayGenerations.length + 1,
         ];
-        const nextPokemons = allPokemons.slice(startIdx, endIdx);
-        setDisplayPokemons(displayPokemons.concat(nextPokemons));
-    }, [allPokemons, displayPokemons, hasMore]);
+        const nextGeneration = generations.slice(startIdx, endIdx);
+        setDisplayGenerations(displayGenerations.concat(nextGeneration));
+    }, [generations, displayGenerations, hasMore]);
 
     useEffect(() => {
+        const generationRules = [
+            { generationNo: 1, displayGeneration: '關都地區', noRange: [1, 151], extraForms: [] },
+            { generationNo: 2, displayGeneration: '城都地區', noRange: [152, 251], extraForms: [] },
+            { generationNo: 3, displayGeneration: '豐緣地區', noRange: [252, 386], extraForms: [] },
+            { generationNo: 4, displayGeneration: '神奧地區', noRange: [387, 493], extraForms: [] },
+            { generationNo: 5, displayGeneration: '合眾地區', noRange: [494, 649], extraForms: [] },
+            { generationNo: 6, displayGeneration: '卡洛斯地區', noRange: [650, 721], extraForms: [] },
+            { generationNo: 7, displayGeneration: '阿羅拉地區', noRange: [722, 809], extraForms: ['ALOLA'] },
+            { generationNo: 8, displayGeneration: '伽勒爾地區', noRange: [810, 898], extraForms: ['GALARIAN'] },
+            { generationNo: 4, displayGeneration: '洗翠地區', noRange: [899, 905], extraForms: ['HISUIAN'] },
+            { generationNo: 9, displayGeneration: '帕底亞地區', noRange: [906, Infinity], extraForms: ['PALDEAN'] },
+        ];
+
         // Group by no and get the first one.
-        const filteredPokemons = chain(pokemons).groupBy(({ no }) => no).map(([f]) => f).value();
-        setAllPokemons(filteredPokemons);
-        setDisplayPokemons(filteredPokemons.slice(0, DEFAULT_ITEM_LIMIT));
+        const generations = generationRules.map((generationRule) => ({
+            no: generationRule.generationNo,
+            displayName: generationRule.displayGeneration,
+            pokemons: chain(pokemons)
+                .filter(({ no, form }) => {
+                    const noInRange = generationRule.noRange[0] <= no && no <= generationRule.noRange[1];
+                    const sameForm = generationRule.extraForms.includes(String(form));
+                    return noInRange || sameForm;
+                })
+                .groupBy(({ no }) => no)
+                .map(([first]) => first)
+                .value()
+        }));
+
+        setGenerations(generations);
+        setDisplayGenerations(generations.slice(0, 1));
     }, [pokemons]);
 
     return (
         <Space className={className} direction='vertical'>
-            <Affix offsetTop={12}>
+            <Affix>
                 <div className='search-box'>
                     <Input.Search
                         placeholder='搜尋寶可夢'
@@ -73,45 +103,63 @@ const SearchScreen: React.FC<SearchScreenProps> = (props) => {
             </Affix>
 
             <InfiniteScroll
-                dataLength={displayPokemons.length}
+                dataLength={displayGenerations.length}
                 next={fetchMoreData}
                 hasMore={hasMore}
-                loader={null}
+                loader={<Spin className='loading' />}
+                scrollThreshold={DEFAULT_SCROLL_THRESHOLD}
             >
-                <Row className='pokemons' justify='space-between' gutter={[8, 8]}>
-                    {displayPokemons.map((pokemon, i) => (
-                        <Col key={i} className={'pokemon-item'} flex='33%'>
-                            <Link to={`/pokemons/${pokemon.no}/${pokemon.form?.toLowerCase()}`}>
-                                <div className={['pokemon-container', pokemon.types[0]].join(' ')}>
-                                    {/* Image */}
-                                    <LazyLoad height={100} offset={1000}>
-                                        <Pokemon.AddressedImage
-                                            pokemonNo={pokemon.no}
-                                            pokemonForm={pokemon.form}
-                                            size={100}
-                                        />
-                                    </LazyLoad>
+                {/* Blocks by generations */}
+                {displayGenerations.map((generation) => (generation.pokemons.length === 0
+                    ? null
+                    : (
+                        <div className='generation-block'>
+                            <Divider className='generation-title'>
+                                {generation.displayName}
+                            </Divider>
 
-                                    <Row className='pokemon-info'>
-                                        {/* No. */}
-                                        <Col flex='20px'>
-                                            <Typography.Text className='pokemon-no'>
-                                                {pokemon.no.toString().padStart(3, '0')}
-                                            </Typography.Text>
-                                        </Col>
+                            {/* Blocks by pokemons */}
+                            <Row key={generation.displayName} className='pokemons' justify='start' gutter={[8, 8]}>
+                                {generation.pokemons.map((pokemon) =>
+                                    <Col key={pokemon.no}
+                                        id={`${generation.displayName}-${pokemon.name}`}
+                                        className={'pokemon-item'}
+                                        flex='33%'
+                                    >
+                                        <Link to={`/pokemons/${pokemon.no}/${pokemon.form?.toLowerCase()}`}>
+                                            <div className={['pokemon-container', pokemon.types[0]].join(' ')}>
+                                                {/* Image */}
+                                                <LazyLoad height={100} offset={1000}>
+                                                    <Pokemon.AddressedImage
+                                                        pokemonNo={pokemon.no}
+                                                        pokemonForm={pokemon.form}
+                                                        size={100}
+                                                    />
+                                                </LazyLoad>
 
-                                        {/* Name */}
-                                        <Col flex='auto'>
-                                            <Typography.Text className='pokemon-name'>
-                                                {pokemon.name}
-                                            </Typography.Text>
-                                        </Col>
-                                    </Row>
-                                </div>
-                            </Link>
-                        </Col>
-                    ))}
-                </Row>
+                                                <Row className='pokemon-info'>
+                                                    {/* No. */}
+                                                    <Col flex='20px'>
+                                                        <Typography.Text className='pokemon-no'>
+                                                            {pokemon.no.toString().padStart(3, '0')}
+                                                        </Typography.Text>
+                                                    </Col>
+
+                                                    {/* Name */}
+                                                    <Col flex='auto'>
+                                                        <Typography.Text className='pokemon-name'>
+                                                            {pokemon.name}
+                                                        </Typography.Text>
+                                                    </Col>
+                                                </Row>
+                                            </div>
+                                        </Link>
+                                    </Col>
+                                )}
+                            </Row>
+                        </div>
+                    )
+                ))}
             </InfiniteScroll>
         </Space>
     );
@@ -129,11 +177,25 @@ const styledSearchScreen = styled(SearchScreen)`
 }
 
 .search-box {
-    padding: 0 12px;
+    padding: 12px 12px 0 12px;
+}
+
+.loading {
+    display: flex;
+    justify-content: center;
+    margin: 1.5em 0;
+}
+
+.generation-title {
+    color: rgba(0, 0, 0, 0.65);
+    font-size: 1.25em;
+    letter-spacing: .25em;
+    padding: 0;
+    margin: .5em 0 .5em 0;
 }
 
 .pokemons {
-    padding: 12px 12px;
+    padding: 0 12px 36px 12px;
     
     .pokemon-item {
         text-align: center;
